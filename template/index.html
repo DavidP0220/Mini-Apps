@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mini App</title>
+<meta name="theme-color" content="#6C5CE7">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- Cover / launch screen -->
+  <section id="cover" class="cover">
+    <div class="cover-inner">
+      <div class="cover-icon" id="coverIcon">📘</div>
+      <h1 id="coverTitle">Título</h1>
+      <p id="coverSubtitle">Subtítulo</p>
+      <button id="startBtn" class="btn-primary">Comenzar</button>
+      <button id="continueBtn" class="btn-ghost hidden">Continuar donde quedé</button>
+      <div class="cover-progress">
+        <div class="cover-progress-bar"><div id="coverProgressFill" class="cover-progress-fill"></div></div>
+        <span id="coverProgressLabel">0% completado</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main app shell -->
+  <div id="shell" class="shell hidden">
+    <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+    <nav id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <span id="sidebarTitle">Título</span>
+        <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+      </div>
+      <div class="progress-track">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+      <ul id="chapterList" class="chapter-list"></ul>
+    </nav>
+
+    <div id="overlay" class="overlay hidden"></div>
+
+    <main id="content" class="content"></main>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

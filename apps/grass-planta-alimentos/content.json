@@ -1,0 +1,419 @@
+{
+  "meta": {
+    "id": "grass-planta-alimentos",
+    "title": "Planta de Alimentos Balanceados GRAS SAS",
+    "subtitle": "DTP-GRAS-001 · Rev. 00 · Puesta en marcha",
+    "author": "Hugo Alberto Díaz Joya",
+    "themeColor": "#2D6CDF",
+    "accentColor": "#F5A623"
+  },
+  "chapters": [
+    {
+      "id": "resumen",
+      "title": "Resumen del Proyecto",
+      "icon": "🏭",
+      "sections": [
+        {
+          "type": "callout",
+          "style": "warning",
+          "body": "Confidencial — uso interno del proyecto. No distribuir fuera del equipo autorizado."
+        },
+        {
+          "type": "text",
+          "heading": "Descripción general",
+          "body": "La Planta de Alimentos Balanceados GRAS procesa tres materias primas base — torta de soja, maíz y aceite de palma — junto con micro-componentes (premezclas vitamínico-minerales, aminoácidos de síntesis y aditivos), para producir alimento balanceado a granel destinado a explotaciones pecuarias. La línea opera bajo un esquema de recepción, limpieza, almacenamiento, molienda, dosificación por bache, mezclado y despacho."
+        },
+        {
+          "type": "table",
+          "heading": "Datos clave",
+          "columns": ["Parámetro", "Valor"],
+          "rows": [
+            ["Capacidad nominal de línea", "7.5 t/h"],
+            ["Almacenamiento total en silos", "990 t (3 compartimentos x 330 t)"],
+            ["Tamaño de bache", "1.0 - 1.5 t"],
+            ["Ciclo de mezclado", "4-5 min"],
+            ["Potencia instalada", "100.5 HP en 11 accionamientos"],
+            ["Código del documento", "DTP-GRAS-001 - Rev. 00"],
+            ["Fecha de emisión", "01 de agosto de 2026"],
+            ["Elaborado por", "Hugo Alberto Díaz Joya"]
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Criterios técnicos del diseño",
+          "body": "(1) Trazabilidad del lote desde la recepción del grano hasta el despacho a galpón. (2) Precisión de dosificación en báscula y micro-ingredientes, factor crítico de calidad nutricional. (3) Seguridad operativa frente a los riesgos propios de la manipulación de granos y polvos combustibles."
+        },
+        {
+          "type": "table",
+          "heading": "Materias primas en la fórmula",
+          "columns": ["Materia prima", "Rol", "Punto de incorporación"],
+          "rows": [
+            ["Torta de soja", "Principal fuente de proteína", "Silo compartimento 1 → molienda → tolva báscula"],
+            ["Maíz", "Principal fuente energética", "Silos compartimentos 2 y 3 → molienda → tolva báscula"],
+            ["Aceite de palma", "Aporte energético y ligante / reductor de polvo", "Dosificado por bache en la mezcladora mediante flautas (tubos perforados)"],
+            ["Micro-componentes", "Vitaminas, minerales, aminoácidos y aditivos", "Pre-pesados por bache, incorporados directamente en la mezcladora"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "proceso",
+      "title": "Proceso Productivo (17 etapas)",
+      "icon": "⚙️",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "Secuencia del proceso",
+          "body": "Desde la descarga del vehículo hasta el despacho a galpones vía monorriel. Naranja = punto de incorporación de aceite de palma y micro-componentes · Oscuro = etapa motorizada · Gris = almacenamiento/transferencia pasiva."
+        },
+        {
+          "type": "table",
+          "columns": ["#", "Etapa", "Función", "Accionamiento"],
+          "rows": [
+            ["1", "Winche (perro de arrastre)", "Descarga tractomula", "Motorreductor 7.5 HP"],
+            ["2", "Foso de recepción", "Recibe grano descargado", "Sin motor"],
+            ["3", "Elevador 1", "Sube grano a prelimpieza", "Motorreductor 7.5 HP"],
+            ["4", "Máquina de prelimpieza", "Separa impurezas del grano", "Motor 10 HP"],
+            ["5", "Transportador sinfín superior", "Distribuye a los 3 compartimentos", "Motorreductor 7.5 HP"],
+            ["6", "Silos de almacenamiento", "3 compartimentos x 330 t (soja/maíz/maíz)", "Sin motor"],
+            ["7", "Transportadores de extracción (x3)", "Uno por compartimento", "Motorreductor 7.5 HP c/u"],
+            ["8", "Transportador transversal", "Reúne el flujo de los 3 compartimentos", "Motorreductor 7.5 HP"],
+            ["9", "Foso intermedio", "Recibe grano del transversal", "Sin motor"],
+            ["10", "Elevador 2", "Sube a silos transitorios de molienda", "Motor 3 HP"],
+            ["11", "Silos transitorios", "Alistamiento previo a molienda", "Sin motor"],
+            ["12", "Alimentador + Molino", "Reducción de partícula", "Alimentador 2 HP · Molino 30 HP"],
+            ["13", "Elevador 3", "Sube a silos sobre tolva báscula", "Motor 3 HP"],
+            ["14", "4 silos + Tolva báscula", "Dosificación del bache (1.0-1.5 t)", "Sistema de pesaje electrónico"],
+            ["15", "Mezcladora", "Homogeneización + aplicación aceite/micro-componentes", "Motor — pendiente ficha fabricante"],
+            ["16", "Tolva de descarga + Elevador final", "Sube a silos de producto a granel", "Motor — pendiente ficha fabricante"],
+            ["17", "Contenedores + Monorriel", "Despacho a galpones — fin de proceso", "Motorreductor de tracción — pendiente ficha fabricante"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warning",
+          "body": "La potencia de mezcladora, elevador final y monorriel debe confirmarse con la ficha técnica del fabricante antes de la selección de arrancadores, protecciones y cálculo de demanda eléctrica total."
+        }
+      ]
+    },
+    {
+      "id": "capacidad",
+      "title": "Capacidad y Balance",
+      "icon": "📊",
+      "sections": [
+        {
+          "type": "table",
+          "columns": ["Parámetro", "Valor"],
+          "rows": [
+            ["Capacidad nominal de línea", "7.5 t/h"],
+            ["Almacenamiento total en silos", "990 t"],
+            ["Tamaño de bache", "1.0 - 1.5 t"],
+            ["Ciclo de mezclado por bache", "4-5 min"]
+          ]
+        },
+        {
+          "type": "text",
+          "body": "Con un ciclo de mezclado de 4-5 minutos y bache promedio de 1.25 t, la mezcladora tiene una capacidad teórica de 15-19 t/h, por encima de la capacidad de la línea de recepción (7.5 t/h). La mezcladora no es el cuello de botella: los puntos críticos de capacidad son la máquina de prelimpieza y la precisión del sistema de pesaje en tolva báscula, que deben verificarse en pruebas de comisionamiento (Semana 2 del planificador)."
+        }
+      ]
+    },
+    {
+      "id": "materias-primas",
+      "title": "Especificaciones de Materias Primas",
+      "icon": "🌾",
+      "sections": [
+        {
+          "type": "table",
+          "heading": "Torta de soja",
+          "columns": ["Parámetro", "Especificación"],
+          "rows": [
+            ["Proteína bruta", "44-47% mínimo (según origen y extracción)"],
+            ["Humedad", "< 12-13% para almacenamiento seguro"],
+            ["Fibra cruda", "< 7%"],
+            ["Actividad ureasa", "< 0.4 mg N/g/min — sobre-tratamiento térmico"],
+            ["Micotoxinas (aflatoxinas)", "< 20 ppb"],
+            ["Granulometría", "Uniforme, libre de terrones"]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Maíz",
+          "columns": ["Parámetro", "Especificación"],
+          "rows": [
+            ["Humedad", "< 14% para almacenamiento seguro en silo"],
+            ["Peso hectolítrico (test weight)", "≥ 72 kg/hL"],
+            ["Granos dañados/quebrados", "< 5%"],
+            ["Impurezas y material extraño", "< 1-2% (retenido en prelimpieza)"],
+            ["Micotoxinas (aflatoxinas/fumonisinas)", "Dentro de límites regulatorios vigentes"]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Aceite de palma",
+          "columns": ["Parámetro", "Especificación"],
+          "rows": [
+            ["Índice de acidez (FFA)", "< 5%"],
+            ["Humedad e impurezas", "< 0.5%"],
+            ["Punto de fusión", "33-39 °C — requiere tubería y tanque con trazado térmico"],
+            ["Sistema de dosificación", "Flautas (tubos perforados), temperatura de línea > 45 °C"]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Micro-componentes",
+          "columns": ["Parámetro", "Especificación"],
+          "rows": [
+            ["Composición típica", "Premezcla vitamínico-mineral, aminoácidos de síntesis, aditivos"],
+            ["Preparación", "Pesaje y empaque individual por bache"],
+            ["Precisión de dosificación", "± 2-3% sobre el peso objetivo"],
+            ["Almacenamiento", "Área seca, climatizada, trazabilidad por lote"],
+            ["Verificación", "Doble chequeo (pesador + supervisor) — riesgo de sub/sobre-dosificación"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "calidad",
+      "title": "Control de Calidad",
+      "icon": "✅",
+      "sections": [
+        {
+          "type": "table",
+          "columns": ["Punto de control", "Criterio", "Frecuencia"],
+          "rows": [
+            ["Recepción de torta de soja y maíz", "Humedad, impurezas, olor, ausencia de mohos/insectos", "Cada lote recibido"],
+            ["Recepción de aceite de palma", "FFA, apariencia, ausencia de contaminación cruzada", "Cada lote recibido"],
+            ["Recepción de micro-componentes", "Vigencia, integridad de empaque, certificado de análisis", "Cada lote recibido"],
+            ["Granulometría post-molienda", "Tamaño de partícula dentro de rango de fórmula", "Cada turno"],
+            ["Precisión de tolva báscula", "Desviación de peso de bache < 1%", "Diaria — inicio de turno"],
+            ["Uniformidad de mezclado", "Coeficiente de variación (CV) < 10%", "Semanal"],
+            ["Dosificación de aceite de palma", "Temperatura de línea > 45 °C, caudal por flautas conforme", "Cada turno"],
+            ["Producto terminado a granel", "Apariencia, humedad final, ausencia de segregación", "Cada bache / muestreo compuesto por turno"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seguridad",
+      "title": "Seguridad Industrial (HSE)",
+      "icon": "⚠️",
+      "sections": [
+        {
+          "type": "text",
+          "body": "La manipulación de granos y polvos orgánicos implica riesgo de explosión de polvo combustible (norma de referencia NFPA 61), atrapamiento y sepultamiento en silos (espacio confinado), y atrapamiento mecánico en elevadores y transportadores."
+        },
+        {
+          "type": "table",
+          "columns": ["Elemento / Riesgo", "Medida de control"],
+          "rows": [
+            ["Polvo combustible en elevadores y transportadores", "Detectores de temperatura/chispa, alivio de explosión, limpieza programada de polvo acumulado (NFPA 61)"],
+            ["Ingreso a silos (espacio confinado)", "Permiso de trabajo en espacio confinado, bloqueo de transportadores, monitoreo de atmósfera, vigía permanente"],
+            ["Partes en movimiento (elevadores, sinfines, molino)", "Guardas fijas, enclavamientos, bloqueo y etiquetado (LOTO) antes de intervención"],
+            ["Ruido (molino, elevadores)", "Protección auditiva obligatoria en zona de molienda"],
+            ["Exposición a polvo", "Respirador con filtro para partículas, gafas de seguridad"],
+            ["Manejo de aceite de palma caliente", "Guantes térmicos, señalización de tuberías con trazado térmico"],
+            ["Trabajo en altura (silos, monorriel)", "Arnés certificado, línea de vida, permiso de trabajo en altura"],
+            ["Emergencia por incendio/explosión", "Extintores tipo ABC en puntos críticos, rutas y salidas de emergencia señalizadas"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mantenimiento",
+      "title": "Mantenimiento Preventivo",
+      "icon": "🛠️",
+      "sections": [
+        {
+          "type": "table",
+          "columns": ["Equipo", "Actividad", "Frecuencia"],
+          "rows": [
+            ["Winche, elevadores (1-3, final)", "Lubricación de chumaceras, inspección de tensión de banda/cadena", "Semanal"],
+            ["Motorreductores (todos)", "Verificación de nivel y estado de aceite", "Mensual"],
+            ["Máquina de prelimpieza", "Limpieza de cribas, verificación de mallas", "Semanal"],
+            ["Molino", "Inspección de martillos/discos, ajuste de holguras", "Quincenal"],
+            ["Tolva báscula", "Calibración del sistema de pesaje con pesas patrón", "Mensual"],
+            ["Mezcladora", "Inspección de paletas/cintas internas y sellos", "Mensual"],
+            ["Sistema de dosificación de aceite (flautas)", "Limpieza de boquillas, verificación de trazado térmico", "Semanal"],
+            ["Silos de almacenamiento", "Inspección estructural y limpieza de residuos", "Trimestral"],
+            ["Sistema monorriel", "Inspección de rieles, ruedas y sistema de tracción", "Mensual"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kpis",
+      "title": "Indicadores Clave (KPI)",
+      "icon": "📈",
+      "sections": [
+        {
+          "type": "table",
+          "columns": ["Indicador", "Referencia de la industria", "Meta del proyecto"],
+          "rows": [
+            ["OEE (efectividad global del equipo)", "60-70% promedio · 85%+ clase mundial", "> 75%"],
+            ["Disponibilidad de planta", "85-92% en plantas de balanceados de referencia", "> 90%"],
+            ["Uniformidad de mezclado (CV)", "< 10% aceptable, < 15% límite", "< 10%"],
+            ["Merma de proceso", "1-1.5% en líneas comparables", "< 1.2%"],
+            ["Consumo energético específico", "8-15 kWh/t en molienda + mezclado", "Establecer línea base en Semana 6"],
+            ["Precisión de dosificación (báscula/micro)", "± 1% báscula principal · ± 2-3% micro-componentes", "± 0.5% báscula · ± 2% micro"],
+            ["Tiempo de ciclo por bache", "4-6 min en mezcladoras horizontales de referencia", "4-5 min"],
+            ["Rotación de inventario en silos", "Función de la demanda de galpones — evitar > 30 días", "Rotación < 21 días en grano"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "costos",
+      "title": "Estructura de Costos (Referencial)",
+      "icon": "💰",
+      "sections": [
+        {
+          "type": "callout",
+          "style": "note",
+          "body": "Base de referencia para presupuestación operativa; los valores absolutos deben ajustarse con cotizaciones locales de energía, insumos y mano de obra."
+        },
+        {
+          "type": "table",
+          "columns": ["Componente de costo", "Referencia industria", "Observación para el proyecto"],
+          "rows": [
+            ["Materia prima (soja + maíz + palma + micro)", "75-85% del costo total del alimento", "Costo dominante — controlar merma y precisión de dosificación"],
+            ["Energía eléctrica", "8-15 kWh/t procesada", "Molino (30 HP) y elevadores concentran la mayor demanda"],
+            ["Mano de obra directa", "3-6% del costo total", "Turno mínimo: 1 operador de recepción, 1 de molienda/mezcla, 1 supervisor"],
+            ["Mantenimiento", "2-4% del costo total anual sobre activo instalado", "Presupuestar repuestos críticos: cadenas, cangilones, martillos de molino, mallas de prelimpieza"],
+            ["Pérdidas y merma de proceso", "1-1.5% de la materia prima procesada", "Meta < 1.2%"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "logistica",
+      "title": "Logística y Almacenamiento",
+      "icon": "🚚",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "Recepción de materia prima",
+          "body": "Descarga por tractomula sobre foso con winche — verificar horario de recepción vs. capacidad de prelimpieza (7.5-10 t/h) para evitar filas de espera."
+        },
+        {
+          "type": "text",
+          "heading": "Almacenamiento de grano",
+          "body": "990 t en 3 compartimentos — a 7.5 t/h de consumo, autonomía teórica de ~5.5 días a plena carga continua."
+        },
+        {
+          "type": "text",
+          "heading": "Almacenamiento de aceite de palma",
+          "body": "Tanque con trazado térmico, temperatura mínima 45 °C para mantener fluidez de bombeo hacia flautas."
+        },
+        {
+          "type": "text",
+          "heading": "Almacenamiento de micro-componentes",
+          "body": "Bodega seca y climatizada, control FIFO por fecha de vencimiento."
+        },
+        {
+          "type": "text",
+          "heading": "Despacho a galpones",
+          "body": "Contenedores sobre monorriel — programar según consumo diario de cada galpón para evitar acumulación de producto terminado."
+        }
+      ]
+    },
+    {
+      "id": "planificador",
+      "title": "Plan de Puesta en Marcha — 8 Semanas",
+      "icon": "🗓️",
+      "sections": [
+        {
+          "type": "text",
+          "body": "Plan de ejecución para puesta en marcha del proyecto, desde verificación de obra civil hasta operación estabilizada. Marca cada actividad al completarla; tu progreso se guarda automáticamente."
+        },
+        {
+          "type": "checklist",
+          "heading": "Semana 1 — Recepción y Montaje Mecánico",
+          "items": [
+            "Verificación de obra civil, cimentación de silos y bancadas de motores",
+            "Montaje de winche, elevador 1 y máquina de prelimpieza",
+            "Alineación y anclaje de silos de almacenamiento (3 compartimentos)"
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Semana 2 — Transporte de Grano y Molienda",
+          "items": [
+            "Montaje de transportadores de extracción y transversal",
+            "Instalación de elevador 2, silos transitorios, alimentador y molino",
+            "Pruebas en vacío de accionamientos 1 a 12 (sin carga de grano)"
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Semana 3 — Dosificación y Mezclado",
+          "items": [
+            "Montaje de elevador 3, silos sobre tolva báscula y sistema de pesaje",
+            "Instalación de mezcladora y sistema de flautas de aceite de palma",
+            "Calibración inicial de báscula con pesas patrón"
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Semana 4 — Despacho y Automatización",
+          "items": [
+            "Montaje de tolva de descarga, elevador final y silos de granel",
+            "Instalación de sistema monorriel y contenedores de despacho",
+            "Programación de control eléctrico / arrancadores de los accionamientos"
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Semana 5 — Comisionamiento en Vacío",
+          "items": [
+            "Prueba secuencial de arranque de línea completa sin materia prima",
+            "Verificación de enclavamientos y paradas de emergencia",
+            "Capacitación de operadores en el proceso de 17 etapas"
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Semana 6 — Comisionamiento con Carga · Línea Base",
+          "items": [
+            "Primera recepción real de torta de soja y maíz — verificación de prelimpieza",
+            "Primeros baches de prueba — ajuste de tolva báscula y mezcladora",
+            "Medición de línea base de consumo energético (kWh/t)"
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Semana 7 — Estabilización y Control de Calidad",
+          "items": [
+            "Verificación de uniformidad de mezclado (CV < 10%) en baches consecutivos",
+            "Ajuste fino de dosificación de aceite de palma (temperatura, caudal)",
+            "Implementación de checklist diario de calidad"
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Semana 8 — Operación Estabilizada y Cierre",
+          "items": [
+            "Primera semana de operación continua a capacidad nominal (7.5 t/h)",
+            "Auditoría HSE completa y cierre de no conformidades",
+            "Entrega de manual de operación y plan de mantenimiento a planta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aprobacion",
+      "title": "Aprobación del Documento",
+      "icon": "🖊️",
+      "sections": [
+        {
+          "type": "table",
+          "columns": ["Rol", "Nombre", "Fecha"],
+          "rows": [
+            ["Elaborado por", "Hugo Alberto Díaz Joya", "01 de agosto de 2026"],
+            ["Revisado por", "—", "—"],
+            ["Aprobado por", "—", "—"]
+          ]
+        }
+      ]
+    }
+  ]
+}

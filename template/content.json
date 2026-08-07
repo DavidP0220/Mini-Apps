@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "id": "demo-app",
+    "title": "Domina el Ayuno Intermitente",
+    "subtitle": "Guía práctica paso a paso",
+    "author": "Tu Marca",
+    "themeColor": "#6C5CE7",
+    "accentColor": "#00D9A5"
+  },
+  "chapters": [
+    {
+      "id": "intro",
+      "title": "Introducción",
+      "icon": "📘",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "Bienvenido",
+          "body": "Esta guía interactiva te llevará paso a paso a través de todo lo que necesitas saber. Marca tu progreso, completa las listas de verificación y pon a prueba lo aprendido con los mini-quizzes al final de cada capítulo."
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "body": "Tu progreso se guarda automáticamente en este dispositivo. Puedes cerrar la app y continuar donde quedaste."
+        }
+      ]
+    },
+    {
+      "id": "fundamentos",
+      "title": "Fundamentos",
+      "icon": "🧠",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "¿Qué es?",
+          "body": "Un patrón de alimentación que alterna periodos de ingesta con periodos de ayuno. No se trata de qué comes, sino de cuándo comes."
+        },
+        {
+          "type": "checklist",
+          "heading": "Antes de empezar, verifica:",
+          "items": [
+            "Consulté con un profesional de salud si tengo alguna condición médica",
+            "Elegí una ventana de alimentación realista para mi rutina",
+            "Tengo suficiente hidratación planeada durante el ayuno"
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál es el foco principal de esta técnica?",
+          "options": ["Qué alimentos comer", "Cuándo comer", "Cuánto ejercicio hacer"],
+          "answerIndex": 1,
+          "explanation": "Correcto: el eje central es la ventana horaria de alimentación, no la composición de la dieta."
+        }
+      ]
+    },
+    {
+      "id": "plan",
+      "title": "Tu plan de 7 días",
+      "icon": "🗓️",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "Cómo usar el plan",
+          "body": "Cada día incluye una tarea concreta. Márcala como completada cuando la termines."
+        },
+        {
+          "type": "checklist",
+          "heading": "Semana 1",
+          "items": [
+            "Día 1 — Ventana 12:12",
+            "Día 2 — Ventana 12:12",
+            "Día 3 — Ventana 14:10",
+            "Día 4 — Ventana 14:10",
+            "Día 5 — Ventana 16:8",
+            "Día 6 — Ventana 16:8",
+            "Día 7 — Evalúa cómo te sentiste"
+          ]
+        }
+      ]
+    }
+  ]
+}
