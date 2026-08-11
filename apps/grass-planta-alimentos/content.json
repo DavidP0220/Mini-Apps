@@ -29,10 +29,10 @@
           "columns": ["Parámetro", "Valor"],
           "rows": [
             ["Capacidad nominal de línea", "7.5 t/h"],
-            ["Almacenamiento total en silos", "990 t (3 compartimentos x 330 t)"],
-            ["Tamaño de bache", "1.0 - 1.5 t"],
+            ["Almacenamiento total en silos", "1.200 t (3 compartimentos x 400 t)"],
+            ["Tamaño de bache", "1 t (fijo)"],
             ["Ciclo de mezclado", "4-5 min"],
-            ["Potencia instalada", "100.5 HP en 11 accionamientos"],
+            ["Potencia instalada", "126 HP en 14 accionamientos eléctricos"],
             ["Código del documento", "DTP-GRAS-001 - Rev. 00"],
             ["Fecha de emisión", "01 de agosto de 2026"],
             ["Elaborado por", "Hugo Alberto Díaz Joya"]
@@ -73,9 +73,9 @@
             ["1", "Winche (perro de arrastre)", "Descarga tractomula", "Motorreductor 7.5 HP"],
             ["2", "Foso de recepción", "Recibe grano descargado", "Sin motor"],
             ["3", "Elevador 1", "Sube grano a prelimpieza", "Motorreductor 7.5 HP"],
-            ["4", "Máquina de prelimpieza", "Separa impurezas del grano", "Motor 10 HP"],
+            ["4", "Máquina de prelimpieza", "Separa impurezas del grano", "Motor 7.5 HP"],
             ["5", "Transportador sinfín superior", "Distribuye a los 3 compartimentos", "Motorreductor 7.5 HP"],
-            ["6", "Silos de almacenamiento", "3 compartimentos x 330 t (soja/maíz/maíz)", "Sin motor"],
+            ["6", "Silos de almacenamiento", "3 compartimentos x 400 t (soja/maíz/maíz)", "Sin motor"],
             ["7", "Transportadores de extracción (x3)", "Uno por compartimento", "Motorreductor 7.5 HP c/u"],
             ["8", "Transportador transversal", "Reúne el flujo de los 3 compartimentos", "Motorreductor 7.5 HP"],
             ["9", "Foso intermedio", "Recibe grano del transversal", "Sin motor"],
@@ -83,16 +83,25 @@
             ["11", "Silos transitorios", "Alistamiento previo a molienda", "Sin motor"],
             ["12", "Alimentador + Molino", "Reducción de partícula", "Alimentador 2 HP · Molino 30 HP"],
             ["13", "Elevador 3", "Sube a silos sobre tolva báscula", "Motor 3 HP"],
-            ["14", "4 silos + Tolva báscula", "Dosificación del bache (1.0-1.5 t)", "Sistema de pesaje electrónico"],
-            ["15", "Mezcladora", "Homogeneización + aplicación aceite/micro-componentes", "Motor — pendiente ficha fabricante"],
-            ["16", "Tolva de descarga + Elevador final", "Sube a silos de producto a granel", "Motor — pendiente ficha fabricante"],
-            ["17", "Contenedores + Monorriel", "Despacho a galpones — fin de proceso", "Motorreductor de tracción — pendiente ficha fabricante"]
+            ["14", "4 silos + Tolva báscula", "Dosificación del bache (1 t)", "Sistema de pesaje electrónico — sin motor"],
+            ["15", "Mezcladora", "Homogeneización + aplicación aceite/micro-componentes", "Motor 30 HP"],
+            ["16", "Tolva de descarga + Elevador final", "Sube a silos de producto a granel", "Motor 3 HP"],
+            ["17", "Contenedores + Monorriel", "Despacho a galpones — fin de proceso", "Motor diésel de tracción"]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Subtotal de potencia instalada",
+          "columns": ["Concepto", "Valor"],
+          "rows": [
+            ["Accionamientos eléctricos (14)", "126 HP"],
+            ["Sistema monorriel", "Motor diésel ~10 HP — no incluido en el subtotal eléctrico"]
           ]
         },
         {
           "type": "callout",
-          "style": "warning",
-          "body": "La potencia de mezcladora, elevador final y monorriel debe confirmarse con la ficha técnica del fabricante antes de la selección de arrancadores, protecciones y cálculo de demanda eléctrica total."
+          "style": "note",
+          "body": "El sistema monorriel opera con motor diésel y no se incluye en el subtotal de potencia eléctrica instalada; se considera por separado en el cálculo de arrancadores y protecciones del tablero."
         }
       ]
     },
@@ -106,14 +115,14 @@
           "columns": ["Parámetro", "Valor"],
           "rows": [
             ["Capacidad nominal de línea", "7.5 t/h"],
-            ["Almacenamiento total en silos", "990 t"],
-            ["Tamaño de bache", "1.0 - 1.5 t"],
+            ["Almacenamiento total en silos", "1.200 t"],
+            ["Tamaño de bache", "1 t (fijo)"],
             ["Ciclo de mezclado por bache", "4-5 min"]
           ]
         },
         {
           "type": "text",
-          "body": "Con un ciclo de mezclado de 4-5 minutos y bache promedio de 1.25 t, la mezcladora tiene una capacidad teórica de 15-19 t/h, por encima de la capacidad de la línea de recepción (7.5 t/h). La mezcladora no es el cuello de botella: los puntos críticos de capacidad son la máquina de prelimpieza y la precisión del sistema de pesaje en tolva báscula, que deben verificarse en pruebas de comisionamiento (Semana 2 del planificador)."
+          "body": "Con un ciclo de mezclado de 4-5 minutos y bache fijo de 1 t, la mezcladora tiene una capacidad teórica de 12-15 t/h, por encima de la capacidad de la línea de recepción (7.5 t/h). La mezcladora no es el cuello de botella: los puntos críticos de capacidad son la máquina de prelimpieza y la precisión del sistema de pesaje en tolva báscula, que deben verificarse en pruebas de comisionamiento (Semana 2 del planificador)."
         }
       ]
     },
@@ -297,7 +306,7 @@
         {
           "type": "text",
           "heading": "Almacenamiento de grano",
-          "body": "990 t en 3 compartimentos — a 7.5 t/h de consumo, autonomía teórica de ~5.5 días a plena carga continua."
+          "body": "1.200 t en 3 compartimentos de 400 t — a 7.5 t/h de consumo, autonomía teórica de ~6.7 días a plena carga continua."
         },
         {
           "type": "text",
