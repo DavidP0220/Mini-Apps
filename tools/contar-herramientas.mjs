@@ -50,7 +50,10 @@ for (const { ruta, nombre } of objetivo) {
     if (!linea.trim()) continue;
     let o;
     try { o = JSON.parse(linea); } catch { continue; }
-    if (o.attachment?.addedNames) o.attachment.addedNames.forEach((n) => herramientas.add(n));
+    // El transcript registra altas y bajas: hay que aplicar ambas, en orden.
+    o.attachment?.addedNames?.forEach((n) => herramientas.add(n));
+    o.attachment?.readdedNames?.forEach((n) => herramientas.add(n));
+    o.attachment?.removedNames?.forEach((n) => herramientas.delete(n));
     const u = o.message?.usage;
     if (!contextoInicial && o.type === 'assistant' && u) {
       contextoInicial = (u.input_tokens || 0) + (u.cache_creation_input_tokens || 0) + (u.cache_read_input_tokens || 0);
