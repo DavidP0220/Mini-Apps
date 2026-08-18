@@ -1,0 +1,7 @@
+# materia prima y renders pesados (no van al repo)
+bases/
+salida/*/img/
+salida/**/*.wav
+salida/**/*.mp4
+salida/**/*.jpg
+salida/**/*.png

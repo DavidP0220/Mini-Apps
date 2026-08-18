@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Panel de Produccion — Red de Abundancia</title>
+<style>
+:root{--oro:#FFD700;--noche:#0B132B;--card:#141c33;--txt:#e8ecf7;--mut:#93a0c4;--ok:#2ecc71}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 system-ui,Segoe UI,sans-serif;background:var(--noche);color:var(--txt)}
+header{padding:28px 20px;background:linear-gradient(135deg,#0B132B,#241a4a);border-bottom:1px solid #2a3557}
+h1{margin:0 0 6px;font-size:24px}h1 span{color:var(--oro)}
+.sub{color:var(--mut);font-size:14px}
+.wrap{max-width:1200px;margin:0 auto;padding:20px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:24px}
+.kpi{background:var(--card);border:1px solid #2a3557;border-radius:12px;padding:14px}
+.kpi b{display:block;font-size:26px;color:var(--oro)}.kpi small{color:var(--mut)}
+.canal{background:var(--card);border:1px solid #2a3557;border-radius:14px;margin-bottom:18px;overflow:hidden}
+.ch{padding:14px 16px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;background:#18213d}
+.ch b{font-size:17px}.ch em{color:var(--mut);font-style:normal;font-size:13px}
+.bar{height:6px;background:#0d1428;border-radius:4px;overflow:hidden;margin-top:6px;width:200px}
+.bar i{display:block;height:100%;background:var(--oro)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td,th{padding:8px 12px;border-top:1px solid #232d4d;text-align:left}
+th{color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase}
+.hz{color:var(--oro);font-variant-numeric:tabular-nums}
+.chk{display:flex;gap:6px}.chk input{accent-color:var(--oro)}
+.tag{background:#222c4d;padding:2px 8px;border-radius:20px;font-size:11px;color:var(--mut)}
+a{color:var(--oro)}
+.hide{display:none}
+</style></head><body>
+<header><div class="wrap"><h1>Panel de Produccion — <span>Red de Abundancia</span></h1>
+<div class="sub">3 canales · 60 videos por mes · marca cada paso y el progreso se guarda en este navegador</div></div></header>
+<div class="wrap">
+<div class="kpis" id="kpis"></div>
+<div id="canales"></div>
+<p class="sub">Estados por video: <b>A</b> audio base · <b>I</b> imagenes · <b>R</b> renderizado · <b>P</b> publicado.</p>
+</div>
+<script>
+const KEY='abundancia-progreso';
+const est=JSON.parse(localStorage.getItem(KEY)||'{}');
+const guardar=()=>localStorage.setItem(KEY,JSON.stringify(est));
+fetch('../datos/catalogo.json').then(r=>r.json()).then(cat=>{
+ const pasos=['A','I','R','P'];
+ const cont=document.getElementById('canales');
+ function pintar(){
+  let tot=0,pub=0,ren=0;
+  cont.innerHTML='';
+  cat.canales.forEach(c=>{
+   const hechos=c.videos.filter(v=>(est[v.id]||[]).includes('P')).length;
+   c.videos.forEach(v=>{tot++;const e=est[v.id]||[];if(e.includes('P'))pub++;if(e.includes('R'))ren++;});
+   const d=document.createElement('div');d.className='canal';
+   d.innerHTML=`<div class="ch"><div><b>${c.nombre}</b> <em>${c.handle} · ${c.deidad}</em>
+     <div class="bar"><i style="width:${hechos/c.videos.length*100}%"></i></div></div>
+     <div><span class="tag">${hechos}/${c.videos.length} publicados</span></div></div>
+     <table><thead><tr><th>#</th><th>Titulo</th><th>Hz</th><th>Dur</th><th>Bloque</th><th>Progreso</th><th>Paquete</th></tr></thead><tbody>
+     ${c.videos.map(v=>`<tr><td>${v.n}</td><td>${v.titulo_corto}</td><td class="hz">${v.hz}</td>
+       <td>${v.horas}h</td><td><span class="tag">${v.bloque}</span></td>
+       <td><div class="chk">${pasos.map(p=>`<label title="${p}"><input type="checkbox" data-id="${v.id}" data-p="${p}" ${(est[v.id]||[]).includes(p)?'checked':''}>${p}</label>`).join('')}</div></td>
+       <td><a href="../salida/${c.slug}/${v.id}.md" target="_blank">abrir</a></td></tr>`).join('')}
+     </tbody></table>`;
+   cont.appendChild(d);
+  });
+  const horas=cat.canales.flatMap(c=>c.videos).reduce((s,v)=>s+v.horas,0);
+  document.getElementById('kpis').innerHTML=`
+   <div class="kpi"><b>${tot}</b><small>videos del mes</small></div>
+   <div class="kpi"><b>${ren}</b><small>renderizados</small></div>
+   <div class="kpi"><b>${pub}</b><small>publicados</small></div>
+   <div class="kpi"><b>${horas}</b><small>horas de contenido</small></div>
+   <div class="kpi"><b>${Math.round(pub/tot*100)}%</b><small>avance del mes</small></div>`;
+ }
+ cont.addEventListener('change',e=>{
+  const t=e.target;if(t.tagName!=='INPUT')return;
+  const id=t.dataset.id,p=t.dataset.p;const a=new Set(est[id]||[]);
+  t.checked?a.add(p):a.delete(p);est[id]=[...a];guardar();pintar();
+ });
+ pintar();
+});
+</script></body></html>
