@@ -1,4 +1,6 @@
 {
+  "_comentario": "Modelo por defecto para este proyecto. Es HTML/CSS/JS puro sin dependencias: Sonnet basta y cuesta 5 veces menos que Opus. Para arquitectura o depuracion dificil, cambia con /model opus dentro de la sesion.",
+  "model": "claude-sonnet-5",
   "permissions": {
     "allow": [
       "Bash(ls:*)",

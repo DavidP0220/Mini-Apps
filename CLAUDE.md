@@ -32,26 +32,38 @@ serve.ps1           servidor local para previsualizar (Windows)
 }
 ```
 
-Tipos de sección soportados por el motor: `text`, `callout`, `checklist`, `quiz`.
+Tipos de sección soportados por el motor: `text`, `callout`, `checklist`, `quiz`, `table`.
 
 ## Comandos
 
 ```bash
 node tools/new-app.mjs <carpeta> --titulo "Título" --color "#RRGGBB"   # crear app nueva
+node tools/content.mjs listar <app>                                    # índice de capítulos
+node tools/content.mjs ver <app> <capituloId>                          # UN capítulo, no los 20 KB
+node tools/content.mjs set <app> <capId> <n> --body "texto"            # editar una sección
+node tools/sync-motor.mjs [--aplicar]                                  # propagar cambios del motor
 node tools/token-report.mjs                                            # ver gasto de tokens
+node tools/contar-herramientas.mjs                                     # herramientas cargadas
 node tools/router/listar-modelos-gratis.mjs                            # modelos gratis de OpenRouter
 pwsh serve.ps1                                                         # previsualizar (Windows)
 ```
+
+## Modelo por defecto
+
+Este proyecto usa **Sonnet** (`.claude/settings.json`). Es HTML/CSS/JS puro sin
+dependencias: Sonnet basta y cuesta 5 veces menos. Cambia a Opus con `/model opus`
+solo para arquitectura o depuración difícil, y vuelve con `/model sonnet`.
 
 ## Reglas de trabajo (ahorro de tokens)
 
 1. **Nunca escribas a mano los archivos del motor al crear una app.** Usa
    `node tools/new-app.mjs`; copia todo y deja solo `content.json` pendiente.
-2. `apps/*/content.json` puede pesar 20 KB: edita **secciones puntuales**, no el
-   archivo completo.
+2. **Nunca leas `apps/*/content.json` entero** (20 KB ≈ 5.200 tokens). Usa
+   `node tools/content.mjs listar/ver/set` para traer o cambiar solo un capítulo.
 3. No leas `template/app.js` ni `styles.css` salvo que el cambio sea al motor.
-4. Si cambias `template/sw.js`, sube la versión del caché (`CACHE = '...-vN'`) o
-   los usuarios seguirán viendo la versión vieja.
+4. Si cambias el motor en `template/`, propágalo con `node tools/sync-motor.mjs
+   --aplicar` en vez de repetir la edición en cada app. Sube la versión del caché
+   (`CACHE = '...-vN'`) o los usuarios seguirán viendo la versión vieja.
 5. Idioma del proyecto y de las apps: **español**.
 
 Detalles de costos y de modelos gratuitos: `docs/OPTIMIZACION-TOKENS.md` y
