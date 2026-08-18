@@ -18,11 +18,31 @@
       "Bash(git log:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Read(//home/user/Mini-Apps/**)"
+      "Read(//home/user/Mini-Apps/**)",
+      "Bash(node tools/content.mjs:*)",
+      "Bash(node tools/sync-motor.mjs:*)"
     ],
     "deny": [
       "Read(**/.env)",
       "Read(**/.claude-code-router/config.json)"
     ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node tools/hooks/aviso-content.mjs",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "node tools/hooks/statusline.mjs"
   }
 }
