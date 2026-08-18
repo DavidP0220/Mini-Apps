@@ -1,19 +1,19 @@
 # uriel-01 — Uriel's Gold and Ruby Flame
 
-Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Rayo Oro-Rubi · 528Hz · 3 horas
+Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Rayo Oro-Rubi · 528Hz · 1 horas
 
 ---
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Uriel's Gold and Ruby Flame 💰 Activate Miracles & Heart-Centered Wealth • 528 Hz • 3 Hours
+Uriel's Gold and Ruby Flame 💰 Activate Miracles & Heart-Centered Wealth • 528 Hz • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)
 ```
 Uriel's Gold and Ruby Flame — 528Hz music to activate transformation, miracles and heart-centered abundance.
 
-Let this 3-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 528Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
+Let this 1-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 528Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
 
 HOW TO USE THIS TRACK
 1. Find a quiet place and set one clear intention about your abundance.
@@ -43,7 +43,7 @@ This music is for relaxation and meditation. It is not a substitute for medical 
 
 ## 3) ETIQUETAS — Studio → *Mostrar más* → campo *Etiquetas* (pega separado por comas)
 ```
-abundance music, money frequency, wealth meditation, manifestation music, law of attraction, sleep music, healing frequency, meditation music, prosperity, attract money, spiritual music, relaxing music, 528hz, 528 hz music, archangel uriel, 3 hour music, uriel's gold and ruby flame
+meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 528hz, 528 hz music, archangel uriel, 1 hour music, uriel's gold and ruby flame
 ```
 
 ## 4) COMENTARIO FIJADO — publícalo y luego clic en los 3 puntos → *Fijar*

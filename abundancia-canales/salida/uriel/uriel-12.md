@@ -43,7 +43,7 @@ This music is for relaxation and meditation. It is not a substitute for medical 
 
 ## 3) ETIQUETAS — Studio → *Mostrar más* → campo *Etiquetas* (pega separado por comas)
 ```
-abundance music, money frequency, wealth meditation, manifestation music, law of attraction, sleep music, healing frequency, meditation music, prosperity, attract money, spiritual music, relaxing music, 396hz, 396 hz music, archangel uriel, 3 hour music, heal the anxiety of lack
+meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 396hz, 396 hz music, archangel uriel, 3 hour music, heal the anxiety of lack
 ```
 
 ## 4) COMENTARIO FIJADO — publícalo y luego clic en los 3 puntos → *Fijar*

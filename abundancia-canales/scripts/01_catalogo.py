@@ -98,15 +98,15 @@ CANALES = {
 
 # Formato de titulo probado: NOMBRE + emoji + BENEFICIO + frecuencia + duracion
 GANCHO = {
- 396: "{t} \u2728 Release Fear & Dissolve the Roots of Scarcity \u2022 {hz} Hz \u2022 {hrs} Hours",
- 417: "{t} \U0001f501 Clear Old Money Patterns & Reset Your Luck \u2022 {hz} Hz \u2022 {hrs} Hours",
- 432: "{t} \U0001f331 Deep Calm, Blessings & Abundance While You Sleep \u2022 {hz} Hz \u2022 {hrs} Hours",
- 528: "{t} \U0001f4b0 Activate Miracles & Heart-Centered Wealth \u2022 {hz} Hz \u2022 {hrs} Hours",
- 741: "{t} \U0001f6e1\ufe0f Cleanse Envy, Evil Eye & Negative Energy \u2022 {hz} Hz \u2022 {hrs} Hours",
- 777: "{t} \U0001f340 Open Divine Luck & Unexpected Doors \u2022 {hz} Hz \u2022 {hrs} Hours",
- 888: "{t} \U0001f4b8 Awaken Financial Magnetism & Non-Stop Money Flow \u2022 {hz} Hz \u2022 {hrs} Hours",
- 963: "{t} \U0001f52e Connect With Divine Wisdom & Higher Guidance \u2022 {hz} Hz \u2022 {hrs} Hours",
- 1111:"{t} \U0001f6aa Enter the Manifestation Portal & Seal Your Intention \u2022 {hz} Hz \u2022 {hrs} Hours",
+ 396: "{t} \u2728 Release Fear & Dissolve the Roots of Scarcity \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
+ 417: "{t} \U0001f501 Clear Old Money Patterns & Reset Your Luck \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
+ 432: "{t} \U0001f331 Deep Calm, Blessings & Abundance While You Sleep \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
+ 528: "{t} \U0001f4b0 Activate Miracles & Heart-Centered Wealth \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
+ 741: "{t} \U0001f6e1\ufe0f Cleanse Envy, Evil Eye & Negative Energy \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
+ 777: "{t} \U0001f340 Open Divine Luck & Unexpected Doors \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
+ 888: "{t} \U0001f4b8 Awaken Financial Magnetism & Non-Stop Money Flow \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
+ 963: "{t} \U0001f52e Connect With Divine Wisdom & Higher Guidance \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
+ 1111:"{t} \U0001f6aa Enter the Manifestation Portal & Seal Your Intention \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
 }
 
 CORTO = {396:"Release Fear & Scarcity",417:"Reset Your Luck",432:"Deep Calm & Blessings",
@@ -116,18 +116,31 @@ EMOJI = {396:"\u2728",417:"\U0001f501",432:"\U0001f331",528:"\U0001f4b0",741:"\U
  777:"\U0001f340",888:"\U0001f4b8",963:"\U0001f52e",1111:"\U0001f6aa"}
 
 def titulo(t, hz, hrs):
+    plural = "" if hrs == 1 else "s"
     """YouTube corta a 100 caracteres: si el titulo largo se pasa, usa el beneficio corto."""
-    largo = GANCHO[hz].format(t=t, hz=hz, hrs=hrs)
+    largo = GANCHO[hz].format(t=t, hz=hz, hrs=hrs, plural=plural)
     if len(largo) <= 100:
         return largo
-    corto = f"{t} {EMOJI[hz]} {CORTO[hz]} \u2022 {hz} Hz \u2022 {hrs} Hours"
-    return corto if len(corto) <= 100 else f"{t} {EMOJI[hz]} {hz} Hz \u2022 {hrs} Hours"[:100]
+    corto = f"{t} {EMOJI[hz]} {CORTO[hz]} \u2022 {hz} Hz \u2022 {hrs} Hour{plural}"
+    return corto if len(corto) <= 100 else f"{t} {EMOJI[hz]} {hz} Hz \u2022 {hrs} Hour{plural}"[:100]
+
+def duracion(hrs, n):
+    """Ajuste con datos reales del nicho (analisis de canales referentes):
+    los videos de 1 HORA son los que mas velocidad de vistas tienen hoy.
+    Se conservan los de 8 h para la busqueda de sueno y algunos de 3 h."""
+    if hrs == 8:
+        return 8
+    if hrs == 2:
+        return 1
+    return 1 if n % 2 else 3
+
 
 def build():
     out = {"generado": "abundancia-canales", "canales": []}
     for slug, c in CANALES.items():
         vids = []
         for i, (t, hz, hrs, thumb, escena) in enumerate(c["videos"], 1):
+            hrs = duracion(hrs, i)
             bloque = c["bloques"][(i - 1) // 5]
             vids.append({
                 "id": f"{slug}-{i:02d}",

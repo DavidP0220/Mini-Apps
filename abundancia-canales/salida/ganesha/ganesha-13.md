@@ -1,19 +1,19 @@
 # ganesha-13 — Wisdom to Choose the Right Path
 
-Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Escudo y Sabiduria · 963Hz · 3 horas
+Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Escudo y Sabiduria · 963Hz · 1 horas
 
 ---
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Wisdom to Choose the Right Path 🔮 Connect With Divine Wisdom & Higher Guidance • 963 Hz • 3 Hours
+Wisdom to Choose the Right Path 🔮 Connect With Divine Wisdom & Higher Guidance • 963 Hz • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)
 ```
 Wisdom to Choose the Right Path — 963Hz music to connect you with divine wisdom and higher guidance.
 
-Let this 3-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 963Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
+Let this 1-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 963Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
 
 HOW TO USE THIS TRACK
 1. Find a quiet place and set one clear intention about your abundance.
@@ -43,7 +43,7 @@ This music is for relaxation and meditation. It is not a substitute for medical 
 
 ## 3) ETIQUETAS — Studio → *Mostrar más* → campo *Etiquetas* (pega separado por comas)
 ```
-abundance music, money frequency, wealth meditation, manifestation music, law of attraction, sleep music, healing frequency, meditation music, prosperity, attract money, spiritual music, relaxing music, 963hz, 963 hz music, lord ganesha, 3 hour music, wisdom to choose the right path
+meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 963hz, 963 hz music, lord ganesha, 1 hour music, wisdom to choose the right path
 ```
 
 ## 4) COMENTARIO FIJADO — publícalo y luego clic en los 3 puntos → *Fijar*

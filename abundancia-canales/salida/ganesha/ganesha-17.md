@@ -1,19 +1,19 @@
 # ganesha-17 — Ganesha Manifestation Ritual 1111Hz
 
-Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Nuevos Comienzos · 1111Hz · 2 horas
+Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Nuevos Comienzos · 1111Hz · 1 horas
 
 ---
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Ganesha Manifestation Ritual 1111Hz 🚪 Manifestation Portal • 1111 Hz • 2 Hours
+Ganesha Manifestation Ritual 1111Hz 🚪 Manifestation Portal • 1111 Hz • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)
 ```
 Ganesha Manifestation Ritual 1111Hz — 1111Hz music to open the manifestation portal and seal your intention.
 
-Let this 2-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 1111Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
+Let this 1-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 1111Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
 
 HOW TO USE THIS TRACK
 1. Find a quiet place and set one clear intention about your abundance.
@@ -43,7 +43,7 @@ This music is for relaxation and meditation. It is not a substitute for medical 
 
 ## 3) ETIQUETAS — Studio → *Mostrar más* → campo *Etiquetas* (pega separado por comas)
 ```
-abundance music, money frequency, wealth meditation, manifestation music, law of attraction, sleep music, healing frequency, meditation music, prosperity, attract money, spiritual music, relaxing music, 1111hz, 1111 hz music, lord ganesha, 2 hour music, ganesha manifestation ritual 1111hz
+meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 1111hz, 1111 hz music, lord ganesha, 1 hour music, ganesha manifestation ritual 1111hz
 ```
 
 ## 4) COMENTARIO FIJADO — publícalo y luego clic en los 3 puntos → *Fijar*

@@ -1,19 +1,19 @@
 # ganesha-11 — Shield of Ganesha: Protection Sound
 
-Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Escudo y Sabiduria · 741Hz · 3 horas
+Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Escudo y Sabiduria · 741Hz · 1 horas
 
 ---
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Shield of Ganesha: Protection Sound 🛡️ Cleanse Envy, Evil Eye & Negative Energy • 741 Hz • 3 Hours
+Shield of Ganesha: Protection Sound 🛡️ Cleanse Envy, Evil Eye & Negative Energy • 741 Hz • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)
 ```
 Shield of Ganesha: Protection Sound — 741Hz music to cleanse your field and protect you from envy and negativity.
 
-Let this 3-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 741Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
+Let this 1-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 741Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
 
 HOW TO USE THIS TRACK
 1. Find a quiet place and set one clear intention about your abundance.
@@ -43,7 +43,7 @@ This music is for relaxation and meditation. It is not a substitute for medical 
 
 ## 3) ETIQUETAS — Studio → *Mostrar más* → campo *Etiquetas* (pega separado por comas)
 ```
-abundance music, money frequency, wealth meditation, manifestation music, law of attraction, sleep music, healing frequency, meditation music, prosperity, attract money, spiritual music, relaxing music, 741hz, 741 hz music, lord ganesha, 3 hour music, shield of ganesha: protection sound
+meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 741hz, 741 hz music, lord ganesha, 1 hour music, shield of ganesha: protection sound
 ```
 
 ## 4) COMENTARIO FIJADO — publícalo y luego clic en los 3 puntos → *Fijar*

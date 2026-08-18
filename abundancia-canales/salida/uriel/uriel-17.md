@@ -1,19 +1,19 @@
 # uriel-17 — Sacred Code 897: Open Roads
 
-Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Codigos Sagrados · 777Hz · 2 horas
+Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Codigos Sagrados · 777Hz · 1 horas
 
 ---
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Sacred Code 897: Open Roads 🍀 Open Divine Luck & Unexpected Doors • 777 Hz • 2 Hours
+Sacred Code 897: Open Roads 🍀 Open Divine Luck & Unexpected Doors • 777 Hz • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)
 ```
 Sacred Code 897: Open Roads — 777Hz music to open divine luck, synchronicity and unexpected doors.
 
-Let this 2-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 777Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
+Let this 1-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 777Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
 
 HOW TO USE THIS TRACK
 1. Find a quiet place and set one clear intention about your abundance.
@@ -43,7 +43,7 @@ This music is for relaxation and meditation. It is not a substitute for medical 
 
 ## 3) ETIQUETAS — Studio → *Mostrar más* → campo *Etiquetas* (pega separado por comas)
 ```
-abundance music, money frequency, wealth meditation, manifestation music, law of attraction, sleep music, healing frequency, meditation music, prosperity, attract money, spiritual music, relaxing music, 777hz, 777 hz music, archangel uriel, 2 hour music, sacred code 897: open roads
+meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 777hz, 777 hz music, archangel uriel, 1 hour music, sacred code 897: open roads
 ```
 
 ## 4) COMENTARIO FIJADO — publícalo y luego clic en los 3 puntos → *Fijar*

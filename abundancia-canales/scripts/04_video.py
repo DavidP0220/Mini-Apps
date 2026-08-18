@@ -41,6 +41,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--id", required=True)
     ap.add_argument("--4k", dest="uhd", action="store_true")
+    ap.add_argument("--oscuro", action="store_true",
+        help="version 'pantalla oscura' para dormir: imagen muy atenuada, "
+             "pesa mucho menos y es el formato con mas velocidad de vistas del nicho")
     ap.add_argument("--seg-imagen", type=int, default=SEG_POR_IMAGEN,
                     help="segundos que se ve cada imagen (por defecto 40)")
     a = ap.parse_args()
@@ -84,7 +87,10 @@ def main():
                      f"enable='between(t,{ini},{fin})'")
     marca = (f"drawtext=text='{esc(canal['nombre'])}':fontcolor=white@0.35:fontsize={H//45}:"
              f"x=w-text_w-40:y=40")
-    fc = ";".join(filtros + cad) + f";[{prev}]" + ",".join(draws+[marca]) + "[vout]"
+    # en modo oscuro la imagen se atenua ANTES del texto, para que la
+    # afirmacion siga legible sobre el fondo casi negro
+    atenua = ["eq=brightness=-0.42:saturation=0.55"] if a.oscuro else []
+    fc = ";".join(filtros + cad) + f";[{prev}]" + ",".join(atenua+draws+[marca]) + "[vout]"
 
     ciclo_mp4 = d/"_ciclo.mp4"
     print(f"[1/2] Ciclo visual de {ciclo}s con {len(imgs)} imagenes a {W}x{H}")
@@ -94,7 +100,7 @@ def main():
     # duracion exacta del audio: -shortest no corta bien con -stream_loop -1
     dur = float(subprocess.run(["ffprobe","-v","error","-show_entries","format=duration",
         "-of","default=nw=1:nk=1",str(audio)],capture_output=True,text=True).stdout.strip())
-    final = d/f"{a.id}.mp4"
+    final = d/(f"{a.id}-oscuro.mp4" if a.oscuro else f"{a.id}.mp4")
     print(f"[2/2] Bucle a {v['horas']} h + audio -> {final}")
     subprocess.run(["ffmpeg","-y","-v","error","-stream_loop","-1","-i",str(ciclo_mp4),
         "-i",str(audio),"-t",f"{dur:.3f}","-c:v","copy","-c:a","aac","-b:a","320k",

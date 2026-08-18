@@ -35,9 +35,12 @@ AFIRMACIONES = [
  "New sources of income find me.",
 ]
 
-TAGS_BASE = ["abundance music","money frequency","wealth meditation","manifestation music",
- "law of attraction","sleep music","healing frequency","meditation music","prosperity",
- "attract money","spiritual music","relaxing music"]
+# Etiquetas ordenadas por volumen de busqueda REAL (vidIQ, mercado US):
+# meditation music 2.4M/mes - binaural beats 1.09M - 432 hz 586k - law of attraction 690k
+# abundance frequency 93k (26k solo en US, la de mayor proporcion estadounidense)
+TAGS_BASE = ["meditation music","binaural beats","law of attraction","abundance frequency",
+ "money frequency","attract money","abundance meditation","wealth meditation","sleep music",
+ "manifestation music","healing frequency","relaxing music","attract abundance","prosperity"]
 
 def descripcion(canal, v):
     hz, hrs = v["hz"], v["horas"]

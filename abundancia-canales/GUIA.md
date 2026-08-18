@@ -133,3 +133,56 @@ generando ingresos por el mes 1. Es un negocio de **acumulación**, no de virali
 
 Cuando tengas la primera base musical y las primeras 5 imágenes, dímelo y renderizamos
 juntos el primer video completo.
+
+---
+
+## 7. Análisis del canal de referencia (datos reales, vidIQ · 18/08/2026)
+
+Video de referencia: *"MÚSICA para ATRAER MUCHO DINERO | AMOR Y ATRAER BUENA SUERTE"* — canal
+**Paco Jarab** (México). El análisis cambió tres decisiones del proyecto.
+
+**El canal:** 268.000 suscriptores · 1.121 videos · 34,9 M de vistas totales ·
+~852.000 vistas en los últimos 30 días · 24 videos publicados al mes.
+
+**El video:** 2 h 59 min · 6.545.598 vistas · publicado en 2020 y todavía sumando 44 vistas/hora.
+Ingreso estimado del video: **$1.767 – $4.712 USD** en toda su vida.
+
+### Lo que confirma nuestro plan
+- Su ritmo es de ~24 videos/mes. El nuestro es de 20 por canal: sostenible y comparable.
+- El catálogo es el activo: un video de 2020 sigue generando vistas seis años después.
+- Los códigos sagrados (71588, 897) y las frecuencias son temas validados — ya están en
+  nuestro catálogo del canal Uriel.
+
+### Lo que corregimos con estos datos
+1. **La duración de 1 hora manda hoy, no las de 3–8 h.** Sus videos con más velocidad de
+   vistas son todos de exactamente 1 hora (35 a 63 vistas/hora), mientras que los de 3 h
+   son de 2020. Reajustamos el catálogo: **23 videos de 1 h, 18 de 3 h y 19 de 8 h**
+   (los de 8 h se conservan para la búsqueda de sueño, que es otro nicho distinto).
+2. **"Pantalla oscura" es su formato campeón.** Su video de pantalla oscura tiene
+   **77 vistas/hora**, el más alto del canal. Por eso `04_video.py` ahora tiene la
+   opción `--oscuro`: misma producción, versión atenuada para dormir. Son dos videos
+   con un solo trabajo.
+3. **El idioma vale dinero.** Su RPM real es de ~$0,45 por cada 1.000 vistas porque su
+   audiencia es de México. Nuestro contenido en inglés apunta a **$1,50–$4,00**: el mismo
+   esfuerzo, entre 3 y 8 veces más ingreso por vista.
+
+### Volumen de búsqueda real (vidIQ, mercado US) — ya aplicado a las etiquetas
+| Palabra clave | Búsquedas/mes | Competencia |
+|---|---|---|
+| meditation music | 2.404.964 | 43,5 |
+| binaural beats | 1.094.796 | 53,4 |
+| law of attraction | 689.877 | 57,5 |
+| 432 hz | 586.178 | 62,2 |
+| 888 hz frequency | 133.004 | 41,5 |
+| abundance frequency | 92.940 | **43,0** |
+
+`abundance frequency` es la mejor oportunidad: alto volumen, competencia media y la mayor
+proporción de búsquedas en Estados Unidos (28%), que es el país que mejor paga.
+
+### Formato de título que le funciona a él (y que ya replicamos)
+`GANCHO EN MAYÚSCULAS + emoji + beneficio concreto + duración`
+Ejemplo suyo: *"ONDAS THETA 🧬 para DINERO | SALDO MILLONARIO DISPONIBLE 💲 (1 Hora)"*
+Nuestro equivalente: *"Lakshmi's Infinite Wealth Current 💸 Non-Stop Money Flow • 888 Hz • 1 Hour"*
+
+> Una advertencia honesta: su canal tardó de 2014 a hoy en llegar ahí, con 1.121 videos.
+> No es dinero rápido. Es un catálogo que se acumula.

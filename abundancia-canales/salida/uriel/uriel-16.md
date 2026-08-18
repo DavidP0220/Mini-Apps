@@ -1,19 +1,19 @@
 # uriel-16 — Sacred Code 71588: Money Now
 
-Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Codigos Sagrados · 888Hz · 2 horas
+Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Codigos Sagrados · 888Hz · 1 horas
 
 ---
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Sacred Code 71588: Money Now 💸 Awaken Financial Magnetism & Non-Stop Money Flow • 888 Hz • 2 Hours
+Sacred Code 71588: Money Now 💸 Awaken Financial Magnetism & Non-Stop Money Flow • 888 Hz • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)
 ```
 Sacred Code 71588: Money Now — 888Hz music to amplify the vibration of money, wealth and infinite flow.
 
-Let this 2-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 888Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
+Let this 1-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 888Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
 
 HOW TO USE THIS TRACK
 1. Find a quiet place and set one clear intention about your abundance.
@@ -43,7 +43,7 @@ This music is for relaxation and meditation. It is not a substitute for medical 
 
 ## 3) ETIQUETAS — Studio → *Mostrar más* → campo *Etiquetas* (pega separado por comas)
 ```
-abundance music, money frequency, wealth meditation, manifestation music, law of attraction, sleep music, healing frequency, meditation music, prosperity, attract money, spiritual music, relaxing music, 888hz, 888 hz music, archangel uriel, 2 hour music, sacred code 71588: money now
+meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 888hz, 888 hz music, archangel uriel, 1 hour music, sacred code 71588: money now
 ```
 
 ## 4) COMENTARIO FIJADO — publícalo y luego clic en los 3 puntos → *Fijar*
