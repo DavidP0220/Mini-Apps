@@ -1,0 +1,10 @@
+# Nunca subir llaves ni configuración con API keys
+.env
+.env.*
+*.key
+tools/router/config.json
+config.json.bak
+
+node_modules/
+.DS_Store
+Thumbs.db
