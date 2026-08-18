@@ -53,12 +53,14 @@ def main():
 
     W,H = (3840,2160) if a.uhd else (1920,1080)
     SEG = a.seg_imagen
-    ciclo = len(imgs)*SEG
+    ciclo = len(imgs)*SEG - 3*(len(imgs)-1)
     frames = SEG*FPS
 
     partes, filtros = [], []
     for i,p in enumerate(imgs):
-        partes += ["-loop","1","-t",str(SEG),"-i",str(p)]
+        # 1 SOLO fotograma de entrada: zoompan expande CADA fotograma que recibe,
+        # asi que alimentarlo con SEG*fps imagenes multiplica el render por ~200
+        partes += ["-loop","1","-framerate","1","-t","1","-i",str(p)]
         # Ken Burns: zoom lento 1.00 -> 1.12 con leve paneo
         filtros.append(
             f"[{i}:v]scale={int(W*1.25)}:-1,zoompan=z='min(1+0.12*on/{frames},1.12)':"
@@ -71,9 +73,12 @@ def main():
         cad.append(f"[{prev}][v{i}]xfade=transition=fade:duration=3:offset={off}[x{i}]")
         prev = f"x{i}"
     # afirmaciones: una cada SEG_POR_IMAGEN, con fade
+    # cada xfade acorta la linea de tiempo 3 s: el texto se calcula sobre
+    # la duracion REAL para que nunca se superpongan dos afirmaciones
+    paso = SEG - 3
     draws = []
     for i,txt in enumerate(AFIRM[:len(imgs)]):
-        ini = i*SEG + max(2, SEG//7); fin = ini + max(6, SEG//2)
+        ini = i*paso + 2; fin = ini + max(4, paso - 4)
         draws.append(f"drawtext=text='{esc(txt)}':fontcolor=white@0.92:fontsize={H//26}:"
                      f"x=(w-text_w)/2:y=h*0.82:shadowcolor=black@0.6:shadowx=2:shadowy=2:"
                      f"enable='between(t,{ini},{fin})'")
@@ -84,12 +89,15 @@ def main():
     ciclo_mp4 = d/"_ciclo.mp4"
     print(f"[1/2] Ciclo visual de {ciclo}s con {len(imgs)} imagenes a {W}x{H}")
     subprocess.run(["ffmpeg","-y","-v","error",*partes,"-filter_complex",fc,"-map","[vout]",
-        "-c:v","libx264","-preset","veryfast","-crf","21","-threads","0","-pix_fmt","yuv420p",str(ciclo_mp4)],check=True)
+        "-c:v","libx264","-preset","veryfast","-crf","23","-maxrate","2200k","-bufsize","4400k","-g","240","-threads","0","-pix_fmt","yuv420p",str(ciclo_mp4)],check=True)
 
+    # duracion exacta del audio: -shortest no corta bien con -stream_loop -1
+    dur = float(subprocess.run(["ffprobe","-v","error","-show_entries","format=duration",
+        "-of","default=nw=1:nk=1",str(audio)],capture_output=True,text=True).stdout.strip())
     final = d/f"{a.id}.mp4"
     print(f"[2/2] Bucle a {v['horas']} h + audio -> {final}")
     subprocess.run(["ffmpeg","-y","-v","error","-stream_loop","-1","-i",str(ciclo_mp4),
-        "-i",str(audio),"-shortest","-c:v","copy","-c:a","aac","-b:a","320k",
+        "-i",str(audio),"-t",f"{dur:.3f}","-c:v","copy","-c:a","aac","-b:a","320k",
         "-movflags","+faststart",str(final)],check=True)
     ciclo_mp4.unlink(missing_ok=True)
     print(f"LISTO -> {final}")
