@@ -54,6 +54,14 @@ Este proyecto usa **Sonnet** (`.claude/settings.json`). Es HTML/CSS/JS puro sin
 dependencias: Sonnet basta y cuesta 5 veces menos. Cambia a Opus con `/model opus`
 solo para arquitectura o depuración difícil, y vuelve con `/model sonnet`.
 
+## Automatismos ya configurados
+
+- **Hook**: leer `apps/*/content.json` entero queda bloqueado con un aviso que
+  remite a `tools/content.mjs`. No es un recordatorio, es una barrera.
+- **Línea de estado**: muestra modelo, contexto usado y costo de la sesión.
+- **Comandos propios**: `/gasto` (reporte de consumo) y `/app-nueva` (crear app).
+  Se editan en `.claude/commands/*.md`.
+
 ## Reglas de trabajo (ahorro de tokens)
 
 1. **Nunca escribas a mano los archivos del motor al crear una app.** Usa

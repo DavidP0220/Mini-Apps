@@ -110,6 +110,19 @@ que de verdad cambia entre una app y otra.
 (`ls`, `cat`, `git status`, `node tools/*`…). Cada permiso que no se pregunta es
 un turno completo que no se paga.
 
+### 7) Convertir las reglas en automatismos
+Una regla escrita se olvida; un hook no. Ya están configurados en
+`.claude/settings.json`:
+
+- **Hook `PreToolUse`** sobre `Read`: bloquea la lectura completa de
+  `apps/*/content.json` y remite a `tools/content.mjs`. Si de verdad hace falta
+  el archivo entero, se lee con `cat` desde Bash.
+- **Línea de estado**: modelo, contexto usado (con aviso al 50% y al 80%) y
+  costo acumulado, siempre a la vista.
+- **Comandos propios**: `/gasto` y `/app-nueva`, definidos en `.claude/commands/`.
+
+Los hooks se activan al iniciar la siguiente sesión (o abriendo `/hooks` una vez).
+
 ## 3. Reglas de trabajo (para ti y para Claude)
 
 - Pide cambios concretos: "cambia el color del capítulo 3" cuesta mucho menos que
