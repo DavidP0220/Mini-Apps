@@ -6,7 +6,7 @@ Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Purificacio
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-777 Hz Cleansing the Money Bloodline 🍀 Attract Sudden Miracles & Fortune • 1 Hour
+Your Money Blocks Dissolve In 5 Minutes 🍀 Cleansing the Money Bloodline • 777 Hz • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

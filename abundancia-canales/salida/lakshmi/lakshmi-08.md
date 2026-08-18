@@ -6,7 +6,7 @@ Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Ashta Laksh
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-888 Hz Dhanya Lakshmi: Abundant Harvest 💸 Awaken Financial Magnetism • 3 Hours
+Prepare Now, Your Abundance Is Arriving 💸 Dhanya Lakshmi: Abundant Harvest • 888 Hz • 3 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

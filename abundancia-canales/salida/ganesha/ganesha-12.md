@@ -6,7 +6,7 @@ Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Escudo y Sabiduria 
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-741 Hz Remove Envy and Evil Eye 🛡️ Remove Every Negative Influence • 3 Hours
+Let The Universe Send You Unexpected Money 🛡️ Remove Envy and Evil Eye • 741 Hz • 3 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

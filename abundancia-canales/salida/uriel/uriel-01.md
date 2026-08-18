@@ -6,7 +6,7 @@ Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Rayo O
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-528 Hz Uriel's Gold and Ruby Flame 💰 Unlock Miracles & Heart-Centered Wealth • 1 Hour
+Money Flows To You Non-Stop After 3 Minutes 💰 Uriel's Gold and Ruby Flame • 528 Hz • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

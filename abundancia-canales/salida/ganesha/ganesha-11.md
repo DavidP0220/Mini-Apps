@@ -6,7 +6,7 @@ Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Escudo y Sabiduria 
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-741 Hz Shield of Ganesha: Protection Sound 🛡️ Shield Your Energy & Your Money • 1 Hour
+Money Flows To You Non-Stop After 3 Minutes 🛡️ Shield of Ganesha: Protection Sound • 741 Hz • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

@@ -6,7 +6,7 @@ Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Corte de Mala Racha
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-888 Hz Ganesha Removes Every Obstacle Tonight 💸 Unlock Infinite Money Flow & Prosperity • 1 Hour
+Money Flows To You Non-Stop After 3 Minutes 💸 • 888 Hz • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

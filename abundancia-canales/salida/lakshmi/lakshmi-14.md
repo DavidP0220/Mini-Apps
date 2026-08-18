@@ -6,7 +6,7 @@ Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Pacto Kuber
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-888 Hz Vault of Endless Riches 💸 Awaken Financial Magnetism • 8 Hours
+Receive Unexpected Money This Week 💸 Vault of Endless Riches • 888 Hz • 8 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

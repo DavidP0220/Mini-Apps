@@ -6,7 +6,7 @@ Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Exito en Negocios �
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-528 Hz Prosperity for Entrepreneurs 💰 Transform Your Energy Into Wealth • 8 Hours
+Wealth Is Being Attracted To You Right Now 💰 Prosperity for Entrepreneurs • 528 Hz • 8 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

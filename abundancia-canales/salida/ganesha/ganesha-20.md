@@ -6,7 +6,7 @@ Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Nuevos Comienzos ·
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-432 Hz Sleep and Wake Up Unblocked 🌱 Deep Sleep & Overnight Abundance • 8 Hours
+Listen Once And Watch Your Luck Change 💰 Sleep and Wake Up Unblocked • 432 Hz • 8 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

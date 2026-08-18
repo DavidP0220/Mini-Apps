@@ -55,3 +55,56 @@ un subnicho caliente y poco saturado. Vale la pena reservarle espacio en el cat�
 Copiar la **economía** de Soothing Harmony (pocos videos, muy buenos, 1–3 h) con la
 **cadencia** de Zen Harmony Sounds (publicar seguido para acelerar el arranque),
 y titular con la **fórmula de frecuencia** de los ganadores en inglés.
+
+---
+
+## CORRECCIÓN IMPORTANTE (misma sesión, con datos más profundos)
+
+Revisé video por video los dos canales de referencia y **tuve que corregir dos
+conclusiones anteriores**. Las dejo escritas para que quede el rastro:
+
+### Corrección 1: Soothing Harmony NO es un canal en inglés
+Lo presenté como referente en inglés. Es **en español**. Además, sus videos recientes
+rinden mal: entre 200 y 900 vistas pese a tener 98.700 suscriptores. Sus números
+históricos vienen de videos de 11 horas publicados en 2024–2025. **No es el modelo a
+copiar.**
+
+### Corrección 2: los ganadores en inglés NO titulan con la frecuencia al frente
+El verdadero referente en inglés es **Wealthy Vibes Melodies** (298.000 subs, EE.UU.).
+Sus títulos con más vistas ponen la **promesa con urgencia primero** y la frecuencia
+al final:
+
+| Título | Vistas | Vistas/hora |
+|---|---|---|
+| PREPARE NOW! You WILL Become A Millionaire This **DECEMBER**! | **102.014** | 13,4 |
+| After 3 minutes, You Will Receive a Large Amount of Money | 14.611 | 7,5 |
+| PREPARE NOW! You WILL Become A Millionaire This **JULY**! | 11.013 | 9,7 |
+| *Warning* 777 (VERY STRONG), Receives Large Amounts Money Non-stop | 9.983 | 4,4 |
+| 3 MINUTES AFTER LISTENING YOU WILL RECEIVE MONEY 💸 | 9.861 | 1,6 |
+
+**Fórmula real del nicho en inglés:**
+`[PROMESA CON TIEMPO O URGENCIA] + emoji + [NOMBRE] + [FRECUENCIA] + [DURACIÓN]`
+
+Elementos que se repiten en sus ganadores:
+- Tiempo concreto: *"After 3 Minutes"*, *"in 5 Minutes"*, *"Non-Stop"*
+- Urgencia: *WARNING*, *DON'T IGNORE*, *PREPARE NOW*
+- **Gancho mensual**: repiten el mismo video cada mes cambiando el nombre del mes.
+  Es su video número uno con 102.014 vistas.
+- La frecuencia va al final, no al principio.
+- **432 Hz es su frecuencia dominante para dinero**, no 888 Hz.
+
+### Lo que se aplicó al catálogo
+1. Los 63 títulos se reescribieron con la fórmula de promesa primero.
+2. Se agregó un **video comodín mensual** a cada canal (video 21), que es su formato
+   más visto. Solo cambias el nombre del mes cada vez que lo republiques.
+3. Se mantiene el reparto de frecuencias cargado a 888/777/963 **pero** hay que
+   vigilar 432 Hz: al referente en inglés le funciona mejor de lo que esperábamos.
+   Es la primera métrica a revisar cuando tengamos datos propios.
+
+### Una advertencia que no me puedo callar
+Sus ganchos más fuertes (*"Money Will Transfer To You Non-Stop"*, *"You WILL Become A
+Millionaire"*) **afirman que vas a recibir dinero**. Funcionan, pero son promesas
+económicas. Nuestros títulos usan la misma estructura de urgencia con verbos que
+invitan en vez de garantizar (*"Money Flows To You"*, *"Let The Universe Send You"*).
+Si prefieres los ganchos duros, se cambian en un minuto en `scripts/01_catalogo.py`
+(lista `GANCHOS`), pero la decisión de asumir ese riesgo es tuya, no mía.

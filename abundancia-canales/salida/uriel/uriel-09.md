@@ -6,7 +6,7 @@ Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Angele
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-888 Hz Angelic Money Blessing While You Sleep 💸 Attract Money, Fortune & Opportunity • 8 Hours
+Wealth Is Being Attracted To You Right Now 💸 • 888 Hz • 8 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

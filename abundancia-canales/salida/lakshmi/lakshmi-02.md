@@ -6,7 +6,7 @@ Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Flujo Inago
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-888 Hz Lakshmi's Infinite Wealth Current 💸 Awaken Financial Magnetism • 3 Hours
+Let The Universe Send You Unexpected Money 💸 Lakshmi's Infinite Wealth Current • 888 Hz • 3 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

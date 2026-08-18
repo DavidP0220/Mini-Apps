@@ -1,17 +1,17 @@
-# lakshmi-03 — Rain of Gold Coins Meditation
+# lakshmi-21 — PREPARE NOW! Your Wealthiest January Is About To Begin
 
-Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Flujo Inagotable · 888Hz · 1 horas
+Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Comodin Mensual · 888Hz · 1 horas
 
 ---
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Big Money Is On Its Way To You Today 💸 Rain of Gold Coins Meditation • 888 Hz • 1 Hour
+PREPARE NOW! Your Wealthiest January Is About To Begin 💸 • 888 Hz • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)
 ```
-Rain of Gold Coins Meditation — 888Hz music to amplify the vibration of money, wealth and infinite flow.
+PREPARE NOW! Your Wealthiest January Is About To Begin — 888Hz music to amplify the vibration of money, wealth and infinite flow.
 
 Let this 1-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 888Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
 
@@ -43,7 +43,7 @@ This music is for relaxation and meditation. It is not a substitute for medical 
 
 ## 3) ETIQUETAS — Studio → *Mostrar más* → campo *Etiquetas* (pega separado por comas)
 ```
-meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 888hz, 888 hz music, goddess maha lakshmi, 1 hour music, rain of gold coins meditation
+meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 888hz, 888 hz music, goddess maha lakshmi, 1 hour music, prepare now! your wealthiest january is about to begin
 ```
 
 ## 4) COMENTARIO FIJADO — publícalo y luego clic en los 3 puntos → *Fijar*
@@ -55,31 +55,31 @@ meditation music, binaural beats, law of attraction, abundance frequency, money 
 
 Imagen 1:
 ```
-soft rain of golden coins over a marble temple, golden lotus temple, coins of light, saffron and gold silk, sacred indian goddess iconography, luminous, cinematic volumetric light, ultra detailed, 8k, serene spiritual atmosphere, color palette #FFD700, #0B132B, #B8860B --ar 16:9 --style raw
+golden calendar page turning into a shower of light and coins, golden lotus temple, coins of light, saffron and gold silk, sacred indian goddess iconography, luminous, cinematic volumetric light, ultra detailed, 8k, serene spiritual atmosphere, color palette #FFD700, #0B132B, #B8860B --ar 16:9 --style raw
 ```
 Imagen 2:
 ```
-wide establishing shot of soft rain of golden coins over a marble temple, golden lotus temple, coins of light, saffron and gold silk, sacred indian goddess iconography, luminous, god rays, soft mist, painterly, no text, no people faces --ar 16:9
+wide establishing shot of golden calendar page turning into a shower of light and coins, golden lotus temple, coins of light, saffron and gold silk, sacred indian goddess iconography, luminous, god rays, soft mist, painterly, no text, no people faces --ar 16:9
 ```
 Imagen 3:
 ```
-close macro detail inspired by soft rain of golden coins over a marble temple, golden lotus temple, coins of light, saffron and gold silk, sacred indian goddess iconography, luminous, shallow depth of field, glowing particles --ar 16:9
+close macro detail inspired by golden calendar page turning into a shower of light and coins, golden lotus temple, coins of light, saffron and gold silk, sacred indian goddess iconography, luminous, shallow depth of field, glowing particles --ar 16:9
 ```
 Imagen 4:
 ```
-symmetrical mandala composition based on soft rain of golden coins over a marble temple, golden lotus temple, coins of light, saffron and gold silk, sacred indian goddess iconography, luminous, sacred geometry, centered --ar 16:9
+symmetrical mandala composition based on golden calendar page turning into a shower of light and coins, golden lotus temple, coins of light, saffron and gold silk, sacred indian goddess iconography, luminous, sacred geometry, centered --ar 16:9
 ```
 Imagen 5:
 ```
-night version of soft rain of golden coins over a marble temple, golden lotus temple, coins of light, saffron and gold silk, sacred indian goddess iconography, luminous, moonlight, deep blues with gold accents --ar 16:9
+night version of golden calendar page turning into a shower of light and coins, golden lotus temple, coins of light, saffron and gold silk, sacred indian goddess iconography, luminous, moonlight, deep blues with gold accents --ar 16:9
 ```
 
 ## 6) PROMPT DE MINIATURA
 ```
-thumbnail art: soft rain of golden coins over a marble temple, golden lotus temple, coins of light, saffron and gold silk, sacred indian goddess iconography, luminous, extreme high contrast, dramatic rim light, large empty space on the left third for text overlay, no text in image --ar 16:9
+thumbnail art: golden calendar page turning into a shower of light and coins, golden lotus temple, coins of light, saffron and gold silk, sacred indian goddess iconography, luminous, extreme high contrast, dramatic rim light, large empty space on the left third for text overlay, no text in image --ar 16:9
 ```
 
-Texto que va ENCIMA de la miniatura (grande, dorado, 2 líneas máx): **RAIN OF GOLD**
+Texto que va ENCIMA de la miniatura (grande, dorado, 2 líneas máx): **THIS JANUARY**
 
 ## 7) AFIRMACIONES EN PANTALLA — aparecen cada 4 minutos sobre las imágenes
 ```
@@ -100,7 +100,7 @@ New sources of income find me.
 ## 8) CHECKLIST DE SUBIDA
 
 - [ ] Audio renderizado (`scripts/03_audio.py`)
-- [ ] 5 imágenes generadas y guardadas en `salida/lakshmi-03/img/`
+- [ ] 5 imágenes generadas y guardadas en `salida/lakshmi-21/img/`
 - [ ] Video renderizado (`scripts/04_video.py`)
 - [ ] Miniatura 1280x720 subida
 - [ ] Título, descripción, etiquetas pegados

@@ -6,7 +6,7 @@ Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Paz y 
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-432 Hz Deep Sleep Under Angel Wings 🌱 Rest Deeply, Wake Up Blessed • 8 Hours
+Everything Starts Changing For You Today 💰 Deep Sleep Under Angel Wings • 432 Hz • 8 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

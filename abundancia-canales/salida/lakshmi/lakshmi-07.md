@@ -6,7 +6,7 @@ Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Ashta Laksh
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-888 Hz Dhana Lakshmi: Magnet for Money 💸 Unlock Infinite Money Flow & Prosperity • 1 Hour
+Your Money Blocks Dissolve In 5 Minutes 💸 Dhana Lakshmi: Magnet for Money • 888 Hz • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

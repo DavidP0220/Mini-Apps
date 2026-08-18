@@ -6,7 +6,7 @@ Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Exito en Negocios �
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-888 Hz The Merchant's Golden Hour 💸 Unlock Infinite Money Flow & Prosperity • 3 Hours
+Listen Once And Watch Your Luck Change 💸 The Merchant's Golden Hour • 888 Hz • 3 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

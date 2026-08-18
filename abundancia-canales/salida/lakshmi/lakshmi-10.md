@@ -6,7 +6,7 @@ Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Ashta Laksh
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-432 Hz Santana Lakshmi: Blessings of Legacy 🌱 Attract Blessings While You Sleep • 8 Hours
+Listen Once And Watch Your Luck Change 💰 Santana Lakshmi: Blessings of Legacy • 432 Hz • 8 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

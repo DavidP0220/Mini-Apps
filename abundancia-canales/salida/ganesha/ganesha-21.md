@@ -1,19 +1,19 @@
-# ganesha-18 — Say Yes to the Life You Want
+# ganesha-21 — PREPARE NOW! Every Door Opens For You This January
 
-Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Nuevos Comienzos · 777Hz · 3 horas
+Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Comodin Mensual · 777Hz · 1 horas
 
 ---
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Prepare Now, Your Abundance Is Arriving 🍀 Say Yes to the Life You Want • 777 Hz • 3 Hours
+PREPARE NOW! Every Door Opens For You This January 💸 • 777 Hz • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)
 ```
-Say Yes to the Life You Want — 777Hz music to open divine luck, synchronicity and unexpected doors.
+PREPARE NOW! Every Door Opens For You This January — 777Hz music to open divine luck, synchronicity and unexpected doors.
 
-Let this 3-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 777Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
+Let this 1-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 777Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
 
 HOW TO USE THIS TRACK
 1. Find a quiet place and set one clear intention about your abundance.
@@ -43,7 +43,7 @@ This music is for relaxation and meditation. It is not a substitute for medical 
 
 ## 3) ETIQUETAS — Studio → *Mostrar más* → campo *Etiquetas* (pega separado por comas)
 ```
-meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 777hz, 777 hz music, lord ganesha, 3 hour music, say yes to the life you want
+meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 777hz, 777 hz music, lord ganesha, 1 hour music, prepare now! every door opens for you this january
 ```
 
 ## 4) COMENTARIO FIJADO — publícalo y luego clic en los 3 puntos → *Fijar*
@@ -55,31 +55,31 @@ meditation music, binaural beats, law of attraction, abundance frequency, money 
 
 Imagen 1:
 ```
-figure stepping into a corridor of golden light, orange and gold ganesha iconography, marigold flowers, temple stone, sunrise light, obstacle-breaking symbolism, cinematic volumetric light, ultra detailed, 8k, serene spiritual atmosphere, color palette #FF7F11, #0B132B, #FFD700 --ar 16:9 --style raw
+sunrise breaking over an opening temple gate, marigold petals, orange and gold ganesha iconography, marigold flowers, temple stone, sunrise light, obstacle-breaking symbolism, cinematic volumetric light, ultra detailed, 8k, serene spiritual atmosphere, color palette #FF7F11, #0B132B, #FFD700 --ar 16:9 --style raw
 ```
 Imagen 2:
 ```
-wide establishing shot of figure stepping into a corridor of golden light, orange and gold ganesha iconography, marigold flowers, temple stone, sunrise light, obstacle-breaking symbolism, god rays, soft mist, painterly, no text, no people faces --ar 16:9
+wide establishing shot of sunrise breaking over an opening temple gate, marigold petals, orange and gold ganesha iconography, marigold flowers, temple stone, sunrise light, obstacle-breaking symbolism, god rays, soft mist, painterly, no text, no people faces --ar 16:9
 ```
 Imagen 3:
 ```
-close macro detail inspired by figure stepping into a corridor of golden light, orange and gold ganesha iconography, marigold flowers, temple stone, sunrise light, obstacle-breaking symbolism, shallow depth of field, glowing particles --ar 16:9
+close macro detail inspired by sunrise breaking over an opening temple gate, marigold petals, orange and gold ganesha iconography, marigold flowers, temple stone, sunrise light, obstacle-breaking symbolism, shallow depth of field, glowing particles --ar 16:9
 ```
 Imagen 4:
 ```
-symmetrical mandala composition based on figure stepping into a corridor of golden light, orange and gold ganesha iconography, marigold flowers, temple stone, sunrise light, obstacle-breaking symbolism, sacred geometry, centered --ar 16:9
+symmetrical mandala composition based on sunrise breaking over an opening temple gate, marigold petals, orange and gold ganesha iconography, marigold flowers, temple stone, sunrise light, obstacle-breaking symbolism, sacred geometry, centered --ar 16:9
 ```
 Imagen 5:
 ```
-night version of figure stepping into a corridor of golden light, orange and gold ganesha iconography, marigold flowers, temple stone, sunrise light, obstacle-breaking symbolism, moonlight, deep blues with gold accents --ar 16:9
+night version of sunrise breaking over an opening temple gate, marigold petals, orange and gold ganesha iconography, marigold flowers, temple stone, sunrise light, obstacle-breaking symbolism, moonlight, deep blues with gold accents --ar 16:9
 ```
 
 ## 6) PROMPT DE MINIATURA
 ```
-thumbnail art: figure stepping into a corridor of golden light, orange and gold ganesha iconography, marigold flowers, temple stone, sunrise light, obstacle-breaking symbolism, extreme high contrast, dramatic rim light, large empty space on the left third for text overlay, no text in image --ar 16:9
+thumbnail art: sunrise breaking over an opening temple gate, marigold petals, orange and gold ganesha iconography, marigold flowers, temple stone, sunrise light, obstacle-breaking symbolism, extreme high contrast, dramatic rim light, large empty space on the left third for text overlay, no text in image --ar 16:9
 ```
 
-Texto que va ENCIMA de la miniatura (grande, dorado, 2 líneas máx): **SAY YES**
+Texto que va ENCIMA de la miniatura (grande, dorado, 2 líneas máx): **JANUARY OPENS**
 
 ## 7) AFIRMACIONES EN PANTALLA — aparecen cada 4 minutos sobre las imágenes
 ```
@@ -100,7 +100,7 @@ New sources of income find me.
 ## 8) CHECKLIST DE SUBIDA
 
 - [ ] Audio renderizado (`scripts/03_audio.py`)
-- [ ] 5 imágenes generadas y guardadas en `salida/ganesha-18/img/`
+- [ ] 5 imágenes generadas y guardadas en `salida/ganesha-21/img/`
 - [ ] Video renderizado (`scripts/04_video.py`)
 - [ ] Miniatura 1280x720 subida
 - [ ] Título, descripción, etiquetas pegados

@@ -6,7 +6,7 @@ Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Rayo O
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-963 Hz Uriel Illuminates Your Way 🔮 Receive Divine Wisdom & Higher Guidance • 8 Hours
+Receive Unexpected Money This Week 🔮 Uriel Illuminates Your Way • 963 Hz • 8 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

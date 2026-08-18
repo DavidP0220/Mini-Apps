@@ -6,7 +6,7 @@ Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Angele
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-432 Hz Choir of Abundance Angels 🌱 Attract Blessings While You Sleep • 8 Hours
+Your Money Blocks Dissolve In 5 Minutes 💰 Choir of Abundance Angels • 432 Hz • 8 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

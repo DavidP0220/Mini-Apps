@@ -6,7 +6,7 @@ Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Purificacio
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-396 Hz Release the Fear of Not Enough ✨ Clear the Deepest Roots of Lack • 8 Hours
+Prepare Now, Your Abundance Is Arriving ✨ Release the Fear of Not Enough • 396 Hz • 8 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

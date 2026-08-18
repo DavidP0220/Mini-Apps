@@ -96,47 +96,47 @@ CANALES = {
   ]},
 }
 
-# Formula tomada de los videos con mas velocidad de vistas en ingles:
-# [FRECUENCIA] Hz + [NOMBRE] + emoji + [PROMESA] + duracion.
-# Tres promesas por frecuencia y se rota segun el numero de video: dos videos
-# nunca llevan la misma promesa seguida (YouTube penaliza el contenido repetitivo
-# y una plantilla identica 20 veces se nota).
-PROMESAS = {
- 396: ["Release Fear & Dissolve Scarcity", "Break Free From the Poverty Mindset",
-       "Clear the Deepest Roots of Lack"],
- 417: ["Clear Old Money Blocks", "Reset Your Luck From Zero", "Undo Years of Financial Blockage"],
- 432: ["Attract Blessings While You Sleep", "Deep Sleep & Overnight Abundance",
-       "Rest Deeply, Wake Up Blessed"],
- 528: ["Unlock Miracles & Heart-Centered Wealth", "Activate the Miracle Frequency",
-       "Transform Your Energy Into Wealth"],
- 741: ["Cleanse Envy, Evil Eye & Bad Energy", "Shield Your Energy & Your Money",
-       "Remove Every Negative Influence"],
- 777: ["Open Divine Luck & Unexpected Doors", "Attract Sudden Miracles & Fortune",
-       "Let Divine Timing Work For You"],
- 888: ["Unlock Infinite Money Flow & Prosperity", "Awaken Financial Magnetism",
-       "Attract Money, Fortune & Opportunity"],
- 963: ["Receive Divine Wisdom & Higher Guidance", "Connect With the Source of All Abundance",
-       "Open the Frequency of God"],
- 1111:["Enter the Manifestation Portal", "Seal Your Intention in the 11:11 Gate",
-       "Manifest What You Asked For"],
-}
+# FORMULA V3 - corregida con el canal de referencia real en ingles
+# (Wealthy Vibes Melodies, 298k subs, EE.UU.). Sus videos con mas vistas NO
+# empiezan por la frecuencia sino por la PROMESA CON URGENCIA, y la frecuencia
+# va al final del titulo:
+#   "PREPARE NOW! You WILL Become A Millionaire This DECEMBER!"  -> 102.014 vistas
+#   "After 3 minutes, You Will Receive a Large Amount of Money"  ->  14.611 vistas
+# Estructura: [GANCHO DE URGENCIA] + emoji + [NOMBRE MISTICO] + Hz + duracion.
+#
+# Nota: los ganadores usan ganchos mas agresivos ("WARNING VERY STRONG",
+# "Money Will Transfer To You"). Aqui se usan versiones que prometen el mismo
+# beneficio sin AFIRMAR que el dinero llegara, para no exponer el canal a un
+# reclamo por promesa economica falsa. Estan ordenados de mas suave a mas fuerte.
+GANCHOS = [
+ "Money Flows To You Non-Stop After 3 Minutes",
+ "Let The Universe Send You Unexpected Money",
+ "Big Money Is On Its Way To You Today",
+ "Receive Unexpected Money This Week",
+ "Everything Starts Changing For You Today",
+ "Open The Door To Sudden Abundance Tonight",
+ "Your Money Blocks Dissolve In 5 Minutes",
+ "Prepare Now, Your Abundance Is Arriving",
+ "Wealth Is Being Attracted To You Right Now",
+ "Listen Once And Watch Your Luck Change",
+]
 
-EMOJI = {396:"\u2728",417:"\U0001f501",432:"\U0001f331",528:"\U0001f4b0",741:"\U0001f6e1\ufe0f",
+EMOJI = {396:"\u2728",417:"\U0001f501",432:"\U0001f4b0",528:"\U0001f4b0",741:"\U0001f6e1\ufe0f",
  777:"\U0001f340",888:"\U0001f4b8",963:"\U0001f52e",1111:"\U0001f6aa"}
 
 
 def titulo(t, hz, hrs, n):
-    """YouTube corta a 100 caracteres. Se prueban las tres promesas de la
-    frecuencia empezando por la que toca por rotacion, y si ninguna cabe se
-    recorta la promesa; la frecuencia y el nombre nunca se pierden."""
+    """Gancho de urgencia + nombre mistico + frecuencia al final.
+    YouTube corta a 100 caracteres: si no cabe se recorta el nombre mistico,
+    nunca el gancho ni la frecuencia (que son lo que trae las visitas)."""
     plural = "" if hrs == 1 else "s"
-    opciones = PROMESAS[hz]
-    orden = [opciones[(n - 1 + k) % len(opciones)] for k in range(len(opciones))]
-    for promesa in orden:
-        cand = f"{hz} Hz {t} {EMOJI[hz]} {promesa} \u2022 {hrs} Hour{plural}"
-        if len(cand) <= 100:
-            return cand
-    return f"{hz} Hz {t} {EMOJI[hz]} \u2022 {hrs} Hour{plural}"[:100]
+    gancho = GANCHOS[(n - 1) % len(GANCHOS)]
+    cola = f" \u2022 {hz} Hz \u2022 {hrs} Hour{plural}"
+    cand = f"{gancho} {EMOJI[hz]} {t}{cola}"
+    if len(cand) <= 100:
+        return cand
+    cand = f"{gancho} {EMOJI[hz]}{cola}"          # sin el nombre mistico
+    return cand if len(cand) <= 100 else cand[:100]
 
 
 def frecuencia(hz, hrs, slug):
@@ -163,6 +163,29 @@ def duracion(hrs, n):
     return 1 if n % 2 else 3
 
 
+# El video con mas vistas del canal de referencia en ingles (102.014 vistas)
+# es un comodin MENSUAL: "PREPARE NOW! You WILL Become A Millionaire This DECEMBER!"
+# Se repite cada mes cambiando solo el nombre del mes. Cada canal lleva el suyo.
+MESES = ["JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY",
+         "AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"]
+
+COMODIN = {
+ "lakshmi": ("PREPARE NOW! Your Wealthiest {mes} Is About To Begin", 888, 1,
+             "THIS {mes}", "golden calendar page turning into a shower of light and coins"),
+ "ganesha": ("PREPARE NOW! Every Door Opens For You This {mes}", 777, 1,
+             "{mes} OPENS", "sunrise breaking over an opening temple gate, marigold petals"),
+ "uriel":   ("PREPARE NOW! Heaven Is Sending Your Provision This {mes}", 963, 1,
+             "{mes} GIFT", "angelic hand releasing a golden orb over a sea of clouds"),
+}
+
+
+def comodin_mensual(slug, mes):
+    """Genera el video comodin del mes para un canal. Cambias el mes y ya."""
+    t, hz, hrs, thumb, escena = COMODIN[slug]
+    return {"titulo": t.format(mes=mes.capitalize()), "hz": hz, "horas": hrs,
+            "miniatura_texto": thumb.format(mes=mes), "escena": escena}
+
+
 def build():
     out = {"generado": "abundancia-canales", "canales": []}
     for slug, c in CANALES.items():
@@ -183,6 +206,15 @@ def build():
                 "escena": escena,
                 "estado": "pendiente",
             })
+        # video 21: el comodin mensual (formato mas visto del nicho en ingles)
+        c_mes = comodin_mensual(slug, MESES[0])
+        vids.append({
+            "id": f"{slug}-21", "n": 21, "bloque": "Comodin Mensual",
+            "titulo_yt": f"{c_mes['titulo']} \U0001f4b8 \u2022 {c_mes['hz']} Hz \u2022 {c_mes['horas']} Hour",
+            "titulo_corto": c_mes["titulo"], "hz": c_mes["hz"], "horas": c_mes["horas"],
+            "miniatura_texto": c_mes["miniatura_texto"], "escena": c_mes["escena"],
+            "estado": "pendiente", "nota": "Cambia el mes cada vez que lo republiques.",
+        })
         out["canales"].append({
             "slug": slug, "nombre": c["nombre"], "handle": c["handle"],
             "deidad": c["deidad"], "paleta": c["paleta"], "estetica": c["estetica"],

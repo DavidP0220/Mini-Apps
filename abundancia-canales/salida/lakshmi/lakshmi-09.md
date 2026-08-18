@@ -6,7 +6,7 @@ Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Ashta Laksh
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-528 Hz Gaja Lakshmi: Royal Fortune 💰 Transform Your Energy Into Wealth • 1 Hour
+Wealth Is Being Attracted To You Right Now 💰 Gaja Lakshmi: Royal Fortune • 528 Hz • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

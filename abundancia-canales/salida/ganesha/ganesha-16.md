@@ -6,7 +6,7 @@ Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Nuevos Comienzos ·
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-528 Hz New Beginnings Start Today 💰 Unlock Miracles & Heart-Centered Wealth • 3 Hours
+Open The Door To Sudden Abundance Tonight 💰 New Beginnings Start Today • 528 Hz • 3 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

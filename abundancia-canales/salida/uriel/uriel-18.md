@@ -6,7 +6,7 @@ Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Codigo
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-1111 Hz 11:11 Portal of Divine Wealth 🚪 Manifest What You Asked For • 3 Hours
+Prepare Now, Your Abundance Is Arriving 🚪 11:11 Portal of Divine Wealth • 1111 Hz • 3 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

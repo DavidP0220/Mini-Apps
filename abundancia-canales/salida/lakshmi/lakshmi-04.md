@@ -6,7 +6,7 @@ Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Flujo Inago
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-432 Hz Sacred Lotus of Prosperity 🌱 Attract Blessings While You Sleep • 8 Hours
+Receive Unexpected Money This Week 💰 Sacred Lotus of Prosperity • 432 Hz • 8 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

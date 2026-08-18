@@ -6,7 +6,7 @@ Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Paz y 
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-432 Hz Peace That Money Cannot Buy 🌱 Deep Sleep & Overnight Abundance • 8 Hours
+Money Flows To You Non-Stop After 3 Minutes 💰 Peace That Money Cannot Buy • 432 Hz • 8 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

@@ -6,7 +6,7 @@ Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Purificacio
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-432 Hz Sleep Rich: 8 Hours of Lakshmi Grace 🌱 Deep Sleep & Overnight Abundance • 8 Hours
+Listen Once And Watch Your Luck Change 💰 Sleep Rich: 8 Hours of Lakshmi Grace • 432 Hz • 8 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

@@ -1,19 +1,19 @@
-# uriel-19 — Manifest Before Sunrise
+# uriel-21 — PREPARE NOW! Heaven Is Sending Your Provision This January
 
-Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Codigos Sagrados · 963Hz · 8 horas
+Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Comodin Mensual · 963Hz · 1 horas
 
 ---
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Wealth Is Being Attracted To You Right Now 🔮 Manifest Before Sunrise • 963 Hz • 8 Hours
+PREPARE NOW! Heaven Is Sending Your Provision This January 💸 • 963 Hz • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)
 ```
-Manifest Before Sunrise — 963Hz music to connect you with divine wisdom and higher guidance.
+PREPARE NOW! Heaven Is Sending Your Provision This January — 963Hz music to connect you with divine wisdom and higher guidance.
 
-Let this 8-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 963Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
+Let this 1-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 963Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
 
 HOW TO USE THIS TRACK
 1. Find a quiet place and set one clear intention about your abundance.
@@ -43,7 +43,7 @@ This music is for relaxation and meditation. It is not a substitute for medical 
 
 ## 3) ETIQUETAS — Studio → *Mostrar más* → campo *Etiquetas* (pega separado por comas)
 ```
-meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 963hz, 963 hz music, archangel uriel, 8 hour music, manifest before sunrise
+meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 963hz, 963 hz music, archangel uriel, 1 hour music, prepare now! heaven is sending your provision this january
 ```
 
 ## 4) COMENTARIO FIJADO — publícalo y luego clic en los 3 puntos → *Fijar*
@@ -55,31 +55,31 @@ meditation music, binaural beats, law of attraction, abundance frequency, money 
 
 Imagen 1:
 ```
-first light over mountains, celestial glow, gold and ruby flame, celestial cathedral clouds, angelic wings of light, cosmic violet sky, ethereal, cinematic volumetric light, ultra detailed, 8k, serene spiritual atmosphere, color palette #FFD700, #9B111E, #1B1035 --ar 16:9 --style raw
+angelic hand releasing a golden orb over a sea of clouds, gold and ruby flame, celestial cathedral clouds, angelic wings of light, cosmic violet sky, ethereal, cinematic volumetric light, ultra detailed, 8k, serene spiritual atmosphere, color palette #FFD700, #9B111E, #1B1035 --ar 16:9 --style raw
 ```
 Imagen 2:
 ```
-wide establishing shot of first light over mountains, celestial glow, gold and ruby flame, celestial cathedral clouds, angelic wings of light, cosmic violet sky, ethereal, god rays, soft mist, painterly, no text, no people faces --ar 16:9
+wide establishing shot of angelic hand releasing a golden orb over a sea of clouds, gold and ruby flame, celestial cathedral clouds, angelic wings of light, cosmic violet sky, ethereal, god rays, soft mist, painterly, no text, no people faces --ar 16:9
 ```
 Imagen 3:
 ```
-close macro detail inspired by first light over mountains, celestial glow, gold and ruby flame, celestial cathedral clouds, angelic wings of light, cosmic violet sky, ethereal, shallow depth of field, glowing particles --ar 16:9
+close macro detail inspired by angelic hand releasing a golden orb over a sea of clouds, gold and ruby flame, celestial cathedral clouds, angelic wings of light, cosmic violet sky, ethereal, shallow depth of field, glowing particles --ar 16:9
 ```
 Imagen 4:
 ```
-symmetrical mandala composition based on first light over mountains, celestial glow, gold and ruby flame, celestial cathedral clouds, angelic wings of light, cosmic violet sky, ethereal, sacred geometry, centered --ar 16:9
+symmetrical mandala composition based on angelic hand releasing a golden orb over a sea of clouds, gold and ruby flame, celestial cathedral clouds, angelic wings of light, cosmic violet sky, ethereal, sacred geometry, centered --ar 16:9
 ```
 Imagen 5:
 ```
-night version of first light over mountains, celestial glow, gold and ruby flame, celestial cathedral clouds, angelic wings of light, cosmic violet sky, ethereal, moonlight, deep blues with gold accents --ar 16:9
+night version of angelic hand releasing a golden orb over a sea of clouds, gold and ruby flame, celestial cathedral clouds, angelic wings of light, cosmic violet sky, ethereal, moonlight, deep blues with gold accents --ar 16:9
 ```
 
 ## 6) PROMPT DE MINIATURA
 ```
-thumbnail art: first light over mountains, celestial glow, gold and ruby flame, celestial cathedral clouds, angelic wings of light, cosmic violet sky, ethereal, extreme high contrast, dramatic rim light, large empty space on the left third for text overlay, no text in image --ar 16:9
+thumbnail art: angelic hand releasing a golden orb over a sea of clouds, gold and ruby flame, celestial cathedral clouds, angelic wings of light, cosmic violet sky, ethereal, extreme high contrast, dramatic rim light, large empty space on the left third for text overlay, no text in image --ar 16:9
 ```
 
-Texto que va ENCIMA de la miniatura (grande, dorado, 2 líneas máx): **BEFORE SUNRISE**
+Texto que va ENCIMA de la miniatura (grande, dorado, 2 líneas máx): **JANUARY GIFT**
 
 ## 7) AFIRMACIONES EN PANTALLA — aparecen cada 4 minutos sobre las imágenes
 ```
@@ -100,7 +100,7 @@ New sources of income find me.
 ## 8) CHECKLIST DE SUBIDA
 
 - [ ] Audio renderizado (`scripts/03_audio.py`)
-- [ ] 5 imágenes generadas y guardadas en `salida/uriel-19/img/`
+- [ ] 5 imágenes generadas y guardadas en `salida/uriel-21/img/`
 - [ ] Video renderizado (`scripts/04_video.py`)
 - [ ] Miniatura 1280x720 subida
 - [ ] Título, descripción, etiquetas pegados

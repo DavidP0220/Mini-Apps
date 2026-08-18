@@ -6,7 +6,7 @@ Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Pacto Kuber
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-777 Hz Attract Unexpected Money in 7 Days 🍀 Let Divine Timing Work For You • 1 Hour
+Everything Starts Changing For You Today 🍀 Attract Unexpected Money in 7 Days • 777 Hz • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

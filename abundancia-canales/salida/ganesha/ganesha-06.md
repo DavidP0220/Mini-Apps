@@ -6,7 +6,7 @@ Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Exito en Negocios �
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-888 Hz Ganesha for Business Growth 💸 Attract Money, Fortune & Opportunity • 3 Hours
+Open The Door To Sudden Abundance Tonight 💸 Ganesha for Business Growth • 888 Hz • 3 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

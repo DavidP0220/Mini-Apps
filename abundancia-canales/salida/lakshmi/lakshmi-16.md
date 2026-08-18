@@ -6,7 +6,7 @@ Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Purificacio
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-396 Hz Burn the Roots of Poverty ✨ Release Fear & Dissolve Scarcity • 3 Hours
+Open The Door To Sudden Abundance Tonight ✨ Burn the Roots of Poverty • 396 Hz • 3 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

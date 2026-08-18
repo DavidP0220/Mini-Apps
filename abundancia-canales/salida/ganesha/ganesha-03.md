@@ -6,7 +6,7 @@ Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Corte de Mala Racha
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-528 Hz The Path Opener Frequency 💰 Transform Your Energy Into Wealth • 1 Hour
+Big Money Is On Its Way To You Today 💰 The Path Opener Frequency • 528 Hz • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

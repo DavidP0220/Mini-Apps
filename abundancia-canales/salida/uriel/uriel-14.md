@@ -6,7 +6,7 @@ Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Paz y 
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-963 Hz Forgive and Unlock Your Flow 🔮 Connect With the Source of All Abundance • 3 Hours
+Receive Unexpected Money This Week 🔮 Forgive and Unlock Your Flow • 963 Hz • 3 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)
