@@ -35,6 +35,25 @@ mini_apps_hotmart/
    `https://tu-usuario.github.io/mis-mini-apps/nombre-del-producto/`
 6. Ese link es el que entregas como acceso al comprar en Hotmart.
 
+## Herramientas (ahorro de tokens)
+
+```bash
+# Crear una app nueva sin que la IA reescriba el motor (~10.000 tokens ahorrados por app)
+node tools/new-app.mjs mi-producto --titulo "Mi Producto" --color "#E67E22"
+
+# Ver cuántos tokens y cuánto dinero se está gastando realmente
+node tools/token-report.mjs
+
+# Ver qué modelos gratuitos ofrece OpenRouter hoy
+node tools/router/listar-modelos-gratis.mjs
+```
+
+## Documentación
+
+- `CLAUDE.md` — contexto del proyecto para la IA (evita que explore el repo en cada sesión).
+- `docs/OPTIMIZACION-TOKENS.md` — diagnóstico del gasto y las 6 acciones que más ahorran.
+- `docs/OPENROUTER-MODELOS-GRATIS.md` — cómo trabajar gratis con modelos de OpenRouter.
+
 ## Personalización rápida por producto
 
 En `content.json` puedes ajustar sin tocar código:
