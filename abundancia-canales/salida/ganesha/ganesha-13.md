@@ -6,7 +6,7 @@ Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Escudo y Sabiduria 
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Wisdom to Choose the Right Path 🔮 Connect With Divine Wisdom & Higher Guidance • 963 Hz • 1 Hour
+963 Hz Wisdom to Choose the Right Path 🔮 Receive Divine Wisdom & Higher Guidance • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

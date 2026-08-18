@@ -96,33 +96,61 @@ CANALES = {
   ]},
 }
 
-# Formato de titulo probado: NOMBRE + emoji + BENEFICIO + frecuencia + duracion
-GANCHO = {
- 396: "{t} \u2728 Release Fear & Dissolve the Roots of Scarcity \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
- 417: "{t} \U0001f501 Clear Old Money Patterns & Reset Your Luck \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
- 432: "{t} \U0001f331 Deep Calm, Blessings & Abundance While You Sleep \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
- 528: "{t} \U0001f4b0 Activate Miracles & Heart-Centered Wealth \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
- 741: "{t} \U0001f6e1\ufe0f Cleanse Envy, Evil Eye & Negative Energy \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
- 777: "{t} \U0001f340 Open Divine Luck & Unexpected Doors \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
- 888: "{t} \U0001f4b8 Awaken Financial Magnetism & Non-Stop Money Flow \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
- 963: "{t} \U0001f52e Connect With Divine Wisdom & Higher Guidance \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
- 1111:"{t} \U0001f6aa Enter the Manifestation Portal & Seal Your Intention \u2022 {hz} Hz \u2022 {hrs} Hour{plural}",
+# Formula tomada de los videos con mas velocidad de vistas en ingles:
+# [FRECUENCIA] Hz + [NOMBRE] + emoji + [PROMESA] + duracion.
+# Tres promesas por frecuencia y se rota segun el numero de video: dos videos
+# nunca llevan la misma promesa seguida (YouTube penaliza el contenido repetitivo
+# y una plantilla identica 20 veces se nota).
+PROMESAS = {
+ 396: ["Release Fear & Dissolve Scarcity", "Break Free From the Poverty Mindset",
+       "Clear the Deepest Roots of Lack"],
+ 417: ["Clear Old Money Blocks", "Reset Your Luck From Zero", "Undo Years of Financial Blockage"],
+ 432: ["Attract Blessings While You Sleep", "Deep Sleep & Overnight Abundance",
+       "Rest Deeply, Wake Up Blessed"],
+ 528: ["Unlock Miracles & Heart-Centered Wealth", "Activate the Miracle Frequency",
+       "Transform Your Energy Into Wealth"],
+ 741: ["Cleanse Envy, Evil Eye & Bad Energy", "Shield Your Energy & Your Money",
+       "Remove Every Negative Influence"],
+ 777: ["Open Divine Luck & Unexpected Doors", "Attract Sudden Miracles & Fortune",
+       "Let Divine Timing Work For You"],
+ 888: ["Unlock Infinite Money Flow & Prosperity", "Awaken Financial Magnetism",
+       "Attract Money, Fortune & Opportunity"],
+ 963: ["Receive Divine Wisdom & Higher Guidance", "Connect With the Source of All Abundance",
+       "Open the Frequency of God"],
+ 1111:["Enter the Manifestation Portal", "Seal Your Intention in the 11:11 Gate",
+       "Manifest What You Asked For"],
 }
 
-CORTO = {396:"Release Fear & Scarcity",417:"Reset Your Luck",432:"Deep Calm & Blessings",
- 528:"Miracles & Wealth",741:"Cleanse Negative Energy",777:"Open Divine Luck",
- 888:"Non-Stop Money Flow",963:"Divine Wisdom",1111:"Manifestation Portal"}
 EMOJI = {396:"\u2728",417:"\U0001f501",432:"\U0001f331",528:"\U0001f4b0",741:"\U0001f6e1\ufe0f",
  777:"\U0001f340",888:"\U0001f4b8",963:"\U0001f52e",1111:"\U0001f6aa"}
 
-def titulo(t, hz, hrs):
+
+def titulo(t, hz, hrs, n):
+    """YouTube corta a 100 caracteres. Se prueban las tres promesas de la
+    frecuencia empezando por la que toca por rotacion, y si ninguna cabe se
+    recorta la promesa; la frecuencia y el nombre nunca se pierden."""
     plural = "" if hrs == 1 else "s"
-    """YouTube corta a 100 caracteres: si el titulo largo se pasa, usa el beneficio corto."""
-    largo = GANCHO[hz].format(t=t, hz=hz, hrs=hrs, plural=plural)
-    if len(largo) <= 100:
-        return largo
-    corto = f"{t} {EMOJI[hz]} {CORTO[hz]} \u2022 {hz} Hz \u2022 {hrs} Hour{plural}"
-    return corto if len(corto) <= 100 else f"{t} {EMOJI[hz]} {hz} Hz \u2022 {hrs} Hour{plural}"[:100]
+    opciones = PROMESAS[hz]
+    orden = [opciones[(n - 1 + k) % len(opciones)] for k in range(len(opciones))]
+    for promesa in orden:
+        cand = f"{hz} Hz {t} {EMOJI[hz]} {promesa} \u2022 {hrs} Hour{plural}"
+        if len(cand) <= 100:
+            return cand
+    return f"{hz} Hz {t} {EMOJI[hz]} \u2022 {hrs} Hour{plural}"[:100]
+
+
+def frecuencia(hz, hrs, slug):
+    """Reasignacion con datos de la competencia en ingles: 888 Hz domina el nicho
+    de dinero, seguido de 777 y 963. 432 Hz se reserva para el contenido de sueno
+    (8 h), que es donde realmente rinde."""
+    if hrs == 8:
+        return hz                      # los de dormir conservan su frecuencia calmante
+    if hz == 432:
+        return 888                     # 432 no es frecuencia de dinero: la cambiamos
+    if hz == 417:
+        return 963 if slug == "uriel" else 777
+    return hz
+
 
 def duracion(hrs, n):
     """Ajuste con datos reales del nicho (analisis de canales referentes):
@@ -141,12 +169,13 @@ def build():
         vids = []
         for i, (t, hz, hrs, thumb, escena) in enumerate(c["videos"], 1):
             hrs = duracion(hrs, i)
+            hz = frecuencia(hz, hrs, slug)
             bloque = c["bloques"][(i - 1) // 5]
             vids.append({
                 "id": f"{slug}-{i:02d}",
                 "n": i,
                 "bloque": bloque,
-                "titulo_yt": titulo(t, hz, hrs),
+                "titulo_yt": titulo(t, hz, hrs, i),
                 "titulo_corto": t,
                 "hz": hz,
                 "horas": hrs,

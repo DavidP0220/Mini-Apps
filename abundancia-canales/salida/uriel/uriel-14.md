@@ -1,19 +1,19 @@
 # uriel-14 — Forgive and Unlock Your Flow
 
-Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Paz y Sanacion · 417Hz · 3 horas
+Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Paz y Sanacion · 963Hz · 3 horas
 
 ---
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Forgive and Unlock Your Flow 🔁 Clear Old Money Patterns & Reset Your Luck • 417 Hz • 3 Hours
+963 Hz Forgive and Unlock Your Flow 🔮 Connect With the Source of All Abundance • 3 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)
 ```
-Forgive and Unlock Your Flow — 417Hz music to clear stagnant energy and undo old money patterns.
+Forgive and Unlock Your Flow — 963Hz music to connect you with divine wisdom and higher guidance.
 
-Let this 3-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 417Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
+Let this 3-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 963Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
 
 HOW TO USE THIS TRACK
 1. Find a quiet place and set one clear intention about your abundance.
@@ -21,8 +21,8 @@ HOW TO USE THIS TRACK
 3. Breathe slowly for the first 3 minutes and repeat the affirmations on screen.
 4. Let it play for at least 30 minutes, or all night while you sleep.
 
-WHAT IS 417Hz?
-417Hz is used in sound therapy to clear stagnant energy and undo old money patterns. Combined with the energy of Archangel Uriel, it becomes a daily ritual of receptivity and gratitude.
+WHAT IS 963Hz?
+963Hz is used in sound therapy to connect you with divine wisdom and higher guidance. Combined with the energy of Archangel Uriel, it becomes a daily ritual of receptivity and gratitude.
 
 AFFIRMATIONS IN THIS VIDEO
 • Money flows to me easily and constantly.
@@ -43,12 +43,12 @@ This music is for relaxation and meditation. It is not a substitute for medical 
 
 ## 3) ETIQUETAS — Studio → *Mostrar más* → campo *Etiquetas* (pega separado por comas)
 ```
-meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 417hz, 417 hz music, archangel uriel, 3 hour music, forgive and unlock your flow
+meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 963hz, 963 hz music, archangel uriel, 3 hour music, forgive and unlock your flow
 ```
 
 ## 4) COMENTARIO FIJADO — publícalo y luego clic en los 3 puntos → *Fijar*
 ```
-🙏 Write "I RECEIVE" below and let this 417Hz frequency work while you rest. Tell us what you are manifesting — Archangel Uriel hears every intention. ✨
+🙏 Write "I RECEIVE" below and let this 963Hz frequency work while you rest. Tell us what you are manifesting — Archangel Uriel hears every intention. ✨
 ```
 
 ## 5) PROMPTS DE IMÁGENES — genera 5 imágenes (Midjourney / Flux / Leonardo)

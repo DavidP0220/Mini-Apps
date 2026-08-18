@@ -6,7 +6,7 @@ Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Paz y 
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Heal the Anxiety of Lack ✨ Release Fear & Dissolve the Roots of Scarcity • 396 Hz • 3 Hours
+396 Hz Heal the Anxiety of Lack ✨ Clear the Deepest Roots of Lack • 3 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

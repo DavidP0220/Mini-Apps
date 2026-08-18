@@ -6,7 +6,7 @@ Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Purificacio
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Rewrite Your Money Story Tonight 💰 Activate Miracles & Heart-Centered Wealth • 528 Hz • 8 Hours
+528 Hz Rewrite Your Money Story Tonight 💰 Unlock Miracles & Heart-Centered Wealth • 8 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

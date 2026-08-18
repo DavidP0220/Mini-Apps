@@ -6,7 +6,7 @@ Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Angele
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Abundia: Goddess of the Overflowing Horn 💸 Non-Stop Money Flow • 888 Hz • 3 Hours
+888 Hz Abundia: Goddess of the Overflowing Horn 💸 Attract Money, Fortune & Opportunity • 3 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

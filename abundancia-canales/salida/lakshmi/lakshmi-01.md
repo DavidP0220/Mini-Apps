@@ -6,7 +6,7 @@ Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Flujo Inago
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-The Golden River of Lakshmi 💰 Activate Miracles & Heart-Centered Wealth • 528 Hz • 1 Hour
+528 Hz The Golden River of Lakshmi 💰 Unlock Miracles & Heart-Centered Wealth • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

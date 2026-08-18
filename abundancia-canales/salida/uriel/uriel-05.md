@@ -6,7 +6,7 @@ Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Rayo O
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Receive What Heaven Sent You 💰 Activate Miracles & Heart-Centered Wealth • 528 Hz • 1 Hour
+528 Hz Receive What Heaven Sent You 💰 Activate the Miracle Frequency • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

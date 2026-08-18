@@ -6,7 +6,7 @@ Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Nuevos Comienzos ·
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Move Forward Without Fear 🔁 Clear Old Money Patterns & Reset Your Luck • 417 Hz • 8 Hours
+417 Hz Move Forward Without Fear 🔁 Clear Old Money Blocks • 8 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

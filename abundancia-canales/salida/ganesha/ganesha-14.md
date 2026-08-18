@@ -6,7 +6,7 @@ Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Escudo y Sabiduria 
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Calm Mind, Clear Decisions 🌱 Deep Calm, Blessings & Abundance While You Sleep • 432 Hz • 8 Hours
+432 Hz Calm Mind, Clear Decisions 🌱 Deep Sleep & Overnight Abundance • 8 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

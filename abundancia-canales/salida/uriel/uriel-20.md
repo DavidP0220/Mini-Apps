@@ -6,7 +6,7 @@ Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Codigo
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-8 Hours in Uriel's Golden Field 🌱 Deep Calm & Blessings • 432 Hz • 8 Hours
+432 Hz 8 Hours in Uriel's Golden Field 🌱 Deep Sleep & Overnight Abundance • 8 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

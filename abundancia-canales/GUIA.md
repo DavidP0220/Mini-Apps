@@ -186,3 +186,39 @@ Nuestro equivalente: *"Lakshmi's Infinite Wealth Current 💸 Non-Stop Money Flo
 
 > Una advertencia honesta: su canal tardó de 2014 a hoy en llegar ahí, con 1.121 videos.
 > No es dinero rápido. Es un catálogo que se acumula.
+
+---
+
+## 8. Decisiones tomadas tras el análisis de la competencia en inglés
+
+Ver el detalle completo en `datos/competencia.md`. Estas tres decisiones ya están
+aplicadas al catálogo y a los 60 paquetes:
+
+**1. Los títulos empiezan por la frecuencia.** Es la fórmula de los canales que están
+ganando en inglés hoy: la frecuencia es lo que la gente busca, la deidad es la identidad
+del canal. Los 60 títulos son únicos y ninguno pasa de 96 caracteres.
+
+Antes: `The Golden River of Lakshmi 💰 Activate Miracles & Heart-Centered Wealth • 528 Hz • 1 Hour`
+Ahora: `528 Hz The Golden River of Lakshmi 💰 Unlock Miracles & Heart-Centered Wealth • 1 Hour`
+
+Cada frecuencia tiene **tres promesas** que rotan, para que veinte videos seguidos no
+parezcan la misma plantilla (YouTube penaliza el contenido repetitivo).
+
+**2. Reparto de frecuencias cargado hacia el dinero.** 888 Hz es la frecuencia dominante
+del nicho en inglés, seguida de 777 y 963. 432 Hz se reservó para los videos de 8 horas,
+que es donde de verdad rinde (sueño).
+
+| Frecuencia | Videos | Para qué |
+|---|---|---|
+| 888 Hz | 14 | Flujo de dinero — la reina del nicho |
+| 528 Hz | 11 | Milagros y transformación |
+| 432 Hz | 9 | Solo videos de 8 h (sueño) |
+| 777 Hz | 9 | Suerte divina y puertas |
+| 963 Hz | 6 | Sabiduría y guía |
+| 396 Hz | 5 | Soltar el miedo a la escasez |
+| 741 / 417 / 1111 Hz | 6 | Protección, reinicio y portal |
+
+**3. Ritmo: 20 videos al mes por canal.** Es el modelo de *Zen Harmony Sounds*
+(+313% de suscriptores en un año) y *Soul Healing Journey* (+89% de vistas en 30 días).
+Publicar seguido acelera el arranque; una vez que el canal despegue podemos bajar el
+ritmo y subir la calidad, que es el modelo de *Soothing Harmony*.

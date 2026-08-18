@@ -6,7 +6,7 @@ Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Codigo
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Manifest Before Sunrise 🔮 Connect With Divine Wisdom & Higher Guidance • 963 Hz • 8 Hours
+963 Hz Manifest Before Sunrise 🔮 Receive Divine Wisdom & Higher Guidance • 8 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

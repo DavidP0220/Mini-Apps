@@ -6,7 +6,7 @@ Canal: **Archangel Uriel Divine Light** (@ArchangelUrielLight) · Bloque: Paz y 
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Uriel's Healing Light 528Hz 💰 Activate Miracles & Heart-Centered Wealth • 528 Hz • 1 Hour
+528 Hz Uriel's Healing Light 528Hz 💰 Unlock Miracles & Heart-Centered Wealth • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

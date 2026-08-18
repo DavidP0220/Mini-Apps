@@ -6,7 +6,7 @@ Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Flujo Inago
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Rain of Gold Coins Meditation 💸 Awaken Financial Magnetism & Non-Stop Money Flow • 888 Hz • 1 Hour
+888 Hz Rain of Gold Coins Meditation 💸 Attract Money, Fortune & Opportunity • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

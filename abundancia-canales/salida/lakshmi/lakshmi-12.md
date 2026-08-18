@@ -6,7 +6,7 @@ Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Pacto Kuber
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-The Kubera Mantra Frequency 💸 Awaken Financial Magnetism & Non-Stop Money Flow • 888 Hz • 1 Hour
+888 Hz The Kubera Mantra Frequency 💸 Attract Money, Fortune & Opportunity • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

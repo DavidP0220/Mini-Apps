@@ -6,7 +6,7 @@ Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Nuevos Comienzos ·
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Say Yes to the Life You Want 🍀 Open Divine Luck & Unexpected Doors • 777 Hz • 3 Hours
+777 Hz Say Yes to the Life You Want 🍀 Let Divine Timing Work For You • 3 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

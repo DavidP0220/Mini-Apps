@@ -6,7 +6,7 @@ Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Ashta Laksh
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Adi Lakshmi: Primordial Abundance 🔮 Connect With Divine Wisdom & Higher Guidance • 963 Hz • 3 Hours
+963 Hz Adi Lakshmi: Primordial Abundance 🔮 Open the Frequency of God • 3 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

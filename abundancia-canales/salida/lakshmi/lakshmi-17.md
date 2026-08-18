@@ -1,19 +1,19 @@
 # lakshmi-17 — Cleansing the Money Bloodline
 
-Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Purificacion de Escasez · 417Hz · 1 horas
+Canal: **Maha Lakshmi Sanctuary** (@MahaLakshmiSanctuary) · Bloque: Purificacion de Escasez · 777Hz · 1 horas
 
 ---
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Cleansing the Money Bloodline 🔁 Clear Old Money Patterns & Reset Your Luck • 417 Hz • 1 Hour
+777 Hz Cleansing the Money Bloodline 🍀 Attract Sudden Miracles & Fortune • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)
 ```
-Cleansing the Money Bloodline — 417Hz music to clear stagnant energy and undo old money patterns.
+Cleansing the Money Bloodline — 777Hz music to open divine luck, synchronicity and unexpected doors.
 
-Let this 1-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 417Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
+Let this 1-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 777Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
 
 HOW TO USE THIS TRACK
 1. Find a quiet place and set one clear intention about your abundance.
@@ -21,8 +21,8 @@ HOW TO USE THIS TRACK
 3. Breathe slowly for the first 3 minutes and repeat the affirmations on screen.
 4. Let it play for at least 30 minutes, or all night while you sleep.
 
-WHAT IS 417Hz?
-417Hz is used in sound therapy to clear stagnant energy and undo old money patterns. Combined with the energy of Goddess Maha Lakshmi, it becomes a daily ritual of receptivity and gratitude.
+WHAT IS 777Hz?
+777Hz is used in sound therapy to open divine luck, synchronicity and unexpected doors. Combined with the energy of Goddess Maha Lakshmi, it becomes a daily ritual of receptivity and gratitude.
 
 AFFIRMATIONS IN THIS VIDEO
 • Money flows to me easily and constantly.
@@ -43,12 +43,12 @@ This music is for relaxation and meditation. It is not a substitute for medical 
 
 ## 3) ETIQUETAS — Studio → *Mostrar más* → campo *Etiquetas* (pega separado por comas)
 ```
-meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 417hz, 417 hz music, goddess maha lakshmi, 1 hour music, cleansing the money bloodline
+meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 777hz, 777 hz music, goddess maha lakshmi, 1 hour music, cleansing the money bloodline
 ```
 
 ## 4) COMENTARIO FIJADO — publícalo y luego clic en los 3 puntos → *Fijar*
 ```
-🙏 Write "I RECEIVE" below and let this 417Hz frequency work while you rest. Tell us what you are manifesting — Goddess Maha Lakshmi hears every intention. ✨
+🙏 Write "I RECEIVE" below and let this 777Hz frequency work while you rest. Tell us what you are manifesting — Goddess Maha Lakshmi hears every intention. ✨
 ```
 
 ## 5) PROMPTS DE IMÁGENES — genera 5 imágenes (Midjourney / Flux / Leonardo)

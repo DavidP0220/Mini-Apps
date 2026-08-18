@@ -6,7 +6,7 @@ Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Nuevos Comienzos ·
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Ganesha Manifestation Ritual 1111Hz 🚪 Manifestation Portal • 1111 Hz • 1 Hour
+1111 Hz Ganesha Manifestation Ritual 1111Hz 🚪 Seal Your Intention in the 11:11 Gate • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

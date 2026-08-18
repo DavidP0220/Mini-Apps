@@ -6,7 +6,7 @@ Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Corte de Mala Racha
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Cut the Cords That Block You ✨ Release Fear & Dissolve the Roots of Scarcity • 396 Hz • 1 Hour
+396 Hz Cut the Cords That Block You ✨ Break Free From the Poverty Mindset • 1 Hour
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)

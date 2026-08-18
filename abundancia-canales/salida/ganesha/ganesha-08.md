@@ -6,7 +6,7 @@ Canal: **Lord Ganesha 432Hz** (@LordGanesha432Hz) · Bloque: Exito en Negocios �
 
 ## 1) TÍTULO — pégalo en YouTube Studio → campo *Título*
 ```
-Blessing for New Contracts 🍀 Open Divine Luck & Unexpected Doors • 777 Hz • 3 Hours
+777 Hz Blessing for New Contracts 🍀 Attract Sudden Miracles & Fortune • 3 Hours
 ```
 
 ## 2) DESCRIPCIÓN — pégala en el campo *Descripción* (todo el bloque)
