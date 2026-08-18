@@ -44,6 +44,14 @@ node tools/new-app.mjs mi-producto --titulo "Mi Producto" --color "#E67E22"
 # Ver cuántos tokens y cuánto dinero se está gastando realmente
 node tools/token-report.mjs
 
+# Editar el contenido sin cargar los 20 KB del archivo entero
+node tools/content.mjs listar mi-producto
+node tools/content.mjs ver mi-producto <capituloId>
+node tools/content.mjs set mi-producto <capituloId> 0 --body "texto nuevo"
+
+# Propagar un cambio del motor a todas las apps
+node tools/sync-motor.mjs --aplicar
+
 # Ver qué modelos gratuitos ofrece OpenRouter hoy
 node tools/router/listar-modelos-gratis.mjs
 ```

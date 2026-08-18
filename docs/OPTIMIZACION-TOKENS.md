@@ -40,13 +40,24 @@ En la sesión se cargaron **547 herramientas**, de las cuales 509 vienen de cone
 Para hacer una PWA en HTML/CSS/JS puro no se necesita ninguno de esos conectores.
 Cada uno mete su nombre, su descripción y sus instrucciones de servidor en **cada turno**.
 
-## 2. Las 6 acciones que más ahorran (en orden de impacto)
+## 2. Las acciones que más ahorran (en orden de impacto)
 
 ### 1) Desconectar los conectores MCP que no uses — ahorro estimado 40-70%
 Es, de lejos, lo más rentable. En claude.ai → Configuración → Conectores, deja
 activos solo los que uses en el proyecto actual. Para este repo basta con **github**
 (y ni siquiera siempre).
 Regla práctica: un conector que no vas a llamar en esta sesión, apágalo.
+
+### 1-bis) Bajar de Opus a Sonnet en este proyecto — ahorro 80% del costo
+Opus cuesta $15/$75 por millón de tokens; Sonnet $3/$15. **Cinco veces menos por
+el mismo trabajo.** Para HTML/CSS/JS puro sin dependencias, Sonnet sobra.
+
+Ya está puesto como modelo por defecto del proyecto en `.claude/settings.json`.
+La sesión medida arriba costó **$4,65 en Opus**; el mismo trabajo en Sonnet
+habría costado **~$0,93**.
+
+Sube a Opus con `/model opus` solo cuando lo necesites de verdad (arquitectura,
+un bug que no cede) y vuelve con `/model sonnet`.
 
 ### 2) Usar modelos gratuitos para el trabajo mecánico — ahorro 100% en esos turnos
 Copiar plantillas, renombrar, reformatear JSON, escribir CSS repetitivo: eso no
@@ -62,6 +73,26 @@ Cada sesión nueva vuelve a pagar los ~69.000 tokens de arranque a precio de
 ### 4) `CLAUDE.md` en el repo — ahorro ~10.000 tokens por sesión
 Ya está creado en la raíz. Evita que Claude tenga que explorar la estructura del
 proyecto con `ls`, `find` y lecturas de archivos cada vez que empieza.
+
+### 4-bis) No cargar `content.json` entero — ahorro ~5.200 tokens por consulta
+El `content.json` de la app GRAS pesa 20,3 KB (~5.191 tokens) con 12 capítulos y
+37 secciones. Leerlo para cambiar un párrafo se paga en **todos** los turnos
+siguientes de la sesión. En su lugar:
+
+```bash
+node tools/content.mjs listar grass-planta-alimentos        # índice, ~200 tokens
+node tools/content.mjs ver grass-planta-alimentos capacidad # 1 capítulo, ~400 tokens
+node tools/content.mjs set grass-planta-alimentos intro 0 --body "texto nuevo"
+```
+
+### 4-ter) No repetir ediciones del motor en cada app
+Al haber varias apps, cada mejora del motor se multiplicaba por N. Ahora se edita
+`template/` una vez y se propaga:
+
+```bash
+node tools/sync-motor.mjs             # muestra qué cambiaría
+node tools/sync-motor.mjs --aplicar   # lo aplica y sube la versión de caché
+```
 
 ### 5) No regenerar el motor en cada app — ahorro ~10.000 tokens por app
 Antes, crear una app nueva significaba reescribir `index.html`, `app.js`,
@@ -96,6 +127,7 @@ un turno completo que no se paga.
 node tools/token-report.mjs           # sesiones de este proyecto
 node tools/token-report.mjs --all     # todos los proyectos
 node tools/token-report.mjs --top 20  # top 20 turnos más caros
+node tools/contar-herramientas.mjs    # herramientas cargadas por conector
 ```
 
 Lee las transcripciones locales de Claude Code (`~/.claude/projects/**/*.jsonl`);
