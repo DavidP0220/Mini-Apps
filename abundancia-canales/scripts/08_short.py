@@ -40,9 +40,13 @@ def main():
     a = ap.parse_args()
     canal, v = buscar(a.id)
     d = BASE / "salida" / a.id
+    # el audio sale del intermedio si existe; si ya lo borraste, se toma del
+    # propio video final, que es igual de valido y evita rehacer media hora de CPU
     audio = next((d/f"audio{e}" for e in (".flac", ".wav") if (d/f"audio{e}").exists()), None)
     if not audio:
-        sys.exit(f"Falta {d}/audio.flac. Corre antes 03_audio.py")
+        audio = d/f"{a.id}.mp4"
+    if not audio.exists():
+        sys.exit(f"No hay audio en {d}. Corre antes 03_audio.py o 04_video.py")
     img = pathlib.Path(a.img) if a.img else next(iter(sorted((d / "img").glob("*"))), None)
     if not img or not img.exists():
         sys.exit(f"No hay imagenes en {d/'img'}")
