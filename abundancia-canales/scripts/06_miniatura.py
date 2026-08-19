@@ -59,7 +59,8 @@ def main():
     for ln in lineas:
         contorno(d, (60, y), ln, f, (255, 215, 0)); y += f.size + 12
     fs = fuente(46)
-    contorno(d, (62, y+18), f"{v['hz']} Hz  •  {v['horas']} HOURS", fs, (255, 255, 255), 4)
+    plural = "" if v["horas"] == 1 else "S"
+    contorno(d, (62, y+18), f"{v['hz']} Hz  •  {v['horas']} HOUR{plural}", fs, (255, 255, 255), 4)
     fm = fuente(30)
     contorno(d, (62, H-58), canal["nombre"].upper(), fm, (255, 255, 255), 3)
     out = BASE/"salida"/a.id/"miniatura.jpg"
