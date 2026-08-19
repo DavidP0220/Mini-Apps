@@ -222,3 +222,48 @@ que es donde de verdad rinde (sueño).
 (+313% de suscriptores en un año) y *Soul Healing Journey* (+89% de vistas en 30 días).
 Publicar seguido acelera el arranque; una vez que el canal despegue podemos bajar el
 ritmo y subir la calidad, que es el modelo de *Soothing Harmony*.
+
+---
+
+## 9. Cambios técnicos importantes (revisión del 19/08)
+
+**El bucle de audio ya no tiene saltos.** El script calculaba un crossfade pero no lo
+aplicaba: pegaba la pista consigo misma con un corte seco, así que cada 2-3 minutos
+habría habido un salto audible. En un video de 8 horas son más de 150 saltos y eso
+arruina la retención. Ahora se funde la cola de la pista con su propia cabeza, y esa
+"unidad" empalma consigo misma de forma inaudible.
+
+**El audio intermedio ahora es FLAC**, no WAV. Sin pérdida de calidad y menos peso.
+Aun así, ten en cuenta el espacio en disco:
+
+| Duración | audio.flac | video final .mp4 |
+|---|---|---|
+| 1 hora | ~600 MB | ~500 MB |
+| 3 horas | ~1,8 GB | ~1,5 GB |
+| 8 horas | ~4,5 GB | ~4 GB |
+
+Borra el `audio.flac` después de renderizar el mp4: ya no lo necesitas.
+
+**Nuevo: Shorts.** `scripts/08_short.py` genera un Short vertical (1080x1920, hasta
+60 s) con los mismos insumos del video largo:
+
+```bash
+python3 scripts/08_short.py --id lakshmi-01
+```
+
+Lleva el texto de la miniatura, la frecuencia, una afirmación y, en los últimos 12
+segundos, un llamado al video completo. **Publica 2 o 3 Shorts por cada video largo**:
+son el motor de descubrimiento y lo que acelera los primeros 1.000 suscriptores.
+
+**Nuevo: marca de canal.** `scripts/07_marca.py` convierte cualquier imagen en avatar
+de 800x800 y banner de 2560x1440 respetando el área segura de YouTube. Los seis
+archivos de los tres canales ya están hechos en `assets/marca/`.
+
+### Orden de trabajo por video (actualizado)
+```bash
+python3 scripts/03_audio.py --id lakshmi-01 --base bases/lakshmi-01.wav
+python3 scripts/04_video.py --id lakshmi-01
+python3 scripts/06_miniatura.py --id lakshmi-01 --img salida/lakshmi-01/img/1.png
+python3 scripts/08_short.py --id lakshmi-01
+rm salida/lakshmi-01/audio.flac
+```
