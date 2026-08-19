@@ -1,0 +1,528 @@
+<title>Bóveda Maha Lakshmi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Karla:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --ground: #EFEDF2;
+  --surface: #FFFFFF;
+  --surface-2: #F6F4F9;
+  --ink: #171526;
+  --ink-soft: #4E4A63;
+  --ink-faint: #7C7791;
+  --gold: #8A6510;
+  --gold-soft: #C9A94E;
+  --line: #DCD8E4;
+  --focus: #3B2E7E;
+  --shadow: 0 1px 2px rgba(23,21,38,.06), 0 8px 24px -12px rgba(23,21,38,.18);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #12101C;
+    --surface: #1B1830;
+    --surface-2: #221E3A;
+    --ink: #EDEAF6;
+    --ink-soft: #B6B0CD;
+    --ink-faint: #857FA0;
+    --gold: #E8B84B;
+    --gold-soft: #8A6510;
+    --line: #2E2950;
+    --focus: #A99BFF;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #12101C;
+  --surface: #1B1830;
+  --surface-2: #221E3A;
+  --ink: #EDEAF6;
+  --ink-soft: #B6B0CD;
+  --ink-faint: #857FA0;
+  --gold: #E8B84B;
+  --gold-soft: #8A6510;
+  --line: #2E2950;
+  --focus: #A99BFF;
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.7);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 400 17px/1.6 Karla, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 60rem; margin: 0 auto; padding: clamp(1.5rem, 4vw, 4rem) clamp(1rem, 4vw, 2rem) 6rem; }
+
+header.top { display: flex; flex-direction: column; gap: .9rem; margin-bottom: 2.5rem; }
+.eyebrow {
+  font: 500 .78rem/1 "IBM Plex Mono", ui-monospace, monospace;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin: 0;
+}
+h1 {
+  font: 600 clamp(2.1rem, 6vw, 3.4rem)/1.05 Fraunces, Georgia, serif;
+  margin: 0; text-wrap: balance; letter-spacing: -.015em;
+}
+.lede { margin: 0; max-width: 46ch; color: var(--ink-soft); font-size: 1.05rem; }
+
+.alert {
+  display: flex; gap: .85rem; align-items: flex-start;
+  border: 1px solid var(--line); border-left: 3px solid var(--gold);
+  background: var(--surface); border-radius: 4px; padding: 1rem 1.15rem;
+  box-shadow: var(--shadow); margin: 2rem 0 2.5rem;
+}
+.alert p { margin: 0; font-size: .96rem; color: var(--ink-soft); }
+.alert strong { color: var(--ink); }
+
+.stats { display: flex; flex-wrap: wrap; gap: 2rem; padding: 1.25rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-bottom: 3rem; }
+.stat b { display: block; font: 500 1.7rem/1 "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; color: var(--ink); }
+.stat span { font-size: .82rem; color: var(--ink-faint); letter-spacing: .04em; }
+
+h2 {
+  font: 600 1.45rem/1.2 Fraunces, Georgia, serif; margin: 3rem 0 .4rem;
+  letter-spacing: -.01em;
+}
+.section-note { margin: 0 0 1.5rem; color: var(--ink-faint); font-size: .95rem; max-width: 52ch; }
+
+.video {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 6px;
+  padding: 1.25rem 1.35rem; margin-bottom: 1rem; box-shadow: var(--shadow);
+}
+.video-head { display: flex; gap: 1.1rem; align-items: flex-start; }
+.idx {
+  font: 500 .95rem/1 "IBM Plex Mono", monospace; color: var(--gold);
+  padding-top: .35rem; font-variant-numeric: tabular-nums;
+}
+.video-meta { min-width: 0; display: flex; flex-direction: column; gap: .35rem; }
+.video h3 { font: 600 1.22rem/1.25 Fraunces, Georgia, serif; margin: 0; letter-spacing: -.01em; }
+.titulo-yt {
+  margin: 0; font: 400 .84rem/1.45 "IBM Plex Mono", monospace;
+  color: var(--ink-faint); word-break: break-word;
+}
+.chips { display: flex; flex-wrap: wrap; gap: .4rem; margin: .3rem 0 0; }
+.chip {
+  font: 500 .74rem/1 "IBM Plex Mono", monospace; letter-spacing: .05em;
+  padding: .38rem .6rem; border-radius: 3px; background: var(--surface-2);
+  color: var(--ink-soft); border: 1px solid var(--line);
+}
+.chip-hz { color: var(--gold); border-color: var(--gold-soft); }
+.chip-quiet { text-transform: none; letter-spacing: .02em; }
+
+.assets { list-style: none; margin: 1.1rem 0 0; padding: 0; display: grid; gap: .4rem; }
+.asset { display: flex; gap: .5rem; align-items: stretch; }
+.asset-link {
+  flex: 1; display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  padding: .6rem .8rem; border: 1px solid var(--line); border-radius: 4px;
+  background: var(--surface-2); color: var(--ink); text-decoration: none;
+  transition: border-color .15s, transform .15s;
+}
+.asset-link:hover { border-color: var(--gold); transform: translateX(2px); }
+.asset-name { font-size: .93rem; font-weight: 500; }
+.asset-kind { font: 400 .72rem/1 "IBM Plex Mono", monospace; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .1em; }
+.copy {
+  font: 500 .78rem/1 Karla, sans-serif; padding: 0 .8rem; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 4px; background: var(--surface);
+  color: var(--ink-soft); transition: border-color .15s, color .15s;
+}
+.copy:hover { border-color: var(--gold); color: var(--gold); }
+.copy[data-done="1"] { color: var(--gold); border-color: var(--gold); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+.steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: .9rem; }
+.steps li { display: flex; gap: .9rem; }
+.steps li::before {
+  counter-increment: s; content: counter(s);
+  font: 500 .8rem/1 "IBM Plex Mono", monospace; color: var(--gold);
+  border: 1px solid var(--gold-soft); border-radius: 50%;
+  width: 1.8rem; height: 1.8rem; display: grid; place-items: center; flex: none;
+}
+pre {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 4px;
+  padding: 1rem; overflow-x: auto; font: 400 .84rem/1.7 "IBM Plex Mono", monospace;
+  color: var(--ink-soft); margin: 1rem 0 0;
+}
+footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line); color: var(--ink-faint); font-size: .86rem; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <p class="eyebrow">Maha Lakshmi Sanctuary</p>
+    <h1>Bóveda de producción</h1>
+    <p class="lede">La materia prima de los 7 videos ya producidos: música original y arte de fondo, listos para descargar y reconstruir en tu equipo.</p>
+  </header>
+
+  <div class="alert">
+    <p><strong>Descarga esto pronto.</strong> Los archivos están alojados temporalmente y los enlaces pueden caducar. Los videos armados —de 500&nbsp;MB a 3,3&nbsp;GB— no se guardan en ningún lado: se reconstruyen desde aquí en unos minutos.</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>7</b><span>VIDEOS PRODUCIDOS</span></div>
+    <div class="stat"><b>29</b><span>ARCHIVOS DE ORIGEN</span></div>
+    <div class="stat"><b>22</b><span>IMÁGENES</span></div>
+  </div>
+
+  <h2>Archivos por video</h2>
+  <p class="section-note">Cada enlace abre en una pestaña nueva; desde ahí guarda el archivo. En el celular es más cómodo usar «Copiar» y pegar el enlace en tu gestor de descargas.</p>
+  <article class="video" id="lakshmi-01">
+  <div class="video-head">
+    <span class="idx">01</span>
+    <div class="video-meta">
+      <h3>The Golden River of Lakshmi</h3>
+      <p class="titulo-yt">Money Flows To You Non-Stop After 3 Minutes 💰 The Golden River of Lakshmi • 528 Hz • 1 Hour</p>
+      <p class="chips">
+        <span class="chip chip-hz">528 Hz</span>
+        <span class="chip">1 h</span>
+        <span class="chip chip-quiet">Flujo Inagotable</span>
+      </p>
+    </div>
+  </div>
+  <ul class="assets"><li class="asset">
+              <a class="asset-link" href="https://ai-music-tracks.s3.us-east-1.amazonaws.com/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/e9927e05-95fc-48bd-b75e-66eab8412f72.wav" target="_blank" rel="noopener">
+                <span class="asset-name">Música base</span>
+                <span class="asset-kind">wav</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-music-tracks.s3.us-east-1.amazonaws.com/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/e9927e05-95fc-48bd-b75e-66eab8412f72.wav"
+                      aria-label="Copiar enlace de Música base">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/b3bd5303-7575-47f6-ad2c-df82fcbbfbbd.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 1</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/b3bd5303-7575-47f6-ad2c-df82fcbbfbbd.png"
+                      aria-label="Copiar enlace de Imagen 1">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/e57a9a90-139b-43e1-a81b-af6df0187942.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 2</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/e57a9a90-139b-43e1-a81b-af6df0187942.png"
+                      aria-label="Copiar enlace de Imagen 2">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/e9a82257-34fa-4e5e-9d5d-0114453c94b3.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 3</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/e9a82257-34fa-4e5e-9d5d-0114453c94b3.png"
+                      aria-label="Copiar enlace de Imagen 3">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/ee7fc495-9b96-42ef-b44a-0ab1f6c4cfa3.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 4</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/ee7fc495-9b96-42ef-b44a-0ab1f6c4cfa3.png"
+                      aria-label="Copiar enlace de Imagen 4">Copiar</button>
+            </li></ul>
+</article>
+<article class="video" id="lakshmi-02">
+  <div class="video-head">
+    <span class="idx">02</span>
+    <div class="video-meta">
+      <h3>Lakshmi&#x27;s Infinite Wealth Current</h3>
+      <p class="titulo-yt">Let The Universe Send You Unexpected Money 💸 Lakshmi&#x27;s Infinite Wealth Current • 888 Hz • 3 Hours</p>
+      <p class="chips">
+        <span class="chip chip-hz">888 Hz</span>
+        <span class="chip">3 h</span>
+        <span class="chip chip-quiet">Flujo Inagotable</span>
+      </p>
+    </div>
+  </div>
+  <ul class="assets"><li class="asset">
+              <a class="asset-link" href="https://ai-music-tracks.s3.us-east-1.amazonaws.com/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/509a408f-4f21-45c3-95c8-2820de2706de.wav" target="_blank" rel="noopener">
+                <span class="asset-name">Música base</span>
+                <span class="asset-kind">wav</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-music-tracks.s3.us-east-1.amazonaws.com/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/509a408f-4f21-45c3-95c8-2820de2706de.wav"
+                      aria-label="Copiar enlace de Música base">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/64f9a733-a4fe-4331-9e59-269c7e027c5a.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 1</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/64f9a733-a4fe-4331-9e59-269c7e027c5a.png"
+                      aria-label="Copiar enlace de Imagen 1">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/242f46f9-22de-4bfb-899d-0f212261fd49.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 2</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/242f46f9-22de-4bfb-899d-0f212261fd49.png"
+                      aria-label="Copiar enlace de Imagen 2">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/e2f933a8-39c5-4a5d-bdee-d75a069068e7.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 3</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/e2f933a8-39c5-4a5d-bdee-d75a069068e7.png"
+                      aria-label="Copiar enlace de Imagen 3">Copiar</button>
+            </li></ul>
+</article>
+<article class="video" id="lakshmi-03">
+  <div class="video-head">
+    <span class="idx">03</span>
+    <div class="video-meta">
+      <h3>Rain of Gold Coins Meditation</h3>
+      <p class="titulo-yt">Big Money Is On Its Way To You Today 💸 Rain of Gold Coins Meditation • 888 Hz • 1 Hour</p>
+      <p class="chips">
+        <span class="chip chip-hz">888 Hz</span>
+        <span class="chip">1 h</span>
+        <span class="chip chip-quiet">Flujo Inagotable</span>
+      </p>
+    </div>
+  </div>
+  <ul class="assets"><li class="asset">
+              <a class="asset-link" href="https://ai-music-tracks.s3.us-east-1.amazonaws.com/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/957217bb-2043-4629-9607-433b068a8072.wav" target="_blank" rel="noopener">
+                <span class="asset-name">Música base</span>
+                <span class="asset-kind">wav</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-music-tracks.s3.us-east-1.amazonaws.com/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/957217bb-2043-4629-9607-433b068a8072.wav"
+                      aria-label="Copiar enlace de Música base">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/f31aa387-99fc-49e1-854f-958702396a80.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 1</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/f31aa387-99fc-49e1-854f-958702396a80.png"
+                      aria-label="Copiar enlace de Imagen 1">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/bdb42e8c-0c5f-41f4-a5b3-a248a69e48df.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 2</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/bdb42e8c-0c5f-41f4-a5b3-a248a69e48df.png"
+                      aria-label="Copiar enlace de Imagen 2">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/bdba7fca-83e5-4b4f-8bbb-89398fa946e0.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 3</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/bdba7fca-83e5-4b4f-8bbb-89398fa946e0.png"
+                      aria-label="Copiar enlace de Imagen 3">Copiar</button>
+            </li></ul>
+</article>
+<article class="video" id="lakshmi-04">
+  <div class="video-head">
+    <span class="idx">04</span>
+    <div class="video-meta">
+      <h3>Sacred Lotus of Prosperity</h3>
+      <p class="titulo-yt">Receive Unexpected Money This Week 💰 Sacred Lotus of Prosperity • 432 Hz • 8 Hours</p>
+      <p class="chips">
+        <span class="chip chip-hz">432 Hz</span>
+        <span class="chip">8 h</span>
+        <span class="chip chip-quiet">Flujo Inagotable</span>
+      </p>
+    </div>
+  </div>
+  <ul class="assets"><li class="asset">
+              <a class="asset-link" href="https://ai-music-tracks.s3.us-east-1.amazonaws.com/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/314e96a7-c865-430b-a94d-d665ace2a27f.wav" target="_blank" rel="noopener">
+                <span class="asset-name">Música base</span>
+                <span class="asset-kind">wav</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-music-tracks.s3.us-east-1.amazonaws.com/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/314e96a7-c865-430b-a94d-d665ace2a27f.wav"
+                      aria-label="Copiar enlace de Música base">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/7ceec97b-5c54-48f1-8f35-57f7a824fa21.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 1</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/7ceec97b-5c54-48f1-8f35-57f7a824fa21.png"
+                      aria-label="Copiar enlace de Imagen 1">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/c5b65d2b-9da2-46dc-b32d-ea7b67fe24b8.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 2</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/c5b65d2b-9da2-46dc-b32d-ea7b67fe24b8.png"
+                      aria-label="Copiar enlace de Imagen 2">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/541bf6f5-f3d9-412e-b4c0-c64bd0850f23.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 3</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/541bf6f5-f3d9-412e-b4c0-c64bd0850f23.png"
+                      aria-label="Copiar enlace de Imagen 3">Copiar</button>
+            </li></ul>
+</article>
+<article class="video" id="lakshmi-05">
+  <div class="video-head">
+    <span class="idx">05</span>
+    <div class="video-meta">
+      <h3>The Wealth Gate Opens Tonight</h3>
+      <p class="titulo-yt">Everything Starts Changing For You Today 🍀 The Wealth Gate Opens Tonight • 777 Hz • 1 Hour</p>
+      <p class="chips">
+        <span class="chip chip-hz">777 Hz</span>
+        <span class="chip">1 h</span>
+        <span class="chip chip-quiet">Flujo Inagotable</span>
+      </p>
+    </div>
+  </div>
+  <ul class="assets"><li class="asset">
+              <a class="asset-link" href="https://ai-music-tracks.s3.us-east-1.amazonaws.com/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/304c0cdd-9ae6-4180-811b-6021fe94198e.wav" target="_blank" rel="noopener">
+                <span class="asset-name">Música base</span>
+                <span class="asset-kind">wav</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-music-tracks.s3.us-east-1.amazonaws.com/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/304c0cdd-9ae6-4180-811b-6021fe94198e.wav"
+                      aria-label="Copiar enlace de Música base">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/9d400df1-fa7d-4a9c-9cf8-060433003fab.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 1</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/9d400df1-fa7d-4a9c-9cf8-060433003fab.png"
+                      aria-label="Copiar enlace de Imagen 1">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/8bd72bef-2de0-4ff5-8ec7-c192aab7aa03.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 2</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/8bd72bef-2de0-4ff5-8ec7-c192aab7aa03.png"
+                      aria-label="Copiar enlace de Imagen 2">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/d3bf4df8-3b55-40f6-b6fb-b1cd1a1abdea.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 3</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/d3bf4df8-3b55-40f6-b6fb-b1cd1a1abdea.png"
+                      aria-label="Copiar enlace de Imagen 3">Copiar</button>
+            </li></ul>
+</article>
+<article class="video" id="lakshmi-06">
+  <div class="video-head">
+    <span class="idx">06</span>
+    <div class="video-meta">
+      <h3>Adi Lakshmi: Primordial Abundance</h3>
+      <p class="titulo-yt">Open The Door To Sudden Abundance Tonight 🔮 Adi Lakshmi: Primordial Abundance • 963 Hz • 3 Hours</p>
+      <p class="chips">
+        <span class="chip chip-hz">963 Hz</span>
+        <span class="chip">3 h</span>
+        <span class="chip chip-quiet">Ashta Lakshmi</span>
+      </p>
+    </div>
+  </div>
+  <ul class="assets"><li class="asset">
+              <a class="asset-link" href="https://ai-music-tracks.s3.us-east-1.amazonaws.com/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/46c65cf2-7178-4d21-84a5-fcfb73be08b1.wav" target="_blank" rel="noopener">
+                <span class="asset-name">Música base</span>
+                <span class="asset-kind">wav</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-music-tracks.s3.us-east-1.amazonaws.com/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/46c65cf2-7178-4d21-84a5-fcfb73be08b1.wav"
+                      aria-label="Copiar enlace de Música base">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/a6e760cb-0031-4d87-90ff-cdca34699a1d.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 1</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/a6e760cb-0031-4d87-90ff-cdca34699a1d.png"
+                      aria-label="Copiar enlace de Imagen 1">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/f1cb9b6b-c73a-4834-9726-cd52e06acfa9.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 2</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/f1cb9b6b-c73a-4834-9726-cd52e06acfa9.png"
+                      aria-label="Copiar enlace de Imagen 2">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/4fa4df63-0a4f-4482-9d1e-ee953535a706.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 3</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/4fa4df63-0a4f-4482-9d1e-ee953535a706.png"
+                      aria-label="Copiar enlace de Imagen 3">Copiar</button>
+            </li></ul>
+</article>
+<article class="video" id="lakshmi-07">
+  <div class="video-head">
+    <span class="idx">07</span>
+    <div class="video-meta">
+      <h3>Dhana Lakshmi: Magnet for Money</h3>
+      <p class="titulo-yt">Your Money Blocks Dissolve In 5 Minutes 💸 Dhana Lakshmi: Magnet for Money • 888 Hz • 1 Hour</p>
+      <p class="chips">
+        <span class="chip chip-hz">888 Hz</span>
+        <span class="chip">1 h</span>
+        <span class="chip chip-quiet">Ashta Lakshmi</span>
+      </p>
+    </div>
+  </div>
+  <ul class="assets"><li class="asset">
+              <a class="asset-link" href="https://ai-music-tracks.s3.us-east-1.amazonaws.com/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/4534fa24-8de6-4a47-b774-9a8f445125f1.wav" target="_blank" rel="noopener">
+                <span class="asset-name">Música base</span>
+                <span class="asset-kind">wav</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-music-tracks.s3.us-east-1.amazonaws.com/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/4534fa24-8de6-4a47-b774-9a8f445125f1.wav"
+                      aria-label="Copiar enlace de Música base">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/94f5012f-434f-4e90-b623-c8db87c52e2f.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 1</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/94f5012f-434f-4e90-b623-c8db87c52e2f.png"
+                      aria-label="Copiar enlace de Imagen 1">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/397d2bd1-82bb-40d2-b9fe-49bd1fb391be.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 2</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/397d2bd1-82bb-40d2-b9fe-49bd1fb391be.png"
+                      aria-label="Copiar enlace de Imagen 2">Copiar</button>
+            </li>
+<li class="asset">
+              <a class="asset-link" href="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/f03d659a-ebd1-497a-bdd6-e668ad4fa4cf.png" target="_blank" rel="noopener">
+                <span class="asset-name">Imagen 3</span>
+                <span class="asset-kind">png</span>
+              </a>
+              <button class="copy" type="button" data-url="https://ai-thumbnails.s3.amazonaws.com/editor/db0bbcfc-841e-4d3f-bd3f-6d9733b4f1fb/f03d659a-ebd1-497a-bdd6-e668ad4fa4cf.png"
+                      aria-label="Copiar enlace de Imagen 3">Copiar</button>
+            </li></ul>
+</article>
+
+  <h2>Cómo reconstruir un video</h2>
+  <p class="section-note">Necesitas ffmpeg y Python con Pillow. Todo el proceso es automático.</p>
+  <ol class="steps">
+    <li>Guarda la música como <code>bases/&lt;id&gt;.wav</code> y las imágenes en <code>salida/&lt;id&gt;/img/</code>.</li>
+    <li>Amplía las imágenes a 2560&nbsp;px de ancho antes de renderizar.</li>
+    <li>Corre los cuatro comandos en orden.</li>
+  </ol>
+  <pre>python3 scripts/03_audio.py --id lakshmi-01 --base bases/lakshmi-01.wav
+python3 scripts/04_video.py --id lakshmi-01
+python3 scripts/06_miniatura.py --id lakshmi-01 --img salida/lakshmi-01/img/1.png
+python3 scripts/08_short.py --id lakshmi-01 --seg 45</pre>
+
+  <footer>
+    Toda la música es original y libre de regalías. El arte fue generado para este proyecto.
+    Página generada desde los archivos <code>FUENTES.md</code> del repositorio.
+  </footer>
+</div>
+
+<script>
+document.querySelectorAll('.copy').forEach(function (b) {
+  b.addEventListener('click', function () {
+    navigator.clipboard.writeText(b.dataset.url).then(function () {
+      b.textContent = 'Copiado';
+      b.dataset.done = '1';
+      setTimeout(function () { b.textContent = 'Copiar'; b.dataset.done = ''; }, 1800);
+    });
+  });
+});
+</script>
