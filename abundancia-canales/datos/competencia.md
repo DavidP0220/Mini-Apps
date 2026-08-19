@@ -108,3 +108,52 @@ económicas. Nuestros títulos usan la misma estructura de urgencia con verbos q
 invitan en vez de garantizar (*"Money Flows To You"*, *"Let The Universe Send You"*).
 Si prefieres los ganchos duros, se cambian en un minuto en `scripts/01_catalogo.py`
 (lista `GANCHOS`), pero la decisión de asumir ese riesgo es tuya, no mía.
+
+---
+
+## CORRECCIÓN IMPORTANTE (misma fecha, tras revisar el canal a fondo)
+
+Mi primera lectura fue incompleta y la corrijo aquí:
+
+**1. Soothing Harmony publica en ESPAÑOL, no en inglés.** Lo clasifiqué mal. Además sus
+videos recientes rinden mal: 200 a 900 vistas cada uno pese a tener 98.700 suscriptores.
+Su promedio alto de vistas viene de videos antiguos de 11 horas. **No es nuestro modelo.**
+
+**2. El referente correcto en inglés es Wealthy Vibes Melodies** (298.000 subs, EE.UU.).
+Y sus títulos NO empiezan por la frecuencia — empiezan por la promesa con urgencia,
+y la frecuencia va al final:
+
+| Título | Vistas | Vistas/hora |
+|---|---|---|
+| PREPARE NOW! You WILL Become A Millionaire This **DECEMBER**! | **102.014** | 13,44 |
+| After 3 minutes, You Will Receive a Large Amount of Money | 14.611 | 7,48 |
+| PREPARE NOW! You WILL Become A Millionaire This **JULY**! | 11.013 | 9,68 |
+| *Warning* 777 (VERY STRONG), Receives Large Amounts Money Non-stop | 9.983 | 4,42 |
+| 3 MINUTES AFTER LISTENING YOU WILL RECEIVE MONEY 💸 | 9.861 | 1,61 |
+
+**La fórmula real que gana en inglés:**
+`[PROMESA CON TIEMPO] + [emoji] + [nombre/tema] + [frecuencia] + [duración]`
+Elementos que se repiten en sus ganadores:
+- Un plazo concreto: *After 3 Minutes*, *in 5 Minutes*, *Non-Stop*, *Today*
+- Urgencia: *WARNING*, *DON'T IGNORE*, *PREPARE NOW*
+- **El mes del año** — su video más visto de todos
+- La frecuencia al FINAL, no al principio
+
+**3. Su frecuencia dominante es 432 Hz, no 888 Hz.** 432 Hz aparece en la mayoría de sus
+títulos de dinero. Nuestro reajuste hacia 888 Hz sigue siendo válido (888 tiene volumen
+de búsqueda propio y menos competencia), pero conviene alternar ambas.
+
+**4. Su duración: 1 h y 3 h por igual.** Los de 1 hora publicados en 2026 tienen mucha
+más velocidad de vistas (2 a 10 por hora) que los de 3 horas del mismo periodo.
+
+### Lo que se aplicó al catálogo
+- Los 63 títulos se reescribieron con la fórmula de urgencia + frecuencia al final.
+- Se añadió el **comodín mensual** a cada canal (su formato #1, 102.014 vistas):
+  "PREPARE NOW! Your Wealthiest [MES] Is About To Begin".
+  Se republica cada mes cambiando solo el nombre del mes.
+
+### Una advertencia sobre estos títulos
+Los ganadores usan promesas económicas literales ("Money Will Transfer To You"). Nuestros
+ganchos prometen el mismo beneficio pero **sin afirmar que el dinero llegará**, para no
+exponer los canales a un reclamo por promesa falsa. Si en algún momento quieres los
+ganchos duros, están documentados arriba y es decisión tuya tomarla con los ojos abiertos.
