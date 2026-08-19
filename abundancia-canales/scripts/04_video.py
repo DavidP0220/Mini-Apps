@@ -51,8 +51,8 @@ def main():
     d = BASE / "salida" / a.id
     imgs = sorted([p for p in (d/"img").glob("*") if p.suffix.lower() in (".png",".jpg",".jpeg")])
     if len(imgs) < 3: sys.exit(f"Pon al menos 3 imagenes en {d/'img'}")
-    audio = d/"audio.wav"
-    if not audio.exists(): sys.exit(f"Falta {audio}. Corre antes 03_audio.py")
+    audio = next((d/f"audio{e}" for e in (".flac", ".wav") if (d/f"audio{e}").exists()), None)
+    if not audio: sys.exit(f"Falta {d}/audio.flac. Corre antes 03_audio.py")
 
     W,H = (3840,2160) if a.uhd else (1920,1080)
     SEG = a.seg_imagen

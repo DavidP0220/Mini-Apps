@@ -1,7 +1,11 @@
-# materia prima y renders pesados (no van al repo)
+# materia prima y renders pesados: NUNCA al repo
 bases/
 salida/*/img/
 salida/**/*.wav
+salida/**/*.flac
+salida/**/*.m4a
+salida/**/*.mp3
 salida/**/*.mp4
 salida/**/*.jpg
 salida/**/*.png
+# el arte de marca SI se versiona: vive en assets/
