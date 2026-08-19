@@ -16,7 +16,57 @@ y volver a Claude cuando necesites criterio.
 | `claude` | Claude (Opus/Sonnet) | consume tus créditos |
 | `ccr code` | modelo gratuito vía OpenRouter | $0 |
 
-## Instalación (una sola vez)
+## Instalación sin el repositorio (lo más simple)
+
+Si no tienes el proyecto clonado, o los scripts fallan, esto configura todo con
+un solo pegado en PowerShell. Reemplaza `PEGA_AQUI_TU_KEY` por tu key real.
+
+```powershell
+npm install -g @musistudio/claude-code-router
+
+$key = "PEGA_AQUI_TU_KEY"
+$dir = "$env:USERPROFILE\.claude-code-router"
+New-Item -ItemType Directory -Force -Path $dir | Out-Null
+
+$config = @"
+{
+  "LOG": false,
+  "API_TIMEOUT_MS": 600000,
+  "Providers": [
+    {
+      "name": "openrouter",
+      "api_base_url": "https://openrouter.ai/api/v1/chat/completions",
+      "api_key": "$key",
+      "models": [
+        "deepseek/deepseek-chat-v3-0324:free",
+        "deepseek/deepseek-r1-0528:free",
+        "qwen/qwen3-coder:free",
+        "meta-llama/llama-3.3-70b-instruct:free"
+      ],
+      "transformer": { "use": ["openrouter"] }
+    }
+  ],
+  "Router": {
+    "default": "openrouter,deepseek/deepseek-chat-v3-0324:free",
+    "background": "openrouter,qwen/qwen3-coder:free",
+    "think": "openrouter,deepseek/deepseek-r1-0528:free",
+    "longContext": "openrouter,meta-llama/llama-3.3-70b-instruct:free",
+    "longContextThreshold": 60000
+  }
+}
+"@
+
+$config | Set-Content "$dir\config.json" -Encoding UTF8
+```
+
+## Seguridad de la key
+
+La key es una contraseña. Si alguna vez queda escrita en un chat, un correo o
+una captura, **anúlala** en https://openrouter.ai/keys (papelera → Delete) y crea
+otra. Solo debe vivir en `~/.claude-code-router/config.json`, que está fuera del
+repositorio y en `.gitignore`.
+
+## Instalación con los scripts del repositorio
 
 **Requisito:** Node.js 18 o superior (https://nodejs.org).
 
