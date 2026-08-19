@@ -102,3 +102,28 @@ Ethereal angelic ambient drone, soft choir pads without words, slow celestial st
 - Miniatura: texto dorado a la izquierda, imagen a la derecha, contorno negro grueso.
 - Firma del canal siempre arriba a la derecha del video.
 - Nunca cambies la tipografía entre videos.
+
+---
+
+## ARTE YA GENERADO (en `assets/marca/`)
+
+Los avatares y banners de los tres canales ya están hechos y en las medidas
+exactas de YouTube. Solo tienes que subirlos:
+
+| Archivo | Medida | Dónde va en YouTube Studio |
+|---|---|---|
+| `<canal>-avatar.png` | 800x800 | Personalización → Desarrollo de la marca → **Foto de perfil** |
+| `<canal>-banner.png` | 2560x1440 | Personalización → Desarrollo de la marca → **Imagen de banner** |
+
+El banner respeta el **área segura de 1546x423 px**, que es lo único que se ve en
+todos los dispositivos: por eso el nombre del canal está en el centro vertical y
+a la izquierda, y la deidad a la derecha.
+
+### Regenerarlos o cambiarlos
+```bash
+python3 scripts/07_marca.py --canal lakshmi --img assets/arte/lakshmi.png --avatar
+python3 scripts/07_marca.py --canal lakshmi --img assets/arte/lakshmi.png --banner
+python3 scripts/07_marca.py --canal lakshmi --img otra.png --banner --sin-texto
+```
+El arte original de cada deidad está en `assets/arte/`. Si generas arte nuevo en
+Leonardo o Midjourney con los prompts de más arriba, pásalo por el mismo script.
