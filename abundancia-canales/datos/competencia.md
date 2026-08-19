@@ -157,3 +157,61 @@ Los ganadores usan promesas económicas literales ("Money Will Transfer To You")
 ganchos prometen el mismo beneficio pero **sin afirmar que el dinero llegará**, para no
 exponer los canales a un reclamo por promesa falsa. Si en algún momento quieres los
 ganchos duros, están documentados arriba y es decisión tuya tomarla con los ojos abiertos.
+
+---
+
+# INVESTIGACIÓN FRESCA — 19/08/2026
+Videos publicados **este mes** en canales de menos de 400.000 suscriptores.
+Filtrar por canales pequeños es deliberado: muestra lo que funciona **sin** una
+audiencia previa, que es exactamente nuestra situación.
+
+## El hallazgo principal: PANTALLA NEGRA
+
+| Video | Subs del canal | Vistas | Índice de sorpresa |
+|---|---|---|---|
+| Black Screen Sleep Music, Instant Fall Asleep \| Insomnia, ADHD | **1.230** | **78.784** | 354 |
+| BLACK SCREEN Sleep Music \| Gentle Rain & Piano | 22.000 | 107.316 | 57 |
+| Sleep in Minutes — BLACK SCREEN Sleep Music | 22.000 | 165.922 | 50 |
+
+Un canal de **1.230 suscriptores** consiguió 78.784 vistas. Es el dato más fuerte
+de toda la investigación. La razón es práctica, no mística: quien pone música para
+dormir no quiere una pantalla que ilumine el cuarto ni que gaste batería toda la noche.
+
+→ **Aplicado:** `04_video.py --negro` genera pantalla negra real. Un video de 8 h
+baja de ~4 GB a ~740 MB y renderiza en una fracción del tiempo.
+
+## El subnicho más grande: LLUVIA + PIANO
+
+| Canal | Subs | Vistas del video | Vistas/hora |
+|---|---|---|---|
+| Piano Rain Retreat | 26.800 | **1.085.832** | **839** |
+| Deep Sleep Harmony | 4.920 | 72.904 | **544** |
+| Relaxing Piano & Rain Sounds | 1.540 | — | 8 |
+
+Más de un millón de vistas con 26.800 suscriptores. La lluvia es el sonido de fondo
+más buscado para dormir, muy por encima de las frecuencias solas.
+
+→ **Aplicado:** `03_audio.py --lluvia -20` sintetiza lluvia con ruido rosa filtrado.
+No usa grabaciones de terceros, así que no hay riesgo de reclamo por Content ID.
+
+## Otros patrones detectados
+
+**1. Promesa de tiempo inmediato.** Se repite en casi todos:
+*Instant Fall Asleep*, *Sleep in Minutes*, *Fall Asleep Fast*, *Sleep Instantly Within 3 Minutes*.
+Coincide con la fórmula que ya usamos («After 3 Minutes», «In 5 Minutes»).
+
+**2. Nombrar el problema concreto.** Los títulos incluyen *Insomnia*, *ADHD*,
+*Anxiety Relief*, *Stress Relief*. No venden música: venden la solución a algo que
+duele. → **Aplicado:** esas etiquetas se añaden automáticamente a los videos de 3 h o más.
+
+**3. «(No Ads)» en el título.** Aparece en varios de los que rinden. Señala que no
+hay anuncios a mitad del video. Se puede monetizar igual con anuncios solo al inicio.
+Es una decisión tuya: menos ingreso por vista, más retención.
+
+**4. La duración que domina hoy es ~3 horas** (10.800 a 13.200 s), con algunos de
+8 horas. Coincide con nuestro reparto actual.
+
+## Lo que NO vamos a copiar
+Los canales de nanas para bebés (*Mozart & Brahms Lullaby*) aparecen mucho y rinden
+bien, pero es otra audiencia, otro RPM y otra marca. Mezclarlo con abundancia
+confundiría al algoritmo sobre a quién recomendar el canal.

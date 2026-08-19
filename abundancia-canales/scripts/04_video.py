@@ -35,12 +35,51 @@ def buscar(vid):
 def esc(t):
     return t.replace("\\","\\\\").replace(":","\\:").replace("'","\u2019")
 
+def pantalla_negra(a, canal, v, d, audio, W, H):
+    """Video de fondo negro puro con las afirmaciones apareciendo muy despacio.
+
+    Los datos del nicho lo respaldan: los videos "BLACK SCREEN" para dormir
+    superan a los de imagen incluso en canales muy pequenos, porque la pantalla
+    no ilumina la habitacion ni gasta bateria. Ademas el archivo es diminuto:
+    comprimir negro puro no cuesta casi nada.
+    """
+    dur = float(subprocess.run(["ffprobe","-v","error","-show_entries","format=duration",
+        "-of","default=nw=1:nk=1",str(audio)],capture_output=True,text=True).stdout.strip())
+    ciclo = 300                      # las afirmaciones rotan cada 5 minutos
+    draws = []
+    for i, txt in enumerate(AFIRM):
+        ini = i * (ciclo // len(AFIRM))
+        fin = ini + (ciclo // len(AFIRM)) - 8
+        draws.append(
+            f"drawtext=text='{esc(txt)}':fontcolor=white@0.30:fontsize={H//34}:"
+            f"x=(w-text_w)/2:y=h/2:enable='between(mod(t\,{ciclo}),{ini},{fin})'")
+    draws.append(f"drawtext=text='{esc(str(v['hz']))} Hz':fontcolor=white@0.16:"
+                 f"fontsize={H//48}:x=(w-text_w)/2:y=h*0.62")
+    fuente = f"color=c=black:s={W}x{H}:r=12"
+    fc = f"[0:v]{','.join(draws)},format=yuv420p[vout]"
+
+    final = d / f"{a.id}-negro.mp4"
+    print(f"[1/1] Pantalla negra {W}x{H}, {dur/3600:.2f} h")
+    subprocess.run(["ffmpeg","-y","-v","error","-f","lavfi","-t",f"{dur:.3f}","-i",fuente,
+        "-i",str(audio),"-filter_complex",fc,"-map","[vout]","-map","1:a",
+        "-c:v","libx264","-preset","veryfast","-crf","30","-g","240",
+        "-c:a","aac","-b:a","320k","-movflags","+faststart",str(final)],check=True)
+    mb = final.stat().st_size / 1e6
+    print(f"LISTO -> {final}  ({mb:.0f} MB)")
+    print("En el titulo pon BLACK SCREEN: es lo que busca esta audiencia.")
+    return
+
+
 def main():
     if not shutil.which("ffmpeg"):
         sys.exit("Falta ffmpeg. Windows -> winget install Gyan.FFmpeg | Mac -> brew install ffmpeg")
     ap = argparse.ArgumentParser()
     ap.add_argument("--id", required=True)
     ap.add_argument("--4k", dest="uhd", action="store_true")
+    ap.add_argument("--negro", action="store_true",
+        help="PANTALLA NEGRA real para dormir: fondo negro puro y solo las "
+             "afirmaciones. Es el formato con mas rendimiento del nicho de sueno "
+             "y pesa una fraccion (un video de 8 h baja de ~4 GB a ~150 MB)")
     ap.add_argument("--oscuro", action="store_true",
         help="version 'pantalla oscura' para dormir: imagen muy atenuada, "
              "pesa mucho menos y es el formato con mas velocidad de vistas del nicho")
@@ -55,6 +94,10 @@ def main():
     if not audio: sys.exit(f"Falta {d}/audio.flac. Corre antes 03_audio.py")
 
     W,H = (3840,2160) if a.uhd else (1920,1080)
+
+    if a.negro:
+        return pantalla_negra(a, canal, v, d, audio, W, H)
+
     SEG = a.seg_imagen
     ciclo = len(imgs)*SEG - 3*(len(imgs)-1)
     frames = SEG*FPS

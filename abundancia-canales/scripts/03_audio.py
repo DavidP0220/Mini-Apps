@@ -46,6 +46,10 @@ def main():
     ap.add_argument("--id", required=True)
     ap.add_argument("--base", required=True, help="melodia base (2-5 min)")
     ap.add_argument("--tono-db", type=float, default=-30.0, help="volumen de la onda senoidal")
+    ap.add_argument("--lluvia", type=float, default=0, metavar="DB",
+        help="agrega una capa de lluvia sintetizada al volumen indicado, p.ej. -22. "
+             "Piano+lluvia es el subnicho de sueno mas grande de YouTube: un canal "
+             "de 26.800 subs logro 1.085.832 vistas con ese formato")
     ap.add_argument("--prueba", type=int, default=0, metavar="SEG",
                     help="renderiza solo N segundos para revisar antes del render final")
     a = ap.parse_args()
@@ -77,8 +81,20 @@ def main():
     # 2) bucle + capa de frecuencia + fundidos + normalizacion
     final = dest / "audio.flac"
     fin_fade = max(total - 20, 1)
-    fc2 = (f"[1:a]volume={a.tono_db}dB,highpass=f=20[t];"
-           f"[0:a][t]amix=inputs=2:duration=first:normalize=0,"
+    # lluvia sintetizada: ruido rosa filtrado. No usa muestras de nadie,
+    # asi que no hay problema de derechos ni de Content ID.
+    entradas_lluvia, cadena_lluvia, mezcla = [], "", "[0:a][t]"
+    n_mix = 2
+    if a.lluvia:
+        entradas_lluvia = ["-f", "lavfi", "-t", str(total),
+                           "-i", "anoisesrc=color=pink:sample_rate=48000:amplitude=0.5"]
+        cadena_lluvia = (f"[2:a]highpass=f=400,lowpass=f=7000,"
+                         f"tremolo=f=0.7:d=0.15,volume={a.lluvia}dB[lluvia];")
+        mezcla = "[0:a][t][lluvia]"
+        n_mix = 3
+
+    fc2 = (f"[1:a]volume={a.tono_db}dB,highpass=f=20[t];" + cadena_lluvia +
+           f"{mezcla}amix=inputs={n_mix}:duration=first:normalize=0,"
            f"atrim=0:{total},"
            f"afade=t=in:st=0:d=8,afade=t=out:st={fin_fade}:d=20,"
            f"loudnorm=I=-16:TP=-1.5:LRA=11[out]")
@@ -86,6 +102,7 @@ def main():
                     "-stream_loop", str(reps), "-i", str(unidad),
                     "-f", "lavfi", "-t", str(total),
                     "-i", f"sine=frequency={v['hz']}:sample_rate=48000",
+                    *entradas_lluvia,
                     "-filter_complex", fc2, "-map", "[out]",
                     "-ac", "2", "-ar", "48000", str(final)], check=True)
     unidad.unlink(missing_ok=True)

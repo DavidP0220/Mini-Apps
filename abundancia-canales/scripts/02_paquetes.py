@@ -35,12 +35,17 @@ AFIRMACIONES = [
  "New sources of income find me.",
 ]
 
-# Etiquetas ordenadas por volumen de busqueda REAL (vidIQ, mercado US):
-# meditation music 2.4M/mes - binaural beats 1.09M - 432 hz 586k - law of attraction 690k
-# abundance frequency 93k (26k solo en US, la de mayor proporcion estadounidense)
+# Etiquetas por volumen de busqueda real (vidIQ, mercado US) mas las que
+# aparecen en los videos que estan reventando este mes en el nicho de sueno:
+# "black screen" y los problemas concretos (insomnia, anxiety, stress).
+# Un canal de 1.230 suscriptores logro 78.784 vistas con "Black Screen Sleep Music".
 TAGS_BASE = ["meditation music","binaural beats","law of attraction","abundance frequency",
  "money frequency","attract money","abundance meditation","wealth meditation","sleep music",
  "manifestation music","healing frequency","relaxing music","attract abundance","prosperity"]
+
+# etiquetas extra segun el tipo de video
+TAGS_SUENO = ["black screen sleep music","deep sleep music","fall asleep fast",
+ "insomnia relief","anxiety relief","stress relief","sleep meditation","sleep aid"]
 
 def descripcion(canal, v):
     hz, hrs = v["hz"], v["horas"]
@@ -89,6 +94,8 @@ def miniatura(canal, v):
 def paquete(canal, v):
     tags = TAGS_BASE + [f"{v['hz']}hz", f"{v['hz']} hz music", canal["deidad"].lower(),
                         f"{v['horas']} hour music", v["titulo_corto"].lower()]
+    if v["horas"] >= 3:                      # los largos compiten en el nicho de sueno
+        tags += TAGS_SUENO
     P = []
     A = P.append
     A(f"# {v['id']} — {v['titulo_corto']}\n")

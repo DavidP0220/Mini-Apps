@@ -43,7 +43,7 @@ This music is for relaxation and meditation. It is not a substitute for medical 
 
 ## 3) ETIQUETAS — Studio → *Mostrar más* → campo *Etiquetas* (pega separado por comas)
 ```
-meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 963hz, 963 hz music, goddess maha lakshmi, 3 hour music, adi lakshmi: primordial abundance
+meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 963hz, 963 hz music, goddess maha lakshmi, 3 hour music, adi lakshmi: primordial abundance, black screen sleep music, deep sleep music, fall asleep fast, insomnia relief, anxiety relief, stress relief, sleep meditation, sleep aid
 ```
 
 ## 4) COMENTARIO FIJADO — publícalo y luego clic en los 3 puntos → *Fijar*
