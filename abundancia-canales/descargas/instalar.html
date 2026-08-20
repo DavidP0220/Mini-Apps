@@ -1,0 +1,166 @@
+<title>Montar el Estudio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Karla:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#EFEDF2; --surface:#FFFFFF; --surface-2:#F6F4F9;
+  --ink:#171526; --ink-soft:#4E4A63; --ink-faint:#7C7791;
+  --gold:#8A6510; --gold-soft:#C9A94E; --line:#DCD8E4; --focus:#3B2E7E;
+  --shadow:0 1px 2px rgba(23,21,38,.06),0 8px 24px -12px rgba(23,21,38,.18);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ground:#12101C; --surface:#1B1830; --surface-2:#221E3A;
+  --ink:#EDEAF6; --ink-soft:#B6B0CD; --ink-faint:#857FA0;
+  --gold:#E8B84B; --gold-soft:#8A6510; --line:#2E2950; --focus:#A99BFF;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.7);
+}}
+:root[data-theme="dark"]{
+  --ground:#12101C; --surface:#1B1830; --surface-2:#221E3A;
+  --ink:#EDEAF6; --ink-soft:#B6B0CD; --ink-faint:#857FA0;
+  --gold:#E8B84B; --gold-soft:#8A6510; --line:#2E2950; --focus:#A99BFF;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);
+  font:400 17px/1.65 Karla,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:52rem;margin:0 auto;padding:clamp(1.5rem,4vw,4rem) clamp(1rem,4vw,2rem) 6rem}
+.eyebrow{font:500 .78rem/1 "IBM Plex Mono",monospace;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--gold);margin:0 0 .8rem}
+h1{font:600 clamp(2rem,6vw,3.2rem)/1.05 Fraunces,Georgia,serif;margin:0 0 .8rem;
+  text-wrap:balance;letter-spacing:-.015em}
+.lede{margin:0 0 2.5rem;max-width:46ch;color:var(--ink-soft);font-size:1.05rem}
+h2{font:600 1.5rem/1.2 Fraunces,Georgia,serif;margin:3rem 0 .4rem;letter-spacing:-.01em}
+.nota{margin:0 0 1.4rem;color:var(--ink-faint);font-size:.95rem;max-width:54ch}
+.paso{background:var(--surface);border:1px solid var(--line);border-radius:6px;
+  padding:1.3rem 1.4rem;margin-bottom:1rem;box-shadow:var(--shadow);
+  display:flex;gap:1.1rem;align-items:flex-start}
+.num{font:500 .95rem/1 "IBM Plex Mono",monospace;color:var(--gold);
+  border:1px solid var(--gold-soft);border-radius:50%;width:2rem;height:2rem;
+  display:grid;place-items:center;flex:none;margin-top:.15rem}
+.paso-cuerpo{min-width:0;flex:1}
+.paso h3{font:600 1.12rem/1.3 Fraunces,Georgia,serif;margin:0 0 .4rem}
+.paso p{margin:0 0 .7rem;color:var(--ink-soft);font-size:.97rem}
+pre{background:var(--surface-2);border:1px solid var(--line);border-radius:4px;
+  padding:.9rem 1rem;overflow-x:auto;margin:.6rem 0 0;
+  font:400 .85rem/1.7 "IBM Plex Mono",monospace;color:var(--ink)}
+code{font:400 .88em "IBM Plex Mono",monospace;background:var(--surface-2);
+  padding:.12em .4em;border-radius:3px}
+pre code{background:none;padding:0}
+.aviso{border:1px solid var(--line);border-left:3px solid var(--gold);
+  background:var(--surface);border-radius:4px;padding:1rem 1.15rem;
+  box-shadow:var(--shadow);margin:1.5rem 0}
+.aviso p{margin:0;font-size:.96rem;color:var(--ink-soft)}
+.aviso strong{color:var(--ink)}
+table{width:100%;border-collapse:collapse;font-size:.95rem;margin:1rem 0}
+th,td{padding:.6rem .8rem;border-bottom:1px solid var(--line);text-align:left}
+th{font:500 .74rem/1 "IBM Plex Mono",monospace;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--ink-faint)}
+td:first-child{font-family:"IBM Plex Mono",monospace;font-size:.86rem;color:var(--gold)}
+.tabla-envoltorio{overflow-x:auto}
+footer{margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--line);
+  color:var(--ink-faint);font-size:.87rem}
+</style>
+
+<div class="wrap">
+  <p class="eyebrow">Red de Canales de Abundancia</p>
+  <h1>Montar el estudio en tu PC</h1>
+  <p class="lede">Todo el proyecto vive en GitHub. En tu equipo se instala en unos minutos y a partir de ahí produce los videos sin límite de tiempo ni de disco.</p>
+
+  <div class="aviso">
+    <p><strong>Por qué conviene hacerlo en tu PC.</strong> La sesión en la nube se suspende sola y corta los renders largos. En tu equipo lanzas el lote de noche y a la mañana están listos. Además ahí sí puedo abrir tu navegador y tus aplicaciones cuando trabajemos juntos.</p>
+  </div>
+
+  <h2>Lo que hay que instalar</h2>
+  <p class="nota">Tres cosas, una sola vez. Copia y pega cada línea en la terminal (en Windows, PowerShell).</p>
+
+  <div class="paso">
+    <span class="num">1</span>
+    <div class="paso-cuerpo">
+      <h3>Git — para traer el proyecto</h3>
+      <p>Windows:</p>
+      <pre><code>winget install Git.Git</code></pre>
+      <p>Mac:</p>
+      <pre><code>brew install git</code></pre>
+    </div>
+  </div>
+
+  <div class="paso">
+    <span class="num">2</span>
+    <div class="paso-cuerpo">
+      <h3>ffmpeg — el motor de audio y video</h3>
+      <p>Es lo que arma los bucles de 8 horas y renderiza. Sin esto nada funciona.</p>
+      <pre><code>winget install Gyan.FFmpeg</code></pre>
+      <p>Mac:</p>
+      <pre><code>brew install ffmpeg</code></pre>
+    </div>
+  </div>
+
+  <div class="paso">
+    <span class="num">3</span>
+    <div class="paso-cuerpo">
+      <h3>Python y Pillow — miniaturas y animación</h3>
+      <p>Descarga Python desde <code>python.org</code> marcando «Add to PATH», y después:</p>
+      <pre><code>pip install Pillow</code></pre>
+    </div>
+  </div>
+
+  <h2>Traer el proyecto</h2>
+  <p class="nota">Una sola vez. Descarga los scripts, el catálogo y toda la materia prima.</p>
+  <pre><code>git clone https://github.com/DavidP0220/Mini-Apps
+cd Mini-Apps
+git checkout claude/proyecto-profesional-ingresos-7tx4aw
+cd abundancia-canales</code></pre>
+
+  <h2>Comprobar que todo quedó bien</h2>
+  <p class="nota">Estos tres comandos deben responder con una versión, no con un error.</p>
+  <pre><code>ffmpeg -version
+python --version
+python -c "import PIL; print('Pillow ok')"</code></pre>
+
+  <h2>Producir el primer video</h2>
+  <p class="nota">Copia la música y las imágenes desde el archivo, y lanza los cuatro pasos.</p>
+  <pre><code>python scripts/03_audio.py --id lakshmi-01 --base assets/origen/musica/lakshmi-01.wav
+python scripts/04_video.py --id lakshmi-01
+python scripts/06_miniatura.py --id lakshmi-01 --img assets/origen/img/lakshmi-01-1.jpg
+python scripts/08_short.py --id lakshmi-01 --seg 45</code></pre>
+
+  <h2>Producir todo el canal de una vez</h2>
+  <p class="nota">Este es el que vas a usar de verdad. Lo lanzas de noche y trabaja solo: si algo falla lo anota y sigue, si lo interrumpes retoma donde iba, y se detiene antes de llenar el disco.</p>
+  <pre><code>python scripts/05_lote.py --canal lakshmi --lluvia -19</code></pre>
+
+  <h2>Las opciones que cambian la calidad</h2>
+  <div class="tabla-envoltorio">
+  <table>
+    <tr><th>Opción</th><th>Qué hace</th><th>Cuándo usarla</th></tr>
+    <tr><td>--profundidad</td><td>Paralaje, luz volumétrica y partículas en dos planos</td><td>Videos ancla y Shorts</td></tr>
+    <tr><td>--negro</td><td>Pantalla negra real para dormir</td><td>Videos de 3 h o más</td></tr>
+    <tr><td>--lluvia -19</td><td>Capa de lluvia sintetizada</td><td>Todo el contenido de sueño</td></tr>
+    <tr><td>--prueba 60</td><td>Renderiza solo 60 segundos</td><td>Siempre, antes del render final</td></tr>
+    <tr><td>--4k</td><td>Sale en 3840×2160</td><td>Solo si tu PC lo aguanta</td></tr>
+  </table>
+  </div>
+
+  <div class="aviso">
+    <p><strong>Consejo que ahorra horas.</strong> Antes de lanzar un video de 8 horas, corre siempre <code>--prueba 60</code>. Renderiza un minuto y te deja escuchar la mezcla y el volumen de la frecuencia. Media hora de CPU se pierde rápido cuando la lluvia quedó demasiado alta.</p>
+  </div>
+
+  <h2>Dónde está cada cosa</h2>
+  <div class="tabla-envoltorio">
+  <table>
+    <tr><th>Carpeta</th><th>Contenido</th></tr>
+    <tr><td>assets/origen/</td><td>Música e imágenes de los videos ya producidos</td></tr>
+    <tr><td>assets/marca/</td><td>Avatares y banners de los tres canales</td></tr>
+    <tr><td>salida/&lt;canal&gt;/</td><td>Títulos, descripciones y etiquetas para copiar y pegar</td></tr>
+    <tr><td>salida/_calendario/</td><td>Fecha y hora exactas de cada publicación</td></tr>
+    <tr><td>GUIA.md</td><td>La estrategia completa</td></tr>
+    <tr><td>datos/competencia.md</td><td>Qué le funciona a la competencia y por qué</td></tr>
+  </table>
+  </div>
+
+  <footer>
+    Cuando lo tengas montado, abre Claude Code en esa carpeta y seguimos desde ahí.
+    En tu equipo sí puedo trabajar con tu navegador y tus aplicaciones.
+  </footer>
+</div>
