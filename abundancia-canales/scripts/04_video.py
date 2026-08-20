@@ -35,6 +35,63 @@ def buscar(vid):
 def esc(t):
     return t.replace("\\","\\\\").replace(":","\\:").replace("'","\u2019")
 
+def ciclo_con_profundidad(a, canal, v, d, imgs, audio, W, H):
+    """Anima cada imagen con 09_animar.py (paralaje, luz y particulas) y encadena
+    los clips resultantes con fundidos. Cada clip es un bucle perfecto, asi que
+    el ciclo completo tambien lo es."""
+    seg = a.seg_imagen
+    clips = []
+    for i, img in enumerate(imgs, 1):
+        clip = d / f"_vivo{i}.mp4"
+        if not clip.exists():
+            print(f"  animando imagen {i}/{len(imgs)} con profundidad...")
+            subprocess.run([sys.executable, str(pathlib.Path(__file__).parent / "09_animar.py"),
+                            "--img", str(img), "--seg", str(seg),
+                            "--intensidad", "1.15", "--salida", str(clip)],
+                           check=True, capture_output=True)
+        clips.append(clip)
+
+    entradas, filtros = [], []
+    for i, c in enumerate(clips):
+        entradas += ["-i", str(c)]
+        filtros.append(f"[{i}:v]scale={W}:{H},setsar=1[v{i}]")
+    cad, prev = [], "v0"
+    for i in range(1, len(clips)):
+        off = seg * i - 3 * i
+        cad.append(f"[{prev}][v{i}]xfade=transition=fade:duration=3:offset={off}[x{i}]")
+        prev = f"x{i}"
+
+    paso = seg - 3
+    draws = []
+    for i, txt in enumerate(AFIRM[:len(clips)]):
+        ini = i * paso + 2
+        draws.append(f"drawtext=text='{esc(txt)}':fontcolor=white@0.92:fontsize={H//26}:"
+                     f"x=(w-text_w)/2:y=h*0.82:shadowcolor=black@0.6:shadowx=2:shadowy=2:"
+                     f"enable='between(t,{ini},{ini + max(4, paso - 4)})'")
+    marca = (f"drawtext=text='{esc(canal['nombre'])}':fontcolor=white@0.35:"
+             f"fontsize={H//45}:x=w-text_w-40:y=40")
+    fc = ";".join(filtros + cad) + f";[{prev}]" + ",".join(draws + [marca]) + "[vout]"
+
+    ciclo_mp4 = d / "_ciclo.mp4"
+    print(f"[1/2] Encadenando {len(clips)} clips animados")
+    subprocess.run(["ffmpeg", "-y", "-v", "error", *entradas, "-filter_complex", fc,
+                    "-map", "[vout]", "-c:v", "libx264", "-preset", "medium", "-crf", "20",
+                    "-pix_fmt", "yuv420p", str(ciclo_mp4)], check=True)
+
+    dur = float(subprocess.run(["ffprobe","-v","error","-show_entries","format=duration",
+        "-of","default=nw=1:nk=1",str(audio)],capture_output=True,text=True).stdout.strip())
+    final = d / f"{a.id}.mp4"
+    print(f"[2/2] Bucle a {dur/3600:.2f} h + audio")
+    subprocess.run(["ffmpeg","-y","-v","error","-stream_loop","-1","-i",str(ciclo_mp4),
+        "-i",str(audio),"-t",f"{dur:.3f}","-c:v","copy","-c:a","aac","-b:a","320k",
+        "-movflags","+faststart",str(final)],check=True)
+    for c in clips:
+        c.unlink(missing_ok=True)
+    ciclo_mp4.unlink(missing_ok=True)
+    print(f"LISTO -> {final}  (con profundidad)")
+    return
+
+
 def pantalla_negra(a, canal, v, d, audio, W, H):
     """Video de fondo negro puro con las afirmaciones apareciendo muy despacio.
 
@@ -76,6 +133,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--id", required=True)
     ap.add_argument("--4k", dest="uhd", action="store_true")
+    ap.add_argument("--profundidad", action="store_true",
+        help="usa el animador con paralaje (09_animar.py) en vez del zoom simple. "
+             "Mucho mejor imagen; tarda ~4x mas. Recomendado en videos ancla y Shorts")
     ap.add_argument("--negro", action="store_true",
         help="PANTALLA NEGRA real para dormir: fondo negro puro y solo las "
              "afirmaciones. Es el formato con mas rendimiento del nicho de sueno "
@@ -97,6 +157,9 @@ def main():
 
     if a.negro:
         return pantalla_negra(a, canal, v, d, audio, W, H)
+
+    if a.profundidad:
+        return ciclo_con_profundidad(a, canal, v, d, imgs, audio, W, H)
 
     SEG = a.seg_imagen
     ciclo = len(imgs)*SEG - 3*(len(imgs)-1)
