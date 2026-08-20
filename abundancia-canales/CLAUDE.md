@@ -15,6 +15,18 @@ No es un repositorio de videos: es el sistema que los produce.
 | Lord Ganesha 432Hz | Abrecaminos y negocios | Mañana |
 | Archangel Uriel Divine Light | Provisión divina y sueño | Noche |
 
+## Herramienta preferida del usuario: VideoExpress.ai
+
+El usuario quiere que **toda** la producción visual pase por **https://videoexpress.ai/**.
+
+**No confundir con InVideo** (invideo.io): son productos distintos. InVideo sí tiene
+servidor MCP, pero **no es el que el usuario usa**. Ya hubo una confusión por esto.
+
+A día de hoy no se ha confirmado que VideoExpress.ai ofrezca MCP. Si en la sesión local
+tienes acceso al navegador, entra a su web y busca Integrations, API o Developers.
+Si tiene MCP, conéctalo y úsalo para todo. Si no, el usuario genera allí y los archivos
+se colocan en `salida/<id>/img/`.
+
 ## Cómo se habla con el usuario
 
 Español. Todo el contenido que se publica en YouTube va en inglés, porque el

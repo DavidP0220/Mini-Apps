@@ -8,16 +8,32 @@
     "rama": "claude/proyecto-profesional-ingresos-7tx4aw",
     "carpeta": "abundancia-canales"
   },
-
   "canales": [
-    {"slug": "lakshmi", "nombre": "Maha Lakshmi Sanctuary", "handle": "@MahaLakshmiSanctuary",
-     "deidad": "Goddess Maha Lakshmi", "nicho": "riqueza, fortuna, oro", "momento": "mañana"},
-    {"slug": "ganesha", "nombre": "Lord Ganesha 432Hz", "handle": "@LordGanesha432Hz",
-     "deidad": "Lord Ganesha", "nicho": "abrecaminos, negocios", "momento": "mañana"},
-    {"slug": "uriel", "nombre": "Archangel Uriel Divine Light", "handle": "@ArchangelUrielLight",
-     "deidad": "Archangel Uriel", "nicho": "provisión divina, sueño", "momento": "noche"}
+    {
+      "slug": "lakshmi",
+      "nombre": "Maha Lakshmi Sanctuary",
+      "handle": "@MahaLakshmiSanctuary",
+      "deidad": "Goddess Maha Lakshmi",
+      "nicho": "riqueza, fortuna, oro",
+      "momento": "mañana"
+    },
+    {
+      "slug": "ganesha",
+      "nombre": "Lord Ganesha 432Hz",
+      "handle": "@LordGanesha432Hz",
+      "deidad": "Lord Ganesha",
+      "nicho": "abrecaminos, negocios",
+      "momento": "mañana"
+    },
+    {
+      "slug": "uriel",
+      "nombre": "Archangel Uriel Divine Light",
+      "handle": "@ArchangelUrielLight",
+      "deidad": "Archangel Uriel",
+      "nicho": "provisión divina, sueño",
+      "momento": "noche"
+    }
   ],
-
   "estado": {
     "videos_en_catalogo": 63,
     "variantes_pantalla_negra": 37,
@@ -31,7 +47,6 @@
     "canales_creados_en_youtube": false,
     "videos_publicados": 0
   },
-
   "decisiones_tomadas": [
     "Títulos con gancho de urgencia al frente y la frecuencia al final, copiando la fórmula del canal Wealthy Vibes Melodies (298k subs, EE.UU.), no la de los canales pequeños que lideran con la frecuencia.",
     "Frecuencias cargadas hacia 888/777/963 Hz para dinero; 432 Hz reservada a los videos de sueño de 8 horas.",
@@ -39,7 +54,6 @@
     "Cada video de 3 h o más tiene un gemelo en PANTALLA NEGRA con título, miniatura y público distintos. Nunca se publican el mismo día: mínimo 48 h de separación.",
     "Los videos de 8 horas y los gemelos negros se producen en el equipo del usuario, no en la sesión en la nube, porque el contenedor se suspende y corta los renders largos."
   ],
-
   "hallazgos_de_investigacion": {
     "fuente": "vidIQ, agosto 2026, canales de menos de 400k suscriptores",
     "pantalla_negra": "Un canal de 1.230 suscriptores logró 78.784 vistas con 'Black Screen Sleep Music'. La razón es práctica: no ilumina el cuarto ni gasta batería.",
@@ -49,7 +63,6 @@
     "cuello_de_botella": "Se necesitan 9.600 vistas para las 4.000 horas pero 66.667 para los 1.000 suscriptores. Quien duerme con el video aporta 8 horas pero no se suscribe. Por eso los Shorts son el motor, no un extra.",
     "rpm": "El canal de referencia en español tiene RPM de ~$0,45 por su audiencia de México. En inglés se apunta a $1,50-$4,00."
   },
-
   "pipeline": {
     "01_catalogo.py": "genera datos/catalogo.json con los 63 videos",
     "02_paquetes.py": "genera los .md con título, descripción, etiquetas y prompts para copiar y pegar",
@@ -64,7 +77,6 @@
     "11_variantes.py": "paquetes de los gemelos en pantalla negra",
     "12_calendario.py": "fecha y hora exactas de cada publicación + cálculo de monetización"
   },
-
   "errores_corregidos": [
     "El crossfade del bucle no se aplicaba: pegaba la pista con corte seco, más de 150 saltos audibles en un video de 8 horas.",
     "zoompan recibía 200 veces más fotogramas de los necesarios: el render pasó de 9 minutos a 43 segundos.",
@@ -72,7 +84,6 @@
     "La miniatura escribía '1 HOURS' en los videos de una hora.",
     "El Short fallaba si ya se había borrado el audio intermedio."
   ],
-
   "pendiente": {
     "del_usuario": [
       "Crear los 3 canales en YouTube y subir avatares y banners de assets/marca/",
@@ -87,7 +98,6 @@
       "Ajustar títulos y miniaturas con los datos reales del canal cuando existan"
     ]
   },
-
   "instrucciones_para_claude": [
     "Lee GUIA.md y datos/competencia.md antes de tomar decisiones de estrategia.",
     "Antes de cualquier render largo, corre siempre --prueba 60 para revisar la mezcla.",
@@ -95,5 +105,14 @@
     "La materia prima vive en assets/origen/. No dependas de enlaces externos: caducan.",
     "Los videos armados no se suben al repositorio: pesan de 0,5 a 4 GB y se reconstruyen con dos comandos.",
     "Cuando el usuario tenga métricas reales de su canal, úsalas para reemplazar las estimaciones (retención, conversión a suscriptor)."
-  ]
+  ],
+  "herramienta_preferida_del_usuario": {
+    "nombre": "VideoExpress.ai",
+    "url": "https://videoexpress.ai/",
+    "uso": "El usuario quiere que TODA la produccion de imagenes, video, animaciones y narrativa pase por esta app.",
+    "ojo_no_confundir": "NO es InVideo (invideo.io). Son productos distintos. InVideo si tiene MCP en https://mcp.invideo.io/sse, pero el usuario NO lo usa.",
+    "estado": "Sin conector MCP confirmado. El dominio videoexpress.ai esta bloqueado por el proxy de la sesion en la nube, y la busqueda web no encuentra referencias a que ofrezca MCP.",
+    "que_falta": "Que el usuario revise videoexpress.ai en su navegador y busque una seccion Integrations, API, Developers o Connect, y ahi una URL MCP terminada en /sse o /mcp.",
+    "si_no_tiene_mcp": "El usuario genera en la app y coloca los archivos en salida/<id>/img/. El pipeline acepta .jpg y .png. Si son clips de video en vez de imagenes, hay que adaptar 04_video.py para montarlos."
+  }
 }
