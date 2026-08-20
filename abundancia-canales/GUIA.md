@@ -267,3 +267,64 @@ python3 scripts/06_miniatura.py --id lakshmi-01 --img salida/lakshmi-01/img/1.pn
 python3 scripts/08_short.py --id lakshmi-01
 rm salida/lakshmi-01/audio.flac
 ```
+
+---
+
+## 10. El camino real a la monetización
+
+YouTube pide dos cosas en 12 meses: **1.000 suscriptores** y **4.000 horas de
+reproducción**. Al hacer la cuenta aparece algo que cambia toda la estrategia.
+
+| Requisito | Cálculo | Vistas necesarias |
+|---|---|---|
+| 4.000 horas de reproducción | 240.000 min ÷ 25 min de retención media | **9.600** |
+| 1.000 suscriptores | conversión típica del nicho, ~1,5% | **66.667** |
+
+**Se necesitan siete veces más vistas para los suscriptores que para las horas.**
+
+Esto es específico de nuestro formato: con videos de 3 a 8 horas, una sola persona
+que se duerme con el video puesto aporta 8 horas de reproducción. Las horas llegan
+solas. Los suscriptores no: alguien que duerme con tu video no se suscribe.
+
+### Qué se hace con esa información
+
+**1. Los Shorts no son un extra, son el motor.** Son lo único que convierte
+espectadores en suscriptores a ritmo alto. Por eso el calendario pone un Short
+por cada video largo, el mismo día.
+
+**2. Las listas de reproducción son la palanca más barata para las horas.**
+Al terminar un video arranca el siguiente sin que nadie haga nada. Crea estas
+cuatro antes de publicar:
+
+| Lista | Contenido |
+|---|---|
+| Sleep Frequencies (Black Screen) | Los gemelos en pantalla negra |
+| 8 Hour Deep Sleep | Los videos de 8 horas |
+| 888 Hz Money Frequency | Todos los de 888 Hz |
+| Morning Abundance Ritual | Los de 1 hora |
+
+Ponlas en la **pantalla final** de cada video y como **primer enlace de la descripción**.
+
+**3. El comentario fijado tiene que pedir la suscripción**, no solo interacción.
+Los paquetes ya lo traen escrito.
+
+**4. Publica a la hora del público que paga.** El calendario usa hora del este de
+EE.UU.: los videos de sueño a las 21:00, los de una hora a las 07:00 y los Shorts
+a las 12:00.
+
+### El calendario ya está hecho
+
+```bash
+python3 scripts/12_calendario.py --canal lakshmi --desde 2026-09-01
+```
+
+Genera `salida/_calendario/calendario-<canal>.md` con **fecha y hora exactas de cada
+publicación**: 52 para Lakshmi, 55 para Ganesha y 56 para Uriel. Respeta la regla de
+que un video y su gemelo negro nunca compitan el mismo día.
+
+Ajusta la retención estimada con `--retencion 22` cuando tengas datos reales de tu
+canal; el cálculo se rehace solo.
+
+> Una advertencia honesta sobre el 1,5% de conversión: es una cifra típica del nicho,
+> no una promesa. Puede ser 0,8% o 3% según lo bien que funcionen tus Shorts y tu
+> marca. Por eso el plan es medir a los 30 días y ajustar, no asumir.
