@@ -1,0 +1,191 @@
+<title>Primer Día en Marcha</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Karla:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--ground:#EFEDF2;--surface:#FFF;--surface-2:#F6F4F9;--ink:#171526;--ink-soft:#4E4A63;
+--ink-faint:#7C7791;--gold:#8A6510;--gold-soft:#C9A94E;--line:#DCD8E4;--focus:#3B2E7E;--ok:#1F7A4D;
+--shadow:0 1px 2px rgba(23,21,38,.06),0 8px 24px -12px rgba(23,21,38,.18)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ground:#12101C;--surface:#1B1830;
+--surface-2:#221E3A;--ink:#EDEAF6;--ink-soft:#B6B0CD;--ink-faint:#857FA0;--gold:#E8B84B;
+--gold-soft:#8A6510;--line:#2E2950;--focus:#A99BFF;--ok:#5FD39B;
+--shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.7)}}
+:root[data-theme="dark"]{--ground:#12101C;--surface:#1B1830;--surface-2:#221E3A;--ink:#EDEAF6;
+--ink-soft:#B6B0CD;--ink-faint:#857FA0;--gold:#E8B84B;--gold-soft:#8A6510;--line:#2E2950;
+--focus:#A99BFF;--ok:#5FD39B;--shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.7)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 17px/1.65 Karla,system-ui,sans-serif;
+-webkit-font-smoothing:antialiased}
+.wrap{max-width:50rem;margin:0 auto;padding:clamp(1.5rem,4vw,4rem) clamp(1rem,4vw,2rem) 6rem}
+.eyebrow{font:500 .78rem/1 "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;
+color:var(--gold);margin:0 0 .8rem}
+h1{font:600 clamp(2rem,6vw,3.2rem)/1.05 Fraunces,Georgia,serif;margin:0 0 .8rem;text-wrap:balance;
+letter-spacing:-.015em}
+.lede{margin:0 0 2rem;max-width:44ch;color:var(--ink-soft);font-size:1.05rem}
+h2{font:600 1.45rem/1.2 Fraunces,Georgia,serif;margin:3rem 0 .3rem;letter-spacing:-.01em}
+.tiempo{font:500 .75rem/1 "IBM Plex Mono",monospace;color:var(--gold);letter-spacing:.08em;
+text-transform:uppercase;margin:0 0 1.2rem}
+.paso{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1.2rem 1.3rem;
+margin-bottom:.9rem;box-shadow:var(--shadow);display:flex;gap:1rem;align-items:flex-start}
+.num{font:500 .9rem/1 "IBM Plex Mono",monospace;color:var(--gold);border:1px solid var(--gold-soft);
+border-radius:50%;width:1.9rem;height:1.9rem;display:grid;place-items:center;flex:none;margin-top:.15rem}
+.cuerpo{min-width:0;flex:1}
+.cuerpo p{margin:0 0 .5rem;color:var(--ink-soft);font-size:.97rem}
+.cuerpo p:last-child{margin-bottom:0}
+.campo{margin-top:.8rem}
+.campo-label{font:500 .72rem/1 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;
+color:var(--ink-faint);display:block;margin-bottom:.35rem}
+.copiable{position:relative}
+pre{background:var(--surface-2);border:1px solid var(--line);border-radius:4px;padding:.8rem 1rem;
+margin:0;overflow-x:auto;white-space:pre-wrap;word-break:break-word;
+font:400 .84rem/1.6 "IBM Plex Mono",monospace;color:var(--ink);max-height:16rem;overflow-y:auto}
+.copiar{margin-top:.4rem;font:500 .78rem/1 Karla,sans-serif;padding:.45rem .9rem;cursor:pointer;
+border:1px solid var(--line);border-radius:4px;background:var(--surface);color:var(--ink-soft)}
+.copiar:hover{border-color:var(--gold);color:var(--gold)}
+.copiar[data-ok="1"]{color:var(--ok);border-color:var(--ok)}
+a{color:var(--gold)}
+a.enlace{display:inline-block;margin-top:.4rem;font-weight:700;text-decoration:none;
+border-bottom:2px solid var(--gold-soft)}
+.aviso{border:1px solid var(--line);border-left:3px solid var(--gold);background:var(--surface);
+border-radius:4px;padding:1rem 1.15rem;box-shadow:var(--shadow);margin:1.5rem 0}
+.aviso p{margin:0;font-size:.96rem;color:var(--ink-soft)}
+.aviso strong{color:var(--ink)}
+button:focus-visible,a:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+footer{margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--ink-faint);
+font-size:.87rem}
+</style>
+
+<div class="wrap">
+<p class="eyebrow">Maha Lakshmi Sanctuary</p>
+<h1>Primer día en marcha</h1>
+<p class="lede">Crear el canal y publicar el primer video. Los textos están abajo, listos para copiar con un botón.</p>
+
+<div class="aviso"><p><strong>Todo esto se hace una sola vez.</strong> A partir del segundo video, publicar te tomará seis minutos: pegar título, descripción y etiquetas, subir la miniatura y programar.</p></div>
+
+<h2>Crear el canal</h2>
+<p class="tiempo">15 minutos</p>
+
+<div class="paso"><span class="num">1</span><div class="cuerpo">
+<p>Entra a YouTube y crea un canal nuevo.</p>
+<a class="enlace" href="https://www.youtube.com/channel_switcher" target="_blank" rel="noopener">Abrir el creador de canales →</a>
+</div></div>
+
+<div class="paso"><span class="num">2</span><div class="cuerpo">
+<p>Ponle nombre. Debe ser exactamente este:</p>
+<div class="campo"><span class="campo-label">Nombre del canal</span>
+<div class="copiable"><pre id="t1">Maha Lakshmi Sanctuary</pre><button class="copiar" data-t="t1">Copiar</button></div></div>
+<div class="campo"><span class="campo-label">Identificador (handle)</span>
+<div class="copiable"><pre id="t2">@MahaLakshmiSanctuary</pre><button class="copiar" data-t="t2">Copiar</button></div></div>
+<p>Si el handle está ocupado, prueba añadiendo <code>Official</code> al final.</p>
+</div></div>
+
+<div class="paso"><span class="num">3</span><div class="cuerpo">
+<p>Sube la imagen de perfil y el banner. Son los archivos que te envié por el chat: <code>lakshmi-avatar.png</code> y <code>lakshmi-banner.png</code>.</p>
+<p>Van en <strong>YouTube Studio → Personalización → Desarrollo de la marca</strong>.</p>
+</div></div>
+
+<div class="paso"><span class="num">4</span><div class="cuerpo">
+<p>Pega la descripción del canal en <strong>Personalización → Información básica</strong>.</p>
+<div class="campo"><span class="campo-label">Descripción del canal</span>
+<div class="copiable"><pre id="t3">✨ Welcome to Maha Lakshmi Sanctuary ✨
+Immerse yourself in the sacred golden frequencies of Goddess Lakshmi, the supreme embodiment of wealth, fortune, love and divine grace. This channel is dedicated to bringing peace, unexpected prosperity and deep spiritual abundance into your home, mind and life through high-frequency instrumental music, pure Solfeggio tones (432Hz, 528Hz, 888Hz) and sacred visual meditations.
+🌟 May boundless wealth, health, peace and divine blessings flow continuously into your life.
+Subscribe and activate the golden aura of prosperity today. 🪷💛
+New frequency every 36 hours.</pre><button class="copiar" data-t="t3">Copiar</button></div></div>
+</div></div>
+
+<h2>Crear las listas de reproducción</h2>
+<p class="tiempo">5 minutos · es lo que más sube el tiempo de visión</p>
+
+<div class="paso"><span class="num">5</span><div class="cuerpo">
+<p>En <strong>Studio → Contenido → Playlists → Crear playlist</strong>, crea estas cuatro. Aún estarán vacías; se van llenando conforme publiques.</p>
+<div class="campo"><span class="campo-label">Los cuatro nombres</span>
+<div class="copiable"><pre id="t4">Sleep Frequencies (Black Screen)
+8 Hour Deep Sleep
+888 Hz Money Frequency
+Morning Abundance Ritual</pre><button class="copiar" data-t="t4">Copiar</button></div></div>
+<p>Al terminar un video arranca el siguiente sin que nadie toque nada. Es la palanca más barata para las 4.000 horas.</p>
+</div></div>
+
+<h2>Publicar el primer video</h2>
+<p class="tiempo">10 minutos</p>
+
+<div class="paso"><span class="num">6</span><div class="cuerpo">
+<p>Sube el archivo <code>lakshmi-01.mp4</code> y pega estos textos en cada casilla.</p>
+<div class="campo"><span class="campo-label">Título</span>
+<div class="copiable"><pre id="t5">Money Flows To You Non-Stop After 3 Minutes 💰 The Golden River of Lakshmi • 528 Hz • 1 Hour</pre><button class="copiar" data-t="t5">Copiar</button></div></div>
+<div class="campo"><span class="campo-label">Descripción</span>
+<div class="copiable"><pre id="t6">The Golden River of Lakshmi — 528Hz music to activate transformation, miracles and heart-centered abundance.
+
+Let this 1-hour journey play while you sleep, work, meditate or pray. Every tone is tuned to 528Hz and layered with a soft ambient pad, so your mind can relax while your intention keeps working in the background.
+
+HOW TO USE THIS TRACK
+1. Find a quiet place and set one clear intention about your abundance.
+2. Play at a low, comfortable volume — headphones recommended, not required.
+3. Breathe slowly for the first 3 minutes and repeat the affirmations on screen.
+4. Let it play for at least 30 minutes, or all night while you sleep.
+
+WHAT IS 528Hz?
+528Hz is used in sound therapy to activate transformation, miracles and heart-centered abundance. Combined with the energy of Goddess Maha Lakshmi, it becomes a daily ritual of receptivity and gratitude.
+
+AFFIRMATIONS IN THIS VIDEO
+• Money flows to me easily and constantly.
+• I am a magnet for wealth and opportunity.
+• Everything I need is already on its way to me.
+• I receive with gratitude and I give with joy.
+• My income grows while I rest.
+• Doors open for me in the perfect timing.
+
+⚠️ Do not listen while driving or operating machinery.
+This music is for relaxation and meditation. It is not a substitute for medical or psychological treatment.
+
+🔔 Subscribe to Maha Lakshmi Sanctuary and turn on the bell to receive a new abundance frequency every 36 hours.
+
+© Maha Lakshmi Sanctuary. Original music and visuals. All rights reserved.</pre><button class="copiar" data-t="t6">Copiar</button></div></div>
+<div class="campo"><span class="campo-label">Etiquetas · en «Mostrar más»</span>
+<div class="copiable"><pre id="t7">meditation music, binaural beats, law of attraction, abundance frequency, money frequency, attract money, abundance meditation, wealth meditation, sleep music, manifestation music, healing frequency, relaxing music, attract abundance, prosperity, 528hz, 528 hz music, goddess maha lakshmi, 1 hour music, the golden river of lakshmi</pre><button class="copiar" data-t="t7">Copiar</button></div></div>
+</div></div>
+
+<div class="paso"><span class="num">7</span><div class="cuerpo">
+<p>Ajustes que no puedes saltarte:</p>
+<p>· Miniatura: sube <code>miniatura.jpg</code><br>
+· Público: <strong>No, no es para niños</strong><br>
+· Categoría: <strong>Música</strong> · Idioma: <strong>Inglés</strong><br>
+· Playlist: <strong>Morning Abundance Ritual</strong></p>
+</div></div>
+
+<div class="paso"><span class="num">8</span><div class="cuerpo">
+<p>Programa la publicación en vez de publicar al momento. Este video es de una hora, así que va a las <strong>07:00 hora del este de EE.UU.</strong> — la rutina de la mañana.</p>
+</div></div>
+
+<div class="paso"><span class="num">9</span><div class="cuerpo">
+<p>Cuando esté publicado, escribe este comentario y fíjalo con los tres puntos → <strong>Fijar</strong>.</p>
+<div class="campo"><span class="campo-label">Comentario fijado</span>
+<div class="copiable"><pre id="t8">🙏 Write &quot;I RECEIVE&quot; below and let this 528Hz frequency work while you rest. Tell us what you are manifesting — Goddess Maha Lakshmi hears every intention. ✨</pre><button class="copiar" data-t="t8">Copiar</button></div></div>
+</div></div>
+
+<h2>Y el Short el mismo día</h2>
+<p class="tiempo">3 minutos · esto es lo que trae suscriptores</p>
+
+<div class="paso"><span class="num">10</span><div class="cuerpo">
+<p>Sube <code>lakshmi-01-short.mp4</code> a las <strong>12:00 hora del este</strong>, con este título y el enlace al video largo en la descripción.</p>
+<div class="campo"><span class="campo-label">Título del Short</span>
+<div class="copiable"><pre id="t9">Money Flows To You Non-Stop 💰 528 Hz #shorts #abundance</pre><button class="copiar" data-t="t9">Copiar</button></div></div>
+<p>Recuerda el dato: hacen falta <strong>66.667 vistas para los 1.000 suscriptores</strong> pero solo 9.600 para las 4.000 horas. Quien duerme con tu video no se suscribe. Los Shorts sí convierten.</p>
+</div></div>
+
+<footer>Cuando el canal esté arriba, pásame el enlace y analizo su rendimiento real para ajustar los títulos y las miniaturas de los siguientes.</footer>
+</div>
+
+<script>
+document.querySelectorAll('.copiar').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=document.getElementById(b.dataset.t).innerText;
+    navigator.clipboard.writeText(t).then(function(){
+      b.textContent='Copiado';b.dataset.ok='1';
+      setTimeout(function(){b.textContent='Copiar';b.dataset.ok='';},1800);
+    });
+  });
+});
+</script>
