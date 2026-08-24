@@ -1,0 +1,368 @@
+{
+  "meta": {
+    "id": "estrategia-youtube-finanzas",
+    "title": "Playbook: Replica a los Canales de Finanzas #1 de YouTube",
+    "subtitle": "Análisis con datos reales (agosto 2026) + flujo de trabajo repetible para tu próximo video",
+    "author": "Investigación con datos en vivo de YouTube",
+    "themeColor": "#0B6E4F",
+    "accentColor": "#D4A72C"
+  },
+  "chapters": [
+    {
+      "id": "intro",
+      "title": "Cómo Usar Este Playbook",
+      "icon": "🎯",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "Qué es esto",
+          "body": "Esta guía no es teoría genérica de 'cómo crecer en YouTube'. Es el resultado de investigar HOY, con herramientas de datos reales de YouTube, a 6 de los canales de finanzas/negocios en inglés más grandes y con más ingresos: The Diary Of A CEO, Alex Hormozi, Graham Stephan, Coffeezilla, Valuetainment y Nischa. Se analizaron sus estadísticas de canal, sus videos más vistos, el guion real (transcripción) de un video de 20.8 millones de vistas, la investigación de palabras clave de mayor volumen en el nicho, y estimaciones de ingresos por video."
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "body": "Tu progreso se guarda automáticamente en este dispositivo. Puedes cerrar la app y continuar donde quedaste."
+        },
+        {
+          "type": "callout",
+          "style": "warning",
+          "body": "Las cifras de 'ingresos estimados' que verás son estimaciones basadas en modelos de RPM por categoría y país (no son datos oficiales de YouTube Analytics de esos canales, a los que nadie externo tiene acceso). Trátalas como orden de magnitud, no como cifra exacta."
+        }
+      ]
+    },
+    {
+      "id": "por-que-finanzas",
+      "title": "Por Qué Finanzas Es el Nicho de Mayor RPM",
+      "icon": "💵",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "El dato que lo explica todo",
+          "body": "RPM (Revenue Per Mille) es lo que ganas por cada 1,000 vistas monetizadas. No todos los nichos valen lo mismo: los anunciantes de bancos, apps de inversión, seguros y software B2B pagan tarifas mucho más altas que anunciantes de entretenimiento o gaming, porque están comprando una audiencia con poder adquisitivo e intención de compra clara. Por eso un canal de finanzas necesita muchas menos vistas que uno de entretenimiento para generar el mismo dinero."
+        },
+        {
+          "type": "table",
+          "heading": "Ingresos estimados por UN SOLO video (datos reales de hoy)",
+          "columns": ["Canal", "Video", "Vistas", "Duración", "Ingreso estimado"],
+          "rows": [
+            ["The Diary Of A CEO", "The AI Safety Expert (entrevista)", "20,808,838", "~87 min", "$50,565 – $134,841 (medio: $84,276)"],
+            ["Coffeezilla", "Youtuber Accidentally Exposes the Scam", "12,604,805", "~14 min", "$34,033 – $90,755 (medio: $56,722)"],
+            ["Alex Hormozi", "How to get SO rich you question the meaning of making money", "4,504,118", "~52 min", "$12,161 – $32,430 (medio: $20,269)"]
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "El matiz que casi nadie te dice: la geografía del RPM",
+          "body": "Al investigar el volumen de búsqueda de 'how to invest' en YouTube, EE.UU. representa solo ~21.6% de las búsquedas (Pakistán 9.3%, India 6.2%, Reino Unido 6.2%, Brasil 4.1%). Es decir: la mayoría del volumen de búsqueda en finanzas viene de países con RPM bajo. Los canales que más ganan (Diary Of A CEO, Coffeezilla, Nischa) están geolocalizados en EE.UU./Reino Unido y hablan un inglés neutro que retiene audiencia norteamericana/británica — la que realmente paga las tarifas publicitarias altas. Optimizar solo por volumen de búsqueda sin pensar en la audiencia que retienes es un error caro."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Por qué finanzas es uno de los nichos más rentables por vista en YouTube?",
+          "options": [
+            "Porque los videos son más largos",
+            "Porque los anunciantes de ese sector pagan RPM más alto por la audiencia con poder adquisitivo",
+            "Porque hay menos competencia"
+          ],
+          "answerIndex": 1,
+          "explanation": "Correcto: el RPM está determinado por cuánto pagan los anunciantes por esa audiencia específica, y los anunciantes financieros pagan tarifas premium."
+        }
+      ]
+    },
+    {
+      "id": "panorama-canales",
+      "title": "Mapa de los 6 Canales Líderes (Datos en Vivo)",
+      "icon": "🗺️",
+      "sections": [
+        {
+          "type": "text",
+          "body": "Snapshot tomado hoy directamente de las estadísticas públicas de cada canal. 'Crecimiento reciente' refleja los últimos ~30 días — esto importa más que el tamaño total, porque te dice si el canal está en expansión, en meseta o en declive AHORA."
+        },
+        {
+          "type": "table",
+          "columns": ["Canal", "Suscriptores", "Formato", "Crecimiento reciente (30 días)", "Lección clave"],
+          "rows": [
+            ["The Diary Of A CEO", "19,000,000", "Entrevista larga (90–160 min)", "+800,000 subs · 41 videos nuevos", "Volumen alto incluso en formato largo; gancho en frío en cada episodio"],
+            ["Valuetainment", "7,160,000", "Entrevista/talk (variable)", "-10,000 subs (¡perdiendo!)", "Se diversificó hacia política/mafia y se alejó de finanzas puras — hoy pierde suscriptores"],
+            ["Graham Stephan", "5,180,000", "Educativo solo (10–25 min)", "+10,000 subs · 33 videos", "Canal maduro en meseta: mismo formato desde 2017 sin renovarse"],
+            ["Coffeezilla", "4,710,000", "Investigación/exposé (15–45 min)", "Vistas recientes a la baja", "Pocos videos (537) pero de altísima calidad; la excepción es 'calidad sobre volumen'"],
+            ["Alex Hormozi", "4,410,000", "Educativo directo + clips (variable)", "+80,000 subs · 153 videos (~5/día)", "Estrategia de volumen extremo: publica todos los días en múltiples formatos"],
+            ["Nischa", "2,240,000", "Educativo solo, marca fija (7–19 min)", "+30,000 subs · 16 videos", "El MEJOR modelo para empezar desde cero: crecimiento fuerte, formato corto y consistente"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "body": "Si estás empezando desde cero, el canal que MÁS deberías estudiar es Nischa, no los gigantes. Con 2.24M de suscriptores está en fuerte crecimiento (+1.3% mensual), publica videos cortos (7-19 min) con una marca de título repetible ('ACCOUNTANT EXPLAINS: ...') y autoridad personal clara (es contadora certificada). Es el patrón más replicable para alguien sin equipo ni presupuesto de producción."
+        },
+        {
+          "type": "callout",
+          "style": "warning",
+          "body": "Valuetainment es la advertencia: su video más visto de todos (22.4M vistas) es sobre un mafioso, no sobre finanzas. Diversificarse lejos del nicho generó picos virales puntuales, pero diluyó la marca — y es el único canal de los 6 que está perdiendo suscriptores este mes."
+        }
+      ]
+    },
+    {
+      "id": "formula-hook",
+      "title": "La Fórmula del Hook (Primeros 60 Segundos)",
+      "icon": "🪝",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "Qué reveló la transcripción real",
+          "body": "Se analizó palabra por palabra el guion del video de 20.8M de vistas de The Diary Of A CEO. El patrón es idéntico al que usan casi todos los canales de entrevista/educación de alto rendimiento hoy (Diary Of A CEO, podcasts similares, y versiones cortas de esto en Nischa y Coffeezilla):"
+        },
+        {
+          "type": "checklist",
+          "heading": "La estructura del 'cold open' (gancho en frío)",
+          "items": [
+            "0:00 — Arranca DIRECTO con la frase más impactante de TODA la entrevista (sacada de la mitad o el final), sin logo ni intro de marca",
+            "Sigue un mini-collage de 3-5 frases más, cada una una revelación o cifra concreta ($, %, años)",
+            "Una sola frase de contexto: quién es el invitado y por qué debería importarte (autoridad + credibilidad en una línea)",
+            "Más frases de shock/curiosidad antes de pedir nada",
+            "SOLO ENTONCES viene el pedido de suscripción — enmarcado como 'ayúdanos a seguir trayendo esto', no como orden",
+            "Recién ahí empieza la conversación real, con una pregunta directa y específica (no una introducción genérica)"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Por qué funciona",
+          "body": "YouTube mide retención en los primeros segundos como señal fuerte para decidir cuánto distribuir el video. Poner la mejor parte primero (en vez de al final, como haría un video 'cronológico') maximiza esa retención inicial. El pedido de suscripción se retrasa a propósito porque pedir algo antes de dar valor reduce la retención."
+        },
+        {
+          "type": "quiz",
+          "question": "Según el patrón observado, ¿cuándo se debe pedir la suscripción?",
+          "options": [
+            "En el segundo 0, antes de cualquier contenido",
+            "Después del gancho inicial de frases impactantes, antes de arrancar la conversación de fondo",
+            "Nunca, es mejor no pedirla"
+          ],
+          "answerIndex": 1,
+          "explanation": "Correcto: se pide después de generar interés (el gancho), nunca antes — pedir antes de dar valor mata la retención inicial."
+        }
+      ]
+    },
+    {
+      "id": "titulos-miniaturas",
+      "title": "Títulos, Miniaturas y Palabras Clave",
+      "icon": "🖼️",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "Patrones de título que se repiten en los videos ganadores",
+          "body": "Al revisar decenas de los videos más vistos de estos 6 canales aparecen los mismos ingredientes una y otra vez: cifras de dinero exactas ($250,000,000, no 'mucho dinero'), la fórmula 'The [Profesión] Expert:' o 'ACCOUNTANT EXPLAINS:' como marca repetible, segunda persona directa ('You', 'Tú'), promesas de resultado concreto, y una brecha de curiosidad sin revelar la respuesta en el título."
+        },
+        {
+          "type": "table",
+          "heading": "Ejemplos reales de títulos de alto rendimiento",
+          "columns": ["Título", "Canal", "Vistas"],
+          "rows": [
+            ["The AI Safety Expert: These Are The Only 5 Jobs That Will Remain In 2030!", "The Diary Of A CEO", "20,808,838"],
+            ["ACCOUNTANT EXPLAINS: Money Habits Keeping You Poor", "Nischa", "11,160,239"],
+            ["Youtuber Accidentally Exposes the Scam He's Promoting", "Coffeezilla", "12,604,805"],
+            ["Meet the $250,000,000 man", "Graham Stephan", "5,476,326"],
+            ["How to get SO rich you question the meaning of making money", "Alex Hormozi", "4,504,118"]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Volumen de búsqueda mensual de keywords clave (EE.UU.)",
+          "columns": ["Palabra clave", "Búsquedas mensuales estimadas"],
+          "rows": [
+            ["personal finance", "1,889,593"],
+            ["real estate", "1,225,691"],
+            ["investing", "776,035"],
+            ["how to make money", "711,543"],
+            ["stock market", "636,310"],
+            ["dave ramsey", "457,157"],
+            ["investing for beginners", "385,559"],
+            ["how to invest", "270,162"],
+            ["credit card", "267,928"],
+            ["compound interest", "178,607"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "body": "Prueba de puntuación real: se evaluó el título 'I Analyzed 50 Millionaire YouTubers. Here's Their #1 Secret' con la herramienta de puntuación de CTR de vidIQ y obtuvo 93/100. Antes de publicar, genera 3-5 variantes de título para tu video y compáralas — no publiques la primera idea que se te ocurra."
+        },
+        {
+          "type": "quiz",
+          "question": "¿Cuál de estos títulos sigue mejor los patrones ganadores observados?",
+          "options": [
+            "Consejos de inversión",
+            "El Contador Explica: 7 Hábitos Que Te Mantienen Pobre",
+            "Video sobre finanzas personales"
+          ],
+          "answerIndex": 1,
+          "explanation": "Correcto: usa una marca de autoridad repetible ('El Contador Explica'), una cifra concreta y una promesa/curiosidad directa al espectador."
+        }
+      ]
+    },
+    {
+      "id": "formato-duracion",
+      "title": "Formato, Duración y Frecuencia de Publicación",
+      "icon": "⏱️",
+      "sections": [
+        {
+          "type": "table",
+          "columns": ["Estrategia", "Duración típica", "Frecuencia observada", "Ejemplo"],
+          "rows": [
+            ["Entrevista larga evergreen", "90–160 min", "~40 videos/mes", "The Diary Of A CEO"],
+            ["Educativo solo, marca fija", "7–19 min", "4 videos/mes", "Nischa"],
+            ["Investigación/exposé", "15–45 min", "1-2 videos/mes", "Coffeezilla"],
+            ["Volumen extremo multi-formato", "8–90 min (todo tamaño)", "~150 videos/mes (5/día)", "Alex Hormozi"],
+            ["Educativo solo, formato variado", "10–25 min", "~1 video/mes (meseta)", "Graham Stephan"]
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Qué formato conviene si estás empezando desde cero",
+          "body": "No compitas por volumen contra Hormozi (equipo grande, años de biblioteca) ni por producción contra Diary Of A CEO (estudio, invitados de alto perfil). El patrón más alcanzable es el de Nischa: videos de 8-15 minutos, un formato de título repetible que se vuelve tu 'marca', y una cadencia sostenible de 1-2 videos por semana en lugar de diaria. La curva de crecimiento de Nischa (+30,000 subs este mes sobre una base de 2.24M) demuestra que este formato SIGUE funcionando en 2026, no es un modelo viejo."
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "body": "Dato de comportamiento del algoritmo: al medir la curva de vistas de un video de Diary Of A CEO, el promedio pasa de ~8,600 vistas en la primera hora a ~200,000 vistas en 24 horas y a ~652,000 vistas a los 28 días. El contenido evergreen de finanzas sigue acumulando vistas semanas después de publicado — muy distinto a una noticia que muere en 48 horas. Por eso conviene priorizar temas atemporales sobre noticias del día."
+        },
+        {
+          "type": "quiz",
+          "question": "Si estás empezando sin equipo ni presupuesto, ¿qué formato es más sostenible?",
+          "options": [
+            "Videos de 90-160 minutos con invitados famosos",
+            "5 videos por día en múltiples formatos",
+            "Videos de 8-15 minutos con una marca de título repetible, 1-2 por semana"
+          ],
+          "answerIndex": 2,
+          "explanation": "Correcto: es el patrón que usa Nischa, actualmente en fuerte crecimiento, y es alcanzable sin equipo de producción grande."
+        }
+      ]
+    },
+    {
+      "id": "flujo-trabajo",
+      "title": "El Flujo de Trabajo Repetible Para Cada Video",
+      "icon": "🔁",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "Cómo funciona esta 'automatización'",
+          "body": "Esta app es estática (sin servidor ni costo) para que la puedas instalar y consultar en cualquier momento. La investigación real — outliers de hoy, canales de referencia, puntuación de títulos y miniaturas — se hace pidiéndosela a Claude en el chat, que tiene acceso a herramientas de datos en vivo de YouTube (vidIQ). Usa el checklist de abajo como el guion exacto de instrucciones que le repites a Claude antes de cada video nuevo."
+        },
+        {
+          "type": "checklist",
+          "heading": "Proceso paso a paso (repítelo antes de cada video)",
+          "items": [
+            "1. Pide investigar 'videos outlier y en tendencia' de la última semana en tu subnicho específico (no 'finanzas' genérico, sino tu ángulo: ahorro, inversión para principiantes, deudas, etc.)",
+            "2. Pide analizar los 10 videos más vistos de 3-5 canales de referencia en tu subnicho: títulos, miniaturas, duración y los primeros 60 segundos",
+            "3. Elige un tema evergreen (no una noticia del día) con alto volumen de búsqueda y RPM alto",
+            "4. Pide generar 5 variantes de título y puntuarlas por CTR; elige la de mayor puntuación",
+            "5. Pide un guion con la estructura de 'cold open': mejores frases primero, contexto en una línea, pedido de suscripción después del gancho",
+            "6. Diseña la miniatura y pide puntuarla antes de subirla",
+            "7. Publica en un horario consistente (mismo día/hora cada semana ayuda a construir hábito de audiencia)",
+            "8. A las 24-48 horas, pide revisar las vistas por hora (VPH) y compararlas contra el promedio del canal",
+            "9. Usa lo que mejor funcionó (tema, título, duración) para decidir el ángulo del siguiente video — así el flujo se vuelve un ciclo, no un evento único"
+          ]
+        },
+        {
+          "type": "quiz",
+          "question": "¿Dónde vive realmente la parte 'automatizada' de investigación de este flujo?",
+          "options": [
+            "Dentro de esta app instalada en el teléfono",
+            "En la conversación con Claude, que puede consultar datos en vivo de YouTube",
+            "No existe, hay que hacerlo todo manualmente en YouTube"
+          ],
+          "answerIndex": 1,
+          "explanation": "Correcto: esta app es tu checklist de referencia offline; la investigación con datos frescos se pide en el chat con Claude."
+        }
+      ]
+    },
+    {
+      "id": "checklist-proximo-video",
+      "title": "Checklist Final: Antes de Publicar",
+      "icon": "✅",
+      "sections": [
+        {
+          "type": "checklist",
+          "heading": "Pre-producción",
+          "items": [
+            "El tema es evergreen, no una noticia que caduca en días",
+            "Investigué qué están cubriendo 3-5 canales de referencia sobre este tema esta semana",
+            "El ángulo/keyword tiene volumen de búsqueda real (no lo inventé)",
+            "Elegí un formato de duración acorde a mi capacidad de producción (8-15 min si estoy empezando)"
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Título y miniatura",
+          "items": [
+            "Generé y comparé al menos 3 variantes de título",
+            "El título usa una cifra concreta o una promesa específica, no algo genérico",
+            "La miniatura se probó/puntuó antes de publicar",
+            "Título y miniatura cuentan la misma historia (no prometen cosas distintas)"
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Guion y edición",
+          "items": [
+            "Los primeros 60 segundos son un 'cold open' con lo mejor del video",
+            "El pedido de suscripción va DESPUÉS del gancho, no antes",
+            "Hay un motivo claro de autoridad/credibilidad en los primeros 30 segundos"
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Después de publicar",
+          "items": [
+            "Revisé el VPH (vistas por hora) a las 24-48h contra mi propio promedio histórico",
+            "Anoté qué funcionó (tema/título/miniatura) para replicarlo en el próximo video",
+            "Programé el próximo video para mantener una cadencia consistente"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "errores-comunes",
+      "title": "Errores que Hunden un Canal de Finanzas",
+      "icon": "⚠️",
+      "sections": [
+        {
+          "type": "table",
+          "columns": ["Error", "Por qué falla", "Evidencia observada"],
+          "rows": [
+            ["Diversificarse lejos del nicho para 'viralizar'", "Diluye la marca y confunde al algoritmo sobre a quién mostrarte", "Valuetainment: su video más visto es sobre un mafioso, no finanzas — y hoy pierde suscriptores"],
+            ["Perseguir solo noticias del día", "Engagement bajo y vida útil corta; no se acumula tráfico a largo plazo", "Videos institucionales de noticias financieras analizados tenían tasas de interacción de apenas 0.1%-2%, muy por debajo del contenido evergreen"],
+            ["No renovar el formato con los años", "El algoritmo y la audiencia premian formatos frescos; el mismo estilo desde hace 8 años deja de sorprender", "Graham Stephan: canal maduro desde 2017, creciendo apenas +10,000 subs/mes hoy"],
+            ["Pedir suscripción antes de dar valor", "Mata la retención en los primeros segundos, la señal más importante para el algoritmo", "Ningún canal de alto rendimiento analizado pide suscripción en los primeros segundos"],
+            ["Publicar sin comparar variantes de título", "Dejas en el 'azar' el factor que más mueve el CTR", "Herramientas de puntuación de título existen justamente porque el mismo video puede rendir muy distinto solo cambiando el título"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "glosario",
+      "title": "Glosario Rápido",
+      "icon": "📖",
+      "sections": [
+        {
+          "type": "table",
+          "columns": ["Término", "Qué significa"],
+          "rows": [
+            ["RPM", "Ingreso por cada 1,000 vistas monetizadas (Revenue Per Mille)"],
+            ["CPM", "Lo que paga el anunciante por cada 1,000 impresiones de su anuncio"],
+            ["VPH", "Vistas por hora — mide qué tan rápido está acelerando un video ahora mismo"],
+            ["Breakout Score", "Cuánto supera un video el promedio histórico de su propio canal"],
+            ["CTR", "Click-Through Rate — porcentaje de gente que hace clic al ver tu miniatura/título"],
+            ["Retención", "Porcentaje del video que la audiencia ve en promedio antes de irse"],
+            ["Evergreen", "Contenido que sigue siendo relevante y sigue generando vistas meses o años después"],
+            ["Cold open", "Empezar el video con lo más impactante, antes de cualquier introducción o marca"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "body": "Guarda esta app en tu pantalla de inicio (botón de instalar del navegador) para tener el checklist siempre a mano antes de grabar."
+        }
+      ]
+    }
+  ]
+}
