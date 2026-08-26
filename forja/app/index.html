@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Forja — estudio multimedia</title>
+<meta name="description" content="Estudio de generacion de video e imagen con IA. Local, sin suscripcion, pagas solo la GPU que usas.">
+<meta name="theme-color" content="#0b0e14">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icono.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icono-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="barra">
+  <div class="marca">
+    <span class="logo">◆</span>
+    <span>Forja</span>
+    <span class="insignia" id="insigniaModo">demo</span>
+  </div>
+  <nav class="pestanas" id="pestanas">
+    <button class="pestana activa" data-vista="generar">Generar</button>
+    <button class="pestana" data-vista="cola">Cola <span class="contador oculto" id="contadorCola">0</span></button>
+    <button class="pestana" data-vista="biblioteca">Biblioteca</button>
+    <button class="pestana" data-vista="gasto">Gasto</button>
+    <button class="pestana" data-vista="ajustes">Ajustes</button>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============================ GENERAR ============================ -->
+<section class="vista activa" id="vista-generar">
+  <div class="columnas">
+    <div class="izquierda">
+      <h2>1. Elige un punto de partida</h2>
+      <p class="pista">Un preset no es decoracion: es el prompt cinematografico ya escrito. Escribes la idea, el preset pone la luz, el lente y el color.</p>
+      <div class="filtros" id="filtrosPreset"></div>
+      <div class="rejillaPresets" id="rejillaPresets"></div>
+
+      <h2>2. Tu idea</h2>
+      <textarea id="idea" rows="3" placeholder="Ej: un hombre solo camina por una carretera vacia al amanecer"></textarea>
+
+      <h2>3. Movimiento de camara</h2>
+      <div class="rejillaCamaras" id="rejillaCamaras"></div>
+    </div>
+
+    <aside class="derecha">
+      <h2>4. Motor y ajustes</h2>
+
+      <label class="campo">
+        <span>Modelo</span>
+        <select id="modelo"></select>
+      </label>
+      <p class="notaModelo" id="notaModelo"></p>
+
+      <details class="avanzado">
+        <summary>Pegar otro modelo de fal.ai</summary>
+        <p class="pista">Si fal saca un modelo nuevo manana, no hay que esperar a una actualizacion: pega su ID aqui. Sin catalogo no hay estimacion de costo.</p>
+        <input type="text" id="modeloManual" placeholder="fal-ai/algo/nuevo">
+      </details>
+
+      <div class="dosCampos">
+        <label class="campo">
+          <span>Duracion</span>
+          <select id="duracion"></select>
+        </label>
+        <label class="campo">
+          <span>Formato</span>
+          <select id="aspecto">
+            <option value="16:9">16:9 horizontal</option>
+            <option value="9:16">9:16 vertical</option>
+            <option value="1:1">1:1 cuadrado</option>
+          </select>
+        </label>
+      </div>
+
+      <label class="campo">
+        <span>Cuantas versiones</span>
+        <select id="salidas">
+          <option value="1">1</option><option value="2">2</option>
+          <option value="3">3</option><option value="4">4</option>
+        </select>
+      </label>
+
+      <div class="precio">
+        <div class="precioFila">
+          <span>Costo estimado</span>
+          <strong id="costoEstimado">—</strong>
+        </div>
+        <div class="precioFila menor">
+          <span>Gastado hoy</span>
+          <span id="gastoHoy">$0.00</span>
+        </div>
+      </div>
+
+      <h2>Prompt final</h2>
+      <pre class="promptFinal" id="promptFinal">—</pre>
+
+      <button class="principal" id="btnGenerar">Generar</button>
+      <p class="pista centro" id="avisoModo"></p>
+    </aside>
+  </div>
+</section>
+
+<!-- ============================ COLA ============================ -->
+<section class="vista" id="vista-cola">
+  <h2>Trabajos en curso</h2>
+  <p class="pista">Puedes cerrar esta pestana o apagar el equipo. El trabajo corre en el servidor del proveedor; al volver a abrir la app, se retoma solo.</p>
+  <div id="listaCola" class="lista"></div>
+</section>
+
+<!-- ============================ BIBLIOTECA ============================ -->
+<section class="vista" id="vista-biblioteca">
+  <div class="encabezadoVista">
+    <h2>Biblioteca</h2>
+    <input type="search" id="buscar" placeholder="Buscar por idea, preset o modelo...">
+  </div>
+  <p class="pista">Lo generado se guarda una copia local. Sigue siendo tuyo aunque canceles la cuenta del proveedor o caduquen sus enlaces.</p>
+  <div id="rejillaBiblioteca" class="rejillaMedios"></div>
+</section>
+
+<!-- ============================ GASTO ============================ -->
+<section class="vista" id="vista-gasto">
+  <h2>Gasto</h2>
+  <p class="pista">Dolares reales, no creditos. Esta cuenta la lleva la app sumando lo estimado de cada generacion; el numero de verdad manda siempre en el panel de tu proveedor.</p>
+  <div class="tarjetas" id="tarjetasGasto"></div>
+  <h2>Por modelo</h2>
+  <div id="tablaGasto"></div>
+  <h2>Comparacion</h2>
+  <div id="comparacion" class="comparacion"></div>
+</section>
+
+<!-- ============================ AJUSTES ============================ -->
+<section class="vista" id="vista-ajustes">
+  <h2>Ajustes</h2>
+
+  <div class="bloque">
+    <h3>Modo de trabajo</h3>
+    <label class="radio"><input type="radio" name="modo" value="demo"> <span><strong>Demo</strong> — todo funciona, no sale nada a internet, no cuesta nada. Para probar la app y aprender el flujo.</span></label>
+    <label class="radio"><input type="radio" name="modo" value="fal"> <span><strong>fal.ai</strong> — generacion real. Requiere clave y saldo prepago.</span></label>
+  </div>
+
+  <div class="bloque">
+    <h3>Clave de fal.ai</h3>
+    <p class="pista">Se guarda solo en este navegador (localStorage), nunca se sube a ningun lado, nunca entra al repositorio. Es tu clave, tu cuenta, tu saldo. Si usas un equipo compartido, usa el modo proxy.</p>
+    <input type="password" id="apiKey" placeholder="pega aqui tu clave de fal.ai" autocomplete="off">
+    <label class="campo">
+      <span>Proxy (opcional)</span>
+      <input type="text" id="proxyUrl" placeholder="https://tu-proxy.workers.dev">
+    </label>
+    <p class="pista">Llena esto solo si tu navegador bloquea la llamada directa (CORS) o si algun dia le das la herramienta a otra persona: entonces la clave vive en el proxy, no en el navegador de nadie. Hay un proxy listo para copiar en <code>forja/proxy/</code>.</p>
+  </div>
+
+  <div class="bloque">
+    <h3>Freno de mano</h3>
+    <label class="campo">
+      <span>Aviso al superar este gasto diario (USD)</span>
+      <input type="number" id="limiteGasto" min="0" step="1">
+    </label>
+    <label class="checkbox"><input type="checkbox" id="archivarMedios"> Guardar copia local de cada resultado</label>
+  </div>
+
+  <div class="bloque">
+    <h3>Tus datos</h3>
+    <p class="pista" id="usoDisco">—</p>
+    <div class="botones">
+      <button id="btnExportar">Exportar respaldo</button>
+      <button id="btnImportar">Importar respaldo</button>
+      <button class="peligro" id="btnBorrarTodo">Borrar todo</button>
+    </div>
+    <input type="file" id="ficheroImportar" accept="application/json" hidden>
+  </div>
+</section>
+
+</main>
+
+<div class="brindis" id="brindis"></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

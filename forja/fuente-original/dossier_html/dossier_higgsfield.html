@@ -1,0 +1,528 @@
+<title>Dossier Higgsfield</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root{
+  --paper:#EEF0F4;
+  --paper-raised:#FFFFFF;
+  --ink:#101826;
+  --ink-soft:#3D4759;
+  --ink-faint:#6B7385;
+  --line:#D6DAE3;
+  --line-strong:#B7BECC;
+  --navy:#12203C;
+  --navy-deep:#0B1626;
+  --gold:#9C7A1E;
+  --gold-strong:#7C6117;
+  --good:#2F7A4F;
+  --good-bg:#E4F1E8;
+  --warn:#946200;
+  --warn-bg:#FBF1DC;
+  --open-bg:#EDEAF7;
+  --open-ink:#5B4EA6;
+  --shadow: 0 1px 2px rgba(16,24,38,.06), 0 8px 24px rgba(16,24,38,.06);
+}
+
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0B1220;
+    --paper-raised:#121B2C;
+    --ink:#E8ECF4;
+    --ink-soft:#B7C0D2;
+    --ink-faint:#8590A6;
+    --line:#243149;
+    --line-strong:#324564;
+    --navy:#1B2C4C;
+    --navy-deep:#0B1626;
+    --gold:#D8B44C;
+    --gold-strong:#F0CB63;
+    --good:#5FBF87;
+    --good-bg:#123322;
+    --warn:#E0AC3F;
+    --warn-bg:#332708;
+    --open-bg:#241E3F;
+    --open-ink:#B9ACEF;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 28px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0B1220;
+  --paper-raised:#121B2C;
+  --ink:#E8ECF4;
+  --ink-soft:#B7C0D2;
+  --ink-faint:#8590A6;
+  --line:#243149;
+  --line-strong:#324564;
+  --navy:#1B2C4C;
+  --navy-deep:#0B1626;
+  --gold:#D8B44C;
+  --gold-strong:#F0CB63;
+  --good:#5FBF87;
+  --good-bg:#123322;
+  --warn:#E0AC3F;
+  --warn-bg:#332708;
+  --open-bg:#241E3F;
+  --open-ink:#B9ACEF;
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 28px rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Source Sans 3', system-ui, sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--gold);color:var(--navy-deep);}
+
+a{color:var(--navy);}
+:root[data-theme="dark"] a, @media (prefers-color-scheme:dark){ }
+a:focus-visible, button:focus-visible, .toc a:focus-visible{outline:2px solid var(--gold-strong); outline-offset:2px;}
+
+h1,h2,h3{font-family:'Fraunces', Georgia, serif; text-wrap:balance; margin:0;}
+.mono{font-family:'IBM Plex Mono', 'Courier New', monospace;}
+
+/* ---------- Shell ---------- */
+.shell{
+  max-width:1180px;
+  margin:0 auto;
+  padding:0 clamp(16px,4vw,48px) 96px;
+}
+
+/* ---------- Masthead ---------- */
+.masthead{
+  padding:56px 0 40px;
+  border-bottom:1px solid var(--line);
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+.eyebrow{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:12.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--gold-strong);
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--gold-strong);}
+.masthead h1{
+  font-size:clamp(2rem, 4vw, 2.85rem);
+  font-weight:600;
+  color:var(--ink);
+  max-width:18ch;
+}
+.masthead .dek{
+  max-width:62ch;
+  color:var(--ink-soft);
+  font-size:1.05rem;
+}
+.status-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:6px;
+}
+.chip{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:12px;
+  letter-spacing:.02em;
+  padding:5px 10px 5px 8px;
+  border-radius:5px;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  border:1px solid var(--line-strong);
+  color:var(--ink-soft);
+  background:var(--paper-raised);
+}
+.chip .sw{width:7px;height:7px;border-radius:50%;}
+.chip.verified .sw{background:var(--good);}
+.chip.corrected .sw{background:var(--warn);}
+.chip.open .sw{background:var(--open-ink);}
+
+/* ---------- Layout: sidebar + content ---------- */
+.layout{
+  display:grid;
+  grid-template-columns:240px 1fr;
+  gap:56px;
+  margin-top:44px;
+  align-items:start;
+}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;}
+  .toc{position:static !important; order:2;}
+}
+
+.toc{
+  position:sticky;
+  top:28px;
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+.toc-label{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:10px;
+}
+.toc a{
+  display:flex;
+  gap:10px;
+  align-items:baseline;
+  padding:8px 10px;
+  border-radius:6px;
+  text-decoration:none;
+  color:var(--ink-soft);
+  font-size:14.5px;
+  border-left:2px solid transparent;
+}
+.toc a:hover{background:var(--paper-raised); color:var(--ink);}
+.toc a .num{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint); font-variant-numeric:tabular-nums;}
+.toc .verdict{
+  margin-top:18px;
+  padding:14px 14px 15px;
+  background:var(--paper-raised);
+  border:1px solid var(--line);
+  border-radius:10px;
+  box-shadow:var(--shadow);
+}
+.toc .verdict .vh{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:6px;}
+.toc .verdict p{margin:0; font-size:13.5px; color:var(--ink-soft); line-height:1.55;}
+.toc .verdict strong{color:var(--good); font-weight:600;}
+
+main{min-width:0;}
+
+/* ---------- Doc sections ---------- */
+.doc{
+  padding:40px 0 44px;
+  border-bottom:1px solid var(--line);
+  scroll-margin-top:24px;
+}
+.doc:last-child{border-bottom:none;}
+.doc-head{
+  display:flex;
+  align-items:flex-start;
+  gap:16px;
+  margin-bottom:6px;
+}
+.doc-tag{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:13px;
+  color:var(--gold-strong);
+  background:color-mix(in srgb, var(--gold-strong) 12%, transparent);
+  border:1px solid color-mix(in srgb, var(--gold-strong) 35%, transparent);
+  padding:3px 8px;
+  border-radius:5px;
+  flex-shrink:0;
+  margin-top:4px;
+}
+.doc h2{font-size:1.5rem; font-weight:600;}
+.doc .file{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12.5px;
+  color:var(--ink-faint);
+  margin:6px 0 22px;
+}
+
+.lede{font-size:1.02rem; color:var(--ink-soft); max-width:70ch; margin-bottom:22px;}
+
+h3.sub{font-size:1.02rem; font-weight:600; margin:26px 0 10px; color:var(--ink);}
+h3.sub:first-child{margin-top:0;}
+
+ul.plain, ol.plain{margin:0 0 16px; padding-left:1.15em;}
+ul.plain li, ol.plain li{margin-bottom:7px; color:var(--ink-soft);}
+ul.plain li::marker{color:var(--ink-faint);}
+p{color:var(--ink-soft); max-width:72ch;}
+strong{color:var(--ink); font-weight:600;}
+
+/* table */
+.twrap{overflow-x:auto; margin:14px 0 20px; border:1px solid var(--line); border-radius:10px; box-shadow:var(--shadow);}
+table{border-collapse:collapse; width:100%; min-width:520px; background:var(--paper-raised);}
+th,td{text-align:left; padding:10px 14px; font-size:14px; border-bottom:1px solid var(--line);}
+th{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11.5px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  background:color-mix(in srgb, var(--navy) 5%, var(--paper-raised));
+  font-weight:600;
+}
+tr:last-child td{border-bottom:none;}
+td.num, th.num{font-variant-numeric:tabular-nums; font-family:'IBM Plex Mono',monospace; font-size:13px;}
+
+/* callouts */
+.callout{
+  border-radius:10px;
+  padding:16px 18px;
+  margin:18px 0;
+  border:1px solid;
+  box-shadow:var(--shadow);
+}
+.callout .ch{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  margin-bottom:8px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.callout p, .callout li{color:var(--ink-soft); font-size:14.5px;}
+.callout p:last-child{margin-bottom:0;}
+
+.callout.correction{background:var(--warn-bg); border-color:color-mix(in srgb, var(--warn) 45%, transparent);}
+.callout.correction .ch{color:var(--warn);}
+.callout.verified{background:var(--good-bg); border-color:color-mix(in srgb, var(--good) 40%, transparent);}
+.callout.verified .ch{color:var(--good);}
+.callout.legal{background:var(--open-bg); border-color:color-mix(in srgb, var(--open-ink) 35%, transparent);}
+.callout.legal .ch{color:var(--open-ink);}
+
+/* open questions */
+.oq{list-style:none; padding:0; margin:0;}
+.oq li{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  padding:9px 0;
+  border-bottom:1px dashed var(--line);
+  font-size:14.5px;
+  color:var(--ink-soft);
+}
+.oq li:last-child{border-bottom:none;}
+.oq .mark{
+  flex-shrink:0;
+  width:18px; height:18px;
+  border-radius:5px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:11px;
+  margin-top:1px;
+  font-family:'IBM Plex Mono',monospace;
+}
+.oq li.done .mark{background:var(--good-bg); color:var(--good); border:1px solid color-mix(in srgb, var(--good) 45%, transparent);}
+.oq li.pending .mark{background:var(--open-bg); color:var(--open-ink); border:1px solid color-mix(in srgb, var(--open-ink) 40%, transparent);}
+.oq li.done{color:var(--ink-faint);}
+
+/* footer / CTA */
+.next{
+  margin-top:8px;
+  padding:30px clamp(20px,4vw,36px);
+  background:var(--navy);
+  border-radius:16px;
+  color:#EDEFF5;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  box-shadow:var(--shadow);
+}
+:root[data-theme="dark"] .next, @media (prefers-color-scheme:dark){ }
+.next h3{color:#F5F1E4; font-size:1.3rem;}
+.next p{color:#C7CEDD; max-width:62ch;}
+.next .steps{display:flex; flex-direction:column; gap:10px; margin-top:4px;}
+.next .step{display:flex; gap:12px; align-items:flex-start; font-size:14.5px; color:#DCE1EC;}
+.next .step .n{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12px;
+  color:var(--navy);
+  background:var(--gold-strong);
+  width:22px;height:22px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+  font-weight:600;
+}
+.next .say{
+  font-family:'IBM Plex Mono',monospace;
+  color:var(--gold-strong);
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.14);
+  padding:2px 7px;
+  border-radius:5px;
+}
+
+@media (prefers-reduced-motion: no-preference){
+  .doc{ }
+}
+</style>
+
+<div class="shell">
+
+  <header class="masthead">
+    <div class="eyebrow"><span class="dot"></span>PROYECTO HIGGSFIELD ALTERNATIVA · dossier de revisión</div>
+    <h1>Antes de decidir el primer paso</h1>
+    <p class="dek">Lo que <span class="mono">higgsfield-market-intel</span> y <span class="mono">higgsfield-tech-scout</span> verificaron el 25-26 de agosto de 2026, listo para tu revisión antes de lanzar a <span class="mono">higgsfield-product-architect</span> a fijar nicho, plataforma y presupuesto.</p>
+    <div class="status-row">
+      <span class="chip verified"><span class="sw"></span>Mercado: sin bloqueos</span>
+      <span class="chip corrected"><span class="sw"></span>Legal: 1 corrección importante</span>
+      <span class="chip open"><span class="sw"></span>5 preguntas abiertas</span>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="toc">
+      <div class="toc-label">Documentos</div>
+      <a href="#doc01"><span class="num">01</span> Competencia — Higgsfield</a>
+      <a href="#doc02"><span class="num">02</span> Proveedores de IA</a>
+      <a href="#doc03"><span class="num">03</span> Plataformas no-code</a>
+      <a href="#doc04"><span class="num">04</span> Riesgos legales</a>
+      <a href="#siguiente"><span class="num">→</span> Próximo paso</a>
+
+      <div class="verdict">
+        <div class="vh">Veredicto de esta ronda</div>
+        <p>Nada refuta el plan del informe original. Al contrario: <strong>el hueco de nicho está más abierto</strong> y <strong>el riesgo legal era menor</strong> de lo que se pensaba.</p>
+      </div>
+    </nav>
+
+    <main>
+
+      <!-- DOC 01 -->
+      <section class="doc" id="doc01">
+        <div class="doc-head">
+          <span class="doc-tag">01</span>
+          <h2>Competencia — Higgsfield.ai</h2>
+        </div>
+        <div class="file">01_COMPETENCIA_HIGGSFIELD.md · actualizado 2026-08-25 · agente <span class="mono">higgsfield-market-intel</span></div>
+
+        <p class="lede">Higgsfield sigue siendo el jugador dominante ($5,400M de valoración, $700M ARR), pero se está moviendo hacia <strong>equipos y agencias</strong>, no hacia el creador individual de bajo presupuesto. Eso es una señal a favor del proyecto, no en contra.</p>
+
+        <h3 class="sub">Movimiento de producto detectado</h3>
+        <ul class="plain">
+          <li><strong>Higgsfield Assist</strong> — copiloto de prompts que sugiere ajustes de cámara antes de gastar créditos.</li>
+          <li><strong>Soul ID</strong> y una suite de <strong>80+ apps creativas</strong> — reposicionamiento hacia "workspace de producción creativa integral".</li>
+          <li>Precios sin cambios materiales: Starter $19, Plus $59, Ultra $129/mes. Créditos <strong>expiran al fin del ciclo</strong> — duplica el costo real si no se consumen todos.</li>
+        </ul>
+
+        <div class="callout verified">
+          <div class="ch">✓ Confirmado — hueco de nicho sigue abierto</div>
+          <p>Ningún competidor combina el motor multi-modelo de Higgsfield con el nicho de mindset/motivación. Sí existen herramientas genéricas de entrada (InVideo AI, Reelsta, Mootion, Hooked) ya usadas por ese tipo de creador — competencia indirecta, de nivel más simple, no una "alternativa a Higgsfield" posicionada para este nicho.</p>
+        </div>
+
+        <h3 class="sub">Preguntas que siguen abiertas</h3>
+        <ul class="oq">
+          <li class="done"><span class="mark">✓</span>Features nuevas de las últimas semanas</li>
+          <li class="done"><span class="mark">✓</span>Competidores de nicho mindset/motivación</li>
+          <li class="pending"><span class="mark">?</span>Confirmar en higgsfield.ai los planes "Team ($79)" y "Scale (~$169)" mencionados por terceros, sin verificar en la fuente oficial</li>
+          <li class="pending"><span class="mark">?</span>Política de reventa/white-label de Higgsfield — sin información pública encontrada</li>
+          <li class="pending"><span class="mark">?</span>Señales de churn, quejas de usuarios o cambios de liderazgo</li>
+        </ul>
+      </section>
+
+      <!-- DOC 02 -->
+      <section class="doc" id="doc02">
+        <div class="doc-head">
+          <span class="doc-tag">02</span>
+          <h2>Proveedores de IA vía API</h2>
+        </div>
+        <div class="file">02_PROVEEDORES_IA_APIS.md · actualizado 2026-08-25 · agente <span class="mono">higgsfield-tech-scout</span></div>
+
+        <p class="lede">Fal.ai se sostiene como el agregador recomendado. El cambio real de esta ronda es de matiz legal en Runway (ver documento 04) y la confirmación del cierre de Sora 2.</p>
+
+        <div class="twrap">
+          <table>
+            <thead><tr><th>Proveedor</th><th>Precio aprox.</th><th>Estado</th></tr></thead>
+            <tbody>
+              <tr><td>Runway Gen-4/4.5</td><td class="num">$0.05–$0.12/seg</td><td>Viable con plan API estándar + atribución "Powered by Runway"</td></tr>
+              <tr><td>Kling AI</td><td class="num">$0.03–$0.34/seg</td><td>Mejor relación calidad/precio</td></tr>
+              <tr><td>Google Veo 3.1</td><td class="num">$0.05–$0.75/seg</td><td>Único con audio nativo sincronizado</td></tr>
+              <tr><td>OpenAI Sora 2</td><td class="num">$0.10–$0.70/seg</td><td style="color:var(--warn)">API cierra 24-sep-2026 — no usar</td></tr>
+              <tr><td>MiniMax / Hailuo</td><td class="num">$0.19–$0.56/clip</td><td>Barato, buena calidad viral</td></tr>
+              <tr><td>ElevenLabs (voz)</td><td class="num">$0.05–$0.10/1K car.</td><td>Reventa del servicio en sí solo vía Authorized Reseller</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout correction">
+          <div class="ch">⚠ Sora 2 — confirmado, sin plan B oficial</div>
+          <p>Shutdown en dos etapas: app/web cerró el 26-abr-2026, API cierra 24-sep-2026. No hay migración oficial de OpenAI. El mercado se está moviendo por su cuenta a Veo 3.1, Kling o MiniMax — este proyecto nace ya sabiendo que Sora 2 no es una opción.</p>
+        </div>
+
+        <h3 class="sub">Sin cambios de fondo</h3>
+        <ul class="plain">
+          <li>Suno/Udio: sigue sin API pública self-serve (Suno abrió un intake curado de "early partners" el 1-jul-2026, no es acceso abierto).</li>
+          <li>Fal.ai sigue siendo la opción recomendada como agregador principal — ahora también cubre Veo y Seedream.</li>
+        </ul>
+      </section>
+
+      <!-- DOC 03 -->
+      <section class="doc" id="doc03">
+        <div class="doc-head">
+          <span class="doc-tag">03</span>
+          <h2>Plataformas no-code</h2>
+        </div>
+        <div class="file">03_PLATAFORMAS_NOCODE.md · actualizado 2026-08-25 · agente <span class="mono">higgsfield-tech-scout</span></div>
+
+        <p class="lede"><strong>Lovable.dev sigue siendo la ruta recomendada para empezar</strong> (Ruta B) — no apareció ningún competidor no-code mejor posicionado en esta ronda.</p>
+
+        <h3 class="sub">Por qué Lovable sobre Bubble</h3>
+        <p>Lovable genera código React/TypeScript real sobre Supabase y lo sincroniza a GitHub — <strong>sin encierro de plataforma</strong>. Bubble no permite exportar código: quedarías atado a su editor de por vida.</p>
+
+        <div class="callout verified">
+          <div class="ch">✓ Base44/Wix — tracción real confirmada</div>
+          <p>"Base44 Payments powered by Wix" sí soporta suscripciones recurrentes nativas para cobrar a terceros. Su ARR pasó de $100M (marzo-2026) a ~$150M (mayo-2026) — no es solo promesa de marketing, hay crecimiento real detrás.</p>
+        </div>
+
+        <div class="callout correction">
+          <div class="ch">⚠ Punto que NO se pudo resolver por investigación web</div>
+          <p>Cómo maneja Lovable/Supabase en la práctica las colas de generación de IA de varios minutos (una animación de video tarda minutos, no segundos). No hay documentación pública específica — solo se sabrá construyendo un prototipo real con patrón webhook/callback y midiendo. Es, con diferencia, el punto más incierto de toda la investigación.</p>
+        </div>
+      </section>
+
+      <!-- DOC 04 -->
+      <section class="doc" id="doc04">
+        <div class="doc-head">
+          <span class="doc-tag">04</span>
+          <h2>Riesgos legales y de negocio</h2>
+        </div>
+        <div class="file">04_LEGAL_RIESGOS.md · actualizado 2026-08-25 · agente <span class="mono">higgsfield-tech-scout</span></div>
+
+        <p class="lede">Esta es la corrección más importante de toda la ronda de investigación. El informe original mezclaba dos cosas legalmente muy distintas.</p>
+
+        <div class="callout legal">
+          <div class="ch">§ El error que se corrigió</div>
+          <p><strong>Lo que el PDF original decía:</strong> revender acceso a Runway/ElevenLabs/fal.ai requiere plan Enterprise, con riesgo de violar contrato si no.</p>
+          <p><strong>Lo que dicen los ToS leídos línea por línea:</strong> eso solo aplica a revender <em>el acceso a la cuenta del proveedor</em>. Construir un producto propio que <em>usa</em> la API como backend y cobra por el producto terminado — que es exactamente el modelo planeado — está permitido en los tres, sin necesidad de plan Enterprise.</p>
+        </div>
+
+        <h3 class="sub">Lo que sí queda confirmado y pesa</h3>
+        <ul class="plain">
+          <li><strong>Runway:</strong> plan API estándar es suficiente; única obligación real es mostrar "Powered by Runway".</li>
+          <li><strong>fal.ai:</strong> sus ToS <em>obligan</em> (no solo permiten) a tener un backend propio intermediario — nunca exponer la API directo al usuario final.</li>
+          <li><strong>ElevenLabs:</strong> revender el servicio en sí exige ser "Authorized Reseller" con acuerdo escrito; integrar sus voces en un producto propio no lo exige.</li>
+          <li><strong>El punto que sigue siendo tuyo:</strong> ante un reclamo de un usuario final (derechos de autor, voz sin consentimiento), <strong>la indemnización recae en el proyecto, no en los proveedores</strong>. Ninguno de los tres te cubre ahí.</li>
+        </ul>
+
+        <h3 class="sub">Pendiente antes de vender a un tercero real</h3>
+        <ul class="oq">
+          <li class="pending"><span class="mark">?</span>Definir con un abogado (consulta puntual) si hace falta seguro de responsabilidad civil o cláusulas de exención propias antes del primer usuario de pago</li>
+          <li class="pending"><span class="mark">?</span>Leer los ToS de Kling y Google Veo con el mismo nivel de detalle (no se hizo en esta pasada)</li>
+          <li class="pending"><span class="mark">?</span>Confirmar si Runway exige Enterprise en la práctica a volumen alto (límite operativo, no legal)</li>
+        </ul>
+      </section>
+
+      <!-- NEXT -->
+      <section class="doc" id="siguiente" style="border-bottom:none; padding-bottom:0;">
+        <div class="next">
+          <h3>Si estás de acuerdo con lo anterior</h3>
+          <p>El siguiente paso es lanzar a <strong>higgsfield-product-architect</strong>. Convierte todo esto en la primera decisión real y ejecutable — nicho exacto, plataforma, proveedor, presupuesto de arranque — registrada con fecha y razón en <span class="mono">06_DECISIONES_PRODUCTO.md</span>, paso a paso y sin saltarse nada, para que puedas seguirlo aunque no sepas programar.</p>
+          <div class="steps">
+            <div class="step"><span class="n">1</span>Te presenta la decisión propuesta antes de que se ejecute nada — tú apruebas o ajustas.</div>
+            <div class="step"><span class="n">2</span>Una vez aprobada, entrega el roadmap semana a semana con cada paso concreto (cuenta a crear, botón a apretar, qué escribir) — nada de "configura la plataforma" sin decir cómo.</div>
+            <div class="step"><span class="n">3</span>Nunca gasta dinero real ni activa nada por su cuenta — cada paso que cueste dinero se confirma contigo antes.</div>
+          </div>
+          <p style="margin-top:6px;">Cuando quieras avanzar, solo dime <span class="say">lánzalo</span> — o dime qué quieres cambiar de estos 4 documentos primero.</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>

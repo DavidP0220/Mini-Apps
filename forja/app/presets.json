@@ -1,0 +1,127 @@
+{
+  "_nota": "Cada preset es una plantilla de prompt. {idea} se reemplaza por lo que escribas. Editar este archivo NO requiere tocar codigo: anade, borra o cambia lo que quieras y recarga la app.",
+  "camaras": [
+    { "id": "estatica",    "nombre": "Estatica",        "frase": "static locked-off shot, tripod, no camera movement" },
+    { "id": "dolly-in",    "nombre": "Dolly in lento",  "frase": "slow dolly in, camera pushing forward steadily" },
+    { "id": "dolly-out",   "nombre": "Dolly out",       "frase": "slow dolly out, camera pulling back to reveal the scene" },
+    { "id": "orbita",      "nombre": "Orbita",          "frase": "smooth 180 degree orbital arc around the subject" },
+    { "id": "grua-arriba", "nombre": "Grua ascendente", "frase": "crane shot rising upward, revealing the environment below" },
+    { "id": "contrapicado","nombre": "Contrapicado",    "frase": "low angle hero shot looking up at the subject, imposing" },
+    { "id": "cenital",     "nombre": "Cenital",         "frase": "top-down birds eye view descending slowly" },
+    { "id": "handheld",    "nombre": "Camara en mano",  "frase": "handheld documentary camera, subtle organic shake" },
+    { "id": "zoom-golpe",  "nombre": "Zoom de golpe",   "frase": "sudden aggressive crash zoom in on the subject" },
+    { "id": "seguimiento", "nombre": "Seguimiento",     "frase": "tracking shot following the subject from behind, steadicam" },
+    { "id": "bullet-time", "nombre": "Tiempo detenido", "frase": "bullet time, camera orbits while the action is frozen mid-motion" },
+    { "id": "earth-zoom",  "nombre": "Zoom desde orbita","frase": "extreme zoom out from the subject to satellite view of earth" }
+  ],
+  "presets": [
+    {
+      "id": "amanecer-disciplina",
+      "nombre": "Amanecer / disciplina",
+      "emoji": "🌅",
+      "categoria": "mindset",
+      "camara": "dolly-in",
+      "modelo": "fal-ai/kling-video/v2/master/text-to-video",
+      "plantilla": "{idea}. Lone silhouette at dawn, golden hour rim light cutting through cold blue mist, long shadows, empty road stretching to the horizon. Cinematic anamorphic 2.39:1, shallow depth of field, film grain, muted teal and amber grade. {camara}"
+    },
+    {
+      "id": "gimnasio-4am",
+      "nombre": "Gimnasio 4am",
+      "emoji": "🏋️",
+      "categoria": "mindset",
+      "camara": "seguimiento",
+      "modelo": "fal-ai/kling-video/v2/master/text-to-video",
+      "plantilla": "{idea}. Dark empty gym before sunrise, single overhead practical light, chalk dust suspended in the air, sweat and steam, heavy iron. High contrast chiaroscuro lighting, deep blacks, harsh key light. Gritty cinematic realism, 35mm. {camara}"
+    },
+    {
+      "id": "ciudad-noche",
+      "nombre": "Ciudad de noche / soledad",
+      "emoji": "🌃",
+      "categoria": "mindset",
+      "camara": "dolly-out",
+      "modelo": "fal-ai/kling-video/v2/master/text-to-video",
+      "plantilla": "{idea}. Rain-slicked empty city street at 3am, neon reflections on wet asphalt, sodium streetlights, one figure alone. Blade Runner palette, cyan and magenta, volumetric haze, lens flares. Cinematic wide shot. {camara}"
+    },
+    {
+      "id": "naturaleza-calma",
+      "nombre": "Naturaleza / calma",
+      "emoji": "🌿",
+      "categoria": "mindset",
+      "camara": "grua-arriba",
+      "modelo": "fal-ai/kling-video/v2/master/text-to-video",
+      "plantilla": "{idea}. Vast still landscape at first light, low ground fog over water, ancient trees, absolute stillness. Soft diffused natural light, desaturated greens, meditative pacing. Shot on 65mm, extreme wide. {camara}"
+    },
+    {
+      "id": "exito-oficina",
+      "nombre": "Exito / oficina",
+      "emoji": "🏢",
+      "categoria": "mindset",
+      "camara": "contrapicado",
+      "modelo": "fal-ai/kling-video/v2/master/text-to-video",
+      "plantilla": "{idea}. Glass tower at blue hour seen from street level, corner office glowing, city grid below. Clean modern architecture, cool blue and warm interior contrast, reflective surfaces. Premium commercial cinematography. {camara}"
+    },
+    {
+      "id": "superacion-lluvia",
+      "nombre": "Superacion / lluvia",
+      "emoji": "🌧️",
+      "categoria": "mindset",
+      "camara": "handheld",
+      "modelo": "fal-ai/kling-video/v2/master/text-to-video",
+      "plantilla": "{idea}. Heavy rain, backlit droplets, figure pushing forward against the storm, mud and effort. Backlight through rain creating a halo, high shutter speed water detail, cold desaturated grade with one warm accent. Raw and physical. {camara}"
+    },
+    {
+      "id": "archivo-historico",
+      "nombre": "Archivo historico",
+      "emoji": "📽️",
+      "categoria": "historia",
+      "camara": "estatica",
+      "modelo": "fal-ai/kling-video/v2/master/text-to-video",
+      "plantilla": "{idea}. Aged archival footage aesthetic, 16mm film emulsion, visible grain, gate weave, slight flicker, period-accurate detail and wardrobe. Sepia and faded color, vignetting, scratches. Documentary realism. {camara}"
+    },
+    {
+      "id": "mapa-imperio",
+      "nombre": "Mapa / imperio",
+      "emoji": "🗺️",
+      "categoria": "historia",
+      "camara": "cenital",
+      "modelo": "fal-ai/kling-video/v2/master/text-to-video",
+      "plantilla": "{idea}. Antique parchment map lit by candlelight, ink and wax seals, borders shifting, dust motes in the beam. Warm amber single-source light, deep shadow, tactile paper texture. Museum documentary look. {camara}"
+    },
+    {
+      "id": "ruinas-tiempo",
+      "nombre": "Ruinas / paso del tiempo",
+      "emoji": "🏛️",
+      "categoria": "historia",
+      "camara": "orbita",
+      "modelo": "fal-ai/kling-video/v2/master/text-to-video",
+      "plantilla": "{idea}. Monumental stone ruins at dusk, weathered carvings, creeping vegetation, scale dwarfing the viewer. Raking low sunlight revealing texture, long shadows, dust in the air. Epic historical documentary. {camara}"
+    },
+    {
+      "id": "retrato-intenso",
+      "nombre": "Retrato intenso",
+      "emoji": "👁️",
+      "categoria": "retrato",
+      "camara": "zoom-golpe",
+      "modelo": "fal-ai/kling-video/v2/master/text-to-video",
+      "plantilla": "{idea}. Extreme close up, single hard key light from the side, half the face in shadow, skin texture and eye detail, breath visible. Black background, Rembrandt lighting, 85mm portrait lens, razor thin focus. {camara}"
+    },
+    {
+      "id": "miniatura-youtube",
+      "nombre": "Miniatura de YouTube",
+      "emoji": "🖼️",
+      "categoria": "imagen",
+      "camara": "estatica",
+      "modelo": "fal-ai/flux-pro/v1.1-ultra",
+      "plantilla": "{idea}. YouTube thumbnail composition: single clear subject, extreme contrast, saturated complementary colors, dramatic rim light, empty negative space on the right third for a text overlay, no text in the image. Ultra sharp, high impact, readable at small size."
+    },
+    {
+      "id": "frame-inicial",
+      "nombre": "Frame inicial (para animar)",
+      "emoji": "🎬",
+      "categoria": "imagen",
+      "camara": "estatica",
+      "modelo": "fal-ai/flux/dev",
+      "plantilla": "{idea}. Cinematic film still, anamorphic 2.39:1 framing, motivated practical lighting, natural color science, shallow depth of field, subtle film grain. Composed so that the subject has room to move within the frame."
+    }
+  ]
+}

@@ -62,6 +62,22 @@ solo para arquitectura o depuración difícil, y vuelve con `/model sonnet`.
 - **Comandos propios**: `/gasto` (reporte de consumo) y `/app-nueva` (crear app).
   Se editan en `.claude/commands/*.md`.
 
+## Proyecto aparte: `forja/` (herramienta multimedia con IA)
+
+`forja/` **no es una mini-app** y no usa el motor de `template/`. Es una herramienta propia de
+generacion de video/imagen con IA (alternativa personal a Higgsfield.ai), tambien en HTML/CSS/JS
+puro y sin dependencias, pero con su propia arquitectura.
+
+- Antes de tocar nada ahi, lee **`forja/MEMORIA.md`** — es la memoria del proyecto: que se
+  investigo, que se decidio (D-001 a D-011), y **que no esta verificado todavia**.
+- Lo que falta esta en **`forja/PENDIENTES.md`**.
+- Todo lo que sale a internet pasa por **`forja/app/js/proveedor.js`** y por nada mas. Esa capa
+  unica es una decision explicita (D-003), no un detalle: es lo que permite cambiar de proveedor
+  sin rehacer la herramienta. **No metas llamadas de red en otros archivos.**
+- Los presets y los modelos son JSON editables (`forja/app/presets.json`, `modelos.json`). Anadir
+  un preset o un modelo **no requiere tocar codigo**.
+- Probar: `node forja/servir.mjs` y luego `node prueba-forja.mjs`.
+
 ## Reglas de trabajo (ahorro de tokens)
 
 1. **Nunca escribas a mano los archivos del motor al crear una app.** Usa

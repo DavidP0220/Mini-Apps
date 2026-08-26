@@ -1,0 +1,102 @@
+{
+  "_nota": "Catalogo editable. Los IDs y precios de fal.ai cambian; verifica en fal.ai/models antes de gastar en serio. Puedes anadir modelos aqui o pegar un ID suelto en la pantalla de Generar sin tocar codigo.",
+  "_verificado": "2026-08-26 (precios de referencia, no leidos de la API)",
+  "modelos": [
+    {
+      "id": "fal-ai/flux/schnell",
+      "nombre": "Flux Schnell",
+      "tipo": "imagen",
+      "motor": "Black Forest Labs",
+      "costo": { "modo": "por_salida", "usd": 0.003 },
+      "campos": ["prompt", "image_size", "num_images"],
+      "notas": "El mas barato. Ideal para explorar ideas y miniaturas antes de gastar en video."
+    },
+    {
+      "id": "fal-ai/flux/dev",
+      "nombre": "Flux Dev",
+      "tipo": "imagen",
+      "motor": "Black Forest Labs",
+      "costo": { "modo": "por_salida", "usd": 0.025 },
+      "campos": ["prompt", "image_size", "num_images"],
+      "notas": "Calidad alta a precio bajo. El caballo de batalla para frames de arranque."
+    },
+    {
+      "id": "fal-ai/flux-pro/v1.1-ultra",
+      "nombre": "Flux Pro 1.1 Ultra",
+      "tipo": "imagen",
+      "motor": "Black Forest Labs",
+      "costo": { "modo": "por_salida", "usd": 0.06 },
+      "campos": ["prompt", "aspect_ratio", "num_images"],
+      "notas": "Maxima calidad de imagen. Usalo solo para el frame que va a mandar al video."
+    },
+    {
+      "id": "fal-ai/bytedance/seedream/v3/text-to-image",
+      "nombre": "Seedream 3",
+      "tipo": "imagen",
+      "motor": "ByteDance",
+      "costo": { "modo": "por_salida", "usd": 0.03 },
+      "campos": ["prompt", "image_size", "num_images"],
+      "notas": "Muy bueno con texto dentro de la imagen (miniaturas)."
+    },
+    {
+      "id": "fal-ai/kling-video/v2/master/text-to-video",
+      "nombre": "Kling 2 Master (texto a video)",
+      "tipo": "video",
+      "motor": "Kuaishou",
+      "costo": { "modo": "por_segundo", "usd": 0.095 },
+      "campos": ["prompt", "duration", "aspect_ratio"],
+      "duraciones": [5, 10],
+      "notas": "La mejor relacion calidad/precio en movimiento cinematografico."
+    },
+    {
+      "id": "fal-ai/kling-video/v2/master/image-to-video",
+      "nombre": "Kling 2 Master (imagen a video)",
+      "tipo": "video",
+      "motor": "Kuaishou",
+      "costo": { "modo": "por_segundo", "usd": 0.095 },
+      "campos": ["prompt", "image_url", "duration"],
+      "duraciones": [5, 10],
+      "notas": "Anima un frame que ya te gusto. Es el flujo mas barato y controlable: imagen barata primero, video despues."
+    },
+    {
+      "id": "fal-ai/minimax/hailuo-02/standard/text-to-video",
+      "nombre": "Hailuo 02 Standard",
+      "tipo": "video",
+      "motor": "MiniMax",
+      "costo": { "modo": "por_salida", "usd": 0.28 },
+      "campos": ["prompt", "duration"],
+      "duraciones": [6, 10],
+      "notas": "Precio fijo por clip. Buen movimiento viral, barato para pruebas de concepto."
+    },
+    {
+      "id": "fal-ai/wan/v2.2-a14b/text-to-video",
+      "nombre": "Wan 2.2",
+      "tipo": "video",
+      "motor": "Alibaba",
+      "costo": { "modo": "por_segundo", "usd": 0.05 },
+      "campos": ["prompt", "duration", "resolution"],
+      "duraciones": [5],
+      "notas": "El costo por segundo mas bajo en 1080p. Opcion de volumen."
+    },
+    {
+      "id": "fal-ai/bytedance/seedance/v1/pro/text-to-video",
+      "nombre": "Seedance 1 Pro",
+      "tipo": "video",
+      "motor": "ByteDance",
+      "costo": { "modo": "por_segundo", "usd": 0.12 },
+      "campos": ["prompt", "duration", "resolution"],
+      "duraciones": [5, 10],
+      "notas": "Tomas largas y consistentes."
+    },
+    {
+      "id": "fal-ai/veo3/fast",
+      "nombre": "Veo 3 Fast",
+      "tipo": "video",
+      "motor": "Google",
+      "costo": { "modo": "por_segundo", "usd": 0.25 },
+      "campos": ["prompt", "duration"],
+      "duraciones": [8],
+      "notas": "El unico con audio nativo sincronizado. Caro: usalo para el clip que abre el video, no para todos."
+    }
+  ]
+}
