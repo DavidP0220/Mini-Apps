@@ -79,10 +79,26 @@ zip_por_volumenes() {
   rm -f "$grupos"
 }
 
-# --- 0. desempaquetar los zips anidados -------------------------------------
+# --- 0. copia de trabajo y limpieza de duplicados ---------------------------
+# El arbol de origen no se toca. Se trabaja sobre una copia, se le quitan los
+# archivos repetidos (casi la mitad del peso lo eran) y se deja constancia de
+# cada borrado en DUPLICADOS_ELIMINADOS.md.
+echo "==> copia de trabajo"
+TRABAJO="$OUT/_arbol_tmp"
+rm -rf "$TRABAJO"; mkdir -p "$TRABAJO"
+cp -a "$SRC/." "$TRABAJO/"
+
+echo "==> quitando duplicados"
+HERRAMIENTAS="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+python3 "$HERRAMIENTAS/deduplicar.py" "$TRABAJO" \
+  "$BASE/DUPLICADOS_ELIMINADOS.md" "$BASE/VERSIONES_DEL_MISMO_DOCUMENTO.md"
+
+SRC="$TRABAJO"
+
+# --- 0.bis. desempaquetar los zips anidados que hayan sobrevivido -----------
 # Dentro del origen hay .zip con documentos que NO existen sueltos en el arbol.
 # Se extraen aparte para que nadie tenga que abrir zips dentro de zips.
-echo "==> abriendo los zips anidados del origen"
+echo "==> abriendo los zips anidados que quedan"
 DESEMP="$OUT/_desempaquetados_tmp"
 rm -rf "$DESEMP"; mkdir -p "$DESEMP"
 while IFS= read -r z; do
@@ -130,10 +146,11 @@ while IFS= read -r dir; do
   fi
 done < <(cd "$SRC" && find . -mindepth 1 -maxdepth 1 -type d -printf '%P\n' | sort)
 
-echo "  ZZ_PAQUETES_INTERNOS_DESEMPAQUETADOS"
-: > "$lista_txt"
 (cd "$DESEMP" && find . -type f -printf '%P\n' | sort) > "$lista_txt"
-zip_por_volumenes "$DESEMP" "$lista_txt" "$PAQ/ZZ_PAQUETES_INTERNOS_DESEMPAQUETADOS"
+if [ -s "$lista_txt" ]; then
+  echo "  ZZ_PAQUETES_INTERNOS_DESEMPAQUETADOS"
+  zip_por_volumenes "$DESEMP" "$lista_txt" "$PAQ/ZZ_PAQUETES_INTERNOS_DESEMPAQUETADOS"
+fi
 
 rm -f "$lista_txt" "$lista_bin"
 
@@ -151,14 +168,22 @@ echo "==> inventario"
   (cd "$SRC" && find . -type f -printf '%10s  %P\n' | sort -k2)
   echo '```'
   echo
-  echo "## B. Contenido de los zips internos, ya desempaquetado"
-  echo
-  echo "Estos archivos vivian DENTRO de los .zip listados arriba. Varios no existen"
-  echo "sueltos en el arbol, por eso se extraen aparte."
-  echo
-  echo '```'
-  (cd "$DESEMP" && find . -type f -printf '%10s  %P\n' | sort -k2)
-  echo '```'
+  if [ -n "$(ls -A "$DESEMP")" ]; then
+    echo "## B. Contenido de los zips internos que se conservaron"
+    echo
+    echo "Estos archivos vivian DENTRO de un .zip del arbol y ademas no existen"
+    echo "sueltos, por eso se extraen aparte."
+    echo
+    echo '```'
+    (cd "$DESEMP" && find . -type f -printf '%10s  %P\n' | sort -k2)
+    echo '```'
+  else
+    echo "## B. Zips internos"
+    echo
+    echo "Ninguno. Todos los .zip anidados eran copias comprimidas de archivos que"
+    echo "ya estaban sueltos en el arbol, asi que se eliminaron; el detalle esta en"
+    echo "DUPLICADOS_ELIMINADOS.md. No hay que abrir zips dentro de zips."
+  fi
 } > "$BASE/INVENTARIO_COMPLETO.md"
 
 # --- 3. manifiesto de huellas ------------------------------------------------
@@ -244,7 +269,7 @@ Si tu Windows no extrae bien un .zip por separado: clic derecho -> Extraer todo,
 uno por uno, apuntando siempre a la misma carpeta destino.
 TXT
 
-rm -rf "$DESEMP"
+rm -rf "$DESEMP" "$TRABAJO"
 
 echo
 echo "LISTO"

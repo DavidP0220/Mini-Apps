@@ -31,21 +31,30 @@ Windows, con Git Bash o WSL.
     ESTADO_DEL_TRASLADO.md                  dónde está el proyecto y qué falta
     INVENTARIO_COMPLETO.md                  todos los archivos, con ruta y tamaño
     MANIFIESTO_SHA256.txt                   huella de cada archivo
+    DUPLICADOS_ELIMINADOS.md                cada copia borrada y dónde quedó la que sobrevive
+    VERSIONES_DEL_MISMO_DOCUMENTO.md        mismo nombre, contenido distinto: cuál es la vigente
     UNICOS_EN_ZIPS_INTERNOS.md              lo que solo vivía dentro de zips anidados
-    paquetes/*.zip                          el proyecto por temas
+    paquetes/*.zip                          una carpeta del proyecto por zip
   envios/                                   el mismo paquete en volúmenes para mandar por chat
     ..._parte_N_de_M.zip
     COMO_UNIRLOS.txt
 ```
 
-## Las tres decisiones de diseño que importan
+## Las cuatro decisiones de diseño que importan
 
 1. **Los zips anidados se abren.** Dentro del origen había `.zip` con documentos que no
    existían sueltos en ninguna carpeta. Copiar solo el árbol los habría perdido. El script
    los extrae aparte y deja constancia de cuáles eran en `UNICOS_EN_ZIPS_INTERNOS.md`.
 2. **Las rutas se conservan.** Cada zip de `paquetes/` guarda la ruta original del archivo,
    así que extraerlos todos en una misma carpeta reconstruye el árbol exacto de partida.
-3. **Lo pesado se separa de lo legible.** El código y los documentos caben en unos pocos MB
+3. **Se quitan los duplicados, no las versiones.** `deduplicar.py` compara por huella
+   SHA-256: de cada grupo de archivos byte a byte idénticos deja uno solo (en el corte de
+   Mindset Mechanics eran 702 copias, casi la mitad del peso) y anota en
+   `DUPLICADOS_ELIMINADOS.md` dónde quedó la copia que sobrevive. Los archivos que comparten
+   nombre pero **no** contenido son versiones distintas: esos no se tocan, se indexan en
+   `VERSIONES_DEL_MISMO_DOCUMENTO.md` marcando cuál es la vigente — la que contiene a las
+   demás, porque las fechas de archivo no sirven (el zip de origen las reescribe todas).
+4. **Lo pesado se separa de lo legible.** El código y los documentos caben en unos pocos MB
    y se pueden abrir enteros; las imágenes y audios generados van en volúmenes numerados
    aparte. Nada se descarta, solo se ordena por peso.
 

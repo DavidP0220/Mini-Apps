@@ -69,8 +69,12 @@ Guion → TTS + ffprobe (duración real) → STORYBOARD → [GATE humano]
 
 ## B. Qué entró en este paquete
 
-**1377 archivos** (160M) del árbol de traslado, más **246** extraídos de
-los 6 `.zip` que venían anidados dentro.
+**675 archivos** (72M), ya sin duplicados. El árbol de origen traía 1.377 archivos
+y 160 MB, pero **702 de ellos eran copias byte a byte de otro archivo del mismo paquete** — el
+mismo PNG repetido en cuatro carpetas, el mismo manual dentro de tres paquetes de conocimiento,
+y 6 `.zip` anidados cuyo contenido completo ya estaba suelto. Se dejó una sola copia de cada
+cosa; el detalle de cada borrado, con la ruta de la copia que sobrevive, está en
+`DUPLICADOS_ELIMINADOS.md`. **Contenido único perdido: cero.**
 
 - **Todo el trabajo con Kimi-Claude**: los 27 archivos de `handoffs/` sin excepción
   (HANDOFF_*, REPORTE_*, INVESTIGACION_*, REVISION_TECNICA_*, PROGRAMA_MEJORA_CONTINUA_KIMI),
@@ -78,17 +82,18 @@ los 6 `.zip` que venían anidados dentro.
 - **Todo el código**: `recraft_ai/`, `video_express_ai/`, `youtube_pipeline/`, `shorts_final/`,
   con configs, requirements, logs de generación y manifiestos de subtítulos.
 - **Toda la documentación**: `PROY_MECH_OPT/`, `docs_raiz_repo/`, los paquetes de conocimiento
-  v1, v2 y v3 (sueltos **y** en `.zip`), investigaciones de canales monetizados y de
+  v1, v2 y v3, investigaciones de canales monetizados y de
   VideoExpress.
 - **Los storyboards**, las **8 memorias persistentes**, los **8 agentes de Claude Code** +
   `settings.local.json`, y todas las **referencias visuales** (personaje, style-locks, badges,
   stills de Recraft, paneles de cómic, last-frames de las 12 escenas).
 
-### Verificación de que nada quedó atrapado dentro de un zip
-Se compararon por huella SHA-256 los archivos sueltos contra los que venían dentro de los
-`.zip` anidados: **0 archivos existen solo dentro de un zip**. Es decir, el árbol ya
-trae suelto todo lo que había ahí dentro; los zips desempaquetados van igualmente por comodidad.
-El detalle está en `UNICOS_EN_ZIPS_INTERNOS.md`.
+### Cuidado con las versiones
+Quitar duplicados **no** significa quitar versiones. Hay 25 documentos que comparten nombre pero
+tienen contenido distinto — hay cuatro `MANUAL_PRODUCCION.md`, tres `PLAYBOOK_MONETIZACION.md`.
+Ninguno se borró, porque borrar uno sí perdería información. En
+`VERSIONES_DEL_MISMO_DOCUMENTO.md` está marcada **cuál es la vigente de cada familia**: la que
+contiene a las demás. Si vas a editar, edita esa.
 
 ### Lo que NO entró — y por qué (decisiones explícitas, ninguna omisión accidental)
 

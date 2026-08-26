@@ -17,17 +17,22 @@ Todo el proyecto Mindset Mechanics: estrategia, código del pipeline, el histori
 handoffs con Kimi Code, la investigación, los storyboards, las memorias persistentes, los 8
 agentes de Claude Code y las referencias visuales.
 
-Cifras de este corte: **{{N_ARBOL}} archivos** ({{PESO}}), más **{{N_DESEMP}} archivos**
-extraídos de los `.zip` que venían anidados dentro del árbol.
+El paquete viene **limpio de duplicados**: el árbol original traía casi la mitad del peso en
+copias idénticas del mismo archivo (el mismo PNG en cuatro carpetas, el mismo manual dentro de
+tres paquetes de conocimiento). Se dejó **una sola copia de cada cosa**.
 
-Cuatro archivos acompañan al paquete y son la prueba de que no falta nada:
+Cifras de este corte: **{{N_ARBOL}} archivos** ({{PESO}}) después de limpiar.
+
+Seis archivos acompañan al paquete y son la prueba de que no falta nada:
 
 | Archivo | Para qué sirve |
 |---|---|
+| `ESTADO_DEL_TRASLADO.md` | Dónde está parado el proyecto y qué queda abierto. |
 | `INVENTARIO_COMPLETO.md` | Lista de **todos** los archivos con ruta y tamaño. Si algo no está ahí, no está en el paquete. |
 | `MANIFIESTO_SHA256.txt` | Huella de cada archivo. Se verifica con `sha256sum -c MANIFIESTO_SHA256.txt`. |
-| `UNICOS_EN_ZIPS_INTERNOS.md` | Lo que solo existía dentro de zips anidados. En este corte: **{{N_UNICOS}}** — el árbol ya trae suelto todo lo que había dentro de los zips. |
-| `ESTADO_DEL_TRASLADO.md` | Dónde está parado el proyecto y qué queda abierto. |
+| `DUPLICADOS_ELIMINADOS.md` | Cada copia borrada **y la ruta de la copia que se conservó**. Nada desapareció sin dejar dicho dónde está. |
+| `VERSIONES_DEL_MISMO_DOCUMENTO.md` | **Léelo antes de editar nada.** Hay documentos con el mismo nombre y contenido distinto (cuatro `MANUAL_PRODUCCION.md`, por ejemplo): esos NO son copias, son versiones, y ahí está marcada cuál es la vigente. |
+| `UNICOS_EN_ZIPS_INTERNOS.md` | Comprobación de que no quedó nada atrapado dentro de un zip. En este corte: **{{N_UNICOS}}**. |
 
 ---
 
@@ -42,16 +47,18 @@ estaban en el origen**, así que:
 | Zip | Qué trae |
 |---|---|
 | `00_RAIZ_INDICES_DEL_AUTOR` | `LEEME_PRIMERO_TRASLADO.md` e `INVENTARIO_ARCHIVOS.md`, escritos por David. **Empieza por aquí.** |
-| `01_HANDOFFS_KIMI_CLAUDE_COMPLETO` | **El trabajo con Kimi-Claude completo**: los 27 archivos de `handoffs/` sin excepción, más `HANDOFF_KIMI_CODE.md`, el volcado de 522 KB `HANDOFF_KIMI_CODE_COMPLETO.txt`, `HANDOFF_KIMI_CODE.zip` y `HANDOFF_KIMI_PACKAGE/`. |
-| `02_CODIGO_PIPELINE__DOCS_Y_CODIGO` | Todo el código: `recraft_ai/`, `video_express_ai/`, `youtube_pipeline/`, `shorts_final/`, configs, requirements, logs, manifiestos de subtítulos. **133 KB — se abre entero sin problema.** |
+| `01_HANDOFFS_KIMI_CLAUDE_COMPLETO` | **El trabajo con Kimi-Claude completo**: los 27 archivos de `handoffs/` sin excepción, más `HANDOFF_KIMI_CODE.md`, el volcado de 522 KB `HANDOFF_KIMI_CODE_COMPLETO.txt` y `HANDOFF_KIMI_PACKAGE/`. |
+| `02_CODIGO_PIPELINE__DOCS_Y_CODIGO` | Todo el código: `recraft_ai/`, `video_express_ai/`, `youtube_pipeline/`, `shorts_final/`, configs, requirements, logs, manifiestos de subtítulos. **130 KB — se abre entero sin problema.** |
 | `02_CODIGO_PIPELINE__ASSETS_parte_N` | Las imágenes, frames y voces en off que produjo ese código. |
-| `03_DOCUMENTACION_Y_MANUALES__DOCS_Y_CODIGO` | Manuales, playbooks, biblia de estilo, investigaciones, `docs_raiz_repo/`, `PROY_MECH_OPT/` y los paquetes de conocimiento v1, v2 y v3. |
-| `03_DOCUMENTACION_Y_MANUALES__ASSETS` | Las imágenes que acompañan a esa documentación. |
+| `03_DOCUMENTACION_Y_MANUALES` | Manuales, playbooks, biblia de estilo, investigaciones, `docs_raiz_repo/`, `PROY_MECH_OPT/` y los paquetes de conocimiento v1, v2 y v3. Son 240 KB: cabe entero. |
 | `04_STORYBOARDS` | `storyboard_resilience_v3_piloto.json` (15 paneles, 94 s) y su versión en Markdown. |
 | `05_MEDIA_REFERENCIA__ASSETS_parte_N` | Referencias de personaje, style-locks, badges, stills de Recraft, paneles de cómic y last-frames de las 12 escenas. |
 | `06_MEMORIA_PERSISTENTE_CLAUDE` | `MEMORY.md` + 7 memorias del proyecto. **Reprodúcelas en la carpeta de memoria de la cuenta nueva.** |
 | `07_AGENTES_CLAUDE_CODE` | Los 8 agentes + `settings.local.json`. **Cópialos a `.claude/agents/`.** |
-| `ZZ_PAQUETES_INTERNOS_DESEMPAQUETADOS` | Los 6 `.zip` que venían anidados, ya abiertos, para no tener que descomprimir zips dentro de zips. |
+
+Los 6 `.zip` que venían anidados dentro del árbol **ya no están**: se comprobó archivo por
+archivo que todo su contenido existe suelto, y se borraron. No hay que descomprimir zips dentro
+de zips.
 
 ---
 
