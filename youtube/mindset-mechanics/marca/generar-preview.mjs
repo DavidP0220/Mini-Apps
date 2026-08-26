@@ -16,5 +16,5 @@ const html = `<style>html,body{margin:0;background:#181818;font-family:Arial}
 const br = await chromium.launch();
 const p = await br.newPage({viewport:{width:620,height:260},deviceScaleFactor:2});
 await p.setContent(html); await p.waitForLoadState('networkidle');
-await p.locator('.row').screenshot({path:'_preview_tamanos.png'});
+await p.locator('.row').screenshot({path:'preview-tamanos.png'});
 await br.close(); console.log('preview ok');
