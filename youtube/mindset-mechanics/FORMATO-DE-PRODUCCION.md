@@ -1,100 +1,98 @@
-# Formato de producción — decisión y evidencia
+# Formato de producción — Factory Settings
 
-**Decidido el 2026-08-26.** Esta decisión va **antes** que la marca visual: define qué se ve en cada
-video, y la marca tiene que derivarse de ella, no al revés.
+**Decidido el 2026-08-26.**
 
 ---
 
-## 1. Qué formato usan los que ganan en el nicho
+## 1. Formato: documental animado 2D con host consistente
 
-De `PLAYBOOK_MONETIZACION.md`, datos ya verificados:
+Es el formato probado del nicho. `PLAYBOOK_MONETIZACION.md`:
 
 | Canal | Formato | Resultado |
 |---|---|---|
-| **Zenn** | Documental animado faceless, 8:00-8:40 | 32 videos → **179.000 subs**, 550k vistas de media |
-| **Professor Stickman** | **Pictogramas, host ausente** | 200-540k por video con solo **24.400 subs** |
-| **Decode The Brain** | **Sin host, narración sobre pictogramas** | *"Vía de producción más barata y rápida"* |
-| ONLI | Personaje 2D, cabeza ovalada | 785k el video top |
-| PsychToons | Cartoon | — |
+| **Zenn** | Documental animado 2D faceless, 8:00-8:40 | 32 videos → **179.000 subs**, **550.000 vistas de media** |
+| ONLI | Personaje 2D, cabeza ovalada | 785.000 el video top |
+| PsychToons | Cartoon 2D | — |
+| Professor Stickman | Pictogramas | 200-540k por video con 24.400 subs |
 
-**Ningún ganador del nicho usa 3D fotorrealista.** Dominan el 2D animado y los pictogramas.
+Ningún ganador del nicho usa fotorrealismo. **Zenn es la tesis de este canal ejecutada a escala**, y lo
+hace en 2D animado.
 
-## 2. La restricción que decide todo: tu capacidad real
+### Corrección registrada
 
-Historial medido, de `LEEME-PRIMERO-HANDOFF.md`:
+Una versión anterior de este documento recomendaba imágenes fijas cinematográficas, argumentando que la
+consistencia de personaje era un riesgo de producción. **Ese argumento era falso.**
+`MANUAL_PRODUCCION.md` §5 dice textualmente:
 
-- **4 videos largos publicados en 5 semanas.**
-- El quinto salió **impublicable**. Causa documentada: *"Personaje inconsistente — cara distinta en
-  casi cada escena."*
-- Toda la deuda técnica del paquete (`import_local_image()`, "Use Consistent Character", las tres
-  iteraciones de `style_lock_v1..v3`) existe para resolver **ese único problema**.
+> *"No bloquea producción — Técnica B (repetición textual, §2) ya está validada en vivo con resultado de
+> alta fidelidad. Técnica A es una mejora a perseguir cuando haya tiempo, no un requisito para producir
+> el canal hoy."*
 
-El plan pide **8 largos al mes**. Con animación de personaje a ~50 escenas por video, el historial dice
-que no ocurre. El personaje recurrente es la pieza más cara y más frágil del pipeline.
+La consistencia está resuelta y probada. El formato es 2D animado.
 
-## 3. Decisión: documental cinematográfico sin personaje
+## 2. El host
 
-Imágenes fijas generadas con IA + movimientos lentos de cámara (push in, paneo, tilt) + tipografía
-animada + narración.
+`marca/personaje.png` — generado con IA, es la referencia visual canónica.
 
-### Por qué
+Cabeza grande ovalada, sin nariz, sin pelo, ojos óvalos negros planos sin iris, cejas finas oscuras
+flotando por encima con hueco visible, boca pequeña y simple, piel crema plana, chaqueta de trabajo
+gris oscuro. **Su firma: una pequeña luz ámbar encendida en la sien derecha**, que proyecta luz cálida
+sobre ese lado de la cara — la máquina corriendo dentro del cráneo. Es lo que enlaza al personaje con
+el nombre del canal.
 
-| Ventaja | Detalle |
-|---|---|
-| **Elimina el problema, no lo gestiona** | Sin personaje recurrente no hay consistencia que mantener. Es la causa raíz del único video fallido. |
-| **~30 imágenes por video** en vez de 50 escenas animadas | 8 largos al mes pasa de imposible a realista. |
-| **Las miniaturas salen gratis** | Cada video produce 30 frames cinematográficos; cualquiera sirve de miniatura, ya en la paleta de marca. |
-| **Coherencia total** | El banner, el avatar y cada escena viven en el mismo mundo visual. |
-| **Diferenciación** | En un feed donde todos los canales de psicología son cartoon plano, esto no se parece a nada. |
+### Ficha canónica — Técnica B (obligatoria)
 
-### El riesgo, dicho claro
+Se pega **palabra por palabra, sin abreviar nunca**, al inicio de CADA Image Prompt de CADA escena.
+Nunca escribir "same character" o "same host" — eso es exactamente lo que rompió el video de Resiliencia.
 
-Lo probado en este nicho es 2D y pictograma. Este formato **no está validado aquí**. Es una apuesta a
-destacar por diferencia en vez de copiar lo que funciona. Si tras 3-4 videos el CTR no acompaña, la
-salida es el formato pictograma de Professor Stickman, que es aún más barato de producir.
+```
+Flat 2D animated documentary character, large rounded oversized head, no nose,
+no hair, plain black oval eyes with no iris and no highlight, thin dark eyebrows
+floating high above the eyes with a visible gap, very small simple mouth low on
+the face, flat cream skin, dark charcoal work jacket over a plain shirt, a small
+soft amber indicator light glowing at his right temple casting warm orange light
+across that side of his face, bold clean dark outlines, cel-shaded flat 2D
+animated documentary style, consistent appearance across all scenes.
+```
 
-## 4. Biblia visual — Factory Settings
+### Cláusula negativa (al final de cada Image Prompt)
+
+```
+Only the main character described — absolutely NO small side characters, NO
+children, NO spectators, NO extra people in the corners or background. No text,
+no letters, no signs or words anywhere in the image. No photorealism, no 3D
+render, no comic panels, no halftone.
+```
+
+### Técnica A — mejora opcional
+
+Subir `personaje.png` con `generate_video.py import-image` y activar "Consistent Character" +
+"Prompt Enhancement". Según `MANUAL_PRODUCCION.md` §5, `mark_consistent_character()` todavía falla al
+marcar una imagen subida a mano; el siguiente paso diagnosticado es generar una imagen con "Create
+Image" teniendo la Reference Photo seleccionada, y revisar si el botón se habilita sobre ese resultado.
+**No bloquea producción.**
+
+## 3. Biblia visual
 
 | Elemento | Regla |
 |---|---|
-| **Paleta** | Fondo `#02060E` casi negro · acento `#FF8A1F` ámbar incandescente · luz fría azul como contrapunto |
-| **Luz** | **Un solo foco cálido por plano.** Fuego, brasa, lámpara, pantalla. Nunca dos focos compitiendo. |
-| **Los dos colores nunca se tocan** | El ámbar es lo antiguo, el azul frío es lo moderno. Esa separación **es** la tesis. |
-| **Caras** | Silueta o contraluz. **Nunca un rostro identificable.** Elimina el problema de consistencia y sube el misterio. |
-| **Espacio negativo** | Generoso y deliberado. La distancia entre elementos carga el significado. |
-| **Textura** | Grano de película, polvo en suspensión, luz volumétrica, profundidad de campo real. |
-| **Prohibido** | Cartoon, 3D render brillante, vector plano, fondos blancos, texto dentro de la imagen generada. |
+| **Estilo** | Cel-shading 2D plano con iluminación cinematográfica. Contornos oscuros marcados. |
+| **Paleta** | Fondo `#050A14` azul casi negro · acento `#FF9A2E` ámbar · luz fría azul de contrapunto |
+| **Luz** | **Un solo foco cálido por plano.** El ámbar viene siempre de la sien del host o de una fuente de la escena. |
+| **Los dos colores no se mezclan** | Ámbar = mecánica antigua. Azul frío = mundo moderno. Esa separación **es** la tesis. |
+| **Personajes de fondo** | Aleatorios, nunca consistentes. Regla dura de VideoExpress: el toggle de Consistent Character se activa **solo** para el host. |
+| **Texto en imagen** | **Prohibido.** Los subtítulos van quemados en post, nunca generados dentro de la imagen. |
+| **Prohibido** | `comic`, `comic panel`, `halftone`, `vector`, `flat` como palabras de prompt · fotorrealismo · render 3D · fondos blancos |
+| **Salida** | 1920×1080 mínimo, siempre. Shorts 1080×1920. |
 
-### Plantilla de prompt
+## 4. Flujo por video
 
-```
-A cinematic documentary still. [ESCENA]. Single warm amber light source
-[fuente concreta] carving rim light onto [sujeto]. Cold blue darkness
-everywhere else — the two colors never touch. Faces in silhouette or
-backlit, never identifiable. Generous negative space. Volumetric light,
-drifting dust motes, film grain, photographic depth of field, painterly
-realism. Absolutely no text, no letters, no words anywhere.
-No cartoon, no 3D render.
-```
-
-## 5. Cómo se monta un video
-
-1. **Guion** (1.500-2.000 palabras para 10-13 min, a 150-172 palabras/minuto).
-2. **Marcar 30 puntos de escena**, uno cada ~25 segundos.
-3. **Generar 30 imágenes** con la plantilla de arriba.
-4. **Animar**: push in lento (2-4% de zoom) o paneo por escena. Nunca cortes secos entre imágenes;
-   fundidos de 0,4-0,6 s.
-5. **Subtítulos quemados** obligatorios — de ellos dependen los recortes de Shorts.
-6. **Salida 1920×1080 mínimo.**
-7. **Miniatura**: elegir el frame más fuerte y añadirle 2-3 palabras encima, con el texto compuesto
-   aparte, nunca generado dentro de la imagen.
-
-## 6. Archivo de referencia
-
-`marca/escena-ejemplo.png` — frame real generado para *The Psychology of People Who Apologize for
-Everything*: el grupo alrededor del fuego, el excluido solo en el frío azul. Es el estándar visual a
-igualar.
-
-**Nota sobre el scoring:** vidIQ puntuó esa imagen 84 y criticó *"demasiado espacio vacío"*. Ese
-criterio aplica a **miniaturas**, no a escenas. En un frame de video ese vacío es el mensaje. No
-optimizar escenas con reglas de miniatura.
+1. **Guion** — 1.500-2.000 palabras para 10-13 min, a 150-172 palabras/minuto.
+2. **Desglose en ~50 escenas**, una cada ~15 segundos.
+3. **Por escena:** ficha canónica del host + descripción de la escena + cláusula negativa → Image Prompt.
+4. **Video Action Prompt** con el vocabulario de cámara de `MANUAL_PRODUCCION.md` §3.
+5. **Subtítulos quemados** — obligatorios, de ellos dependen los recortes de Shorts.
+6. **QA contra el checklist** de `ESTILO_MINDSET_MECHANICS.md` §7 antes de ensamblar.
+7. **3-4 Shorts** recortados del largo con `make_ultrashorts.sh`: 12-18s, un hecho concreto, cero jerga
+   clínica en la apertura, badge de suscripción, enlazados como Related Video.
+8. **Miniatura**: frame del propio video + 2-3 palabras compuestas aparte, nunca generadas en la imagen.
