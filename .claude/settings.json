@@ -20,7 +20,11 @@
       "Bash(git commit:*)",
       "Read(//home/user/Mini-Apps/**)",
       "Bash(node tools/content.mjs:*)",
-      "Bash(node tools/sync-motor.mjs:*)"
+      "Bash(node tools/sync-motor.mjs:*)",
+      "Bash(node human-chronicles/tools/hc.mjs:*)",
+      "Bash(node human-chronicles/tools/buscar-archivo.mjs:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(ffprobe:*)"
     ],
     "deny": [
       "Read(**/.env)",

@@ -9,6 +9,7 @@ a compradores de Hotmart.
 ```
 template/           motor base — index.html, app.js, styles.css, sw.js, manifest.json, icons/
 apps/<producto>/    copia del motor + content.json propio  <- lo único que cambia por app
+human-chronicles/   conocimiento del canal de YouTube Human Chronicles (proyecto aparte)
 tools/              scripts de apoyo (ver abajo)
 docs/               guías de costos y de modelos gratuitos
 serve.ps1           servidor local para previsualizar (Windows)
@@ -48,6 +49,33 @@ node tools/router/listar-modelos-gratis.mjs                            # modelos
 pwsh serve.ps1                                                         # previsualizar (Windows)
 ```
 
+## Human Chronicles (segundo proyecto de este repo)
+
+`human-chronicles/` **no es una mini-app**: es el conocimiento y el método de un canal de YouTube
+de historia (`@humanchronicles11`, faceless, en inglés) cuyo objetivo es llegar a monetización.
+Convive aquí porque necesitaba respaldo remoto; es **autocontenido y portable** a un repo propio.
+
+```bash
+node human-chronicles/tools/hc.mjs listar            # índice + coste en tokens
+node human-chronicles/tools/hc.mjs ver <doc> <n>     # SOLO una sección
+node human-chronicles/tools/hc.mjs buscar "texto"    # grep sobre los 39 documentos
+node human-chronicles/tools/hc.mjs estado            # ficha del canal
+node human-chronicles/tools/buscar-archivo.mjs "..." --video video-01   # dominio público
+```
+
+- **Empieza siempre por `human-chronicles/SINTESIS.md`** (~3.000 tokens, da el cuadro completo).
+  Leer los 39 documentos enteros cuesta ~71.000.
+- El hook bloquea leer con Read cualquier `.md` de más de 6 KB de esa carpeta. Es a propósito.
+- `documentos_canal/ERRORES_A_EVITAR.md` **se lee entero** (con `cat`) antes de cualquier trabajo
+  del canal. Es la única excepción, y es obligatoria.
+- Los 9 agentes del canal están en `.claude/agents/`. Los 4 multicanal sirven a varios canales:
+  **al invocarlos hay que decirles explícitamente en cuál trabajan.**
+- El comando `/hc` carga este contexto de una vez.
+
+Reglas duras del canal: ni un crédito sin autorización de David para ese lote · nada se publica sin
+que David vea el render · ejecutar primero y documentar después · el material del canal en inglés,
+la comunicación en español.
+
 ## Modelo por defecto
 
 Este proyecto usa **Sonnet** (`.claude/settings.json`). Es HTML/CSS/JS puro sin
@@ -72,7 +100,10 @@ solo para arquitectura o depuración difícil, y vuelve con `/model sonnet`.
 4. Si cambias el motor en `template/`, propágalo con `node tools/sync-motor.mjs
    --aplicar` en vez de repetir la edición en cada app. Sube la versión del caché
    (`CACHE = '...-vN'`) o los usuarios seguirán viendo la versión vieja.
-5. Idioma del proyecto y de las apps: **español**.
+5. **Nunca leas los documentos de `human-chronicles/` enteros.** Usa
+   `node human-chronicles/tools/hc.mjs`. Excepción única y obligatoria:
+   `ERRORES_A_EVITAR.md`, que se lee entero antes de trabajar en el canal.
+6. Idioma del proyecto y de las apps: **español**.
 
 Detalles de costos y de modelos gratuitos: `docs/OPTIMIZACION-TOKENS.md` y
 `docs/OPENROUTER-MODELOS-GRATIS.md`.
