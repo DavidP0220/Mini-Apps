@@ -1,12 +1,12 @@
-COMO USAR ESTAS 7 PARTES
+COMO USAR ESTAS 11 PARTES
 =================================
 
 Son el mismo paquete completo (TRASLADO_MINDSET_MECHANICS_COMPLETO_2026-08-26),
-partido en 7 zips para poder mandarlos por chat (cada uno pesa menos de 20 MB).
+partido en 11 zips para poder mandarlos por chat.
 No falta nada: juntas suman exactamente el mismo contenido que el zip grande.
 
 Pasos:
-1. Descarga las 7 partes (parte_1_de_7 hasta parte_7_de_7).
+1. Descarga las 11 partes (parte_1_de_11 hasta parte_11_de_11).
 2. Extrae CADA UNA en la MISMA carpeta destino (por ejemplo, tu Escritorio).
    Todas comparten la misma carpeta raiz interna ("TRASLADO_MINDSET_MECHANICS_COMPLETO_2026-08-26"),
    asi que al extraerlas en el mismo sitio se juntan solas en una sola carpeta

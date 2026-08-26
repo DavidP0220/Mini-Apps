@@ -1,84 +1,94 @@
 # LÉEME PRIMERO — Traslado del proyecto **Mindset Mechanics**
 
 **Paquete maestro `TRASLADO_MINDSET_MECHANICS_COMPLETO_2026-08-26`**
-Destino: una cuenta nueva de Claude (Max) que va a **continuar** este proyecto, no empezarlo.
+Destino: una cuenta nueva de Claude (plan Max) que va a **continuar** este proyecto, no
+empezarlo de cero.
+
+> Este archivo explica **cómo se abre y se verifica el paquete**.
+> El documento del proyecto en sí lo escribió David y está en
+> `00_RAIZ_INDICES_DEL_AUTOR.zip` → **`LEEME_PRIMERO_TRASLADO.md`**.
+> Ese es el que manda sobre alcance, exclusiones y credenciales. Léelo justo después de este.
 
 ---
 
-## 0. Qué es este paquete y por qué está partido así
+## 1. Qué hay dentro
 
-Es **todo** el proyecto Mindset Mechanics: la estrategia, el código del pipeline, los
-handoffs con Kimi Code, la investigación, las memorias del agente, los agentes de
-Claude Code y los assets generados.
+Todo el proyecto Mindset Mechanics: estrategia, código del pipeline, el historial completo de
+handoffs con Kimi Code, la investigación, los storyboards, las memorias persistentes, los 8
+agentes de Claude Code y las referencias visuales.
 
-No se ha omitido nada. La prueba está en tres archivos que acompañan a este:
+Cifras de este corte: **1377 archivos** (160M), más **246 archivos**
+extraídos de los `.zip` que venían anidados dentro del árbol.
+
+Cuatro archivos acompañan al paquete y son la prueba de que no falta nada:
 
 | Archivo | Para qué sirve |
 |---|---|
 | `INVENTARIO_COMPLETO.md` | Lista de **todos** los archivos con ruta y tamaño. Si algo no está ahí, no está en el paquete. |
 | `MANIFIESTO_SHA256.txt` | Huella de cada archivo. Se verifica con `sha256sum -c MANIFIESTO_SHA256.txt`. |
-| `UNICOS_EN_ZIPS_INTERNOS.md` | Los **42 archivos que solo vivían dentro de zips anidados** y que se habrían perdido si alguien hubiera copiado solo las carpetas. |
-
-Cifras de este corte: **687 archivos** en el árbol original (99M) más
-**226 archivos** rescatados del interior de los zips anidados.
+| `UNICOS_EN_ZIPS_INTERNOS.md` | Lo que solo existía dentro de zips anidados. En este corte: **0** — el árbol ya trae suelto todo lo que había dentro de los zips. |
+| `ESTADO_DEL_TRASLADO.md` | Dónde está parado el proyecto y qué queda abierto. |
 
 ---
 
-## 1. Cómo abrirlo (orden exacto)
+## 2. Cómo abrirlo
 
-Dentro de `paquetes/` hay varios zips. Cada uno guarda las rutas **tal cual estaban en el
-proyecto original**, así que:
+Dentro de `paquetes/` hay un zip por carpeta del proyecto. Cada uno guarda las rutas **tal cual
+estaban en el origen**, así que:
 
 > **Extrae todos los zips de `paquetes/` en una misma carpeta.**
 > Se ensamblan solos en el árbol original — no se pisan ni se duplican entre sí.
 
 | Zip | Qué trae |
 |---|---|
-| `01_HANDOFFS_KIMI_CLAUDE.zip` | **El trabajo con Kimi-Claude completo**: handoffs, reportes diarios, revisiones técnicas, investigación diaria y el paquete `HANDOFF_KIMI_PACKAGE`. |
-| `02_DOCUMENTACION_Y_MANUALES.zip` | Manuales, playbooks, biblia de estilo y los paquetes de conocimiento v1, v2 y v3 (tal cual, en `.zip`). |
-| `03_PAQUETES_INTERNOS_DESEMPAQUETADOS.zip` | Esos mismos paquetes **ya abiertos**, para no tener que descomprimir zips dentro de zips. Aquí están los 42 archivos únicos. |
-| `04_CODIGO_FUENTE_PIPELINE.zip` | Todo el código: `youtube_pipeline/`, `video_express_ai/`, `recraft_ai/`, `shorts_final/`, configs, requirements, logs. Ligero: se puede abrir entero sin problema. |
-| `05_ASSETS_GENERADOS_parte_N_de_M.zip` | Las imágenes, voces en off y frames generados. Pesan y no comprimen, por eso van en volúmenes aparte y numerados. **No hacen falta para entender el proyecto**, pero son parte del historial y no se descartan. |
+| `00_RAIZ_INDICES_DEL_AUTOR` | `LEEME_PRIMERO_TRASLADO.md` e `INVENTARIO_ARCHIVOS.md`, escritos por David. **Empieza por aquí.** |
+| `01_HANDOFFS_KIMI_CLAUDE_COMPLETO` | **El trabajo con Kimi-Claude completo**: los 27 archivos de `handoffs/` sin excepción, más `HANDOFF_KIMI_CODE.md`, el volcado de 522 KB `HANDOFF_KIMI_CODE_COMPLETO.txt`, `HANDOFF_KIMI_CODE.zip` y `HANDOFF_KIMI_PACKAGE/`. |
+| `02_CODIGO_PIPELINE__DOCS_Y_CODIGO` | Todo el código: `recraft_ai/`, `video_express_ai/`, `youtube_pipeline/`, `shorts_final/`, configs, requirements, logs, manifiestos de subtítulos. **133 KB — se abre entero sin problema.** |
+| `02_CODIGO_PIPELINE__ASSETS_parte_N` | Las imágenes, frames y voces en off que produjo ese código. |
+| `03_DOCUMENTACION_Y_MANUALES__DOCS_Y_CODIGO` | Manuales, playbooks, biblia de estilo, investigaciones, `docs_raiz_repo/`, `PROY_MECH_OPT/` y los paquetes de conocimiento v1, v2 y v3. |
+| `03_DOCUMENTACION_Y_MANUALES__ASSETS` | Las imágenes que acompañan a esa documentación. |
+| `04_STORYBOARDS` | `storyboard_resilience_v3_piloto.json` (15 paneles, 94 s) y su versión en Markdown. |
+| `05_MEDIA_REFERENCIA__ASSETS_parte_N` | Referencias de personaje, style-locks, badges, stills de Recraft, paneles de cómic y last-frames de las 12 escenas. |
+| `06_MEMORIA_PERSISTENTE_CLAUDE` | `MEMORY.md` + 7 memorias del proyecto. **Reprodúcelas en la carpeta de memoria de la cuenta nueva.** |
+| `07_AGENTES_CLAUDE_CODE` | Los 8 agentes + `settings.local.json`. **Cópialos a `.claude/agents/`.** |
+| `ZZ_PAQUETES_INTERNOS_DESEMPAQUETADOS` | Los 6 `.zip` que venían anidados, ya abiertos, para no tener que descomprimir zips dentro de zips. |
 
 ---
 
-## 2. Orden de lectura para la cuenta que recibe esto
+## 3. Orden de lectura para la cuenta que recibe esto
 
-No leas el paquete entero de golpe. Este es el camino corto para poder trabajar el mismo día:
-
-1. **`ESTADO_DEL_TRASLADO.md`** (aquí al lado) — dónde está parado el proyecto **hoy**, qué
-   decisión está bloqueando la producción y qué falta por recibir.
-2. **`ERRORES_QUE_NO_SE_DEBEN_REPETIR.md`**
-   (en `03_PAQUETES_INTERNOS_DESEMPAQUETADOS` → `PAQUETE_..._2026-08-25_v3/`) — 26 errores
-   con causa raíz y arreglo. Es el documento que más créditos y semanas ahorra. Léelo entero.
-3. **`LEEME_PRIMERO.md` y `MANIFIESTO.md`** del mismo paquete v3 — el mapa del conocimiento,
-   indexado por tema, fecha y severidad.
-4. **`01_estrategia_y_estilo/SISTEMA_STORYBOARD_MINDSET_MECHANICS.md`** — el método de
-   storyboard (esquema JSON + checklist de 15 puntos). Es la pieza más reutilizable de todo.
-5. **`HANDOFF_2026-08-25_decision_tercera_via_resiliencia.md`** (en `01_HANDOFFS...`) — el
-   pivote más importante del historial, con su razonamiento completo.
-6. Los reportes del **2026-08-26** (`REVISION_TECNICA`, `REPORTE_..._storyboard`,
-   `..._captacion`, `..._interaccion`, `INVESTIGACION_DIARIA`) — el último día registrado.
-   Ahí está el estado real, ya verificado contra archivos, no asumido.
-7. `04_CODIGO_FUENTE_PIPELINE` → empieza por `youtube_pipeline/README.md` y
-   `youtube_pipeline/config/channels.example.yaml`.
+1. **`LEEME_PRIMERO_TRASLADO.md`** (zip `00`) — el documento de David: alcance, qué se excluyó
+   a propósito, credenciales que hay que rehacer, estado del proyecto.
+2. **`ESTADO_DEL_TRASLADO.md`** (aquí al lado) — resumen operativo de dónde está el proyecto.
+3. **`06_MEMORIA_PERSISTENTE_CLAUDE/MEMORY.md`** y sus archivos — cómo trabaja David y sus
+   reglas duras.
+4. **`03_.../docs_raiz_repo/CLAUDE.md`** — el protocolo de handoffs con Kimi Code:
+   *"si no está en `handoffs/`, no existe"*.
+5. **`ERRORES_QUE_NO_SE_DEBEN_REPETIR.md`**
+   (`03_.../PROY_MECH_OPT/PAQUETE_CONOCIMIENTO_v3/`) — 26 errores con causa raíz y arreglo.
+   Es el documento que más créditos y semanas ahorra. Léelo entero.
+6. **`01_HANDOFFS.../handoffs/`** en orden cronológico — el historial real de decisiones.
+   Los cinco archivos del **26-ago** son el último día registrado.
+7. **`MANUAL_PRODUCCION.md`** + `SISTEMA_STORYBOARD_MINDSET_MECHANICS.md` +
+   `ESTILO_MINDSET_MECHANICS.md` + `DICCIONARIO_VISUAL_MINDSET_MECHANICS.md` —
+   **antes de generar una sola imagen.**
+8. `02_CODIGO_PIPELINE/` cuando toque ejecutar. Empieza por `youtube_pipeline/README.md`.
 
 ---
 
-## 3. Cómo se trabaja este proyecto (para no romper el método)
+## 4. Cómo se trabaja este proyecto (para no romper el método)
 
-El sistema tiene cuatro roles y la separación entre ellos es lo que ha evitado quemar
-presupuesto:
+Cuatro roles, y la separación entre ellos es lo que ha evitado quemar presupuesto:
 
 | Rol | Quién | Qué decide |
 |---|---|---|
 | Estratega | **Kimi Code** (otro LLM, vía handoffs en git) | Alcance, presupuesto, método |
 | Ejecutor técnico | **Claude Code** | Genera, ensambla, reporta. Ejecuta sin improvisar |
-| Storyboard Director | Subagente especializado | Convierte guion en storyboard técnico |
+| Storyboard Director | Subagente especializado | Convierte el guion en storyboard técnico |
 | Gate de calidad | **David** (humano) | Aprueba storyboard y piloto. Su veredicto manda |
 
-Los handoffs con Kimi van completos en `01_HANDOFFS_KIMI_CLAUDE.zip` — **ese intercambio es
-parte del proyecto, no un anexo**. Sin él se pierde el porqué de la mitad de las decisiones.
+El intercambio con Kimi va completo en el zip `01` — **es parte del proyecto, no un anexo**.
+Sin él se pierde el porqué de la mitad de las decisiones.
 
 **Las tres reglas de arquitectura que no se negocian:**
 
@@ -89,34 +99,33 @@ parte del proyecto, no un anexo**. Sin él se pierde el porqué de la mitad de l
    10-18 s por escena, cada uno con plano distinto.
 
 **Reglas de comunicación heredadas:** español siempre con David; el contenido del canal en
-inglés · 1080p mínimo, nunca bajar el nivel · investigar en la web antes de parchar · no
-mezclar canales/proyectos distintos en un mismo repo · nada se planifica sobre una fuente sin
-verificar.
+inglés · 1080p mínimo, nunca bajar el nivel · investigar en la web antes de parchar · **no
+mezclar canales ni proyectos distintos** · nada se planifica sobre una fuente sin verificar ·
+nada se ejecuta sin autorización explícita cuando cuesta créditos.
 
 ---
 
-## 4. Los agentes de Claude Code que hay que instalar
+## 5. Verificar que no se perdió nada al copiar
 
-En `03_PAQUETES_INTERNOS_DESEMPAQUETADOS` → `PAQUETE_..._2026-08-25_v3/05_agentes_claude_code/`
-hay 8 agentes listos. Cópialos a `.claude/agents/` de la cuenta nueva:
+```bash
+# en la carpeta donde extrajiste TODOS los zips de paquetes/
+sha256sum -c MANIFIESTO_SHA256.txt
+```
 
-`chief-technical-officer` · `storyboard-director` · `thumbnail-ctr-strategist` ·
-`thumbnail-consistency-guardian` · `community-engagement-manager` · `growth-acquisition-lead` ·
-`publish-readiness-coordinator` · `knowledge-archivist`
-
-Y en `06_memoria_claude/` están las memorias del proyecto (alcance, política de idiomas,
-calidad mínima 1080p, días de publicación, separación de canales). Adáptalas, no las borres.
+Si algo sale `FAILED` o no aparece, se vuelve a sacar del zip que lo contiene según
+`INVENTARIO_COMPLETO.md`.
 
 ---
 
-## 5. Seguridad — ya revisado
+## 6. Seguridad — ya revisado
 
-Se barrió el paquete entero buscando claves (`sk-`, `AIza`, `ghp_`, `.env` reales,
-credenciales): **cero resultados**. Solo viajan los `.env.example` con los nombres de las
-variables y ningún valor. La cuenta que reciba esto tendrá que poner sus propias claves de
-YouTube Data API, Anthropic, ElevenLabs, Gemini, Recraft y VideoExpress.
+Se barrió el paquete entero buscando claves (`sk-`, `AIza`, `ghp_`, `xoxb-`, claves privadas,
+`.env` reales, `auth_state.json`, archivos con `token`/`secret`/`credential` en el nombre):
+**cero resultados**. Solo viajan los `.env.example` con los nombres de las variables y ningún
+valor. Las credenciales hay que rehacerlas en el PC nuevo — la lista está en el §5 del
+`LEEME_PRIMERO_TRASLADO.md` de David.
 
 ---
 
-*Paquete armado con `tools/traslado/armar-traslado.sh`. Si llegan más partes del origen,
-se vuelve a ejecutar el mismo script y se regenera todo — inventario y manifiesto incluidos.*
+*Paquete armado con `tools/traslado/armar-traslado.sh`. Se puede regenerar entero —
+inventario y manifiesto incluidos — volviendo a ejecutar el script.*
