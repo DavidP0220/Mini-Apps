@@ -168,12 +168,28 @@ https://www.youtube.com/@mentalmechanics?sub_confirmation=1
 | Archivo | Medida | Dónde va |
 |---|---|---|
 | `marca/avatar.png` | 800 × 800 | Foto de perfil |
-| `marca/banner.png` | 2048 × 1152 | Banner del canal |
-| `marca/avatar.svg` / `banner.svg` | vectorial | Fuente editable |
+| `marca/banner.png` | 2560 × 1440 | Banner del canal |
+| `marca/preview-tamanos.png` | — | Verificación del avatar a 32/48/88/160 px |
+| `marca/generar-marca.mjs` | — | Script para regenerar ambos |
 
-Ambos respetan `ESTILO_MINDSET_MECHANICS.md`: cabeza rectangular redondeada, sin nariz, sin orejas,
-sin pelo, ojos óvalos negros grandes, cejas gruesas flotando con hueco visible, boca pequeña abajo,
-piel crema plana, contorno oscuro, gorra azul marino, hoodie gris sobre camiseta blanca.
+### Cómo están hechos — y por qué así
 
-El banner mantiene texto y personaje dentro de la **zona segura móvil** (1235 × 338 centrada), que es
-lo único que se ve en teléfono.
+**No son dibujos nuevos. Son tu propio personaje**, recortado de `REFERENCIA_personaje.png`, el frame
+extraído de los videos ya publicados. Un redibujo vectorial plano habría violado la regla dura de
+`ESTILO_MINDSET_MECHANICS.md`: *"PROHIBIDO en prompts de este canal: `comic`, `comic panel`,
+`halftone`, `vector`, `flat`"*. Usar el frame real garantiza que la marca y los videos sean la misma cosa.
+
+**Avatar — decisión de diseño basada en dato:** YouTube muestra la foto de perfil a **32×40 px** en
+comentarios y feeds, el contexto más pequeño de toda la plataforma. Una figura completa con hombros,
+hoodie y gorra se convierte en una mancha a ese tamaño. Por eso el recorte es cerrado a visera, cejas
+y ojos: la cara crema contra el fondo azul oscuro da un punto focal único con contraste alto, que es
+lo que la guía oficial de YouTube pide para que se reconozca al instante. Verificado en
+`preview-tamanos.png` a los cuatro tamaños reales.
+
+**Banner — construcción:** fondo desenfocado del propio frame para eliminar costuras, el personaje
+nítido enmascarado con degradado radial, luz ámbar que sale del orbe del frame como color de acento,
+viñeta y degradado lateral para que el texto quede legible. Texto y cara caben dentro de la **zona
+segura móvil** (1546 × 423 centrada), que es lo único visible en teléfono.
+
+**Efecto halo:** la investigación de branding 2026 lo documenta — un banner cuidado hace que el
+espectador asuma que los videos están bien producidos antes de ver uno. Uno pobre sugiere lo contrario.
