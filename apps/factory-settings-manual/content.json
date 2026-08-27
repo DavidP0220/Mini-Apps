@@ -1,0 +1,627 @@
+{
+  "meta": {
+    "id": "factory-settings-manual",
+    "title": "Factory Settings",
+    "subtitle": "The field manual for a brain that shipped in 200,000 BC",
+    "author": "Factory Settings",
+    "themeColor": "#FF8A1F",
+    "accentColor": "#FF8A1F",
+    "lang": "en",
+    "theme": "dark",
+    "ui": {
+      "start": "Open the manual",
+      "resume": "Pick up where you left off",
+      "progress": "% read",
+      "prev": "← Back",
+      "next": "Next →",
+      "finish": "Finish ✓"
+    }
+  },
+  "chapters": [
+    {
+      "id": "start",
+      "title": "Before you start",
+      "icon": "⚙️",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "The premise",
+          "body": "Your brain shipped in 200,000 BC. Nobody sent the update. Almost every behaviour in this manual is a piece of machinery that worked extremely well in the world it was built for, and now runs in a world that stopped existing. The behaviour is not the malfunction. The mismatch is."
+        },
+        {
+          "type": "text",
+          "heading": "What this is not",
+          "body": "There is no advice in here. No routines, no morning protocol, no five steps. Each chapter takes one specific thing you do, names the mechanism behind it, and traces it back to where it came from. What you do with that is your business."
+        },
+        {
+          "type": "callout",
+          "style": "tip",
+          "body": "Read one chapter at a time, then leave it alone for a day. These mechanisms are easier to recognise in yourself than to remember from a list."
+        },
+        {
+          "type": "checklist",
+          "heading": "The eight mechanisms",
+          "items": [
+            "Your mind goes blank under pressure",
+            "You cannot sit in silence",
+            "Your attention will not stay where you put it",
+            "Jealousy did not get removed",
+            "You avoid the task that would take forty minutes",
+            "The empty room feels watched",
+            "You rehearse conversations that never happen",
+            "You apologise when someone walks into you"
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warning",
+          "body": "For education and information only. This is not a substitute for professional psychological or medical advice."
+        }
+      ]
+    },
+    {
+      "id": "pressure",
+      "title": "The blank under pressure",
+      "icon": "🧊",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "What you do",
+          "body": "Everyone in the room is waiting for you to speak. You prepared. You said these exact words out loud, alone, maybe thirty times. And now there is nothing — not fear exactly, just a blank white space where the sentence used to be."
+        },
+        {
+          "type": "text",
+          "heading": "What is actually running",
+          "body": "Freezing is not the absence of a response. It is a response, and an old one. Going quiet and going still was once the difference between being seen and not being seen. The system that does it cannot tell the difference between a predator and a project deadline, because it was never built to make that distinction — the distinction did not exist. What makes it worse over time is that the body keeps paying for every activation, whether or not anything was actually there."
+        },
+        {
+          "type": "table",
+          "heading": "Where this comes from",
+          "columns": [
+            "Mechanism",
+            "Named by",
+            "What was shown"
+          ],
+          "rows": [
+            [
+              "Learned helplessness",
+              "Seligman, 1967",
+              "When escape repeatedly fails, animals stop attempting it even once escape becomes possible"
+            ],
+            [
+              "Allostatic load",
+              "McEwen, 1993",
+              "The cumulative bodily cost of repeated stress responses, not of any single one"
+            ],
+            [
+              "Physiological sigh",
+              "Respiratory research, 2010s",
+              "A double inhale followed by a long exhale reinflates collapsed alveoli and drops arousal faster than slow breathing"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "body": "The blank is not you failing to perform. It is a system performing exactly what it was built to do, at the worst possible moment."
+        },
+        {
+          "type": "quiz",
+          "question": "Why can the freeze response not tell a meeting from a predator?",
+          "options": [
+            "Because the response is too slow to make the distinction",
+            "Because the distinction did not exist in the world that built it",
+            "Because meetings are genuinely dangerous",
+            "Because the response is damaged by modern stress"
+          ],
+          "answerIndex": 1,
+          "explanation": "The machinery predates meetings entirely. It was never calibrated against a category that did not exist when it evolved."
+        }
+      ]
+    },
+    {
+      "id": "silence",
+      "title": "The reach for noise",
+      "icon": "🔇",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "What you do",
+          "body": "You get in the car. Before the seatbelt, before the engine, your hand goes to the radio. A podcast in the shower. The television on in an empty house. You are not choosing a song. You are filling something."
+        },
+        {
+          "type": "text",
+          "heading": "What is actually running",
+          "body": "In the environment that built you, silence was not peace — it was information. The birds stop. The insects stop. Something is moving. A brain that relaxed into silence left fewer descendants than one that treated it as the last warning it was going to get. Sustained monitoring of a quiet channel is also, measurably, one of the things human attention is worst at."
+        },
+        {
+          "type": "table",
+          "heading": "Where this comes from",
+          "columns": [
+            "Mechanism",
+            "Named by",
+            "What was shown"
+          ],
+          "rows": [
+            [
+              "Mackworth vigilance task",
+              "Mackworth, 1948",
+              "Detection performance on a monotonous watch collapses within about thirty minutes"
+            ],
+            [
+              "Hyperactive agency detection",
+              "Barrett, 2000",
+              "The mind defaults to assuming an agent behind ambiguous events, because a false alarm is cheap and a miss is not"
+            ],
+            [
+              "Zeigarnik effect",
+              "Zeigarnik, 1927",
+              "Unfinished business stays active in memory in a way finished business does not"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "body": "You are not bad at being alone with your thoughts. You are very good at listening for something that stopped coming three hundred thousand years ago."
+        },
+        {
+          "type": "quiz",
+          "question": "What made silence worth reacting to in the ancestral environment?",
+          "options": [
+            "It meant the group had moved on without you",
+            "It signalled that other animals had already detected something",
+            "It made it harder to hear approaching predators",
+            "It was associated with night and cold"
+          ],
+          "answerIndex": 1,
+          "explanation": "The value was indirect. Silence was other species' alarm, arriving before yours."
+        }
+      ]
+    },
+    {
+      "id": "attention",
+      "title": "The phone you turn back over",
+      "icon": "📵",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "What you do",
+          "body": "You put the phone face down. That was a decision, made on purpose. Ninety seconds later your hand is turning it back over and you do not remember deciding that part."
+        },
+        {
+          "type": "text",
+          "heading": "What is actually running",
+          "body": "Attention is a budget, and evolution spends it on whatever might change your odds over the next ten minutes. A rustle in the grass could be wind, or it could be the last sound you ever hear. Being wrong about wind costs nothing; being wrong about the leopard costs everything. So the system was built to be wrong constantly, in one direction. It was calibrated for a world where everything that grabbed your attention was rare — which is the one assumption a notification breaks."
+        },
+        {
+          "type": "table",
+          "heading": "Where this comes from",
+          "columns": [
+            "Mechanism",
+            "Named by",
+            "What was shown"
+          ],
+          "rows": [
+            [
+              "Smoke detector principle",
+              "Nesse, 2001",
+              "Defensive systems are tuned to over-trigger, because false alarms are cheap relative to misses"
+            ],
+            [
+              "Hyperbolic discounting",
+              "Ainslie, 1975",
+              "Value drops steeply with delay, so a small immediate reward can outrank a large later one"
+            ],
+            [
+              "Mackworth vigilance task",
+              "Mackworth, 1948",
+              "Sustained attention on a low-event channel degrades quickly and predictably"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "body": "Your attention span was never broken. It was calibrated for a world where everything that grabbed it was rare."
+        },
+        {
+          "type": "quiz",
+          "question": "Why is a system tuned to over-trigger still a good design?",
+          "options": [
+            "Because false alarms have no cost at all",
+            "Because the cost of a miss is far higher than the cost of a false alarm",
+            "Because it improves with practice",
+            "Because it saves energy overall"
+          ],
+          "answerIndex": 1,
+          "explanation": "The asymmetry does the work. Many cheap false alarms beat one fatal miss, so selection tolerates a system that is wrong most of the time."
+        }
+      ]
+    },
+    {
+      "id": "jealousy",
+      "title": "The arithmetic you did not agree to do",
+      "icon": "👀",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "What you do",
+          "body": "You saw the notification. You were not looking for it. Someone liked a photo, not even a recent photo, and now you are doing arithmetic you did not agree to do."
+        },
+        {
+          "type": "text",
+          "heading": "What is actually running",
+          "body": "Evolution has no interest in whether you are happy. It registers one thing: whether your genes make it into the next round. For most of human history the fastest way to lose that round was to spend twenty years raising a child who was not yours — so the monitoring system that guards against it was built expensive, intrusive and impossible to switch off. It is also, by design, biased toward the error that costs less."
+        },
+        {
+          "type": "table",
+          "heading": "Where this comes from",
+          "columns": [
+            "Mechanism",
+            "Named by",
+            "What was shown"
+          ],
+          "rows": [
+            [
+              "Mate guarding",
+              "Buss, 1992",
+              "Jealousy tracks threats to a pair bond and triggers behaviour aimed at retaining a partner"
+            ],
+            [
+              "Error management theory",
+              "Haselton & Buss, 2000",
+              "Where two errors cost differently, judgement is biased toward the cheaper mistake rather than toward accuracy"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "body": "The feeling is not a verdict about your partner. It is a smoke detector reporting that it is still powered on."
+        },
+        {
+          "type": "quiz",
+          "question": "What does error management theory predict about suspicion?",
+          "options": [
+            "That it converges on accuracy over time",
+            "That it is biased toward whichever mistake is less costly",
+            "That it disappears in secure relationships",
+            "That it is learned entirely from experience"
+          ],
+          "answerIndex": 1,
+          "explanation": "When the two possible errors cost different amounts, selection favours bias over accuracy."
+        }
+      ]
+    },
+    {
+      "id": "procrastination",
+      "title": "The forty-minute task",
+      "icon": "⏳",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "What you do",
+          "body": "There is a thing you have not done. You know exactly what it is. It would take about forty minutes. You have now spent three weeks not doing it, which is roughly thirty times longer than doing it would have taken."
+        },
+        {
+          "type": "text",
+          "heading": "What is actually running",
+          "body": "For almost all of human history the currency of everything was calories, not money. A body that spent calories on a task with no immediate return was making a bet it could not afford to lose. Effort now for reward later was not wisdom — it was a way to die in a bad winter. The task you are avoiding is rarely the problem. What you are avoiding is the feeling the task predicts."
+        },
+        {
+          "type": "table",
+          "heading": "Where this comes from",
+          "columns": [
+            "Mechanism",
+            "Named by",
+            "What was shown"
+          ],
+          "rows": [
+            [
+              "Hyperbolic discounting",
+              "Ainslie, 1975",
+              "Delayed rewards lose value sharply, which makes immediate relief outrank distant benefit"
+            ],
+            [
+              "Optimal foraging",
+              "MacArthur & Pianka, 1966",
+              "Animals allocate effort by expected return per unit of energy, abandoning low-yield patches"
+            ],
+            [
+              "Zeigarnik effect",
+              "Zeigarnik, 1927",
+              "The unfinished task keeps consuming attention, which is why avoiding it is not free"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "body": "You are not avoiding the task. You are avoiding the feeling the task predicts — and the avoidance costs more than the task, because the unfinished version keeps running."
+        },
+        {
+          "type": "quiz",
+          "question": "Why is avoidance more expensive than it looks?",
+          "options": [
+            "Because the task gets objectively harder over time",
+            "Because unfinished tasks keep consuming attention",
+            "Because delay always adds new work",
+            "Because energy costs rise with time"
+          ],
+          "answerIndex": 1,
+          "explanation": "An unfinished task stays active in memory, so you pay attention costs for three weeks instead of forty minutes."
+        }
+      ]
+    },
+    {
+      "id": "watched",
+      "title": "The empty room",
+      "icon": "👁️",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "What you do",
+          "body": "You are alone in your own home. You have been alone for hours. And then, for no reason you can point to, you turn around."
+        },
+        {
+          "type": "text",
+          "heading": "What is actually running",
+          "body": "Part of your brain answers one question constantly, without asking permission: is something looking at me right now? It runs in the dark, while you read, while you sleep. It was built by a filter with no interest in whether it is right — only in what it costs to be wrong. The same machinery makes you overestimate how much anyone is looking at you when the room is not empty."
+        },
+        {
+          "type": "table",
+          "heading": "Where this comes from",
+          "columns": [
+            "Mechanism",
+            "Named by",
+            "What was shown"
+          ],
+          "rows": [
+            [
+              "Hyperactive agency detection",
+              "Barrett, 2000",
+              "Ambiguous cues get read as an agent by default, because missing a real one was lethal"
+            ],
+            [
+              "Gaze detection",
+              "Baron-Cohen, 1995",
+              "Humans have dedicated machinery for detecting eye direction and being looked at"
+            ],
+            [
+              "Spotlight effect",
+              "Gilovich, 2000",
+              "People consistently overestimate how much others notice them"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "body": "The room was always empty. The system that checks was never built to believe you."
+        },
+        {
+          "type": "quiz",
+          "question": "Why does gaze detection stay on when you are demonstrably alone?",
+          "options": [
+            "Because it needs constant calibration",
+            "Because the cost of missing a real watcher outweighs the cost of false alarms",
+            "Because it is a learned habit from childhood",
+            "Because it is a side effect of poor lighting"
+          ],
+          "answerIndex": 1,
+          "explanation": "Same asymmetry as the smoke detector. A system that never checks is a system that misses the one time it mattered."
+        }
+      ]
+    },
+    {
+      "id": "rehearsal",
+      "title": "The argument in the shower",
+      "icon": "🚿",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "What you do",
+          "body": "The water is running and you are winning an argument with someone who is not in the room. You have the perfect line. You have their response. You have your response to their response."
+        },
+        {
+          "type": "text",
+          "heading": "What is actually running",
+          "body": "Humans are the only animal that spends a meaningful part of its life inside events that have not happened. That is not daydreaming, it is a simulator, and it was expensive to build. Something that costs that much energy does not survive three hundred thousand years unless it pays for itself. What it buys is rehearsal for the only problem that ever really mattered: other people, and your standing among them."
+        },
+        {
+          "type": "table",
+          "heading": "Where this comes from",
+          "columns": [
+            "Mechanism",
+            "Named by",
+            "What was shown"
+          ],
+          "rows": [
+            [
+              "Default mode network",
+              "Raichle, 2001",
+              "A brain network that becomes more active at rest, associated with simulating events and other minds"
+            ],
+            [
+              "Dunbar's number",
+              "Dunbar, 1990s",
+              "Human social group size clusters around 150, a scale that demands constant relationship tracking"
+            ],
+            [
+              "Self-presentation theory of social anxiety",
+              "Leary & Kowalski, 1990",
+              "Social anxiety arises when you are motivated to make an impression and doubt you will manage it"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "body": "The conversation never happens because it was never the point. The rehearsal was the point."
+        },
+        {
+          "type": "quiz",
+          "question": "What does the simulator's energy cost imply?",
+          "options": [
+            "That it is an inefficient leftover",
+            "That it must deliver enough benefit to justify itself",
+            "That it only runs when you are stressed",
+            "That it evolved recently"
+          ],
+          "answerIndex": 1,
+          "explanation": "Expensive machinery does not persist across evolutionary time unless it pays. The cost is evidence of value, not of malfunction."
+        }
+      ]
+    },
+    {
+      "id": "apology",
+      "title": "Sorry when it was not you",
+      "icon": "🙏",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "What you do",
+          "body": "Someone walks into you. They were not looking. You were standing still. And you are the one who says sorry."
+        },
+        {
+          "type": "text",
+          "heading": "What is actually running",
+          "body": "For most of human history there was no such thing as surviving alone — not as a hardship, as a category that did not exist. The group had the fire, the food, the warning, the water. Outside it there was no version of you that lasted the winter. So the most dangerous thing a human could do was not lose a fight. It was become someone the group stopped protecting. The reflex apology is an appeasement display: cheap, fast, and aimed at keeping you inside."
+        },
+        {
+          "type": "table",
+          "heading": "Where this comes from",
+          "columns": [
+            "Mechanism",
+            "Named by",
+            "What was shown"
+          ],
+          "rows": [
+            [
+              "Appeasement displays",
+              "Ethology, mid-20th century",
+              "Across social species, submission signals defuse conflict and preserve group membership"
+            ],
+            [
+              "Dunbar's number",
+              "Dunbar, 1990s",
+              "Standing inside a group of roughly this size requires constant, low-cost maintenance"
+            ],
+            [
+              "Cost of exclusion",
+              "Social exclusion research",
+              "Exclusion registers on pathways overlapping those for physical pain"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "body": "The question is not why you apologise so much. It is what you think happens if you stop."
+        },
+        {
+          "type": "quiz",
+          "question": "Why is a reflex apology a good bet, mechanically speaking?",
+          "options": [
+            "Because it always resolves the conflict",
+            "Because it costs almost nothing and protects group standing",
+            "Because it signals honesty",
+            "Because it prevents physical retaliation"
+          ],
+          "answerIndex": 1,
+          "explanation": "It is cheap insurance. The downside of one unnecessary apology is trivial next to the downside of losing standing."
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "title": "The one pattern",
+      "icon": "🔗",
+      "sections": [
+        {
+          "type": "text",
+          "heading": "All eight are the same shape",
+          "body": "Every mechanism in this manual is a system tuned by an asymmetry. Two possible errors, unequal costs, and selection biasing toward the cheaper one. Freezing, scanning silence, checking the phone, checking the notification, avoiding the task, turning around in an empty room, rehearsing the argument, apologising first — none of these are accuracy failures. They are correct outputs from systems that were never optimising for accuracy in the first place."
+        },
+        {
+          "type": "table",
+          "heading": "The asymmetry behind each one",
+          "columns": [
+            "Behaviour",
+            "Cheap error",
+            "Expensive error"
+          ],
+          "rows": [
+            [
+              "Going blank",
+              "Freeze unnecessarily",
+              "Move while something is watching"
+            ],
+            [
+              "Filling silence",
+              "Check for nothing",
+              "Miss the one real warning"
+            ],
+            [
+              "Breaking attention",
+              "Look at a false alarm",
+              "Ignore the real threat"
+            ],
+            [
+              "Jealousy",
+              "Suspect wrongly",
+              "Miss it entirely"
+            ],
+            [
+              "Procrastination",
+              "Delay a task",
+              "Spend scarce calories on no return"
+            ],
+            [
+              "Feeling watched",
+              "Turn around for nothing",
+              "Be watched and not know"
+            ],
+            [
+              "Rehearsing",
+              "Simulate a conversation that never happens",
+              "Enter it unprepared"
+            ],
+            [
+              "Apologising",
+              "Apologise unnecessarily",
+              "Lose standing in the group"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "note",
+          "body": "None of it means something is wrong with you. It means the settings were written for a world that stopped existing, and nobody ever sent the update."
+        },
+        {
+          "type": "checklist",
+          "heading": "Worth noticing this week",
+          "items": [
+            "One moment you reached for noise without deciding to",
+            "One task you are avoiding, and the feeling it predicts",
+            "One apology that was not yours to make",
+            "One conversation you rehearsed that will never happen",
+            "One time you checked something you knew you should not check"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Where the rest of this lives",
+          "body": "Each chapter here is the compressed version of a full episode on the Factory Settings channel, where the same mechanism gets traced end to end with the research it came from."
+        },
+        {
+          "type": "callout",
+          "style": "warning",
+          "body": "For education and information only. Not a substitute for professional psychological or medical advice."
+        }
+      ]
+    }
+  ]
+}

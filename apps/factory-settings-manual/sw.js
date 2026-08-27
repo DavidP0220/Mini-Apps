@@ -1,4 +1,4 @@
-const CACHE = 'mini-app-v3';
+const CACHE = 'factory-settings-manual-v1';
 const ASSETS = ['./', './index.html', './styles.css', './app.js', './content.json', './manifest.json'];
 
 self.addEventListener('install', (e) => {

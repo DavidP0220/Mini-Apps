@@ -13,9 +13,22 @@
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   }
 
-  // Theme
+  // Textos de interfaz. Por defecto en castellano; una app los sustituye con meta.ui.
+  const UI = Object.assign({
+    start: 'Comenzar',
+    resume: 'Continuar donde quedé',
+    progress: '% completado',
+    prev: '← Anterior',
+    next: 'Siguiente →',
+    finish: 'Completar ✓',
+  }, data.meta.ui || {});
+  if (data.meta.lang) document.documentElement.setAttribute('lang', data.meta.lang);
+  document.getElementById('startBtn').textContent = UI.start;
+  document.getElementById('continueBtn').textContent = UI.resume;
+
+  // Theme. meta.theme fija el tema inicial; lo que el usuario elija manda por encima.
   const root = document.documentElement;
-  const savedTheme = localStorage.getItem('theme_' + data.meta.id);
+  const savedTheme = localStorage.getItem('theme_' + data.meta.id) || data.meta.theme;
   if (savedTheme) root.setAttribute('data-theme', savedTheme);
   document.getElementById('themeToggle').addEventListener('click', () => {
     const cur = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
@@ -46,7 +59,7 @@
   function refreshCoverProgress() {
     const pct = progressPct();
     document.getElementById('coverProgressFill').style.width = pct + '%';
-    document.getElementById('coverProgressLabel').textContent = pct + '% completado';
+    document.getElementById('coverProgressLabel').textContent = pct + UI.progress;
     document.getElementById('continueBtn').classList.toggle('hidden', !state.currentChapter);
   }
   refreshCoverProgress();
@@ -110,13 +123,13 @@
     const navRow = document.createElement('div');
     navRow.className = 'nav-buttons';
     const prevBtn = document.createElement('button');
-    prevBtn.textContent = '← Anterior';
+    prevBtn.textContent = UI.prev;
     prevBtn.disabled = idx === 0;
     prevBtn.addEventListener('click', () => renderChapter(data.chapters[idx - 1].id));
 
     const nextBtn = document.createElement('button');
     const isLast = idx === data.chapters.length - 1;
-    nextBtn.textContent = isLast ? 'Completar ✓' : 'Siguiente →';
+    nextBtn.textContent = isLast ? UI.finish : UI.next;
     nextBtn.className = 'primary';
     nextBtn.addEventListener('click', () => {
       if (!state.doneChapters.includes(chapterId)) {
