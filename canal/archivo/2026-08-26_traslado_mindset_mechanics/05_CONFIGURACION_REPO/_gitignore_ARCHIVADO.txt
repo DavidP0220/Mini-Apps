@@ -1,0 +1,139 @@
+# === LISTA BLANCA ===
+# Esta carpeta contiene múltiples proyectos ajenos a Mindset Mechanics
+# (documentos financieros, otros clientes, etc). Por seguridad: todo
+# se ignora por defecto, y solo se permite explícitamente lo del
+# proyecto Mindset Mechanics.
+
+/*
+
+!/.gitignore
+!/.gitattributes
+!/CLAUDE.md
+!/INDEX.md
+
+!/handoffs
+!/handoffs/**
+
+!/PROYECTO MECHANICS OPTIMIZACIONES
+!/PROYECTO MECHANICS OPTIMIZACIONES/**
+
+# NOTA 2026-08-25: Human Chronicles es un canal aparte de Mindset Mechanics.
+# Su contenido NO va en este repo. Explicitamente excluido - no re-agregar.
+
+# Estos ya estaban trackeados a mano (git ignora .gitignore para archivos ya
+# trackeados), pero cualquier ARCHIVO NUEVO dentro de storyboards/ se estaba
+# ignorando en silencio. Se declaran explicitamente. 2026-08-25.
+!/POLITICA_IDIOMAS.md
+!/SISTEMA_STORYBOARD_MINDSET_MECHANICS.md
+!/storyboards
+!/storyboards/**
+
+!/RESILIENCE_SCENE_PLAN.md
+!/ESTILO_MINDSET_MECHANICS.md
+!/script_resilience_video.md
+!/script_social_anxiety_video.md
+!/video_understand.py
+
+!/video_express_ai
+!/video_express_ai/**
+
+!/recraft_ai
+!/recraft_ai/**
+
+!/youtube_pipeline
+!/youtube_pipeline/**
+
+!/shorts_final
+!/shorts_final/**
+
+# NOTA 2026-08-26: producto nuevo "alternativa a Higgsfield.ai", separado del
+# pipeline de producción de video. Se agrega explícitamente tras encontrar que
+# la carpeta llevaba desde su creación (2026-08-25) ignorada en silencio por
+# esta misma lista blanca - el mismo bug de rutas/gitignore que ya había
+# encontrado la auditoría técnica del 2026-08-25 en otro módulo. Ver
+# PROYECTO HIGGSFIELD ALTERNATIVA/07_ERRORES_Y_LECCIONES.md.
+!/PROYECTO HIGGSFIELD ALTERNATIVA
+!/PROYECTO HIGGSFIELD ALTERNATIVA/**
+
+# === Dentro de las carpetas permitidas: bloquear sesiones, credenciales,
+#     configuración real y salidas pesadas ===
+
+# video_express_ai
+video_express_ai/.env
+video_express_ai/auth_state.json
+video_express_ai/__pycache__/
+# Lock de sesión (session.py): estado local de un proceso en curso, nunca
+# debe viajar en git - commitearlo bloquearía a otra máquina al clonar.
+video_express_ai/.videoexpress.lock
+# Descargas a medio terminar (_download escribe a .part y renombra al final).
+*.part
+# NOTA 2026-08-25: outputs/ y logs/ SI se trackean ahora (ver mas abajo) -
+# Recraft y VideoExpress solo alojan los archivos generados 60 dias, hay
+# que preservarlos en git o se pierden para siempre. Excepcion: videos
+# finales pesados (*.mp4 mayores a ~90MB rondan el limite duro de 100MB de
+# GitHub) - esos necesitan otro destino (Drive u otro storage), no git.
+
+# recraft_ai
+recraft_ai/.env
+recraft_ai/__pycache__/
+
+# youtube_pipeline
+youtube_pipeline/.env
+youtube_pipeline/config/channels.yaml
+youtube_pipeline/channels/*/token.json
+youtube_pipeline/channels/*/output/
+youtube_pipeline/channels/*/comic_panels/
+youtube_pipeline/output/
+youtube_pipeline/__pycache__/
+youtube_pipeline/**/__pycache__/
+youtube_pipeline/*.mp4
+
+# shorts_final: scripts + imagenes/pruebas SI se guardan (2026-08-25, decision
+# de David: nunca perder nada generado). Los .mp4 siguen bloqueados por la
+# regla global de abajo (limite de tamano de GitHub), no por politica.
+
+# === Reglas generales de seguridad (por si aparece algo nuevo dentro
+#     de las carpetas permitidas) ===
+*.mp4
+*.mp3
+*.wav
+*.mov
+*.avi
+*.mkv
+session/
+sessions/
+auth/
+cookies*
+*.session
+state.json
+storage_state.json
+*.storageState.json
+auth_state.json
+.env
+.env.*
+# ...pero las PLANTILLAS sin secretos si se trackean: son la unica
+# documentacion de que variables hay que configurar. `.env.*` de arriba las
+# tragaba en silencio - recraft_ai/.env.example sobrevive solo porque se
+# agrego a mano antes de que existiera esa regla, y cualquier plantilla NUEVA
+# (video_express_ai/.env.example, youtube_pipeline/.env.example) se habria
+# ignorado sin aviso. Mismo fallo silencioso que ya paso con storyboards/.
+!.env.example
+!.env.template
+!.env.sample
+*credentials*
+*token*
+*api_key*
+*apikey*
+*secret*
+*.pem
+*.key
+!*.public.key
+venv/
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+kimi_token.txt
+.claude/
+.DS_Store
+Thumbs.db

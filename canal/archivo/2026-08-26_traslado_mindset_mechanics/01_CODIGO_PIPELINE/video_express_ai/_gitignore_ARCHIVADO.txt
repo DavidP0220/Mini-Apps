@@ -1,0 +1,5 @@
+.env
+auth_state.json
+__pycache__/
+# outputs/ SI se trackea (2026-08-25) - ver nota en el .gitignore raiz.
+# Los .mp4 pesados los sigue bloqueando la regla global del .gitignore raiz.

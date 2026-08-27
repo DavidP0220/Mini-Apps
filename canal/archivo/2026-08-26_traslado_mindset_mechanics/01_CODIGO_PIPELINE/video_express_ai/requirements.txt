@@ -1,0 +1,6 @@
+playwright
+python-dotenv
+faster-whisper
+yt-dlp
+# _render_subtitle_pngs.py y _make_long_badge.py importan PIL - faltaba aqui
+Pillow

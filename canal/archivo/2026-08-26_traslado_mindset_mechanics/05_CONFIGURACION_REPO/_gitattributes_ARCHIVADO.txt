@@ -1,0 +1,43 @@
+# Normalizacion de fin de linea.
+#
+# Por que existe este archivo (2026-08-25): el repo no tenia .gitattributes,
+# asi que el fin de linea de cada archivo dependia de la config local de git
+# de cada maquina (core.autocrlf). El indice ya estaba en LF, pero varios
+# archivos del arbol de trabajo estaban en CRLF (recraft_client.py,
+# generate_scene.py, video_express_bot.py, generate_video.py,
+# _assemble_visual_track.py, _final_assembly.py). Mientras solo sean .py no
+# rompe nada, pero un .sh con CRLF falla en bash con el clasico
+# "\r: command not found" - y este proyecto ejecuta .sh reales
+# (shorts_final/process_all.sh, make_ultrashorts.sh, add_badge.sh) que
+# ensamblan video con ffmpeg. Fijarlo aqui elimina la clase entera de
+# problema en vez de esperar a que reviente en otra maquina o tras un clon
+# limpio.
+
+* text=auto eol=lf
+
+# Scripts ejecutados por bash/sh: LF obligatorio siempre.
+*.sh text eol=lf
+
+# Codigo y configuracion: LF.
+*.py   text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml  text eol=lf
+*.txt  text eol=lf
+
+# Binarios: git no debe tocarlos nunca (una "normalizacion" sobre un PNG o un
+# MP4 lo corrompe).
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.mp4  binary
+*.mov  binary
+*.mp3  binary
+*.wav  binary
+*.zip  binary
+*.pdf  binary
+*.ttf  binary
+*.otf  binary

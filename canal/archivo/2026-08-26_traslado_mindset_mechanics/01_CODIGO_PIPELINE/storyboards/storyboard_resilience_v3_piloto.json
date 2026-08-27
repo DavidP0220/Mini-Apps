@@ -1,0 +1,541 @@
+{
+  "video": "resilience_v3",
+  "segment": "piloto_SC01-SC02",
+  "audio_total_s": 553.4,
+  "segment_tc": "0:00-1:34",
+  "segment_duration_s": 94,
+  "shots": [
+    {
+      "shot_id": "SC01_SH001a",
+      "scene": 1,
+      "duration_s": 5,
+      "shot_size": "medium",
+      "angle": "eye_level",
+      "camera_move": {
+        "type": "push_in",
+        "speed": "slow",
+        "phase": "1/2",
+        "note": "fase 1/2: arranque del movimiento"
+      },
+      "subject": "HOST",
+      "action": "sits at conference table leaning slightly forward, mouth half-open mid-word, sheet of notes held loosely in one hand, eyes fixed frame-right",
+      "environment": "corporate meeting room at dusk, long dark-wood table, out-of-focus colleague silhouettes on the right, warm amber lamps, cool teal dusk through window, warm amber interior grade with muted teal accents; host on left third, open space right",
+      "emotion_beat": "hook",
+      "image_prompt": "Soft painterly digital illustration in the style of a modern animated explainer short, 2D stylised animation, not anime. Medium shot of a young man drawn with deliberately simplified cartoon proportions: a VERY LARGE round smooth head about one third of his total height, a completely smooth bald head shape with NO visible hair at all, a dark navy baseball cap sitting directly on that smooth head. His face is extremely minimal: two small plain solid black oval eyes with no iris, no highlight and no eyelashes, two thin short dark eyebrows, a tiny dot nose and a small simple line mouth. Flat pale cream skin with soft even shading and NO blush, NO pink cheeks. Small simple body in a grey hoodie, dark jeans and sneakers. He sits at a long dark-wood conference table, leaning slightly forward, mouth half-open mid-word, holding a sheet of notes loosely in one hand, eyes fixed toward frame right. He is placed on the left third of the frame with open space on the right. Corporate meeting room at dusk: out-of-focus colleague silhouettes along the right side of the table, warm amber desk lamps, cool teal dusk light through a window behind him, warm amber interior grade with muted teal accents. Rich atmospheric cinematic lighting, warm rim light, volumetric light shafts, floating dust particles. Muted harmonious colour palette. Full-bleed single scene with real environmental depth and a detailed background. Clean soft linework, thick black outline, flat cel-shading. Absolutely NO halftone dots, NO ben-day dots, NO starburst or speed lines, NO comic panels, NO white gutters, NO speech bubbles, NO anime face, NO detailed irises, NO visible hair, NO visible ears, NO blush, NO sharp jawline, NO photorealism, and NO text, letters, signs or words anywhere in the image.",
+      "video_action_prompt": "Slow smooth push-in toward the young man with his navy cap and grey hoodie, seated at the conference table. His chest rises once with a held breath, the sheet of notes shifts slightly in his hand, dust particles drift through the warm lamp light, the blurred colleague silhouettes stay soft and still. The push-in tightens the frame on his face as his mouth opens to speak. Calm-before-the-storm tone, restrained tension. Stable camera, smooth motion, minimal distortion.",
+      "transition_out": "cut_on_action",
+      "vo_text": "Picture this: you're in a high-stakes meeting, and all eyes are on you. You've prepped for this for weeks.",
+      "vo_tc": "0:00-0:12",
+      "status": "pending",
+      "derived_from": "SC01_SH001",
+      "tc": "0:00-0:05",
+      "panel_index": 1,
+      "vo_block_tc": "0:00-0:12",
+      "rhythm_role": "entrada",
+      "rhythm_note": "entrada a mitad de accion: corto, no deja instalarse",
+      "risk": [
+        "R2-NEGATIVOS-INLINE: el image_prompt lleva los negativos escritos dentro del prompt positivo, lo que ESTILO_MINDSET_MECHANICS.md 6.bis declara contraproducente (los tokens 'ears'/'nose' condicionan en positivo). El modelo por defecto de recraft_ai/generate_scene.py es recraftv4_1, que NO acepta el parametro negative_prompt (recraft_client.py:87,136), asi que la via del 6.bis no esta disponible sin cambiar a recraftv3 @1820x1024. DECISION PENDIENTE DE KIMI antes de gastar creditos."
+      ]
+    },
+    {
+      "shot_id": "SC01_SH001b",
+      "scene": 1,
+      "duration_s": 7,
+      "shot_size": "medium",
+      "angle": "eye_level",
+      "camera_move": {
+        "type": "push_in",
+        "speed": "slow",
+        "phase": "2/2",
+        "note": "fase 2/2: continuacion del MISMO movimiento sobre la MISMA imagen, encuadre ya avanzado (cut-in sobre el eje del movimiento, no jump cut)"
+      },
+      "subject": "HOST",
+      "action": "sits at conference table leaning slightly forward, mouth half-open mid-word, sheet of notes held loosely in one hand, eyes fixed frame-right",
+      "environment": "corporate meeting room at dusk, long dark-wood table, out-of-focus colleague silhouettes on the right, warm amber lamps, cool teal dusk through window, warm amber interior grade with muted teal accents; host on left third, open space right",
+      "emotion_beat": "hook",
+      "image_prompt": "Soft painterly digital illustration in the style of a modern animated explainer short, 2D stylised animation, not anime. Medium shot of a young man drawn with deliberately simplified cartoon proportions: a VERY LARGE round smooth head about one third of his total height, a completely smooth bald head shape with NO visible hair at all, a dark navy baseball cap sitting directly on that smooth head. His face is extremely minimal: two small plain solid black oval eyes with no iris, no highlight and no eyelashes, two thin short dark eyebrows, a tiny dot nose and a small simple line mouth. Flat pale cream skin with soft even shading and NO blush, NO pink cheeks. Small simple body in a grey hoodie, dark jeans and sneakers. He sits at a long dark-wood conference table, leaning slightly forward, mouth half-open mid-word, holding a sheet of notes loosely in one hand, eyes fixed toward frame right. He is placed on the left third of the frame with open space on the right. Corporate meeting room at dusk: out-of-focus colleague silhouettes along the right side of the table, warm amber desk lamps, cool teal dusk light through a window behind him, warm amber interior grade with muted teal accents. Rich atmospheric cinematic lighting, warm rim light, volumetric light shafts, floating dust particles. Muted harmonious colour palette. Full-bleed single scene with real environmental depth and a detailed background. Clean soft linework, thick black outline, flat cel-shading. Absolutely NO halftone dots, NO ben-day dots, NO starburst or speed lines, NO comic panels, NO white gutters, NO speech bubbles, NO anime face, NO detailed irises, NO visible hair, NO visible ears, NO blush, NO sharp jawline, NO photorealism, and NO text, letters, signs or words anywhere in the image.",
+      "video_action_prompt": "Continuation of the previous shot, second half of the same camera move, already tighter in the frame. Slow smooth push-in toward the young man with his navy cap and grey hoodie, seated at the conference table. His chest rises once with a held breath, the sheet of notes shifts slightly in his hand, dust particles drift through the warm lamp light, the blurred colleague silhouettes stay soft and still. The push-in tightens the frame on his face as his mouth opens to speak. Calm-before-the-storm tone, restrained tension. Stable camera, smooth motion, minimal distortion.",
+      "transition_out": "cut_on_action",
+      "vo_text": "Picture this: you're in a high-stakes meeting, and all eyes are on you. You've prepped for this for weeks.",
+      "vo_tc": "0:00-0:12",
+      "status": "pending",
+      "derived_from": "SC01_SH001",
+      "tc": "0:05-0:12",
+      "panel_index": 2,
+      "vo_block_tc": "0:00-0:12",
+      "transition_in": "cut_on_action",
+      "rhythm_role": "exhalacion",
+      "rhythm_note": "deja aterrizar el bloqueo antes de cortar",
+      "risk": [
+        "R2-NEGATIVOS-INLINE: el image_prompt lleva los negativos escritos dentro del prompt positivo, lo que ESTILO_MINDSET_MECHANICS.md 6.bis declara contraproducente (los tokens 'ears'/'nose' condicionan en positivo). El modelo por defecto de recraft_ai/generate_scene.py es recraftv4_1, que NO acepta el parametro negative_prompt (recraft_client.py:87,136), asi que la via del 6.bis no esta disponible sin cambiar a recraftv3 @1820x1024. DECISION PENDIENTE DE KIMI antes de gastar creditos."
+      ]
+    },
+    {
+      "shot_id": "SC01_SH002a",
+      "scene": 1,
+      "duration_s": 8,
+      "shot_size": "close_up",
+      "angle": "dutch",
+      "camera_move": {
+        "type": "pan",
+        "speed": "slow",
+        "direction": "left",
+        "phase": "1/2",
+        "note": "fase 1/2: arranque del movimiento"
+      },
+      "subject": "HOST",
+      "action": "mouth stays half-open but no words come out, black oval eyes widen and stop blinking, the hand with notes lowers out of frame",
+      "environment": "same meeting room, very shallow focus, background melted into soft warm and teal shapes, amber lamp glow on one cheek, cool window edge light on the other; face on right third, empty lamp-lit space opening left",
+      "emotion_beat": "tensión",
+      "image_prompt": "Soft painterly digital illustration in the style of a modern animated explainer short, 2D stylised animation, not anime. Close-up, slight dutch angle, of a young man drawn with deliberately simplified cartoon proportions: a VERY LARGE round smooth head about one third of his total height, a completely smooth bald head shape with NO visible hair at all, a dark navy baseball cap sitting directly on that smooth head. His face is extremely minimal: two small plain solid black oval eyes with no iris, no highlight and no eyelashes, two thin short dark eyebrows, a tiny dot nose and a small simple line mouth. Flat pale cream skin with soft even shading and NO blush, NO pink cheeks. Small simple body in a grey hoodie, dark jeans and sneakers. His mouth hangs half-open and silent, his black oval eyes are wide and unblinking, his gaze fixed toward frame right. His face sits on the right third of the frame, eyes at the upper-right intersection, with empty lamp-lit space opening on the left. Very shallow focus: the meeting room melts into soft warm and teal shapes behind him, amber lamp glow on one cheek, cool edge light from a window on the other, warm amber interior grade with muted teal accents. Rich atmospheric cinematic lighting, warm rim light, volumetric light shafts, floating dust particles. Muted harmonious colour palette. Full-bleed single scene with real environmental depth and a detailed background. Clean soft linework, thick black outline, flat cel-shading. Absolutely NO halftone dots, NO ben-day dots, NO starburst or speed lines, NO comic panels, NO white gutters, NO speech bubbles, NO anime face, NO detailed irises, NO visible hair, NO visible ears, NO blush, NO sharp jawline, NO photorealism, and NO text, letters, signs or words anywhere in the image.",
+      "video_action_prompt": "Slow smooth pan to the left across the close-up of the young man with his navy cap and grey hoodie. His plain black oval eyes stay wide and unblinking, his half-open mouth does not move, a faint tremor runs through his shoulders, dust particles drift through the amber lamp light. The pan opens empty space beside his face, underlining the silence. Growing unease, held-breath pacing. Stable camera, smooth motion, minimal distortion.",
+      "transition_out": "cut_on_action",
+      "vo_text": "You open your mouth to share a brilliant idea, and… nothing. Your mind goes completely blank. The words are gone. The concepts have vanished.",
+      "vo_tc": "0:12-0:24",
+      "status": "pending",
+      "derived_from": "SC01_SH002",
+      "tc": "0:12-0:20",
+      "panel_index": 3,
+      "vo_block_tc": "0:12-0:24",
+      "rhythm_role": "exhalacion",
+      "rhythm_note": "sostiene el silencio: el plano mas largo del cuerpo del piloto",
+      "risk": [
+        "R2-NEGATIVOS-INLINE: el image_prompt lleva los negativos escritos dentro del prompt positivo, lo que ESTILO_MINDSET_MECHANICS.md 6.bis declara contraproducente (los tokens 'ears'/'nose' condicionan en positivo). El modelo por defecto de recraft_ai/generate_scene.py es recraftv4_1, que NO acepta el parametro negative_prompt (recraft_client.py:87,136), asi que la via del 6.bis no esta disponible sin cambiar a recraftv3 @1820x1024. DECISION PENDIENTE DE KIMI antes de gastar creditos."
+      ]
+    },
+    {
+      "shot_id": "SC01_SH002b",
+      "scene": 1,
+      "duration_s": 4,
+      "shot_size": "close_up",
+      "angle": "dutch",
+      "camera_move": {
+        "type": "pan",
+        "speed": "slow",
+        "direction": "left",
+        "phase": "2/2",
+        "note": "fase 2/2: continuacion del MISMO movimiento sobre la MISMA imagen, encuadre ya avanzado (cut-in sobre el eje del movimiento, no jump cut)"
+      },
+      "subject": "HOST",
+      "action": "mouth stays half-open but no words come out, black oval eyes widen and stop blinking, the hand with notes lowers out of frame",
+      "environment": "same meeting room, very shallow focus, background melted into soft warm and teal shapes, amber lamp glow on one cheek, cool window edge light on the other; face on right third, empty lamp-lit space opening left",
+      "emotion_beat": "tensión",
+      "image_prompt": "Soft painterly digital illustration in the style of a modern animated explainer short, 2D stylised animation, not anime. Close-up, slight dutch angle, of a young man drawn with deliberately simplified cartoon proportions: a VERY LARGE round smooth head about one third of his total height, a completely smooth bald head shape with NO visible hair at all, a dark navy baseball cap sitting directly on that smooth head. His face is extremely minimal: two small plain solid black oval eyes with no iris, no highlight and no eyelashes, two thin short dark eyebrows, a tiny dot nose and a small simple line mouth. Flat pale cream skin with soft even shading and NO blush, NO pink cheeks. Small simple body in a grey hoodie, dark jeans and sneakers. His mouth hangs half-open and silent, his black oval eyes are wide and unblinking, his gaze fixed toward frame right. His face sits on the right third of the frame, eyes at the upper-right intersection, with empty lamp-lit space opening on the left. Very shallow focus: the meeting room melts into soft warm and teal shapes behind him, amber lamp glow on one cheek, cool edge light from a window on the other, warm amber interior grade with muted teal accents. Rich atmospheric cinematic lighting, warm rim light, volumetric light shafts, floating dust particles. Muted harmonious colour palette. Full-bleed single scene with real environmental depth and a detailed background. Clean soft linework, thick black outline, flat cel-shading. Absolutely NO halftone dots, NO ben-day dots, NO starburst or speed lines, NO comic panels, NO white gutters, NO speech bubbles, NO anime face, NO detailed irises, NO visible hair, NO visible ears, NO blush, NO sharp jawline, NO photorealism, and NO text, letters, signs or words anywhere in the image.",
+      "video_action_prompt": "Continuation of the previous shot, second half of the same camera move, already tighter in the frame. Slow smooth pan to the left across the close-up of the young man with his navy cap and grey hoodie. His plain black oval eyes stay wide and unblinking, his half-open mouth does not move, a faint tremor runs through his shoulders, dust particles drift through the amber lamp light. The pan opens empty space beside his face, underlining the silence. Growing unease, held-breath pacing. Stable camera, smooth motion, minimal distortion.",
+      "transition_out": "smash_cut",
+      "vo_text": "You open your mouth to share a brilliant idea, and… nothing. Your mind goes completely blank. The words are gone. The concepts have vanished.",
+      "vo_tc": "0:12-0:24",
+      "status": "pending",
+      "derived_from": "SC01_SH002",
+      "tc": "0:20-0:24",
+      "panel_index": 4,
+      "vo_block_tc": "0:12-0:24",
+      "transition_in": "cut_on_action",
+      "rhythm_role": "aceleracion",
+      "rhythm_note": "acelera hacia el pattern interrupt",
+      "risk": [
+        "R2-NEGATIVOS-INLINE: el image_prompt lleva los negativos escritos dentro del prompt positivo, lo que ESTILO_MINDSET_MECHANICS.md 6.bis declara contraproducente (los tokens 'ears'/'nose' condicionan en positivo). El modelo por defecto de recraft_ai/generate_scene.py es recraftv4_1, que NO acepta el parametro negative_prompt (recraft_client.py:87,136), asi que la via del 6.bis no esta disponible sin cambiar a recraftv3 @1820x1024. DECISION PENDIENTE DE KIMI antes de gastar creditos."
+      ]
+    },
+    {
+      "shot_id": "SC01_SH003a",
+      "scene": 1,
+      "duration_s": 4,
+      "shot_size": "insert",
+      "angle": "high",
+      "camera_move": {
+        "type": "tilt",
+        "speed": "slow",
+        "direction": "down",
+        "phase": "1/2",
+        "note": "fase 1/2: arranque del movimiento"
+      },
+      "subject": "HOST",
+      "action": "fingers loosen, note pages slip from his hand, one sheet tilts mid-fall and settles onto the dark table, fingertips tremble once against the wood",
+      "environment": "macro detail of the tabletop, pages with blurred illegible scribble-like marks only, simple pen, warm pool of lamplight on wood grain, edges falling to shadow, very shallow depth of field; hand in lower-left third, open space above",
+      "emotion_beat": "tensión sostenida (PATTERN INTERRUPT 25-35s)",
+      "image_prompt": "Soft painterly digital illustration in the style of a modern animated explainer short, 2D stylised animation, not anime. Extreme close-up detail insert of the hand of a young man drawn with deliberately simplified cartoon proportions: a VERY LARGE round smooth head about one third of his total height, a completely smooth bald head shape with NO visible hair at all, a dark navy baseball cap sitting directly on that smooth head. His face is extremely minimal: two small plain solid black oval eyes with no iris, no highlight and no eyelashes, two thin short dark eyebrows, a tiny dot nose and a small simple line mouth. Flat pale cream skin with soft even shading and NO blush, NO pink cheeks. Small simple body in a grey hoodie, dark jeans and sneakers. Only his grey-hoodie sleeve, his hand and the tabletop are visible: his fingers loosen as several note pages slip from his grip, one sheet tilting mid-fall onto a dark wood table; the pages show only soft blurred scribble-like marks, never legible words; a simple pen lies nearby; a warm pool of lamplight on the wood grain, edges falling into shadow; very shallow depth of field; the hand sits in the lower-left third with open space above. Rich atmospheric cinematic lighting, warm rim light, volumetric light shafts, floating dust particles. Muted harmonious colour palette. Full-bleed single scene with real environmental depth and a detailed background. Clean soft linework, thick black outline, flat cel-shading. Absolutely NO halftone dots, NO ben-day dots, NO starburst or speed lines, NO comic panels, NO white gutters, NO speech bubbles, NO anime face, NO detailed irises, NO visible hair, NO visible ears, NO blush, NO sharp jawline, NO photorealism, and NO text, letters, signs or words anywhere in the image.",
+      "video_action_prompt": "Slow smooth tilt down over the detail of the hand of the young man with his navy cap and grey hoodie, on the dark wood table. His fingers loosen and the note pages slide and settle onto the wood, one sheet rocking gently before going still, his fingertips trembling once against the table, dust particles falling through the narrow pool of warm lamplight. The tilt lands on the fallen pages. Abrupt, intimate, held-tension tone. Stable camera, smooth motion, minimal distortion.",
+      "transition_out": "cut_on_action",
+      "vo_text": "All that's left is that rising tide of panic as you stare into a sea of expectant faces. That frustrating moment of shutting down is not a personal failure.",
+      "vo_tc": "0:24-0:36",
+      "status": "pending",
+      "derived_from": "SC01_SH003",
+      "tc": "0:24-0:28",
+      "panel_index": 5,
+      "vo_block_tc": "0:24-0:36",
+      "rhythm_role": "rafaga",
+      "rhythm_note": "PATTERN INTERRUPT: plano mas corto del piloto, aterriza el smash_cut",
+      "risk": [
+        "R2-NEGATIVOS-INLINE: el image_prompt lleva los negativos escritos dentro del prompt positivo, lo que ESTILO_MINDSET_MECHANICS.md 6.bis declara contraproducente (los tokens 'ears'/'nose' condicionan en positivo). El modelo por defecto de recraft_ai/generate_scene.py es recraftv4_1, que NO acepta el parametro negative_prompt (recraft_client.py:87,136), asi que la via del 6.bis no esta disponible sin cambiar a recraftv3 @1820x1024. DECISION PENDIENTE DE KIMI antes de gastar creditos."
+      ]
+    },
+    {
+      "shot_id": "SC01_SH003b",
+      "scene": 1,
+      "duration_s": 8,
+      "shot_size": "insert",
+      "angle": "high",
+      "camera_move": {
+        "type": "tilt",
+        "speed": "slow",
+        "direction": "down",
+        "phase": "2/2",
+        "note": "fase 2/2: continuacion del MISMO movimiento sobre la MISMA imagen, encuadre ya avanzado (cut-in sobre el eje del movimiento, no jump cut)"
+      },
+      "subject": "HOST",
+      "action": "fingers loosen, note pages slip from his hand, one sheet tilts mid-fall and settles onto the dark table, fingertips tremble once against the wood",
+      "environment": "macro detail of the tabletop, pages with blurred illegible scribble-like marks only, simple pen, warm pool of lamplight on wood grain, edges falling to shadow, very shallow depth of field; hand in lower-left third, open space above",
+      "emotion_beat": "tensión sostenida (PATTERN INTERRUPT 25-35s)",
+      "image_prompt": "Soft painterly digital illustration in the style of a modern animated explainer short, 2D stylised animation, not anime. Extreme close-up detail insert of the hand of a young man drawn with deliberately simplified cartoon proportions: a VERY LARGE round smooth head about one third of his total height, a completely smooth bald head shape with NO visible hair at all, a dark navy baseball cap sitting directly on that smooth head. His face is extremely minimal: two small plain solid black oval eyes with no iris, no highlight and no eyelashes, two thin short dark eyebrows, a tiny dot nose and a small simple line mouth. Flat pale cream skin with soft even shading and NO blush, NO pink cheeks. Small simple body in a grey hoodie, dark jeans and sneakers. Only his grey-hoodie sleeve, his hand and the tabletop are visible: his fingers loosen as several note pages slip from his grip, one sheet tilting mid-fall onto a dark wood table; the pages show only soft blurred scribble-like marks, never legible words; a simple pen lies nearby; a warm pool of lamplight on the wood grain, edges falling into shadow; very shallow depth of field; the hand sits in the lower-left third with open space above. Rich atmospheric cinematic lighting, warm rim light, volumetric light shafts, floating dust particles. Muted harmonious colour palette. Full-bleed single scene with real environmental depth and a detailed background. Clean soft linework, thick black outline, flat cel-shading. Absolutely NO halftone dots, NO ben-day dots, NO starburst or speed lines, NO comic panels, NO white gutters, NO speech bubbles, NO anime face, NO detailed irises, NO visible hair, NO visible ears, NO blush, NO sharp jawline, NO photorealism, and NO text, letters, signs or words anywhere in the image.",
+      "video_action_prompt": "Continuation of the previous shot, second half of the same camera move, already tighter in the frame. Slow smooth tilt down over the detail of the hand of the young man with his navy cap and grey hoodie, on the dark wood table. His fingers loosen and the note pages slide and settle onto the wood, one sheet rocking gently before going still, his fingertips trembling once against the table, dust particles falling through the narrow pool of warm lamplight. The tilt lands on the fallen pages. Abrupt, intimate, held-tension tone. Stable camera, smooth motion, minimal distortion.",
+      "transition_out": "match_cut",
+      "vo_text": "All that's left is that rising tide of panic as you stare into a sea of expectant faces. That frustrating moment of shutting down is not a personal failure.",
+      "vo_tc": "0:24-0:36",
+      "status": "pending",
+      "derived_from": "SC01_SH003",
+      "tc": "0:28-0:36",
+      "panel_index": 6,
+      "vo_block_tc": "0:24-0:36",
+      "transition_in": "cut_on_action",
+      "rhythm_role": "exhalacion",
+      "rhythm_note": "recuperacion larga tras el golpe",
+      "risk": [
+        "R2-NEGATIVOS-INLINE: el image_prompt lleva los negativos escritos dentro del prompt positivo, lo que ESTILO_MINDSET_MECHANICS.md 6.bis declara contraproducente (los tokens 'ears'/'nose' condicionan en positivo). El modelo por defecto de recraft_ai/generate_scene.py es recraftv4_1, que NO acepta el parametro negative_prompt (recraft_client.py:87,136), asi que la via del 6.bis no esta disponible sin cambiar a recraftv3 @1820x1024. DECISION PENDIENTE DE KIMI antes de gastar creditos."
+      ]
+    },
+    {
+      "shot_id": "SC01_SH004a",
+      "scene": 1,
+      "duration_s": 7,
+      "shot_size": "wide",
+      "angle": "overhead",
+      "camera_move": {
+        "type": "crane",
+        "speed": "slow",
+        "direction": "up",
+        "phase": "1/2",
+        "note": "fase 1/2: arranque del movimiento"
+      },
+      "subject": "HOST",
+      "action": "seen from directly above, he sits small and motionless at the long table, shoulders drawn in, head bowed over the fallen notes, arms close to his body; colleague silhouettes ring the table, all turned toward him",
+      "environment": "full conference room top-down, long table on a diagonal lower-left to upper-right, alternating warm lamplight pools and cool shadow on the floor, teal dusk strip at windows on upper edge; host in lower-left area with empty floor around him",
+      "emotion_beat": "vulnerabilidad",
+      "image_prompt": "Soft painterly digital illustration in the style of a modern animated explainer short, 2D stylised animation, not anime. Wide overhead top-down shot of a young man drawn with deliberately simplified cartoon proportions: a VERY LARGE round smooth head about one third of his total height, a completely smooth bald head shape with NO visible hair at all, a dark navy baseball cap sitting directly on that smooth head. His face is extremely minimal: two small plain solid black oval eyes with no iris, no highlight and no eyelashes, two thin short dark eyebrows, a tiny dot nose and a small simple line mouth. Flat pale cream skin with soft even shading and NO blush, NO pink cheeks. Small simple body in a grey hoodie, dark jeans and sneakers. Seen from directly above: he sits small and motionless at a long dark conference table set on a diagonal from lower-left to upper-right, shoulders drawn in, head bowed over fallen note pages, arms held close to his body; a ring of out-of-focus colleague silhouettes around the table all turned toward him; alternating pools of warm lamplight and cool shadow across the floor, a strip of teal dusk light at the windows along the upper edge; he occupies the lower-left area of the frame with empty floor space around him. Rich atmospheric cinematic lighting, warm rim light, volumetric light shafts, floating dust particles. Muted harmonious colour palette. Full-bleed single scene with real environmental depth and a detailed background. Clean soft linework, thick black outline, flat cel-shading. Absolutely NO halftone dots, NO ben-day dots, NO starburst or speed lines, NO comic panels, NO white gutters, NO speech bubbles, NO anime face, NO detailed irises, NO visible hair, NO visible ears, NO blush, NO sharp jawline, NO photorealism, and NO text, letters, signs or words anywhere in the image.",
+      "video_action_prompt": "Slow smooth crane up from the overhead view of the young man with his navy cap and grey hoodie at the conference table. His shoulders stay drawn in, his head stays bowed over the fallen notes, the colleague silhouettes remain still and turned toward him, dust drifting slowly through the warm light pools. The rise reveals how small and alone he is in the long room. Vulnerable, exposed tone. Stable camera, smooth motion, minimal distortion.",
+      "transition_out": "cut_on_action",
+      "vo_text": "It's not because you're not smart enough or weren't prepared. It's not your fault. It's your ancient survival wiring—designed to save you from tigers—misfiring in a modern world.",
+      "vo_tc": "0:36-0:48",
+      "status": "pending",
+      "derived_from": "SC01_SH004",
+      "tc": "0:36-0:43",
+      "panel_index": 7,
+      "vo_block_tc": "0:36-0:48",
+      "rhythm_role": "exhalacion",
+      "rhythm_note": "la grua necesita recorrido para revelar escala",
+      "risk": [
+        "R2-NEGATIVOS-INLINE: el image_prompt lleva los negativos escritos dentro del prompt positivo, lo que ESTILO_MINDSET_MECHANICS.md 6.bis declara contraproducente (los tokens 'ears'/'nose' condicionan en positivo). El modelo por defecto de recraft_ai/generate_scene.py es recraftv4_1, que NO acepta el parametro negative_prompt (recraft_client.py:87,136), asi que la via del 6.bis no esta disponible sin cambiar a recraftv3 @1820x1024. DECISION PENDIENTE DE KIMI antes de gastar creditos."
+      ]
+    },
+    {
+      "shot_id": "SC01_SH004b",
+      "scene": 1,
+      "duration_s": 5,
+      "shot_size": "wide",
+      "angle": "overhead",
+      "camera_move": {
+        "type": "crane",
+        "speed": "slow",
+        "direction": "up",
+        "phase": "2/2",
+        "note": "fase 2/2: continuacion del MISMO movimiento sobre la MISMA imagen, encuadre ya avanzado (cut-in sobre el eje del movimiento, no jump cut)"
+      },
+      "subject": "HOST",
+      "action": "seen from directly above, he sits small and motionless at the long table, shoulders drawn in, head bowed over the fallen notes, arms close to his body; colleague silhouettes ring the table, all turned toward him",
+      "environment": "full conference room top-down, long table on a diagonal lower-left to upper-right, alternating warm lamplight pools and cool shadow on the floor, teal dusk strip at windows on upper edge; host in lower-left area with empty floor around him",
+      "emotion_beat": "vulnerabilidad",
+      "image_prompt": "Soft painterly digital illustration in the style of a modern animated explainer short, 2D stylised animation, not anime. Wide overhead top-down shot of a young man drawn with deliberately simplified cartoon proportions: a VERY LARGE round smooth head about one third of his total height, a completely smooth bald head shape with NO visible hair at all, a dark navy baseball cap sitting directly on that smooth head. His face is extremely minimal: two small plain solid black oval eyes with no iris, no highlight and no eyelashes, two thin short dark eyebrows, a tiny dot nose and a small simple line mouth. Flat pale cream skin with soft even shading and NO blush, NO pink cheeks. Small simple body in a grey hoodie, dark jeans and sneakers. Seen from directly above: he sits small and motionless at a long dark conference table set on a diagonal from lower-left to upper-right, shoulders drawn in, head bowed over fallen note pages, arms held close to his body; a ring of out-of-focus colleague silhouettes around the table all turned toward him; alternating pools of warm lamplight and cool shadow across the floor, a strip of teal dusk light at the windows along the upper edge; he occupies the lower-left area of the frame with empty floor space around him. Rich atmospheric cinematic lighting, warm rim light, volumetric light shafts, floating dust particles. Muted harmonious colour palette. Full-bleed single scene with real environmental depth and a detailed background. Clean soft linework, thick black outline, flat cel-shading. Absolutely NO halftone dots, NO ben-day dots, NO starburst or speed lines, NO comic panels, NO white gutters, NO speech bubbles, NO anime face, NO detailed irises, NO visible hair, NO visible ears, NO blush, NO sharp jawline, NO photorealism, and NO text, letters, signs or words anywhere in the image.",
+      "video_action_prompt": "Continuation of the previous shot, second half of the same camera move, already tighter in the frame. Slow smooth crane up from the overhead view of the young man with his navy cap and grey hoodie at the conference table. His shoulders stay drawn in, his head stays bowed over the fallen notes, the colleague silhouettes remain still and turned toward him, dust drifting slowly through the warm light pools. The rise reveals how small and alone he is in the long room. Vulnerable, exposed tone. Stable camera, smooth motion, minimal distortion.",
+      "transition_out": "hard_cut",
+      "vo_text": "It's not because you're not smart enough or weren't prepared. It's not your fault. It's your ancient survival wiring—designed to save you from tigers—misfiring in a modern world.",
+      "vo_tc": "0:36-0:48",
+      "status": "pending",
+      "derived_from": "SC01_SH004",
+      "tc": "0:43-0:48",
+      "panel_index": 8,
+      "vo_block_tc": "0:36-0:48",
+      "transition_in": "cut_on_action",
+      "rhythm_role": "aceleracion",
+      "rhythm_note": "cierra escena 1 acortando hacia el corte de escena",
+      "risk": [
+        "R2-NEGATIVOS-INLINE: el image_prompt lleva los negativos escritos dentro del prompt positivo, lo que ESTILO_MINDSET_MECHANICS.md 6.bis declara contraproducente (los tokens 'ears'/'nose' condicionan en positivo). El modelo por defecto de recraft_ai/generate_scene.py es recraftv4_1, que NO acepta el parametro negative_prompt (recraft_client.py:87,136), asi que la via del 6.bis no esta disponible sin cambiar a recraftv3 @1820x1024. DECISION PENDIENTE DE KIMI antes de gastar creditos."
+      ]
+    },
+    {
+      "shot_id": "SC02_SH005a",
+      "scene": 2,
+      "duration_s": 4,
+      "shot_size": "extreme_close_up",
+      "angle": "eye_level",
+      "camera_move": {
+        "type": "push_in",
+        "speed": "slow",
+        "phase": "1/2",
+        "note": "fase 1/2: arranque del movimiento"
+      },
+      "subject": "HOST",
+      "action": "his right eye fills the frame, open too wide, unblinking; a thin bead of sweat slides slowly down his temple; the eye flicks once frame-right",
+      "environment": "extreme macro, background only amber-teal blur of the meeting room, lower edge of navy cap brim crossing the top of frame, very shallow macro focus; eye on upper-left third looking right",
+      "emotion_beat": "tensión (íntima)",
+      "image_prompt": "Soft painterly digital illustration in the style of a modern animated explainer short, 2D stylised animation, not anime. Extreme close-up framed tight on one eye and the temple of a young man drawn with deliberately simplified cartoon proportions: a VERY LARGE round smooth head about one third of his total height, a completely smooth bald head shape with NO visible hair at all, a dark navy baseball cap sitting directly on that smooth head. His face is extremely minimal: two small plain solid black oval eyes with no iris, no highlight and no eyelashes, two thin short dark eyebrows, a tiny dot nose and a small simple line mouth. Flat pale cream skin with soft even shading and NO blush, NO pink cheeks. Small simple body in a grey hoodie, dark jeans and sneakers. His right eye fills the upper-left third of the frame, open too wide and unblinking, a plain solid black oval; a thin bead of sweat slides down his temple; the lower edge of his dark navy cap brim crosses the top of the frame; the blurred warm meeting room glows as soft amber smudges across his cheek and skin; very shallow macro focus, muted amber and teal tones. Rich atmospheric cinematic lighting, warm rim light, volumetric light shafts, floating dust particles. Muted harmonious colour palette. Full-bleed single scene with real environmental depth and a detailed background. Clean soft linework, thick black outline, flat cel-shading. Absolutely NO halftone dots, NO ben-day dots, NO starburst or speed lines, NO comic panels, NO white gutters, NO speech bubbles, NO anime face, NO detailed irises, NO visible hair, NO visible ears, NO blush, NO sharp jawline, NO photorealism, and NO text, letters, signs or words anywhere in the image.",
+      "video_action_prompt": "Very slow smooth push-in on the extreme close-up of the eye of the young man with his navy cap and grey hoodie. His plain solid black oval eye stays open too wide without blinking, a thin bead of sweat slides slowly down his temple, the soft amber glow on his skin shimmers faintly, floating dust crosses the macro focus. The push tightens until the eye dominates the frame. Claustrophobic, clinical tension. Stable camera, smooth motion, minimal distortion.",
+      "transition_out": "cut_on_action",
+      "vo_text": "This 'brain freeze' is a universal human experience. It happens to public speakers, athletes, students in an exam… just about everyone.",
+      "vo_tc": "0:48-1:00",
+      "status": "pending",
+      "derived_from": "SC02_SH005",
+      "tc": "0:48-0:52",
+      "panel_index": 9,
+      "vo_block_tc": "0:48-1:00",
+      "rhythm_role": "inhalacion",
+      "rhythm_note": "entra rapido al ojo tras el cambio de escena",
+      "risk": [
+        "R2-NEGATIVOS-INLINE: el image_prompt lleva los negativos escritos dentro del prompt positivo, lo que ESTILO_MINDSET_MECHANICS.md 6.bis declara contraproducente (los tokens 'ears'/'nose' condicionan en positivo). El modelo por defecto de recraft_ai/generate_scene.py es recraftv4_1, que NO acepta el parametro negative_prompt (recraft_client.py:87,136), asi que la via del 6.bis no esta disponible sin cambiar a recraftv3 @1820x1024. DECISION PENDIENTE DE KIMI antes de gastar creditos."
+      ]
+    },
+    {
+      "shot_id": "SC02_SH005b",
+      "scene": 2,
+      "duration_s": 8,
+      "shot_size": "extreme_close_up",
+      "angle": "eye_level",
+      "camera_move": {
+        "type": "push_in",
+        "speed": "slow",
+        "phase": "2/2",
+        "note": "fase 2/2: continuacion del MISMO movimiento sobre la MISMA imagen, encuadre ya avanzado (cut-in sobre el eje del movimiento, no jump cut)"
+      },
+      "subject": "HOST",
+      "action": "his right eye fills the frame, open too wide, unblinking; a thin bead of sweat slides slowly down his temple; the eye flicks once frame-right",
+      "environment": "extreme macro, background only amber-teal blur of the meeting room, lower edge of navy cap brim crossing the top of frame, very shallow macro focus; eye on upper-left third looking right",
+      "emotion_beat": "tensión (íntima)",
+      "image_prompt": "Soft painterly digital illustration in the style of a modern animated explainer short, 2D stylised animation, not anime. Extreme close-up framed tight on one eye and the temple of a young man drawn with deliberately simplified cartoon proportions: a VERY LARGE round smooth head about one third of his total height, a completely smooth bald head shape with NO visible hair at all, a dark navy baseball cap sitting directly on that smooth head. His face is extremely minimal: two small plain solid black oval eyes with no iris, no highlight and no eyelashes, two thin short dark eyebrows, a tiny dot nose and a small simple line mouth. Flat pale cream skin with soft even shading and NO blush, NO pink cheeks. Small simple body in a grey hoodie, dark jeans and sneakers. His right eye fills the upper-left third of the frame, open too wide and unblinking, a plain solid black oval; a thin bead of sweat slides down his temple; the lower edge of his dark navy cap brim crosses the top of the frame; the blurred warm meeting room glows as soft amber smudges across his cheek and skin; very shallow macro focus, muted amber and teal tones. Rich atmospheric cinematic lighting, warm rim light, volumetric light shafts, floating dust particles. Muted harmonious colour palette. Full-bleed single scene with real environmental depth and a detailed background. Clean soft linework, thick black outline, flat cel-shading. Absolutely NO halftone dots, NO ben-day dots, NO starburst or speed lines, NO comic panels, NO white gutters, NO speech bubbles, NO anime face, NO detailed irises, NO visible hair, NO visible ears, NO blush, NO sharp jawline, NO photorealism, and NO text, letters, signs or words anywhere in the image.",
+      "video_action_prompt": "Continuation of the previous shot, second half of the same camera move, already tighter in the frame. Very slow smooth push-in on the extreme close-up of the eye of the young man with his navy cap and grey hoodie. His plain solid black oval eye stays open too wide without blinking, a thin bead of sweat slides slowly down his temple, the soft amber glow on his skin shimmers faintly, floating dust crosses the macro focus. The push tightens until the eye dominates the frame. Claustrophobic, clinical tension. Stable camera, smooth motion, minimal distortion.",
+      "transition_out": "cut_on_action",
+      "vo_text": "This 'brain freeze' is a universal human experience. It happens to public speakers, athletes, students in an exam… just about everyone.",
+      "vo_tc": "0:48-1:00",
+      "status": "pending",
+      "derived_from": "SC02_SH005",
+      "tc": "0:52-1:00",
+      "panel_index": 10,
+      "vo_block_tc": "0:48-1:00",
+      "transition_in": "cut_on_action",
+      "rhythm_role": "exhalacion",
+      "rhythm_note": "se queda en el sudor: incomodidad por permanencia",
+      "risk": [
+        "R2-NEGATIVOS-INLINE: el image_prompt lleva los negativos escritos dentro del prompt positivo, lo que ESTILO_MINDSET_MECHANICS.md 6.bis declara contraproducente (los tokens 'ears'/'nose' condicionan en positivo). El modelo por defecto de recraft_ai/generate_scene.py es recraftv4_1, que NO acepta el parametro negative_prompt (recraft_client.py:87,136), asi que la via del 6.bis no esta disponible sin cambiar a recraftv3 @1820x1024. DECISION PENDIENTE DE KIMI antes de gastar creditos."
+      ]
+    },
+    {
+      "shot_id": "SC02_SH006a",
+      "scene": 2,
+      "duration_s": 6,
+      "shot_size": "medium_close",
+      "angle": "dutch",
+      "camera_move": {
+        "type": "pan",
+        "speed": "slow",
+        "direction": "right",
+        "phase": "1/2",
+        "note": "fase 1/2: arranque del movimiento"
+      },
+      "subject": "HOST",
+      "action": "sits rigid in three-quarter view, gaze locked frame-right at nothing, free hand gripping the table edge, throat moves in one dry swallow",
+      "environment": "claustrophobic tight framing, background compressed into dark blurred shapes, single warm lamp orb behind his shoulder, longer shadows, dimmer warm amber grade with muted teal accents; host on left third, open dark space right",
+      "emotion_beat": "tensión sostenida",
+      "image_prompt": "Soft painterly digital illustration in the style of a modern animated explainer short, 2D stylised animation, not anime. Medium close-up, slight dutch angle, of a young man drawn with deliberately simplified cartoon proportions: a VERY LARGE round smooth head about one third of his total height, a completely smooth bald head shape with NO visible hair at all, a dark navy baseball cap sitting directly on that smooth head. His face is extremely minimal: two small plain solid black oval eyes with no iris, no highlight and no eyelashes, two thin short dark eyebrows, a tiny dot nose and a small simple line mouth. Flat pale cream skin with soft even shading and NO blush, NO pink cheeks. Small simple body in a grey hoodie, dark jeans and sneakers. He sits rigid in three-quarter view on the left third of the frame, gaze locked toward frame right at nothing, his free hand gripping the edge of the table, shoulders tense; open dark space on the right. The background is compressed into dark blurred shapes with a single warm lamp orb glowing behind his shoulder; longer shadows, dimmer warm amber grade with muted teal accents. Rich atmospheric cinematic lighting, warm rim light, volumetric light shafts, floating dust particles. Muted harmonious colour palette. Full-bleed single scene with real environmental depth and a detailed background. Clean soft linework, thick black outline, flat cel-shading. Absolutely NO halftone dots, NO ben-day dots, NO starburst or speed lines, NO comic panels, NO white gutters, NO speech bubbles, NO anime face, NO detailed irises, NO visible hair, NO visible ears, NO blush, NO sharp jawline, NO photorealism, and NO text, letters, signs or words anywhere in the image.",
+      "video_action_prompt": "Slow smooth pan to the right across the medium close-up of the young man with his navy cap and grey hoodie. He stays rigid, gaze locked off-screen to the right, his throat moves in one dry swallow, his fingers press harder on the table edge, the warm lamp glow behind his shoulder flickers almost imperceptibly, dust drifting through the light. The pan follows the direction of his stare into empty dark space. Sustained, airless tension. Stable camera, smooth motion, minimal distortion.",
+      "transition_out": "cut_on_action",
+      "vo_text": "In these moments, your higher-level thinking seems to abandon you. Your prefrontal cortex—the logical, planning, modern part of your brain—gets its signals scrambled and takes a backseat.",
+      "vo_tc": "1:00-1:12",
+      "status": "pending",
+      "derived_from": "SC02_SH006",
+      "tc": "1:00-1:06",
+      "panel_index": 11,
+      "vo_block_tc": "1:00-1:12",
+      "rhythm_role": "neutro",
+      "rhythm_note": "beat de respiracion normal, sin acento",
+      "risk": [
+        "R2-NEGATIVOS-INLINE: el image_prompt lleva los negativos escritos dentro del prompt positivo, lo que ESTILO_MINDSET_MECHANICS.md 6.bis declara contraproducente (los tokens 'ears'/'nose' condicionan en positivo). El modelo por defecto de recraft_ai/generate_scene.py es recraftv4_1, que NO acepta el parametro negative_prompt (recraft_client.py:87,136), asi que la via del 6.bis no esta disponible sin cambiar a recraftv3 @1820x1024. DECISION PENDIENTE DE KIMI antes de gastar creditos."
+      ]
+    },
+    {
+      "shot_id": "SC02_SH006b",
+      "scene": 2,
+      "duration_s": 6,
+      "shot_size": "medium_close",
+      "angle": "dutch",
+      "camera_move": {
+        "type": "pan",
+        "speed": "slow",
+        "direction": "right",
+        "phase": "2/2",
+        "note": "fase 2/2: continuacion del MISMO movimiento sobre la MISMA imagen, encuadre ya avanzado (cut-in sobre el eje del movimiento, no jump cut)"
+      },
+      "subject": "HOST",
+      "action": "sits rigid in three-quarter view, gaze locked frame-right at nothing, free hand gripping the table edge, throat moves in one dry swallow",
+      "environment": "claustrophobic tight framing, background compressed into dark blurred shapes, single warm lamp orb behind his shoulder, longer shadows, dimmer warm amber grade with muted teal accents; host on left third, open dark space right",
+      "emotion_beat": "tensión sostenida",
+      "image_prompt": "Soft painterly digital illustration in the style of a modern animated explainer short, 2D stylised animation, not anime. Medium close-up, slight dutch angle, of a young man drawn with deliberately simplified cartoon proportions: a VERY LARGE round smooth head about one third of his total height, a completely smooth bald head shape with NO visible hair at all, a dark navy baseball cap sitting directly on that smooth head. His face is extremely minimal: two small plain solid black oval eyes with no iris, no highlight and no eyelashes, two thin short dark eyebrows, a tiny dot nose and a small simple line mouth. Flat pale cream skin with soft even shading and NO blush, NO pink cheeks. Small simple body in a grey hoodie, dark jeans and sneakers. He sits rigid in three-quarter view on the left third of the frame, gaze locked toward frame right at nothing, his free hand gripping the edge of the table, shoulders tense; open dark space on the right. The background is compressed into dark blurred shapes with a single warm lamp orb glowing behind his shoulder; longer shadows, dimmer warm amber grade with muted teal accents. Rich atmospheric cinematic lighting, warm rim light, volumetric light shafts, floating dust particles. Muted harmonious colour palette. Full-bleed single scene with real environmental depth and a detailed background. Clean soft linework, thick black outline, flat cel-shading. Absolutely NO halftone dots, NO ben-day dots, NO starburst or speed lines, NO comic panels, NO white gutters, NO speech bubbles, NO anime face, NO detailed irises, NO visible hair, NO visible ears, NO blush, NO sharp jawline, NO photorealism, and NO text, letters, signs or words anywhere in the image.",
+      "video_action_prompt": "Continuation of the previous shot, second half of the same camera move, already tighter in the frame. Slow smooth pan to the right across the medium close-up of the young man with his navy cap and grey hoodie. He stays rigid, gaze locked off-screen to the right, his throat moves in one dry swallow, his fingers press harder on the table edge, the warm lamp glow behind his shoulder flickers almost imperceptibly, dust drifting through the light. The pan follows the direction of his stare into empty dark space. Sustained, airless tension. Stable camera, smooth motion, minimal distortion.",
+      "transition_out": "hard_cut",
+      "vo_text": "In these moments, your higher-level thinking seems to abandon you. Your prefrontal cortex—the logical, planning, modern part of your brain—gets its signals scrambled and takes a backseat.",
+      "vo_tc": "1:00-1:12",
+      "status": "pending",
+      "derived_from": "SC02_SH006",
+      "tc": "1:06-1:12",
+      "panel_index": 12,
+      "vo_block_tc": "1:00-1:12",
+      "transition_in": "cut_on_action",
+      "rhythm_role": "neutro",
+      "rhythm_note": "beat de respiracion normal, sin acento",
+      "risk": [
+        "R2-NEGATIVOS-INLINE: el image_prompt lleva los negativos escritos dentro del prompt positivo, lo que ESTILO_MINDSET_MECHANICS.md 6.bis declara contraproducente (los tokens 'ears'/'nose' condicionan en positivo). El modelo por defecto de recraft_ai/generate_scene.py es recraftv4_1, que NO acepta el parametro negative_prompt (recraft_client.py:87,136), asi que la via del 6.bis no esta disponible sin cambiar a recraftv3 @1820x1024. DECISION PENDIENTE DE KIMI antes de gastar creditos."
+      ]
+    },
+    {
+      "shot_id": "SC02_SH007a",
+      "scene": 2,
+      "duration_s": 5,
+      "shot_size": "insert",
+      "angle": "high",
+      "camera_move": {
+        "type": "static",
+        "speed": "slow",
+        "note": "barely-there micro drift, never frozen | fase 1/2: arranque del movimiento",
+        "phase": "1/2"
+      },
+      "subject": "HOST",
+      "action": "his hand lies palm-down on the scattered note pages, fingers slowly curl until the pages crease under them, a fine tremor runs through the fingers, the pen beside them does not move",
+      "environment": "same tabletop, light dimmer, warm lamplight pool narrowed, edges in deep shadow, pages with blurred illegible scribble-like marks only, very shallow depth of field; hand in center-left third",
+      "emotion_beat": "vulnerabilidad",
+      "image_prompt": "Soft painterly digital illustration in the style of a modern animated explainer short, 2D stylised animation, not anime. Extreme close-up detail insert of the hand of a young man drawn with deliberately simplified cartoon proportions: a VERY LARGE round smooth head about one third of his total height, a completely smooth bald head shape with NO visible hair at all, a dark navy baseball cap sitting directly on that smooth head. His face is extremely minimal: two small plain solid black oval eyes with no iris, no highlight and no eyelashes, two thin short dark eyebrows, a tiny dot nose and a small simple line mouth. Flat pale cream skin with soft even shading and NO blush, NO pink cheeks. Small simple body in a grey hoodie, dark jeans and sneakers. Only his grey-hoodie sleeve, his hand and the tabletop are visible: his hand lies palm-down on scattered note pages, fingers half-curled so the pages crease under them; a simple pen rests motionless beside; the warm pool of lamplight has narrowed, edges fallen to deep shadow; the pages show only blurred illegible scribble-like marks; very shallow depth of field; the hand sits in the center-left third. Rich atmospheric cinematic lighting, warm rim light, volumetric light shafts, floating dust particles. Muted harmonious colour palette. Full-bleed single scene with real environmental depth and a detailed background. Clean soft linework, thick black outline, flat cel-shading. Absolutely NO halftone dots, NO ben-day dots, NO starburst or speed lines, NO comic panels, NO white gutters, NO speech bubbles, NO anime face, NO detailed irises, NO visible hair, NO visible ears, NO blush, NO sharp jawline, NO photorealism, and NO text, letters, signs or words anywhere in the image.",
+      "video_action_prompt": "Static shot with a barely-there slow drift over the detail of the hand of the young man with his navy cap and grey hoodie, resting on the scattered pages. His fingers slowly curl until the pages crease under them, a fine tremor runs through the fingers, the pen beside them does not move, dust particles float through the narrowed warm light. Nothing else moves. Quiet helplessness, held still. Stable camera, smooth motion, minimal distortion.",
+      "transition_out": "cut_on_action",
+      "vo_text": "It feels like the command center of your mind has just been hijacked. You know the information is in there. You know what you need to do, but you just can't get to it.",
+      "vo_tc": "1:12-1:24",
+      "status": "pending",
+      "derived_from": "SC02_SH007",
+      "tc": "1:12-1:17",
+      "panel_index": 13,
+      "vo_block_tc": "1:12-1:24",
+      "rhythm_role": "inhalacion",
+      "rhythm_note": "reaprieta antes del plano final",
+      "risk": [
+        "R2-NEGATIVOS-INLINE: el image_prompt lleva los negativos escritos dentro del prompt positivo, lo que ESTILO_MINDSET_MECHANICS.md 6.bis declara contraproducente (los tokens 'ears'/'nose' condicionan en positivo). El modelo por defecto de recraft_ai/generate_scene.py es recraftv4_1, que NO acepta el parametro negative_prompt (recraft_client.py:87,136), asi que la via del 6.bis no esta disponible sin cambiar a recraftv3 @1820x1024. DECISION PENDIENTE DE KIMI antes de gastar creditos."
+      ]
+    },
+    {
+      "shot_id": "SC02_SH007b",
+      "scene": 2,
+      "duration_s": 7,
+      "shot_size": "insert",
+      "angle": "high",
+      "camera_move": {
+        "type": "static",
+        "speed": "slow",
+        "note": "barely-there micro drift, never frozen | fase 2/2: continuacion del MISMO movimiento sobre la MISMA imagen, encuadre ya avanzado (cut-in sobre el eje del movimiento, no jump cut)",
+        "phase": "2/2"
+      },
+      "subject": "HOST",
+      "action": "his hand lies palm-down on the scattered note pages, fingers slowly curl until the pages crease under them, a fine tremor runs through the fingers, the pen beside them does not move",
+      "environment": "same tabletop, light dimmer, warm lamplight pool narrowed, edges in deep shadow, pages with blurred illegible scribble-like marks only, very shallow depth of field; hand in center-left third",
+      "emotion_beat": "vulnerabilidad",
+      "image_prompt": "Soft painterly digital illustration in the style of a modern animated explainer short, 2D stylised animation, not anime. Extreme close-up detail insert of the hand of a young man drawn with deliberately simplified cartoon proportions: a VERY LARGE round smooth head about one third of his total height, a completely smooth bald head shape with NO visible hair at all, a dark navy baseball cap sitting directly on that smooth head. His face is extremely minimal: two small plain solid black oval eyes with no iris, no highlight and no eyelashes, two thin short dark eyebrows, a tiny dot nose and a small simple line mouth. Flat pale cream skin with soft even shading and NO blush, NO pink cheeks. Small simple body in a grey hoodie, dark jeans and sneakers. Only his grey-hoodie sleeve, his hand and the tabletop are visible: his hand lies palm-down on scattered note pages, fingers half-curled so the pages crease under them; a simple pen rests motionless beside; the warm pool of lamplight has narrowed, edges fallen to deep shadow; the pages show only blurred illegible scribble-like marks; very shallow depth of field; the hand sits in the center-left third. Rich atmospheric cinematic lighting, warm rim light, volumetric light shafts, floating dust particles. Muted harmonious colour palette. Full-bleed single scene with real environmental depth and a detailed background. Clean soft linework, thick black outline, flat cel-shading. Absolutely NO halftone dots, NO ben-day dots, NO starburst or speed lines, NO comic panels, NO white gutters, NO speech bubbles, NO anime face, NO detailed irises, NO visible hair, NO visible ears, NO blush, NO sharp jawline, NO photorealism, and NO text, letters, signs or words anywhere in the image.",
+      "video_action_prompt": "Continuation of the previous shot, second half of the same camera move, already tighter in the frame. Static shot with a barely-there slow drift over the detail of the hand of the young man with his navy cap and grey hoodie, resting on the scattered pages. His fingers slowly curl until the pages crease under them, a fine tremor runs through the fingers, the pen beside them does not move, dust particles float through the narrowed warm light. Nothing else moves. Quiet helplessness, held still. Stable camera, smooth motion, minimal distortion.",
+      "transition_out": "match_cut",
+      "vo_text": "It feels like the command center of your mind has just been hijacked. You know the information is in there. You know what you need to do, but you just can't get to it.",
+      "vo_tc": "1:12-1:24",
+      "status": "pending",
+      "derived_from": "SC02_SH007",
+      "tc": "1:17-1:24",
+      "panel_index": 14,
+      "vo_block_tc": "1:12-1:24",
+      "transition_in": "cut_on_action",
+      "rhythm_role": "exhalacion",
+      "rhythm_note": "abre paso al plano sostenido",
+      "risk": [
+        "R2-NEGATIVOS-INLINE: el image_prompt lleva los negativos escritos dentro del prompt positivo, lo que ESTILO_MINDSET_MECHANICS.md 6.bis declara contraproducente (los tokens 'ears'/'nose' condicionan en positivo). El modelo por defecto de recraft_ai/generate_scene.py es recraftv4_1, que NO acepta el parametro negative_prompt (recraft_client.py:87,136), asi que la via del 6.bis no esta disponible sin cambiar a recraftv3 @1820x1024. DECISION PENDIENTE DE KIMI antes de gastar creditos."
+      ]
+    },
+    {
+      "shot_id": "SC02_SH008",
+      "scene": 2,
+      "duration_s": 10,
+      "shot_size": "close_up",
+      "angle": "eye_level",
+      "camera_move": {
+        "type": "push_in",
+        "speed": "very_slow",
+        "note": "push-in completes at ~8s, final 2s near-still HOLD, only light and dust moving (único plano sostenido del piloto)"
+      },
+      "subject": "HOST",
+      "action": "turns his head a few degrees toward camera (three-quarter, never direct address), plain black oval eyes glisten, jaw sets, shoulders square, then he goes very still",
+      "environment": "meeting room behind almost fully dark, one warm rim light tracing his cap and cheek, deep teal-black shadows, dim warm amber grade; face on right third, eyes at upper-right intersection, open space left",
+      "emotion_beat": "tensión máxima / pregunta abierta",
+      "image_prompt": "Soft painterly digital illustration in the style of a modern animated explainer short, 2D stylised animation, not anime. Close-up of a young man drawn with deliberately simplified cartoon proportions: a VERY LARGE round smooth head about one third of his total height, a completely smooth bald head shape with NO visible hair at all, a dark navy baseball cap sitting directly on that smooth head. His face is extremely minimal: two small plain solid black oval eyes with no iris, no highlight and no eyelashes, two thin short dark eyebrows, a tiny dot nose and a small simple line mouth. Flat pale cream skin with soft even shading and NO blush, NO pink cheeks. Small simple body in a grey hoodie, dark jeans and sneakers. In three-quarter view he turns his head a few degrees toward the camera without fully facing it; his plain black oval eyes glisten, his jaw is set, his shoulders squared; he is very still. His face sits on the right third of the frame, eyes at the upper-right intersection, open space on the left. The meeting room behind him is almost fully dark, one warm rim light tracing his cap and cheek, deep teal-black shadows, dim warm amber grade. Rich atmospheric cinematic lighting, warm rim light, volumetric light shafts, floating dust particles. Muted harmonious colour palette. Full-bleed single scene with real environmental depth and a detailed background. Clean soft linework, thick black outline, flat cel-shading. Absolutely NO halftone dots, NO ben-day dots, NO starburst or speed lines, NO comic panels, NO white gutters, NO speech bubbles, NO anime face, NO detailed irises, NO visible hair, NO visible ears, NO blush, NO sharp jawline, NO photorealism, and NO text, letters, signs or words anywhere in the image.",
+      "video_action_prompt": "Very slow smooth push-in on the close-up of the young man with his navy cap and grey hoodie as he turns his head a few degrees toward the camera. His jaw sets, his plain black oval eyes hold still and glistening, the warm rim light settles along his cap and cheek, dust drifts through the teal-dark room. The push-in completes early and the final two seconds hold nearly still on his face, only light and dust moving. Maximum tension, question left hanging. Stable camera, smooth motion, minimal distortion.",
+      "transition_out": "hard_cut",
+      "vo_text": "This isn't just a feeling; it's a real neurological event. When your brain perceives overwhelming stress, it fundamentally shifts its resources. But why?",
+      "vo_tc": "1:24-1:34",
+      "status": "pending",
+      "derived_from": "SC02_SH008",
+      "tc": "1:24-1:34",
+      "panel_index": 15,
+      "vo_block_tc": "1:24-1:34",
+      "rhythm_role": "hold",
+      "rhythm_note": "exhalacion final ya aprobada: push-in + HOLD 2s",
+      "risk": [
+        "R1-DERIVA-2D: 10s supera la ventana segura de 5-8s por clip (NOTA ola2). Es el panel con mas probabilidad de deriva de estilo del piloto. Si sale mal, partirlo en 6s+4s antes de re-rollear la imagen.",
+        "R2-NEGATIVOS-INLINE: el image_prompt lleva los negativos escritos dentro del prompt positivo, lo que ESTILO_MINDSET_MECHANICS.md 6.bis declara contraproducente (los tokens 'ears'/'nose' condicionan en positivo). El modelo por defecto de recraft_ai/generate_scene.py es recraftv4_1, que NO acepta el parametro negative_prompt (recraft_client.py:87,136), asi que la via del 6.bis no esta disponible sin cambiar a recraftv3 @1820x1024. DECISION PENDIENTE DE KIMI antes de gastar creditos."
+      ]
+    }
+  ],
+  "panel_count": 15,
+  "max_clip_duration_s": 10,
+  "duration_rule": "VideoExpress admite 3-10s por clip (input range video_duration, min=3 max=10, leido del DOM en vivo 2026-08-25). NINGUN panel puede superar 10s. Los 12s originales eran inejecutables. Cada llamada a animate_library_image() debe pasar duration_seconds=<duration_s del panel>.",
+  "rhythm_rule": "v1.1 (2026-08-26, MANUAL_PRODUCCION.md 3.2.1): el ritmo NO es plano. Ningun par de paneles consecutivos dura lo mismo salvo el beat neutro SH006. Rango 4-8s para paneles normales; 9-10s solo para la exhalacion de cierre (y marcado como riesgo de deriva 2D). El panel mas corto del segmento cae SOBRE el pattern interrupt. Los limites de beat y los bloques de voz en off NO se tocaron: siguen en 0:12/0:24/0:36/0:48/1:00/1:12/1:24/1:34.",
+  "rhythm_previous": "v1.0: 14 paneles de 6s exactos + 1 de 10s (cadencia plana). Reversible: ver tabla en el .md, seccion 5.",
+  "risk_flags": [
+    {
+      "id": "R1-DERIVA-2D",
+      "panel": "SC02_SH008",
+      "estado": "aceptado con vigilancia",
+      "detalle": "clip de 10s por encima de la ventana segura 5-8s de la ola 2."
+    },
+    {
+      "id": "R2-NEGATIVOS-INLINE",
+      "panel": "todos",
+      "estado": "BLOQUEANTE-DECISION",
+      "detalle": "negativos dentro del prompt positivo vs ESTILO 6.bis; recraftv4_1 no soporta negative_prompt. Decide Kimi: (a) redactar los negativos en positivo, o (b) cambiar a recraftv3 @1820x1024 y pasar el negativo por API."
+    },
+    {
+      "id": "R3-AUDIO-SIN-ASSETS",
+      "panel": "todos",
+      "estado": "abierto",
+      "detalle": "SISTEMA_STORYBOARD 8.5 exige bloque AUDIO por panel. El andamiaje esta ahora en el .md seccion 7, pero sin asset_id reales: nadie ha curado todavia la libreria de musica/SFX con licencia YPP."
+    },
+    {
+      "id": "R4-CREDITOS-RECRAFT",
+      "panel": "todos",
+      "estado": "bloqueante externo",
+      "detalle": "saldo de la API de Recraft sin pagar (commit 7c425d0). Nada de esto se puede generar hasta resolverlo."
+    },
+    {
+      "id": "R5-RENDIMIENTO",
+      "panel": "todos",
+      "estado": "informativo",
+      "detalle": "MANUAL 3.2.2: presupuestar paneles x3 (~24 generaciones de imagen, ~45 de video en el peor caso), no x1."
+    }
+  ]
+}

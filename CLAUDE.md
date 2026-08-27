@@ -76,3 +76,19 @@ solo para arquitectura o depuración difícil, y vuelve con `/model sonnet`.
 
 Detalles de costos y de modelos gratuitos: `docs/OPTIMIZACION-TOKENS.md` y
 `docs/OPENROUTER-MODELOS-GRATIS.md`.
+
+---
+
+## Proyecto paralelo: `canal/` — sistema multiagente de monetización
+
+En `canal/` vive un **segundo proyecto, autocontenido y sin relación con el motor de
+mini-apps**: el sistema de agentes que investiga, documenta y produce el canal de YouTube.
+No comparten código ni contenido; están en el mismo repositorio solo mientras el canal no
+tenga uno propio (`canal/base-conocimiento/05-decisiones/DECISIONES.md`, D-10).
+
+- Puerta de entrada: `canal/README.md`. Tablero vivo: `canal/ESTADO.md`.
+- Agentes: `.claude/agents/` — `jefe-monetizacion` (orquestador) y cuatro especialistas.
+- Comandos: `/ronda-diaria` (lanza una ronda completa) y `/estado-canal` (foto rápida).
+- **Si trabajas en `canal/`, usa Opus** (`/model opus`): es investigación y estrategia, no
+  HTML plano. La regla de Sonnet por defecto aplica al motor de mini-apps, no a esto.
+- No mezcles nunca contenido del canal dentro de `apps/` o `template/`, ni al revés.
