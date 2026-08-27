@@ -19,7 +19,7 @@ La COT-0086 quedó absorbida dentro de la 0092 y de la 0096. En la 0096 ese bloq
 $ 3.834.500 (25 RELPOL en vez de 20).
 
 Suma de los 8 subtotales de la 0096 verificada uno por uno: **$ 32.740.421 exacto, 67 referencias,
-553 unidades.** La COT-0100 usa esas mismas cifras sin tocar un peso.
+553 unidades.** La COT-0104 usa esas mismas cifras sin tocar un peso.
 
 ## 2. Cruce con los competidores
 
@@ -51,7 +51,7 @@ Cubre los grupos G + H (lo que se cotizó aparte como COT-0098).
 > (13,4 %). ISC es distribuidor Chint/Tbloc y saca entre 54 % y 68 % de descuento sobre lista;
 > ítem por ítem estamos entre 10 % y 58 % arriba de ellos en ese bloque.
 >
-> Por eso el comparativo de la COT-0100 se plantea **a nivel de paquete completo**, no bloque por
+> Por eso el comparativo de la COT-0104 se plantea **a nivel de paquete completo**, no bloque por
 > bloque. Si preguntan por ese bloque puntual, el argumento es el variador: WEG CFW500 de 3 HP con
 > soporte en Colombia contra INVT GD27 de 2 HP importado.
 
@@ -66,13 +66,13 @@ ISC incluye tres referencias que nuestra cotización **no tiene**:
 | Relevo JZX-22F 14 pines 3 A 220 V AC | 5 | $ 49.127 |
 | **Total** | | **$ 698.780** |
 
-Si GRASS los necesita hay que agregarlos a la COT-0100 antes de enviarla, o el cliente va a
+Si GRASS los necesita hay que agregarlos a la COT-0104 antes de enviarla, o el cliente va a
 encontrar el hueco cuando compare. Confirmar con Luis Enrique qué motores quedan en esos
 arranques.
 
 ### Comparación de paquete completo — la que va en el documento
 
-| | Comprando a los dos | COT-0100 |
+| | Comprando a los dos | COT-0104 |
 |---|---|---|
 | Base | $ 31.394.738 | $ 32.740.421 |
 | IVA 19 % | $ 5.965.001 | $ 6.220.680 |
@@ -94,7 +94,7 @@ $ 3.138.368.** Esta cifra sí es defendible con los tres documentos sobre la mes
   aplica.
 - El anexo de detalle se mantiene completo, en página aparte, para que el cliente pueda auditar.
 
-## 4. Números de la COT-0100
+## 4. Números de la COT-0104
 
 | Concepto | Valor |
 |---|---|
@@ -116,7 +116,7 @@ descontable, así que el margen real sube manteniendo los mismos precios base.
 ## 5. Pendientes antes de enviar
 
 - [ ] Decidir si se agregan los 10 contactores 16 A, los 2 guardamotores 25-40 A y los 5 relés
-      JZX-22F (sección 2). Si se agregan, hay que recotizarlos y actualizar la COT-0100.
+      JZX-22F (sección 2). Si se agregan, hay que recotizarlos y actualizar la COT-0104.
 - [ ] Verificar vigencia de la firma electrónica en el portal de la DIAN.
 - [ ] Verificar el correo registrado en el RUT — ahí llega el token de habilitación.
 - [ ] Agregar la responsabilidad 48 en la casilla 53 del RUT.
@@ -129,10 +129,10 @@ descontable, así que el margen real sube manteniendo los mismos precios base.
 
 | Archivo | Qué es |
 |---|---|
-| `COT-0100-cotizacion-con-IVA` | Cotización consolidada, IVA incluido. Reemplaza 0086, 0092, 0096 y 0098 |
+| `COT-0104-cotizacion-con-IVA` | Cotización consolidada, IVA incluido. Reemplaza 0086, 0092, 0096 y 0098 |
 | `carta-facturacion-iva` | Comunicación formal al cliente sobre la facturación con IVA y los plazos |
-| `contrato-suministro` | Contrato de suministro CS-0100-2026 |
-| `pagare-y-carta-instrucciones` | Pagaré PG-0100-2026 y su carta de instrucciones |
+| `contrato-suministro` | Contrato de suministro CS-0104-2026 |
+| `pagare-y-carta-instrucciones` | Pagaré PG-0104-2026 y su carta de instrucciones |
 
 Cada uno está en `.html` (fuente editable) y en `.pdf` (listo para enviar). Para regenerar los PDF
 después de editar un HTML, se imprime a PDF desde el navegador con márgenes por defecto.
