@@ -1,7 +1,0 @@
-.env
-config/channels.yaml
-channels/*/token.json
-channels/*/output/
-output/
-__pycache__/
-*.pyc

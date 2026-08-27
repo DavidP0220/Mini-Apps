@@ -1,6 +1,0 @@
-requests
-python-dotenv
-# Pillow: recorte a 16:9 exacto (_crop_to_16_9). Los modelos V4.x de Recraft
-# no ofrecen ningun tamano 16:9 exacto, y VideoExpress rechaza animar
-# cualquier otra proporcion - el recorte local no es opcional.
-Pillow

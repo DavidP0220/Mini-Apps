@@ -79,16 +79,16 @@ Detalles de costos y de modelos gratuitos: `docs/OPTIMIZACION-TOKENS.md` y
 
 ---
 
-## Proyecto paralelo: `canal/` — sistema multiagente de monetización
+## `canal/` — solo el buzón público de handoffs para Kimi
 
-En `canal/` vive un **segundo proyecto, autocontenido y sin relación con el motor de
-mini-apps**: el sistema de agentes que investiga, documenta y produce el canal de YouTube.
-No comparten código ni contenido; están en el mismo repositorio solo mientras el canal no
-tenga uno propio (`canal/base-conocimiento/05-decisiones/DECISIONES.md`, D-10).
+El proyecto del canal **ya no vive aquí**. Desde el 2026-08-27 su fuente única de verdad es el
+repositorio privado `DavidP0220/mindset-mechanics` (decisión D-11), donde están los agentes, la
+base de conocimiento, el archivo histórico y el código de producción.
 
-- Puerta de entrada: `canal/README.md`. Tablero vivo: `canal/ESTADO.md`.
-- Agentes: `.claude/agents/` — `jefe-monetizacion` (orquestador) y cuatro especialistas.
-- Comandos: `/ronda-diaria` (lanza una ronda completa) y `/estado-canal` (foto rápida).
-- **Si trabajas en `canal/`, usa Opus** (`/model opus`): es investigación y estrategia, no
-  HTML plano. La regla de Sonnet por defecto aplica al motor de mini-apps, no a esto.
+En este repositorio solo queda `canal/puente-kimi/`: los handoffs que Kimi debe poder leer desde
+un enlace público. Reglas de qué puede publicarse ahí: `canal/puente-kimi/BUZON_PUBLICO.md`.
+
+- Para trabajar en el canal, usa el repositorio del canal, no este.
+- Los agentes (`jefe-monetizacion` y los cuatro especialistas) siguen definidos en
+  `.claude/agents/` para poder lanzarlos desde aquí, pero **operan sobre el otro repositorio**.
 - No mezcles nunca contenido del canal dentro de `apps/` o `template/`, ni al revés.
