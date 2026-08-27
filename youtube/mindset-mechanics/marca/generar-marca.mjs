@@ -1,16 +1,9 @@
-// FACTORY SETTINGS — avatar + banner desde personaje.png (2D animado, generado con IA)
-// b64: python3 -c "import base64;open('_p.b64','w').write('data:image/png;base64,'+base64.b64encode(open('personaje.png','rb').read()).decode())"
+// FACTORY SETTINGS — banner desde personaje.png (2D animado, generado con IA)
+// El avatar YA NO sale de aqui: es un logo, no el rostro. Ver generar-avatar.py.
 import { chromium } from '/opt/node22/lib/node_modules/playwright/index.mjs';
 import { readFileSync } from 'fs';
-const P = readFileSync('_p.b64','utf8');
+const P = 'data:image/png;base64,' + readFileSync('personaje.png').toString('base64');
 const AMBER='#FF9A2E', CREAM='#FFF3E0';
-
-// AVATAR 800x800 — cara llenando el circulo. fuente 1280x720, escala 1.35
-const avatar = `<style>html,body{margin:0}
- .a{position:relative;width:800px;height:800px;overflow:hidden;background:#050A14}
- img{position:absolute;width:1728px;left:-437px;top:-25px}
- .vig{position:absolute;inset:0;background:radial-gradient(circle at 50% 46%,rgba(0,0,0,0) 52%,rgba(5,10,20,.72) 100%)}
-</style><div class="a"><img src="${P}"><div class="vig"></div></div>`;
 
 // BANNER 2560x1440 — zona segura movil 1546x423: x 507..2053, y 508..931
 const banner = `<style>html,body{margin:0}
@@ -33,7 +26,7 @@ const banner = `<style>html,body{margin:0}
  <div class="s">NEW VIDEO EVERY 4 DAYS</div></div></div>`;
 
 const br = await chromium.launch();
-for (const [h,s,o,w,ht] of [[avatar,'.a','avatar.png',800,800],[banner,'.b','banner.png',2560,1440]]) {
+for (const [h,s,o,w,ht] of [[banner,'.b','banner.png',2560,1440]]) {
   const p = await br.newPage({viewport:{width:w,height:ht},deviceScaleFactor:1});
   await p.setContent(h); await p.waitForLoadState('networkidle');
   await p.locator(s).screenshot({path:o}); console.log(o,'ok'); await p.close();

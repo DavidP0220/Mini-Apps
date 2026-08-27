@@ -84,18 +84,26 @@ lea a 32 px y que las miniaturas destaquen en un feed saturado.
 | `marca/avatar.png` | 800 × 800 | Foto de perfil |
 | `marca/banner.png` | 2560 × 1440 | Banner del canal |
 | `marca/preview-tamanos.png` | — | Verificación a 32/48/88/160 px |
-| `marca/arte-fuente-ia.png` | 1280 × 720 | Arte original generado con IA |
-| `marca/generar-marca.mjs` | — | Regenera avatar y banner |
+| `marca/logo-fuente-ia.png` | 1024 × 1024 | Arte del logo generado con IA — insumo del avatar |
+| `marca/personaje.png` | — | Host canónico — insumo del banner |
+| `marca/generar-avatar.py` | — | Regenera el avatar desde `logo-fuente-ia.png` |
+| `marca/generar-marca.mjs` | — | Regenera el banner desde `personaje.png` |
+| `marca/generar-preview.mjs` | — | Regenera la verificación de tamaños |
 
-**Cómo están hechos.** El arte se generó con IA (una cabeza humana de piedra agrietada, de perfil, con
-un símbolo de encendido incandescente donde iría el cerebro). La tipografía la monté aparte con código,
-porque los generadores de imagen destrozan el texto — así la letra queda perfecta y se puede cambiar
-sin regenerar el arte.
+**Método.** El arte lo genera la IA; la geometría y la tipografía las monta el código. Los generadores
+de imagen destrozan el texto y no encuadran para iconos pequeños, así que esas dos cosas se hacen
+aparte y se pueden cambiar sin regenerar el arte.
 
-**Avatar:** recorte cerrado al símbolo. YouTube muestra la foto de perfil a **32×40 px** en comentarios
-y feeds; un anillo naranja incandescente sobre negro es de las pocas formas que sobreviven a ese tamaño.
-Verificado en `preview-tamanos.png`.
+**Avatar: un logo, no un rostro.** Los canales faceless se marcan con logo; los iconos de cara son para
+creadores que salen en cámara. El avatar es una cabeza de perfil en crema sobre negro con **la luz
+ámbar en la sien** — la misma firma que lleva el host en los videos (`FORMATO-DE-PRODUCCION.md` §2), de
+modo que el icono y el personaje son la misma idea.
+
+YouTube muestra la foto de perfil recortada **en círculo** y a **32 px** en comentarios y feeds. Ese
+recorte, no el cuadrado, es el que decide: `marca/opciones/revision-circular.png` compara las variantes
+bajo él. El reencuadre de `generar-avatar.py` existe para que el punto ámbar sobreviva a ese tamaño.
+Historial completo de la decisión en `marca/opciones/OPCIONES-AVATAR.md`.
 
 **Banner:** texto y símbolo dentro de la zona segura móvil (1546 × 423 centrada), lo único visible en
-teléfono. Incluye la promesa de cadencia, que es de las pocas cosas que mueven la suscripción en la
-visita al canal.
+teléfono. Usa el rostro del host, que ahí sí funciona porque hay espacio. Incluye la promesa de
+cadencia, que es de las pocas cosas que mueven la suscripción en la visita al canal.
