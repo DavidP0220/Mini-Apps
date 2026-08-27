@@ -171,6 +171,63 @@ partir de plantillas*, no tu personaje. Y para miniaturas, Canva hace lo mismo m
 
 ---
 
+## 4.quater storytribeapp.com — el mejor de los maquetadores, y aun asi no sirve
+
+*Sin verificar contra la fuente — página bloqueada. Datos de búsqueda.*
+
+**Qué es:** creador de storyboards online, sin necesidad de saber dibujar. Personajes de librería
+que se arrastran, fondos de localizaciones reales, biblioteca de props, herramienta de lápiz a
+mano alzada y bloqueo de elementos en el lienzo.
+
+**Precio:** gratis hasta 3 storyboards; **9,99 USD/mes** acceso completo. Es el más barato de
+todos los revisados.
+
+**Lo mejor que tiene, y hay que reconocérselo:** campos nativos para **número de escena,
+indicaciones de cámara, notas de voz en off, notas de audio y especificaciones técnicas**, puestos
+donde se necesitan para el traspaso a producción. Esa es exactamente la estructura de anotación de
+un tablero profesional — y confirma que el esquema de 12 campos de
+`SISTEMA_STORYBOARD_MINDSET_MECHANICS.md` está bien planteado.
+
+**Por qué aun así no sirve, y es el dato decisivo:** **no tiene IA.** Lo dicen ellos mismos: la
+app no incorpora IA por ahora. La "consistencia de personaje" que promete es la de *sus* muñecos
+de librería en distintas poses, no la de un personaje propio.
+
+**Veredicto: descartado**, por lo mismo que los otros cuatro maquetadores.
+
+---
+
+## 4.quinquies El patrón, que es la conclusión de verdad
+
+Siete herramientas revisadas. **Seis caen en la misma categoría**: son **lienzos con librería
+propia de personajes**.
+
+| Herramienta | ¿Genera el personaje del canal? | ¿Sale al pipeline? |
+|---|---|---|
+| storyboardthat | No — su librería | No |
+| Canva | No — sus plantillas | Solo API Enterprise |
+| Visme | No — sus plantillas | API + Zapier |
+| StoryTribe | No — su librería, y sin IA | Export |
+| storyboardart.org | Es una escuela | — |
+| Nano Banana (lámina) | Lo intenta y **le pone nariz** | No |
+| **storyboarder.ai** | **Dice que sí — estilos propios** | Export |
+
+**Ninguna puede dibujar a un hombre calvo, sin nariz y sin orejas, con gorra navy y hoodie gris**,
+porque ese personaje no existe en ninguna librería del mundo: existe solo como estilo dentro de
+Recraft, entrenado con las referencias del canal.
+
+Eso no es una limitación de la búsqueda. **Es la respuesta**, y sale igual en siete productos
+independientes: para un canal cuyo activo es un personaje bloqueado propio, un maquetador con
+librería ajena no puede ser la solución. La única categoría que sigue viva es la de los
+generadores con estilo propio — y de esos, el que ya está pagado e integrado es Recraft.
+
+**Lo único que queda por investigar de verdad** no es otro maquetador: es la categoría de
+**image-to-video / animática**, porque ahí sí hay un punto frágil real — `video_express_ai` es un
+bot de Playwright que maneja una web ajena por el navegador, y eso se rompe cada vez que esa web
+cambia un botón. `storyboarder.ai` y otros ofrecen image-to-video por API. Ese es el siguiente
+frente con retorno posible.
+
+---
+
 ## 5. ⚠️ EL HALLAZGO — Recraft tiene consistencia de personaje y el pipeline no la usa
 
 Esto sí está **verificado de primera mano** contra el código y los logs del repo.
@@ -269,6 +326,7 @@ de los 210 de V4.1 pro. Una sola generación lo dice.
 | storyboardthat | No | No | — | ❌ Descartado |
 | Canva | No | Solo API Enterprise | — | ❌ Para storyboard · ✅ **para miniaturas** |
 | Visme | No | API + Zapier | 15-29 USD/mes | ❌ Descartado |
+| StoryTribe | No, y sin IA | Export | 9,99 USD/mes | ❌ Descartado |
 | storyboardart.org | — | — | — | ❌ Es una escuela |
 
 **Camino más rápido, barato y de más calidad, en este orden:**
