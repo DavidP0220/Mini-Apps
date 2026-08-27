@@ -351,3 +351,101 @@ herramienta de storyboard mueve ese número: el storyboard afecta a la calidad d
 problema medido es que **nadie los está viendo**. Lo que sí lo mueve, y cuesta 0: rehacer títulos
 y miniaturas de los 4 largos, y hacer Shorts en serie copiando el que consiguió 99 % de retención
 y trajo 4 de los 11 suscriptores.
+
+---
+
+## 6. ⚠️ SEGUNDO HALLAZGO — vidIQ genera video por API, y ya lo tienes conectado
+
+**Verificado de primera mano**: leí la definición de la herramienta y consulté el saldo. Esto no
+viene de una búsqueda.
+
+El conector de **vidIQ que ya usas para la analítica del canal** expone
+`vidiq_generate_video`. No es un extra: es un generador de video completo por API.
+
+### 6.1 Lo que hace
+
+| Capacidad | Detalle |
+|---|---|
+| **Primer fotograma** | `startFrameB64` — image-to-video desde tu still de Recraft |
+| **Último fotograma** | `endFrameB64` — **fuerza dónde acaba el clip** (no disponible en Sora) |
+| **Imágenes de referencia** | `ingredients`, hasta **9** en seedance-2 y minimax-h3; 3 en veo-3.1 |
+| **Modelos** | minimax-h3, sora-2, sora-2-pro, veo-3.1 (+fast/lite), **kling-3, kling-3-pro**, seedance-2 (+fast), gemini-omni-flash |
+| **Duración** | seedance-2: **cualquier valor de 1 a 15 s** · minimax-h3: 4-15 s · veo-3.1: 4/6/8 s |
+| **Resolución** | hasta 1080p, y 2k en minimax-h3 |
+| **Ejecución** | asíncrona: devuelve `mcpJobId`, se consulta con `vidiq_job_poll` |
+| **Fallos** | si la generación falla, **los créditos se devuelven solos** |
+
+### 6.2 Por qué esto es más importante que cualquier herramienta de storyboard
+
+**`video_express_ai` es un bot de Playwright que maneja una web ajena por el navegador.** 51 KB de
+código conduciendo botones de una página que no controlas. Cada vez que VideoExpress cambia el
+DOM, se rompe. Necesita login manual, sesión guardada en `auth_state.json`, y no se puede correr
+en un contenedor sin navegador — por eso las rutinas remotas nunca han podido generar nada.
+
+`vidiq_generate_video` es **una llamada de API**. Sin navegador, sin sesión, sin scraping.
+
+Y hay una capacidad que VideoExpress no da y que **tu pipeline ya está pidiendo a gritos**:
+el canal extrae `last_frame_*.png` de las 12 escenas precisamente para encadenar continuidad.
+Con `endFrameB64` no hay que rezar para que el clip acabe donde toca: **se le impone el fotograma
+final**. Eso es control de raccord real, no un prompt pidiéndolo por favor.
+
+Añadido: `ingredients` con hasta 9 imágenes de referencia es el equivalente en video del `style_id`
+de Recraft — consistencia de personaje del lado del modelo.
+
+### 6.3 La cuenta de créditos
+
+Tarifa documentada en la propia herramienta: **duración (s) × tarifa del modelo por segundo × 20
+créditos**, cotizada exactamente al enviar.
+
+Saldo consultado hoy: **2 créditos**. Renovables: **0 de 2.000**, que vuelven el **18-sep-2026**.
+Es decir: el plan da 2.000 créditos al mes y este ciclo ya está gastado.
+
+Con las tarifas por segundo que devuelve la investigación de mercado (*no verificadas contra
+vidIQ*, así que esto es estimación, no dato):
+
+| Modelo | Tarifa citada | Clip de 6 s | 44 sub-clips (un acto) |
+|---|---|---|---|
+| Wan / Runway Gen-4 Turbo | ~0,05 USD/s | ~6 créditos | ~264 |
+| Kling 3 | 0,09-0,14 USD/s | ~11-17 créditos | ~475-740 |
+| Veo 3.1 Fast | ~0,15 USD/s | ~18 créditos | ~790 |
+
+**Con 2.000 créditos renovables al mes, eso son entre 2 y 7 actos completos por ciclo**, sin pagar
+nada extra. Compáralo con los 210 créditos de Recraft **por imagen fija**.
+
+### 6.4 El dato de estilo que confirma tu regla — y sugiere apretarla
+
+La investigación sobre animación 2D con modelos de video coincide en dos cosas:
+
+1. **Mantener los clips cortos (2-4 s) evita la deriva hacia el fotorrealismo.** Tu regla actual es
+   4-8 s con 9-10 s en el cierre de acto. El extremo bajo es el seguro; los de 10 s son el riesgo,
+   y ya los tienes marcados como bandera R1.
+2. **El estilo 2D plano produce menos artefactos temporales que el fotorrealista**, porque la
+   geometría simple y el color plano le quitan carga al modelo. O sea: el estilo del canal juega
+   a favor, no en contra.
+
+### 6.5 Qué falta por comprobar, y cuesta 1 clip
+
+- La **tarifa real por segundo** de cada modelo dentro de vidIQ (se ve al enviar).
+- Si el estilo cel-shaded plano **aguanta** en `seedance-2` o `kling-3` partiendo de un still de
+  Recraft — que es la prueba de verdad.
+- Si `endFrameB64` respeta el fotograma final con fidelidad suficiente para el raccord.
+
+**Las tres se responden con UNA generación de 5 segundos** usando `SC01_SH001` como primer
+fotograma. No hace falta más.
+
+---
+
+## 7. Camino recomendado, actualizado
+
+1. **Recraft V3 + `style_id`** para las imágenes fijas → arregla consistencia y probablemente el
+   coste. Coste de la prueba: 1 generación.
+2. **vidIQ `generate_video` en vez del bot de Playwright** para la animación → elimina la
+   fragilidad del navegador y aporta control de primer y último fotograma. Coste de la prueba:
+   1 clip de 5 s, cuando vuelvan los créditos el 18-sep o si recargas antes.
+3. **Parchear `generate_piloto_stills.py`** para que acepte `--style-id`. Coste: 0.
+4. **Addendum §10** (eye-trace, notan, silueta). Coste: 0.
+5. Maquetadores de storyboard: **ninguno**. Ya está resuelto por el generador del tablero.
+
+Si las dos pruebas salen bien, el pipeline queda: **guion → TTS → storyboard → Recraft con
+`style_id` → vidIQ image-to-video con primer y último fotograma → ffmpeg → publicación**, y
+desaparece el único componente que depende de un navegador.
