@@ -1,11 +1,38 @@
 # PUENTE CON KIMI CODE — protocolo
 
 Kimi Code es el **estratega y decisor de alto nivel**. Los agentes de este repositorio son la
-**ejecución**. La comunicación entre los dos lados ocurre **por archivos versionados en el
-repositorio**, no por chat: así queda historial, fecha y autor de cada decisión.
+**ejecución**.
 
-Este protocolo no se reinventa: viene funcionando desde el proyecto anterior y su historial
-completo está en `../archivo/2026-08-26_traslado_mindset_mechanics/03_PUENTE_KIMI_CLAUDE_HANDOFFS/`.
+## ⚠️ Cómo funciona el puente DE VERDAD (corregido 2026-08-27)
+
+La primera versión de este documento decía que la comunicación era por commits al repositorio.
+**Era incorrecto.** Verificado contra las reglas del repositorio `DavidP0220/mindset-mechanics`,
+que es donde Kimi trabaja:
+
+> **Kimi no tiene cuenta de Google, ni acceso a disco, ni acceso a git.**
+
+Es decir, el puente es **asimétrico** y solo una dirección está automatizada:
+
+| Dirección | Cómo funciona | ¿Automático? |
+|---|---|---|
+| **Kimi → Claude** | Kimi deja el archivo en una carpeta de Drive sincronizada en el PC de David (`kimi-buzon`). David escribe *"sincroniza"* y Claude la copia a `handoffs/` | Sí, si Claude corre **en el PC de David** |
+| **Claude → Kimi** | Claude escribe el handoff, le dice a David el **nombre exacto del archivo**, y **David lo arrastra a mano al chat de Kimi** | **No. Nunca lo fue.** El puente es David |
+
+**Y una limitación más, de esta sesión:** cuando Claude corre en la nube (como ahora) tampoco
+puede leer el buzón de Drive, porque ese es un disco del PC de David. En sesiones en la nube,
+**las dos direcciones son manuales**.
+
+### Consecuencia práctica
+Un handoff escrito y commiteado **no llega a Kimi por sí solo**. El trabajo no está entregado
+hasta que David lo arrastra al chat de Kimi. Por eso cada handoff se cierra avisando a David
+del nombre exacto del archivo — nunca se da por entregado sin ese aviso.
+
+### Propuesta para quitar a David de cartero (pendiente de su decisión)
+El repositorio `DavidP0220/Mini-Apps` es **público**, así que cualquier archivo suyo es legible
+desde una URL de tipo `raw.githubusercontent.com`. Si Kimi Code puede abrir enlaces, publicar
+ahí los handoffs haría automática la dirección Claude → Kimi.
+**Contrapartida que David debe sopesar:** eso hace públicos los documentos de estrategia del
+proyecto. Hoy viven en un repositorio privado. No se hace sin su visto bueno explícito.
 
 ## Los dos tipos de archivo
 

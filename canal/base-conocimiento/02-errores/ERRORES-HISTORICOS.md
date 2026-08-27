@@ -139,11 +139,32 @@ una ficha; si deja de aplicar se marca OBSOLETA con fecha y motivo.
 **Verificación:** la ficha de la herramienta enlaza el apartado concreto de la documentación que respalda la capacidad usada.
 
 ---
+---
 
-## Los cinco antipatrones, en una línea cada uno
+### E-15 — Producir con plantilla + IA + volumen: el perfil que YouTube está terminando
+**Cuándo:** enforcement real de enero de 2026, fichado aquí el 2026-08-27 · **Coste potencial:** el canal entero, y la expulsión permanente del programa de socios
+**Síntoma:** el atajo obvio para monetizar rápido — una plantilla de guion, narración de IA uniforme, visuales genéricos y mucho volumen — es exactamente el perfil que la política de "contenido no auténtico" persigue.
+**Causa raíz:** la política no castiga el formato sin rostro ni el uso de IA por separado. Castiga la **combinación** de salida masiva plantillada sin ángulo editorial propio. Es fácil caer en ella sin querer cuando el objetivo es "monetizar rápido".
+**Evidencia:** en enero de 2026 se terminaron **16 canales con 35 millones de suscriptores combinados y 4.700 millones de vistas**. Caso documentado: un canal de ~588.000 suscriptores fue desmonetizado por narración de IA uniforme, visuales plantillados y estructura repetitiva. Sistema de tres avisos: aviso → suspensión de 90 días → expulsión permanente. Fuentes citadas en `PLAN_MAESTRO_PORTAFOLIO.md` del repositorio `DavidP0220/mindset-mechanics`.
+**Antídoto:** **guion original y ángulo editorial propio en cada video** — nunca la misma plantilla rellenada. Identidad visual diferenciada por canal. Y la regla dura que ya estaba escrita y sigue vigente: **cero generación de contenido pago para un canal hasta que tenga nombre confirmado y cuentas reales creadas.** Si un canal del portafolio empieza a parecerse a otro, eso es la señal de alarma, no una eficiencia.
+**Verificación:** antes de publicar, la pregunta es "¿este video tiene un ángulo que no tendría ningún otro canal del nicho?". Si la respuesta es no, no se publica.
+
+---
+
+### E-16 — Dos líneas de trabajo en paralelo que no se ven entre sí
+**Cuándo:** 23 al 26 de agosto de 2026, detectado el 2026-08-27 · **Coste:** tres decisiones estratégicas paradas cuatro días, y dos pipelines distintos construidos para lo mismo
+**Síntoma:** el proyecto avanzó simultáneamente en tres sitios que no se sincronizaban: el repositorio donde trabaja Kimi, un paquete de traslado de otra máquina, y un tercer repositorio. Los handoffs de Kimi del 23-ago se quedaron sin respuesta porque la sesión que siguió trabajando estaba en la otra línea.
+**Causa raíz:** no había una **fuente única de verdad** declarada, y el puente con el estratega dependía de un traslado manual que nadie ejecutó. Ya había un antecedente: dos sesiones de Claude Code trabajando sobre el mismo repositorio a la vez, con commits casi idénticos.
+**Antídoto:** una sola fuente de verdad declarada por escrito, y una sesión activa a la vez. Antes de empezar a trabajar, verificar la fecha del último commit real (`git log -1`) y de los handoffs pendientes; si hay trabajo posterior a lo que tenemos, se consolida **antes** de producir nada nuevo.
+**Verificación:** cada ronda abre nombrando cuál es la fuente única y cuál fue su último movimiento.
+
+
+
+## Los seis antipatrones, en una línea cada uno
 
 1. **Asumir en vez de verificar** (E-03, E-14) — la fuente real, siempre, aunque cueste 5 minutos.
 2. **Insistir con un método que ya falló** (E-01, E-05) — dos fallos y se para.
 3. **Confundir la métrica con la señal** (E-04, E-12) — mira el tamaño de muestra y el número que de verdad importa.
 4. **Dar por respaldado lo que solo existe en un sitio** (E-10, E-11) — un sitio es cero sitios.
 5. **Aprobarse el trabajo a uno mismo** (E-02, E-13) — el control de calidad y la autorización son de otro.
+6. **Trabajar sin fuente única de verdad** (E-15, E-16) — dos líneas en paralelo producen el doble de trabajo y la mitad de avance, y el atajo plantillado cuesta el canal.
