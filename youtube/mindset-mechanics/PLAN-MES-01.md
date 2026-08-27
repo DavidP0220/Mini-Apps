@@ -326,4 +326,8 @@ despreciable.
 
 La única vía de ingreso real dentro de la ventana de 30 días sigue siendo el infoproducto en inglés
 con el motor de Mini-Apps, link en descripción y en "Acerca de". No depende de ningún umbral.
-Ver `ALCANCES-DEL-PAQUETE.md` §6.
+
+**Montado el 2026-08-27** en `apps/factory-settings-manual/`: 10 capítulos, y los 8 de mecanismo son
+estos mismos 8 videos, así que cada publicación es el anuncio natural de su capítulo. Falta decidir
+precio y captura de correos, y activar GitHub Pages. Ver `INFOPRODUCTO.md` y
+`ALCANCES-DEL-PAQUETE.md` §6.

@@ -181,6 +181,7 @@ suscriptores, sin logística, sin esperar al YPP.
    tiempo) y no producir más.
 3. **Todo el esfuerzo al video largo de 10-13 min**, con las fórmulas A/C del playbook, cadencia de 1
    cada 4-5 días.
-4. **Montar el infoproducto en inglés esta semana** con el motor de Mini-Apps. Es el único ingreso
-   posible dentro de 30 días.
+4. ~~**Montar el infoproducto en inglés esta semana** con el motor de Mini-Apps.~~ **Hecho el
+   2026-08-27:** `apps/factory-settings-manual/`, 10 capítulos. Queda decidir precio y captura de
+   correos, y activar GitHub Pages. Ver `INFOPRODUCTO.md`.
 5. Regenerar el video de Resiliencia con el estilo correcto antes de publicarlo.
