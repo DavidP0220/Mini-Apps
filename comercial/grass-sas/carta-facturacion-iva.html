@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Facturación con IVA — Electromandos del Oriente · GRASS S.A.S.</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --tinta:#0F172A; --gris:#475569; --gris2:#94A3B8; --linea:#E2E8F0;
+  --azul:#1D4ED8; --azulsuave:#EFF4FF; --verde:#047857; --papel:#fff;
+}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--tinta);background:#F1F5F9;font-size:10.5pt;line-height:1.5}
+.hoja{max-width:21cm;margin:0 auto;background:var(--papel);padding:16mm 15mm 14mm}
+h1{font-size:21pt;line-height:1.15;letter-spacing:-.02em;font-weight:700}
+h2{font-size:12.5pt;margin:26px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--tinta);
+  letter-spacing:-.01em}
+h3{font-size:10.5pt;margin:16px 0 6px;letter-spacing:.02em}
+p{margin:0 0 9px}
+small{font-size:8.5pt;color:var(--gris)}
+.eyebrow{font-size:8pt;letter-spacing:.16em;text-transform:uppercase;color:var(--gris2);font-weight:600}
+/* ---- cabecera ---- */
+.cab{background:var(--tinta);color:#fff;overflow:hidden;margin:-16mm -15mm 22px;padding:15mm 15mm 12mm}
+.cab .eyebrow{color:#8FB0F0}
+.cab h1{color:#fff;margin:6px 0 8px}
+.cab .lead{color:#CBD5E1;font-size:10pt;max-width:13cm}
+.cab .num{float:right;text-align:right;margin-left:12px;max-width:38%}
+.cab .num b{display:block;font-size:16pt}
+.cab .num span{font-size:8.5pt;color:#94A3B8}
+.partes{display:flex;gap:10px;margin-top:16px;clear:both}
+.parte{min-width:0}
+.parte{flex:1;border:1px solid #334155;border-radius:6px;padding:10px 12px}
+.parte .eyebrow{color:#64748B;margin-bottom:5px}
+.parte b{font-size:10.5pt;display:block;margin-bottom:3px}
+.parte span{font-size:8.7pt;color:#CBD5E1;display:block;line-height:1.45}
+/* ---- total ---- */
+.total{border:2px solid var(--tinta);border-radius:8px;padding:16px 18px;margin:4px 0 18px}
+.total .eyebrow{color:var(--gris)}
+.total .cifra{font-size:32pt;font-weight:700;letter-spacing:-.03em;line-height:1.05;margin:2px 0 2px}
+.total .pie{font-size:9pt;color:var(--gris)}
+.desglose{display:flex;gap:0;margin-top:14px;border-top:1px solid var(--linea);padding-top:12px}
+.desglose div{flex:1;padding-right:14px}
+.desglose div+div{border-left:1px solid var(--linea);padding-left:14px}
+.desglose .k{font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris2);font-weight:600}
+.desglose .v{font-size:13pt;font-weight:700;letter-spacing:-.02em;margin-top:2px}
+.desglose .v.sm{font-size:11.5pt}
+/* ---- tablas ---- */
+table{width:100%;border-collapse:collapse;font-size:9.5pt}
+table.fx{table-layout:fixed}
+th{text-align:left;overflow-wrap:break-word;font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);
+  font-weight:600;padding:0 8px 7px 0;border-bottom:1.5px solid var(--tinta)}
+td{padding:8px 8px 8px 0;overflow-wrap:break-word;border-bottom:1px solid var(--linea);vertical-align:top}
+th.r,td.r{text-align:right;padding-right:0}
+th.c,td.c{text-align:center}
+tr.tot td{border-top:1.5px solid var(--tinta);border-bottom:none;font-weight:700;padding-top:10px;font-size:11pt}
+.grupo td{background:var(--azulsuave);font-weight:700;font-size:9pt;letter-spacing:.04em;
+  text-transform:uppercase;padding:7px 8px 7px 6px;border-bottom:1px solid var(--linea)}
+.it{font-weight:600}
+.sub{display:block;color:var(--gris);font-size:8.5pt;line-height:1.4;margin-top:2px;font-weight:400}
+.sfila td{font-weight:700;background:#F8FAFC}
+/* ---- cajas ---- */
+.nota{border-left:3px solid var(--azul);background:var(--azulsuave);padding:11px 14px;margin:12px 0;
+  font-size:9.5pt;border-radius:0 5px 5px 0}
+.nota b{display:block;margin-bottom:3px}
+.cols{display:flex;gap:16px;margin-top:10px}
+.cols>div{flex:1}
+.cond{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--linea);border-radius:6px;overflow:hidden}
+.cond>div{padding:11px 14px;border-bottom:1px solid var(--linea)}
+.cond>div:nth-child(odd){border-right:1px solid var(--linea)}
+.cond>div:nth-last-child(-n+2){border-bottom:none}
+.cond .k{font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris2);font-weight:600;margin-bottom:3px}
+.cond .v{font-size:9.5pt}
+/* ---- firmas ---- */
+.firmas{display:flex;gap:40px;margin-top:36px;page-break-inside:avoid}
+.firmas div{flex:1}
+.linea{border-top:1px solid var(--tinta);margin-top:44px;padding-top:6px;font-size:9pt}
+.linea b{display:block}
+.pie{margin-top:26px;padding-top:10px;border-top:1px solid var(--linea);
+  font-size:8pt;color:var(--gris2);display:flex;justify-content:space-between}
+ol,ul{margin:0 0 10px 18px}li{margin-bottom:5px}
+.cl{margin-bottom:14px}
+.cl h3{margin-top:0}
+@page{size:A4;margin:14mm 13mm}
+@media print{
+  body{background:#fff;font-size:9.8pt}
+  .hoja{max-width:none;padding:0;margin:0}
+  .cab{margin:-14mm -13mm 18px;padding:14mm 13mm 10mm}
+  h2{page-break-after:avoid}
+  tr,.nota,.cond,.total{page-break-inside:avoid}
+  .noprint{display:none}
+}
+</style></head><body><div class="hoja">
+
+<header class="cab">
+  <div class="num"><b>EO-2026-014</b><span>Bucaramanga · 27 de agosto de 2026</span></div>
+  <div class="eyebrow">Suministro industrial · Automatización y control</div>
+  <h1>Facturación electrónica<br>con IVA discriminado</h1>
+  <p class="lead">Comunicación formal sobre el régimen de facturación aplicable a la cotización
+  COT-0100 y a las órdenes de compra que se deriven de ella.</p>
+  <div class="partes">
+    <div class="parte"><div class="eyebrow">Dirigida a</div>
+      <b>Grupo Agroindustrial GRASS S.A.S.</b>
+      <span>NIT 901.185.692-3<br>At.: Sr. Luis Enrique — Compras / Mantenimiento<br>Barrancabermeja, Santander</span></div>
+    <div class="parte"><div class="eyebrow">Emitida por</div>
+      <b>Walter David Peñuela Sanabria</b>
+      <span>Electromandos del Oriente · C.C. 1.098.761.868<br>Calle 153F #22-19, Villa España II — Bucaramanga<br>317 802 1422 · electromandos1@hotmail.com</span></div>
+  </div>
+</header>
+
+<p>Respetado señor Luis Enrique:</p>
+
+<p>En atención a su solicitud de facturación con IVA discriminado, me permito confirmar
+formalmente que <b>sí es posible emitir factura electrónica de venta con IVA del 19 %
+discriminado</b> para la totalidad del suministro cotizado, y precisar a continuación el
+sustento y los tiempos del proceso.</p>
+
+<h2>1. Por qué las cotizaciones anteriores no traían IVA</h2>
+<p>Las cotizaciones COT-0086, COT-0092, COT-0096 y COT-0098 se emitieron bajo la condición de
+<b>no responsable de IVA</b> — responsabilidad 49 del RUT, conforme al parágrafo 3.º del
+artículo 437 del Estatuto Tributario. Bajo esa condición no procede liquidar ni discriminar el
+impuesto, razón por la cual los valores se presentaron netos.</p>
+<p>Esa condición se adoptó para ofrecerles el precio más bajo posible. Entendido que para GRASS
+S.A.S. el IVA es <b>impuesto descontable</b> y no un costo, se procede al ajuste del régimen.</p>
+
+<h2>2. Trámite en curso ante la DIAN</h2>
+<table>
+  <thead><tr><th>Etapa</th><th>Descripción</th><th class="c">Tiempo</th></tr></thead>
+  <tbody>
+    <tr><td class="it">1. Actualización del RUT</td>
+      <td>Inscripción de la responsabilidad <b>48 — Impuesto sobre las ventas (IVA)</b> en la
+      casilla 53 del Registro Único Tributario.</td><td class="c">1–2 días hábiles</td></tr>
+    <tr><td class="it">2. Habilitación como facturador electrónico</td>
+      <td>Registro en el servicio de facturación electrónica de la DIAN, superación del set de
+      pruebas y asociación del proveedor tecnológico, conforme a la Resolución DIAN 000165 de 2023.</td>
+      <td class="c">1–2 días hábiles</td></tr>
+    <tr><td class="it">3. Autorización de numeración</td>
+      <td>Solicitud y activación del rango de numeración con prefijo <b>FE</b>.</td>
+      <td class="c">1 día hábil</td></tr>
+    <tr class="tot"><td colspan="2">Plazo total estimado</td><td class="c">3 a 5 días hábiles</td></tr>
+  </tbody>
+</table>
+
+<div class="nota"><b>Lo que esto NO cambia</b>
+Los precios base del suministro se mantienen exactamente iguales a los ya cotizados. No hay
+reajuste, recargo ni recomposición de valores unitarios: únicamente se adiciona el IVA del 19 %,
+que ustedes descuentan en su declaración. El alcance técnico, la garantía, el plazo de entrega y
+el flete incluido a Barrancabermeja permanecen sin modificación.</div>
+
+<h2>3. Efecto sobre los valores de la COT-0100</h2>
+<table>
+  <thead><tr><th>Concepto</th><th class="r">Valor</th></tr></thead>
+  <tbody>
+    <tr><td>Valor del suministro (base gravable)</td><td class="r">$ 32.740.421</td></tr>
+    <tr><td>IVA 19 % — descontable para GRASS S.A.S.</td><td class="r">$ 6.220.680</td></tr>
+    <tr class="tot"><td>Total factura</td><td class="r">$ 38.961.101</td></tr>
+  </tbody>
+</table>
+<p style="margin-top:10px"><small>Si GRASS S.A.S. actúa como agente de retención, sobre la factura
+se practicarán las retenciones que correspondan — retención en la fuente por compras y retención de
+IVA — las cuales serán descontadas del pago y certificadas conforme a la ley.</small></p>
+
+<h2>4. Cómo avanzamos sin perder tiempo</h2>
+<ol>
+  <li><b>La orden de compra puede emitirse desde ya.</b> No es necesario esperar a que concluya el
+  trámite: la orden se recibe y se registra de inmediato con los valores de la COT-0100, IVA incluido.</li>
+  <li><b>El aprovisionamiento arranca con el anticipo.</b> La compra del material a fábrica y las
+  entregas parciales inician de inmediato, de modo que el trámite tributario corre en paralelo y no
+  desplaza la fecha de entrega.</li>
+  <li><b>La factura electrónica se expide con IVA discriminado</b> una vez habilitada la numeración,
+  dentro del plazo indicado, y se remite a su correo de recepción de factura electrónica junto con
+  el acta de entrega correspondiente.</li>
+</ol>
+
+<div class="nota"><b>Compromiso</b>
+Si al momento de la primera entrega parcial la habilitación no estuviera concluida, el material se
+despacha igualmente contra remisión firmada y la factura electrónica con IVA se emite después,
+cubriendo la totalidad de lo entregado. En ningún caso el trámite retrasa el suministro ni modifica
+el precio pactado.</div>
+
+<h2>5. Vigencia</h2>
+<p>La oferta COT-0100 se mantiene vigente <b>hasta el 11 de septiembre de 2026</b>, con precios,
+alcance y condiciones firmes durante ese término.</p>
+
+<p style="margin-top:16px">Quedo atento a la orden de compra y a cualquier precisión técnica o
+tributaria que requieran sus áreas de compras y contabilidad.</p>
+<p>Cordialmente,</p>
+
+<div class="firmas">
+  <div><div class="linea"><b>Walter David Peñuela Sanabria</b>
+    C.C. 1.098.761.868 — Electromandos del Oriente<br>317 802 1422 · electromandos1@hotmail.com</div></div>
+  <div></div>
+</div>
+
+<div class="pie"><span>EO-2026-014 · Facturación con IVA — GRASS S.A.S.</span>
+  <span>27 de agosto de 2026</span></div>
+</div></body></html>

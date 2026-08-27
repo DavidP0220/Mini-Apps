@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>COT-0100 · Electromandos del Oriente · GRASS S.A.S.</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --tinta:#0F172A; --gris:#475569; --gris2:#94A3B8; --linea:#E2E8F0;
+  --azul:#1D4ED8; --azulsuave:#EFF4FF; --verde:#047857; --papel:#fff;
+}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--tinta);background:#F1F5F9;font-size:10.5pt;line-height:1.5}
+.hoja{max-width:21cm;margin:0 auto;background:var(--papel);padding:16mm 15mm 14mm}
+h1{font-size:21pt;line-height:1.15;letter-spacing:-.02em;font-weight:700}
+h2{font-size:12.5pt;margin:26px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--tinta);
+  letter-spacing:-.01em}
+h3{font-size:10.5pt;margin:16px 0 6px;letter-spacing:.02em}
+p{margin:0 0 9px}
+small{font-size:8.5pt;color:var(--gris)}
+.eyebrow{font-size:8pt;letter-spacing:.16em;text-transform:uppercase;color:var(--gris2);font-weight:600}
+/* ---- cabecera ---- */
+.cab{background:var(--tinta);color:#fff;overflow:hidden;margin:-16mm -15mm 22px;padding:15mm 15mm 12mm}
+.cab .eyebrow{color:#8FB0F0}
+.cab h1{color:#fff;margin:6px 0 8px}
+.cab .lead{color:#CBD5E1;font-size:10pt;max-width:13cm}
+.cab .num{float:right;text-align:right;margin-left:12px;max-width:38%}
+.cab .num b{display:block;font-size:16pt}
+.cab .num span{font-size:8.5pt;color:#94A3B8}
+.partes{display:flex;gap:10px;margin-top:16px;clear:both}
+.parte{min-width:0}
+.parte{flex:1;border:1px solid #334155;border-radius:6px;padding:10px 12px}
+.parte .eyebrow{color:#64748B;margin-bottom:5px}
+.parte b{font-size:10.5pt;display:block;margin-bottom:3px}
+.parte span{font-size:8.7pt;color:#CBD5E1;display:block;line-height:1.45}
+/* ---- total ---- */
+.total{border:2px solid var(--tinta);border-radius:8px;padding:16px 18px;margin:4px 0 18px}
+.total .eyebrow{color:var(--gris)}
+.total .cifra{font-size:32pt;font-weight:700;letter-spacing:-.03em;line-height:1.05;margin:2px 0 2px}
+.total .pie{font-size:9pt;color:var(--gris)}
+.desglose{display:flex;gap:0;margin-top:14px;border-top:1px solid var(--linea);padding-top:12px}
+.desglose div{flex:1;padding-right:14px}
+.desglose div+div{border-left:1px solid var(--linea);padding-left:14px}
+.desglose .k{font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris2);font-weight:600}
+.desglose .v{font-size:13pt;font-weight:700;letter-spacing:-.02em;margin-top:2px}
+.desglose .v.sm{font-size:11.5pt}
+/* ---- tablas ---- */
+table{width:100%;border-collapse:collapse;font-size:9.5pt}
+table.fx{table-layout:fixed}
+th{text-align:left;overflow-wrap:break-word;font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);
+  font-weight:600;padding:0 8px 7px 0;border-bottom:1.5px solid var(--tinta)}
+td{padding:8px 8px 8px 0;overflow-wrap:break-word;border-bottom:1px solid var(--linea);vertical-align:top}
+th.r,td.r{text-align:right;padding-right:0}
+th.c,td.c{text-align:center}
+tr.tot td{border-top:1.5px solid var(--tinta);border-bottom:none;font-weight:700;padding-top:10px;font-size:11pt}
+.grupo td{background:var(--azulsuave);font-weight:700;font-size:9pt;letter-spacing:.04em;
+  text-transform:uppercase;padding:7px 8px 7px 6px;border-bottom:1px solid var(--linea)}
+.it{font-weight:600}
+.sub{display:block;color:var(--gris);font-size:8.5pt;line-height:1.4;margin-top:2px;font-weight:400}
+.sfila td{font-weight:700;background:#F8FAFC}
+/* ---- cajas ---- */
+.nota{border-left:3px solid var(--azul);background:var(--azulsuave);padding:11px 14px;margin:12px 0;
+  font-size:9.5pt;border-radius:0 5px 5px 0}
+.nota b{display:block;margin-bottom:3px}
+.cols{display:flex;gap:16px;margin-top:10px}
+.cols>div{flex:1}
+.cond{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--linea);border-radius:6px;overflow:hidden}
+.cond>div{padding:11px 14px;border-bottom:1px solid var(--linea)}
+.cond>div:nth-child(odd){border-right:1px solid var(--linea)}
+.cond>div:nth-last-child(-n+2){border-bottom:none}
+.cond .k{font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris2);font-weight:600;margin-bottom:3px}
+.cond .v{font-size:9.5pt}
+/* ---- firmas ---- */
+.firmas{display:flex;gap:40px;margin-top:36px;page-break-inside:avoid}
+.firmas div{flex:1}
+.linea{border-top:1px solid var(--tinta);margin-top:44px;padding-top:6px;font-size:9pt}
+.linea b{display:block}
+.pie{margin-top:26px;padding-top:10px;border-top:1px solid var(--linea);
+  font-size:8pt;color:var(--gris2);display:flex;justify-content:space-between}
+ol,ul{margin:0 0 10px 18px}li{margin-bottom:5px}
+.cl{margin-bottom:14px}
+.cl h3{margin-top:0}
+@page{size:A4;margin:14mm 13mm}
+@media print{
+  body{background:#fff;font-size:9.8pt}
+  .hoja{max-width:none;padding:0;margin:0}
+  .cab{margin:-14mm -13mm 18px;padding:14mm 13mm 10mm}
+  h2{page-break-after:avoid}
+  tr,.nota,.cond,.total{page-break-inside:avoid}
+  .noprint{display:none}
+}
+</style></head><body><div class="hoja">
+
+<header class="cab">
+  <div class="num"><b>COT-0100</b><span>Bucaramanga · 27 de agosto de 2026</span></div>
+  <div class="eyebrow">Suministro industrial · Automatización y control</div>
+  <h1>Cotización consolidada —<br>tablero de control y automatización de planta</h1>
+  <p class="lead">Suministro completo de 67 referencias: PLC Delta con módulos de expansión,
+  instrumentación de nivel y peso, neumática, protección y maniobra de motores, variador de
+  velocidad WEG, módulos de relé de interfaz y conductores. Precio con IVA incluido.</p>
+  <div class="partes">
+    <div class="parte"><div class="eyebrow">Dirigida a</div>
+      <b>Grupo Agroindustrial GRASS S.A.S.</b>
+      <span>NIT 901.185.692-3<br>At.: Sr. Luis Enrique — Compras / Mantenimiento<br>Barrancabermeja, Santander</span></div>
+    <div class="parte"><div class="eyebrow">Emitida por</div>
+      <b>Walter David Peñuela Sanabria</b>
+      <span>Electromandos del Oriente · C.C. 1.098.761.868<br>Calle 153F #22-19, Villa España II — Bucaramanga<br>317 802 1422 · electromandos1@hotmail.com</span></div>
+  </div>
+</header>
+
+<div class="total">
+  <div class="eyebrow">Total a pagar — IVA incluido</div>
+  <div class="cifra">$ 38.961.101</div>
+  <div class="pie">67 referencias · 553 unidades · flete incluido hasta Barrancabermeja · pesos colombianos</div>
+  <div class="desglose">
+    <div><div class="k">Valor del suministro</div><div class="v sm">$ 32.740.421</div></div>
+    <div><div class="k">IVA 19 %</div><div class="v sm">$ 6.220.680</div></div>
+    <div><div class="k">Anticipo 60 %</div><div class="v sm">$ 23.376.661</div></div>
+    <div><div class="k">Saldo contra entrega</div><div class="v sm">$ 15.584.440</div></div>
+  </div>
+</div>
+
+<div class="nota"><b>Una sola cotización reemplaza a las anteriores</b>
+Esta COT-0100 consolida y deja sin efecto las cotizaciones COT-0086, COT-0092, COT-0096 y COT-0098.
+El alcance técnico y los precios base son los mismos de la COT-0096; lo único que se agrega es el
+IVA discriminado, que para ustedes es descontable.</div>
+
+<h2>1. Resumen del suministro</h2>
+<table class="fx">
+  <colgroup><col style="width:55%"><col style="width:11%"><col style="width:11%"><col style="width:23%"></colgroup>
+  <thead><tr><th>Grupo</th><th class="c">Refs.</th><th class="c">Und.</th><th class="r">Valor</th></tr></thead>
+  <tbody><tr><td><b>A</b> &nbsp;Neumática</td><td class="c">9</td><td class="c">149</td><td class="r">$ 2.941.213</td></tr>
+<tr><td><b>B</b> &nbsp;Control y automatización</td><td class="c">5</td><td class="c">8</td><td class="r">$ 4.526.950</td></tr>
+<tr><td><b>C</b> &nbsp;Instrumentación y medición</td><td class="c">5</td><td class="c">23</td><td class="r">$ 13.190.708</td></tr>
+<tr><td><b>D</b> &nbsp;Tablero, protección y conexionado</td><td class="c">12</td><td class="c">26</td><td class="r">$ 1.524.012</td></tr>
+<tr><td><b>E</b> &nbsp;Conductores</td><td class="c">3</td><td class="c">6</td><td class="r">$ 661.651</td></tr>
+<tr><td><b>F</b> &nbsp;Módulos de relé de interfaz</td><td class="c">3</td><td class="c">69</td><td class="r">$ 3.982.966</td></tr>
+<tr><td><b>G</b> &nbsp;Contactores, guardamotores y accesorios de tablero</td><td class="c">29</td><td class="c">271</td><td class="r">$ 5.162.921</td></tr>
+<tr><td><b>H</b> &nbsp;Variador de velocidad</td><td class="c">1</td><td class="c">1</td><td class="r">$ 750.000</td></tr>
+    <tr class="tot"><td>Valor del suministro</td><td class="c">67</td><td class="c">553</td><td class="r">$ 32.740.421</td></tr>
+    <tr><td colspan="3">IVA 19 %</td><td class="r">$ 6.220.680</td></tr>
+    <tr class="tot"><td colspan="3">TOTAL A PAGAR</td><td class="r">$ 38.961.101</td></tr>
+  </tbody>
+</table>
+<p style="margin-top:8px"><small>El detalle ítem por ítem, con cantidades y valores unitarios, está en el anexo de la página siguiente.</small></p>
+
+<h2>2. Comparación con las otras ofertas en evaluación</h2>
+<p>Las dos cotizaciones que ustedes tienen cubren, entre las dos, una parte del tablero. Comparadas
+sobre el mismo alcance y ambas con IVA:</p>
+<table class="fx">
+  <colgroup><col style="width:50%"><col style="width:25%"><col style="width:25%"></colgroup>
+  <thead><tr><th>Alcance</th><th class="r">Otros proveedores</th><th class="r">Esta oferta</th></tr></thead>
+  <tbody>
+    <tr><td class="it">Neumática, PLC, instrumentación, tablero y conductores
+      <span class="sub">34 referencias idénticas · Imagen Eléctrica IE-107-190</span></td>
+      <td class="r">$ 26.182.500</td><td class="r">$ 22.844.534</td></tr>
+    <tr><td class="it">Contactores, guardamotores, borneras y variador
+      <span class="sub">Industrial Solutions Colombia 15025 · variador INVT de 2 HP frente al WEG de 3 HP de esta oferta</span></td>
+      <td class="r">$ 5.212.238</td><td class="r">$ 5.912.921</td></tr>
+    <tr><td class="it">Módulos de relé de interfaz RELPOL y HONGFA
+      <span class="sub">69 unidades · ninguna de las otras dos ofertas lo incluye</span></td>
+      <td class="r">no cotizado</td><td class="r">$ 3.982.966</td></tr>
+    <tr class="sfila"><td>Subtotal</td><td class="r">$ 31.394.738</td><td class="r">$ 32.740.421</td></tr>
+    <tr><td>IVA 19 %</td><td class="r">$ 5.965.001</td><td class="r">$ 6.220.680</td></tr>
+    <tr class="tot"><td>Total con IVA</td><td class="r">$ 37.359.739</td><td class="r">$ 38.961.101</td></tr>
+  </tbody>
+</table>
+<div class="nota"><b>Lo que esto significa en plata</b>
+Comprando a los dos proveedores pagan $ 37.359.739 y les siguen faltando los 69 módulos de relé
+de interfaz, que valen $ 4.739.730 con IVA. Con esta oferta pagan $ 1.601.362 más
+y el tablero queda completo, con un solo responsable. <b style="display:inline">Ventaja neta a su
+favor: $ 3.138.368.</b></div>
+
+<h2>3. Condiciones comerciales</h2>
+<div class="cond">
+  <div><div class="k">Validez de la oferta</div><div class="v">15 días calendario — hasta el 11 de septiembre de 2026</div></div>
+  <div><div class="k">Forma de pago</div><div class="v">60 % de anticipo con la orden de compra · 40 % contra entrega</div></div>
+  <div><div class="k">Entrega</div><div class="v">3 semanas desde la confirmación de la orden de compra, con entregas parciales desde el primer despacho</div></div>
+  <div><div class="k">Flete</div><div class="v">Incluido hasta las instalaciones del cliente en Barrancabermeja</div></div>
+  <div><div class="k">Garantía</div><div class="v">12 meses en equipos electrónicos de control e instrumentación y 6 meses en accesorios neumáticos, desde la entrega, por defectos de fabricación</div></div>
+  <div><div class="k">Facturación</div><div class="v">Factura electrónica con IVA discriminado del 19 %. Los valores unitarios se expresan sin IVA; el impuesto se liquida sobre el total</div></div>
+</div>
+<p style="margin-top:12px"><small>Los precios están sujetos a disponibilidad de inventario al momento de confirmar la orden.
+La orden de compra debe emitirse dentro de la vigencia de esta oferta. Valores en pesos colombianos.</small></p>
+
+<h2>4. Notas técnicas</h2>
+<div class="cols">
+  <div>
+    <h3>Sistema de control</h3>
+    <p><small>Todo el bloque de control es Delta original, con las referencias exactas especificadas.
+    El conjunto entrega 64 entradas digitales, 44 salidas relé y 4 entradas análogas, con Ethernet
+    Modbus TCP/IP en la CPU.</small></p>
+    <h3>Variador de velocidad</h3>
+    <p><small>Se ofrece WEG CFW500 de 3 HP en lugar de un variador genérico de importación de 2 HP:
+    un tamaño de potencia completo por encima, mayor margen de arranque y red de soporte y repuestos
+    en Colombia.</small></p>
+  </div>
+  <div>
+    <h3>Ventilación del tablero</h3>
+    <p><small>Ventilador y rejilla con filtro de 250 × 250 mm (Plastin PFI-2500) en lugar de
+    210 × 210 mm — mayor área de paso de aire y mejor disipación térmica, al mismo valor unitario.
+    Se confirma el espacio disponible antes del despacho.</small></p>
+    <h3>Transformador de corriente</h3>
+    <p><small>CT de relación 200/5 A clase 0.5 en vez de 100/5 A. No dimensionar el transformador al
+    límite de la carga reduce saturación del núcleo y calentamiento. El amperímetro Autonics se
+    entrega parametrizado para esta relación, sin costo adicional.</small></p>
+  </div>
+</div>
+
+<div class="firmas">
+  <div><div class="linea"><b>Walter David Peñuela Sanabria</b>
+    C.C. 1.098.761.868 — Electromandos del Oriente</div></div>
+  <div><div class="linea"><b>Aceptación del cliente</b>
+    Grupo Agroindustrial GRASS S.A.S. — nombre, cargo y fecha</div></div>
+</div>
+
+<div class="pie"><span>COT-0100 · Grupo Agroindustrial GRASS S.A.S.</span>
+  <span>Walter David Peñuela Sanabria · 317 802 1422</span></div>
+
+<div style="page-break-before:always"></div>
+<h2 style="margin-top:0">Anexo — detalle del suministro</h2>
+<p><small>Valores unitarios sin IVA. El IVA del 19 % se liquida sobre el valor total del suministro.</small></p>
+<table class="fx">
+  <colgroup><col style="width:53%"><col style="width:9%"><col style="width:19%"><col style="width:19%"></colgroup>
+  <thead><tr><th>Descripción técnica</th><th class="c">Cant.</th><th class="r">Vr. unitario</th><th class="r">Vr. total</th></tr></thead>
+  <tbody>
+    <tr class="grupo"><td colspan="4">A · Neumática</td></tr>
+<tr><td class="it">Electroválvula 5/2 monoestable, bobina 24 V DC con LED<span class="sub">5 vías / 2 posiciones · referencia tipo 4V210-08 · montaje sobre bloque colector, conexión 1/4</span></td><td class="c">20</td><td class="r">$ 53.612</td><td class="r">$ 1.072.248</td></tr>
+<tr><td class="it">Bloque colector en aluminio, 10 estaciones para válvulas 22 mm</td><td class="c">2</td><td class="r">$ 112.455</td><td class="r">$ 224.910</td></tr>
+<tr><td class="it">Unidad FRL 3/8 NPT — filtro, regulador y lubricador</td><td class="c">1</td><td class="r">$ 136.864</td><td class="r">$ 136.864</td></tr>
+<tr><td class="it">Racor codo roscado 1/4 NPT a tubo de 1/4"</td><td class="c">40</td><td class="r">$ 4.358</td><td class="r">$ 174.338</td></tr>
+<tr><td class="it">Racor pasamuros rápido, unión tubo-tubo para tubo de 1/4"</td><td class="c">40</td><td class="r">$ 8.717</td><td class="r">$ 348.677</td></tr>
+<tr><td class="it">Racor regulador de flujo en codo, línea para cilindro, tubo de 1/4"</td><td class="c">40</td><td class="r">$ 12.204</td><td class="r">$ 488.156</td></tr>
+<tr><td class="it">Silenciador de bronce sinterizado 1/8 NPT para desfogues</td><td class="c">4</td><td class="r">$ 3.487</td><td class="r">$ 13.948</td></tr>
+<tr><td class="it">Válvula de corte manual 3/2 vías 3/8 NPT con despresurización</td><td class="c">1</td><td class="r">$ 28.767</td><td class="r">$ 28.767</td></tr>
+<tr><td class="it">Manguera de poliuretano PU 1/4 azul × 200 metros</td><td class="c">1</td><td class="r">$ 453.305</td><td class="r">$ 453.305</td></tr>
+<tr class="sfila"><td colspan="3">Subtotal A</td><td class="r">$ 2.941.213</td></tr>
+<tr class="grupo"><td colspan="4">B · Control y automatización</td></tr>
+<tr><td class="it">CPU PLC slim con Ethernet — 8 entradas / 4 salidas relé, 24 V DC<span class="sub">Delta DVP12SE11R · Ethernet Modbus TCP/IP y 2 puertos RS485 Modbus</span></td><td class="c">1</td><td class="r">$ 1.563.031</td><td class="r">$ 1.563.031</td></tr>
+<tr><td class="it">Módulo de expansión — 16 entradas digitales 24 V DC<span class="sub">Delta DVP16SM11N</span></td><td class="c">2</td><td class="r">$ 353.055</td><td class="r">$ 706.110</td></tr>
+<tr><td class="it">Módulo de expansión mixto — 8 entradas / 8 salidas relé<span class="sub">Delta DVP16SP11R</span></td><td class="c">3</td><td class="r">$ 374.849</td><td class="r">$ 1.124.546</td></tr>
+<tr><td class="it">Módulo de expansión — 16 salidas relé<span class="sub">Delta DVP16SN11R</span></td><td class="c">1</td><td class="r">$ 305.109</td><td class="r">$ 305.109</td></tr>
+<tr><td class="it">Módulo de expansión — 4 entradas análogas 14 bits, 4-20 mA / 0-10 V<span class="sub">Delta DVP04AD-S</span></td><td class="c">1</td><td class="r">$ 828.154</td><td class="r">$ 828.154</td></tr>
+<tr class="sfila"><td colspan="3">Subtotal B</td><td class="r">$ 4.526.950</td></tr>
+<tr class="grupo"><td colspan="4">C · Instrumentación y medición</td></tr>
+<tr><td class="it">Sensor rotativo de paleta 110 V AC<span class="sub">Detección de nivel de sólidos en silo, contacto SPDT</span></td><td class="c">18</td><td class="r">$ 536.121</td><td class="r">$ 9.650.178</td></tr>
+<tr><td class="it">Indicador de peso para panel 24 V DC<span class="sub">Retransmisión 4-20 mA y comunicación RS485</span></td><td class="c">1</td><td class="r">$ 2.680.604</td><td class="r">$ 2.680.604</td></tr>
+<tr><td class="it">Amperímetro digital Autonics MT4W-AA-40 — 0-5 A AC, 96×48 mm<span class="sub">Producto original Autonics · retransmisión 4-20 mA y 3 relés</span></td><td class="c">1</td><td class="r">$ 566.631</td><td class="r">$ 566.631</td></tr>
+<tr><td class="it">Control de nivel por electrodos EBCQH</td><td class="c">2</td><td class="r">$ 137.299</td><td class="r">$ 274.598</td></tr>
+<tr><td class="it">Transformador de corriente CT 200/5 A clase 0.5</td><td class="c">1</td><td class="r">$ 18.697</td><td class="r">$ 18.697</td></tr>
+<tr class="sfila"><td colspan="3">Subtotal C</td><td class="r">$ 13.190.708</td></tr>
+<tr class="grupo"><td colspan="4">D · Tablero, protección y conexionado</td></tr>
+<tr><td class="it">Fuente conmutada para riel DIN 24 V DC 5 A 120 W — marca ABB</td><td class="c">1</td><td class="r">$ 353.164</td><td class="r">$ 353.164</td></tr>
+<tr><td class="it">Barra de cobre 20 × 5 mm × 3 metros de longitud</td><td class="c">1</td><td class="r">$ 653.821</td><td class="r">$ 653.821</td></tr>
+<tr><td class="it">Ventilador con filtro 250 × 250 mm — 125 m³/h, 230 V AC</td><td class="c">2</td><td class="r">$ 113.326</td><td class="r">$ 226.653</td></tr>
+<tr><td class="it">Rejilla con filtro de entrada de aire 250 × 250 mm — Plastin PFI-2500</td><td class="c">2</td><td class="r">$ 36.874</td><td class="r">$ 73.749</td></tr>
+<tr><td class="it">Termostato para ventilador 0-60 °C — contacto NA 10 A</td><td class="c">1</td><td class="r">$ 36.613</td><td class="r">$ 36.613</td></tr>
+<tr><td class="it">Aislador escalonado 4 puestos, rosca M8</td><td class="c">4</td><td class="r">$ 19.178</td><td class="r">$ 76.711</td></tr>
+<tr><td class="it">Aislador tipo cilíndrico / barril M8 para pletina de tierra</td><td class="c">2</td><td class="r">$ 3.487</td><td class="r">$ 6.974</td></tr>
+<tr><td class="it">Terminal pin hueco canutillo 18 AWG 1 mm² (amarillo) × bolsa 100 u</td><td class="c">4</td><td class="r">$ 3.487</td><td class="r">$ 13.948</td></tr>
+<tr><td class="it">Terminal pin hueco canutillo 12 AWG 4 mm² (gris) × bolsa 100 u</td><td class="c">2</td><td class="r">$ 6.102</td><td class="r">$ 12.205</td></tr>
+<tr><td class="it">Terminal pin hueco doble entrada 18 AWG 1 mm² (rojo) × bolsa 100 u</td><td class="c">4</td><td class="r">$ 5.230</td><td class="r">$ 20.920</td></tr>
+<tr><td class="it">Terminal pin hueco doble entrada 12 AWG 4 mm² (naranja) × bolsa 100 u</td><td class="c">2</td><td class="r">$ 11.768</td><td class="r">$ 23.537</td></tr>
+<tr><td class="it">Terminal tipo O anillo 12-10 AWG para tornillo 1/4 (amarillo) × bolsa 100 u</td><td class="c">1</td><td class="r">$ 25.717</td><td class="r">$ 25.717</td></tr>
+<tr class="sfila"><td colspan="3">Subtotal D</td><td class="r">$ 1.524.012</td></tr>
+<tr class="grupo"><td colspan="4">E · Conductores</td></tr>
+<tr><td class="it">Rollo de cable flexible 18 AWG color rojo × 100 m</td><td class="c">4</td><td class="r">$ 83.251</td><td class="r">$ 333.005</td></tr>
+<tr><td class="it">Rollo de cable 12 AWG THHN/THWN × 100 m</td><td class="c">1</td><td class="r">$ 256.292</td><td class="r">$ 256.292</td></tr>
+<tr><td class="it">Rollo de cable flexible 20 AWG × 100 m</td><td class="c">1</td><td class="r">$ 72.354</td><td class="r">$ 72.354</td></tr>
+<tr class="sfila"><td colspan="3">Subtotal E</td><td class="r">$ 661.651</td></tr>
+<tr class="grupo"><td colspan="4">F · Módulos de relé de interfaz</td></tr>
+<tr><td class="it">Módulo de relé de interfaz RELPOL GZT92 — 12 A / 300 V AC<span class="sub">Bobina 220-240 V AC · montaje riel DIN 35 mm, terminales de tornillo con retenedor metálico</span></td><td class="c">25</td><td class="r">$ 54.948</td><td class="r">$ 1.373.705</td></tr>
+<tr><td class="it">Módulo de relé de interfaz HONGFA HF41F/024-ZS + base 41F-1Z-C2-1<span class="sub">Bobina 24 V DC / 400 mW — acople directo a salida digital de PLC · contacto 1 CO 6 A / 250 V AC · base slim 6,2 mm con LED, protección de bobina y pulsador de prueba</span></td><td class="c">40</td><td class="r">$ 61.908</td><td class="r">$ 2.476.305</td></tr>
+<tr><td class="it">Barra de puenteo 10 polos para base 41F-1Z-C2-1<span class="sub">Puente de latón estañado, paso 6,2 mm, cuerpo aislado PA66, 6 A — se corta a la medida</span></td><td class="c">4</td><td class="r">$ 33.239</td><td class="r">$ 132.956</td></tr>
+<tr class="sfila"><td colspan="3">Subtotal F</td><td class="r">$ 3.982.966</td></tr>
+<tr class="grupo"><td colspan="4">G · Contactores, guardamotores y accesorios de tablero</td></tr>
+<tr><td class="it">Bornera tres pisos push PFT2.5 3P<span class="sub">Tbloc · 20-12 AWG · 500 V · 24 A</span></td><td class="c">33</td><td class="r">$ 10.856</td><td class="r">$ 358.244</td></tr>
+<tr><td class="it">Canaleta plástica ranurada 25×40 mm × 2 m<span class="sub">Mernok</span></td><td class="c">4</td><td class="r">$ 9.850</td><td class="r">$ 39.399</td></tr>
+<tr><td class="it">Canaleta plástica ranurada 60×60 mm × 2 m<span class="sub">Mernok</span></td><td class="c">6</td><td class="r">$ 33.022</td><td class="r">$ 198.132</td></tr>
+<tr><td class="it">Bloque auxiliar frontal NS2-AE11 — 1NA+1NC<span class="sub">Chint · para guardamotor NS2-25</span></td><td class="c">12</td><td class="r">$ 27.270</td><td class="r">$ 327.241</td></tr>
+<tr><td class="it">Bloque auxiliar lateral NS2-AU11 — 1NA+1NC<span class="sub">Chint · para guardamotor NS2-25</span></td><td class="c">3</td><td class="r">$ 39.796</td><td class="r">$ 119.387</td></tr>
+<tr><td class="it">Contactor NC1-09 — 20 A, bobina 220 V, 1NA<span class="sub">Chint</span></td><td class="c">5</td><td class="r">$ 28.774</td><td class="r">$ 143.872</td></tr>
+<tr><td class="it">Contactor NC1-18 — 32 A, bobina 220 V, 1NA<span class="sub">Chint</span></td><td class="c">1</td><td class="r">$ 32.453</td><td class="r">$ 32.453</td></tr>
+<tr><td class="it">Contactor NC1-25 — 45 A, bobina 220 V, 1NA<span class="sub">Chint</span></td><td class="c">5</td><td class="r">$ 45.866</td><td class="r">$ 229.331</td></tr>
+<tr><td class="it">Contactor NC1-40 — 60 A, bobina 220 V, 1NA+1NC<span class="sub">Chint</span></td><td class="c">3</td><td class="r">$ 98.223</td><td class="r">$ 294.668</td></tr>
+<tr><td class="it">Guardamotor NS2-25 — 1-1,6 A<span class="sub">Chint</span></td><td class="c">1</td><td class="r">$ 98.383</td><td class="r">$ 98.383</td></tr>
+<tr><td class="it">Guardamotor NS2-25 — 4-6,3 A<span class="sub">Chint</span></td><td class="c">3</td><td class="r">$ 98.383</td><td class="r">$ 295.148</td></tr>
+<tr><td class="it">Guardamotor NS2-25 — 13-18 A<span class="sub">Chint</span></td><td class="c">8</td><td class="r">$ 98.382</td><td class="r">$ 787.057</td></tr>
+<tr><td class="it">Guardamotor NS2-80B — 40-63 A<span class="sub">Chint</span></td><td class="c">1</td><td class="r">$ 272.309</td><td class="r">$ 272.309</td></tr>
+<tr><td class="it">Interruptor NXM 250 A — 50 kA/220 V, 36 kA/440 V, 3P<span class="sub">Chint · Ue 690 VAC, FRM250S</span></td><td class="c">1</td><td class="r">$ 205.966</td><td class="r">$ 205.966</td></tr>
+<tr><td class="it">Mini interruptor NB1-63DC — 2P, 2 A, 500 VDC, 6 kA<span class="sub">Chint · curva tipo C</span></td><td class="c">3</td><td class="r">$ 69.102</td><td class="r">$ 207.305</td></tr>
+<tr><td class="it">Piloto ND16-22DS 220 V — amarillo<span class="sub">Chint · corto, IP40</span></td><td class="c">2</td><td class="r">$ 5.238</td><td class="r">$ 10.476</td></tr>
+<tr><td class="it">Piloto ND16-22DS 220 V — rojo<span class="sub">Chint · corto, IP40</span></td><td class="c">15</td><td class="r">$ 5.238</td><td class="r">$ 78.569</td></tr>
+<tr><td class="it">Piloto ND16-22DS 220 V — verde<span class="sub">Chint · corto, IP40</span></td><td class="c">2</td><td class="r">$ 5.238</td><td class="r">$ 10.476</td></tr>
+<tr><td class="it">Pulsador de emergencia NP2-BS542 — rojo con retén<span class="sub">Chint · 22 mm, 1NC, metálico</span></td><td class="c">1</td><td class="r">$ 14.033</td><td class="r">$ 14.033</td></tr>
+<tr><td class="it">Pulsador luminoso doble NP2-BW8465 — marcha/paro<span class="sub">Chint · 1NA+1NC con piloto</span></td><td class="c">15</td><td class="r">$ 26.142</td><td class="r">$ 392.129</td></tr>
+<tr><td class="it">Tapa final EPL NTB 2,5-10 — gris<span class="sub">Tbloc</span></td><td class="c">7</td><td class="r">$ 568</td><td class="r">$ 3.977</td></tr>
+<tr><td class="it">Tapa final EPL NTB 2,5-10 E — amarillo/verde<span class="sub">Tbloc</span></td><td class="c">16</td><td class="r">$ 1.208</td><td class="r">$ 19.324</td></tr>
+<tr><td class="it">Puente busbar TCC 2,5/10<span class="sub">Tbloc · para bornera NTB 2,5</span></td><td class="c">4</td><td class="r">$ 17.324</td><td class="r">$ 69.298</td></tr>
+<tr><td class="it">Riel DIN 35-7,5 ranurado galvanizado × 2 m<span class="sub">Tbloc</span></td><td class="c">6</td><td class="r">$ 19.523</td><td class="r">$ 117.136</td></tr>
+<tr><td class="it">Bornera push PFT 2.5 — 24 A, 800 V, 20-12 AWG<span class="sub">Tbloc · gris</span></td><td class="c">20</td><td class="r">$ 1.830</td><td class="r">$ 36.595</td></tr>
+<tr><td class="it">Bornera push PFT 6 — 41 A, 800 V, 20-8 AWG<span class="sub">Tbloc · gris</span></td><td class="c">18</td><td class="r">$ 3.660</td><td class="r">$ 65.882</td></tr>
+<tr><td class="it">Bornera dos pisos push PFT2.5 2P — 20-12 AWG, 500 V, 24 A<span class="sub">Tbloc</span></td><td class="c">60</td><td class="r">$ 10.370</td><td class="r">$ 622.207</td></tr>
+<tr><td class="it">Bornera push tierra PFT 2.5 E — 20-12 AWG<span class="sub">Tbloc · puesta a tierra</span></td><td class="c">13</td><td class="r">$ 5.807</td><td class="r">$ 75.493</td></tr>
+<tr><td class="it">Bornera push tierra PFT 6 E — 20-8 AWG<span class="sub">Tbloc · puesta a tierra</span></td><td class="c">3</td><td class="r">$ 12.810</td><td class="r">$ 38.431</td></tr>
+<tr class="sfila"><td colspan="3">Subtotal G</td><td class="r">$ 5.162.921</td></tr>
+<tr class="grupo"><td colspan="4">H · Variador de velocidad</td></tr>
+<tr><td class="it">Variador de velocidad WEG CFW500 — 3 HP, 440 V AC<span class="sub">Nuevo, sellado de fábrica — control vectorial, protecciones integradas</span></td><td class="c">1</td><td class="r">$ 750.000</td><td class="r">$ 750.000</td></tr>
+<tr class="sfila"><td colspan="3">Subtotal H</td><td class="r">$ 750.000</td></tr>
+    <tr class="tot"><td colspan="3">Valor del suministro — 67 referencias, 553 unidades</td><td class="r">$ 32.740.421</td></tr>
+    <tr><td colspan="3">IVA 19 %</td><td class="r">$ 6.220.680</td></tr>
+    <tr class="tot"><td colspan="3">TOTAL A PAGAR</td><td class="r">$ 38.961.101</td></tr>
+  </tbody>
+</table>
+<div class="pie"><span>COT-0100 · Anexo de detalle</span><span>electromandos1@hotmail.com · 317 802 1422</span></div>
+</div></body></html>

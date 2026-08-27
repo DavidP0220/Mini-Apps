@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contrato de suministro — Electromandos del Oriente · GRASS S.A.S.</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --tinta:#0F172A; --gris:#475569; --gris2:#94A3B8; --linea:#E2E8F0;
+  --azul:#1D4ED8; --azulsuave:#EFF4FF; --verde:#047857; --papel:#fff;
+}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--tinta);background:#F1F5F9;font-size:10.5pt;line-height:1.5}
+.hoja{max-width:21cm;margin:0 auto;background:var(--papel);padding:16mm 15mm 14mm}
+h1{font-size:21pt;line-height:1.15;letter-spacing:-.02em;font-weight:700}
+h2{font-size:12.5pt;margin:26px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--tinta);
+  letter-spacing:-.01em}
+h3{font-size:10.5pt;margin:16px 0 6px;letter-spacing:.02em}
+p{margin:0 0 9px}
+small{font-size:8.5pt;color:var(--gris)}
+.eyebrow{font-size:8pt;letter-spacing:.16em;text-transform:uppercase;color:var(--gris2);font-weight:600}
+/* ---- cabecera ---- */
+.cab{background:var(--tinta);color:#fff;overflow:hidden;margin:-16mm -15mm 22px;padding:15mm 15mm 12mm}
+.cab .eyebrow{color:#8FB0F0}
+.cab h1{color:#fff;margin:6px 0 8px}
+.cab .lead{color:#CBD5E1;font-size:10pt;max-width:13cm}
+.cab .num{float:right;text-align:right;margin-left:12px;max-width:38%}
+.cab .num b{display:block;font-size:16pt}
+.cab .num span{font-size:8.5pt;color:#94A3B8}
+.partes{display:flex;gap:10px;margin-top:16px;clear:both}
+.parte{min-width:0}
+.parte{flex:1;border:1px solid #334155;border-radius:6px;padding:10px 12px}
+.parte .eyebrow{color:#64748B;margin-bottom:5px}
+.parte b{font-size:10.5pt;display:block;margin-bottom:3px}
+.parte span{font-size:8.7pt;color:#CBD5E1;display:block;line-height:1.45}
+/* ---- total ---- */
+.total{border:2px solid var(--tinta);border-radius:8px;padding:16px 18px;margin:4px 0 18px}
+.total .eyebrow{color:var(--gris)}
+.total .cifra{font-size:32pt;font-weight:700;letter-spacing:-.03em;line-height:1.05;margin:2px 0 2px}
+.total .pie{font-size:9pt;color:var(--gris)}
+.desglose{display:flex;gap:0;margin-top:14px;border-top:1px solid var(--linea);padding-top:12px}
+.desglose div{flex:1;padding-right:14px}
+.desglose div+div{border-left:1px solid var(--linea);padding-left:14px}
+.desglose .k{font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris2);font-weight:600}
+.desglose .v{font-size:13pt;font-weight:700;letter-spacing:-.02em;margin-top:2px}
+.desglose .v.sm{font-size:11.5pt}
+/* ---- tablas ---- */
+table{width:100%;border-collapse:collapse;font-size:9.5pt}
+table.fx{table-layout:fixed}
+th{text-align:left;overflow-wrap:break-word;font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);
+  font-weight:600;padding:0 8px 7px 0;border-bottom:1.5px solid var(--tinta)}
+td{padding:8px 8px 8px 0;overflow-wrap:break-word;border-bottom:1px solid var(--linea);vertical-align:top}
+th.r,td.r{text-align:right;padding-right:0}
+th.c,td.c{text-align:center}
+tr.tot td{border-top:1.5px solid var(--tinta);border-bottom:none;font-weight:700;padding-top:10px;font-size:11pt}
+.grupo td{background:var(--azulsuave);font-weight:700;font-size:9pt;letter-spacing:.04em;
+  text-transform:uppercase;padding:7px 8px 7px 6px;border-bottom:1px solid var(--linea)}
+.it{font-weight:600}
+.sub{display:block;color:var(--gris);font-size:8.5pt;line-height:1.4;margin-top:2px;font-weight:400}
+.sfila td{font-weight:700;background:#F8FAFC}
+/* ---- cajas ---- */
+.nota{border-left:3px solid var(--azul);background:var(--azulsuave);padding:11px 14px;margin:12px 0;
+  font-size:9.5pt;border-radius:0 5px 5px 0}
+.nota b{display:block;margin-bottom:3px}
+.cols{display:flex;gap:16px;margin-top:10px}
+.cols>div{flex:1}
+.cond{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--linea);border-radius:6px;overflow:hidden}
+.cond>div{padding:11px 14px;border-bottom:1px solid var(--linea)}
+.cond>div:nth-child(odd){border-right:1px solid var(--linea)}
+.cond>div:nth-last-child(-n+2){border-bottom:none}
+.cond .k{font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris2);font-weight:600;margin-bottom:3px}
+.cond .v{font-size:9.5pt}
+/* ---- firmas ---- */
+.firmas{display:flex;gap:40px;margin-top:36px;page-break-inside:avoid}
+.firmas div{flex:1}
+.linea{border-top:1px solid var(--tinta);margin-top:44px;padding-top:6px;font-size:9pt}
+.linea b{display:block}
+.pie{margin-top:26px;padding-top:10px;border-top:1px solid var(--linea);
+  font-size:8pt;color:var(--gris2);display:flex;justify-content:space-between}
+ol,ul{margin:0 0 10px 18px}li{margin-bottom:5px}
+.cl{margin-bottom:14px}
+.cl h3{margin-top:0}
+@page{size:A4;margin:14mm 13mm}
+@media print{
+  body{background:#fff;font-size:9.8pt}
+  .hoja{max-width:none;padding:0;margin:0}
+  .cab{margin:-14mm -13mm 18px;padding:14mm 13mm 10mm}
+  h2{page-break-after:avoid}
+  tr,.nota,.cond,.total{page-break-inside:avoid}
+  .noprint{display:none}
+}
+</style></head><body><div class="hoja">
+
+<header class="cab">
+  <div class="num"><b>CS-0100-2026</b><span>Bucaramanga<br>____ / ____ / 2026</span></div>
+  <div class="eyebrow">Contrato</div>
+  <h1>Contrato de suministro<br>de bienes muebles</h1>
+  <p class="lead">Suministro de equipos de control, instrumentación, neumática, protección y maniobra
+  para tablero de automatización de planta, conforme a la cotización COT-0100 del 27 de agosto de 2026.</p>
+  <div class="partes">
+    <div class="parte"><div class="eyebrow">El proveedor</div>
+      <b>Walter David Peñuela Sanabria</b>
+      <span>Persona natural comerciante — Electromandos del Oriente<br>C.C. 1.098.761.868<br>Calle 153F #22-19, Villa España II — Bucaramanga<br>317 802 1422 · electromandos1@hotmail.com</span></div>
+    <div class="parte"><div class="eyebrow">El comprador</div>
+      <b>Grupo Agroindustrial GRASS S.A.S.</b>
+      <span>NIT 901.185.692-3<br>Representante legal: ______________________<br>C.C. ______________________<br>Barrancabermeja, Santander</span></div>
+  </div>
+</header>
+
+<p>Entre los suscritos, <b>WALTER DAVID PEÑUELA SANABRIA</b>, mayor de edad, identificado con
+cédula de ciudadanía número 1.098.761.868, actuando en nombre propio como persona natural
+comerciante bajo la denominación comercial <i>Electromandos del Oriente</i>, quien para efectos del
+presente documento se denominará <b>EL PROVEEDOR</b>; y <b>GRUPO AGROINDUSTRIAL GRASS S.A.S.</b>,
+sociedad comercial identificada con NIT 901.185.692-3, representada legalmente por
+______________________________, mayor de edad, identificado con cédula de ciudadanía número
+______________________, quien para efectos del presente documento se denominará <b>EL COMPRADOR</b>,
+hemos convenido celebrar el presente <b>contrato de suministro</b>, regido por los artículos 968 y
+siguientes del Código de Comercio y por las siguientes cláusulas:</p>
+
+<h2>Cláusulas</h2>
+
+<div class="cl"><h3>Primera — Objeto</h3>
+<p>EL PROVEEDOR se obliga a suministrar a EL COMPRADOR, y este a recibir y pagar, los bienes
+muebles descritos en la cotización <b>COT-0100 del 27 de agosto de 2026</b>, que consta de
+<b>67 referencias y 553 unidades</b> destinadas al tablero de control y automatización de planta,
+en las cantidades, marcas y especificaciones técnicas allí detalladas.</p></div>
+
+<div class="cl"><h3>Segunda — Alcance y anexos</h3>
+<p>Forman parte integral e inseparable de este contrato: <b>(a)</b> la cotización COT-0100 con su
+anexo de detalle ítem por ítem; <b>(b)</b> la orden de compra emitida por EL COMPRADOR;
+<b>(c)</b> el pagaré y su carta de instrucciones suscritos conforme a la cláusula décima cuarta;
+y <b>(d)</b> las actas de entrega parcial y final. En caso de discrepancia entre los documentos,
+prevalece el presente contrato y, en materia de alcance técnico, la cotización COT-0100.</p></div>
+
+<div class="cl"><h3>Tercera — Valor</h3>
+<p>El valor total del contrato asciende a la suma de <b>TREINTA Y OCHO MILLONES NOVECIENTOS
+SESENTA Y UN MIL CIENTO UN PESOS ($ 38.961.101) MONEDA CORRIENTE</b>, discriminado así:</p>
+<table>
+  <thead><tr><th>Concepto</th><th class="r">Valor</th></tr></thead>
+  <tbody>
+    <tr><td>Valor del suministro (base gravable)</td><td class="r">$ 32.740.421</td></tr>
+    <tr><td>IVA 19 %</td><td class="r">$ 6.220.680</td></tr>
+    <tr class="tot"><td>Valor total del contrato</td><td class="r">$ 38.961.101</td></tr>
+  </tbody>
+</table>
+<p style="margin-top:10px">El valor incluye el flete hasta las instalaciones de EL COMPRADOR en
+Barrancabermeja, Santander. Los precios son firmes durante toda la ejecución y no admiten reajuste,
+salvo modificación del alcance acordada por escrito entre las partes.</p></div>
+
+<div class="cl"><h3>Cuarta — Forma de pago</h3>
+<ol>
+  <li><b>Anticipo del 60 % — $ 23.376.661</b>, pagadero dentro de los tres (3) días hábiles
+  siguientes a la firma de este contrato y a la emisión de la orden de compra. El aprovisionamiento
+  y el plazo de entrega comienzan a contarse desde la fecha en que este anticipo sea efectivamente
+  acreditado en la cuenta de EL PROVEEDOR.</li>
+  <li><b>Saldo del 40 % — $ 15.584.440</b>, pagadero dentro de los treinta (30) días calendario
+  siguientes a la suscripción del acta de entrega final, previa presentación de la factura
+  electrónica correspondiente.</li>
+</ol>
+<p>Los pagos se realizarán mediante transferencia o consignación a la cuenta que EL PROVEEDOR
+indique por escrito. El pago se entiende efectuado en la fecha de acreditación efectiva de los
+fondos.</p></div>
+
+<div class="cl"><h3>Quinta — Facturación, impuestos y retenciones</h3>
+<p>EL PROVEEDOR expedirá <b>factura electrónica de venta con IVA del 19 % discriminado</b>, conforme
+a la Resolución DIAN 000165 de 2023, la cual se remitirá al correo de recepción de factura
+electrónica que EL COMPRADOR designe. EL COMPRADOR practicará las retenciones a que haya lugar
+según su calidad de agente retenedor y expedirá los certificados correspondientes dentro de los
+términos legales. Los valores retenidos se descuentan del pago y no constituyen incumplimiento.</p></div>
+
+<div class="cl"><h3>Sexta — Plazo, lugar y forma de entrega</h3>
+<p>EL PROVEEDOR entregará la totalidad del suministro dentro de las <b>tres (3) semanas</b>
+siguientes a la acreditación del anticipo, en las instalaciones de EL COMPRADOR en Barrancabermeja,
+Santander. Se autorizan <b>entregas parciales</b>, que comenzarán con las referencias disponibles en
+inventario. Cada entrega se soportará con remisión firmada por quien reciba en nombre de
+EL COMPRADOR.</p></div>
+
+<div class="cl"><h3>Séptima — Recibo, verificación y acta de entrega</h3>
+<p>EL COMPRADOR dispone de <b>cinco (5) días hábiles</b> contados desde cada entrega para verificar
+cantidades, referencias y estado aparente de los bienes, y formular por escrito las observaciones a
+que haya lugar. Vencido ese término sin observaciones, la entrega se entenderá recibida a
+satisfacción. Subsanadas las observaciones, o no habiéndolas, se suscribirá el <b>acta de entrega
+final</b>, documento que habilita el cobro del saldo.</p></div>
+
+<div class="cl"><h3>Octava — Transferencia del riesgo y reserva de dominio</h3>
+<p>El riesgo sobre los bienes se traslada a EL COMPRADOR con la entrega material en el lugar
+convenido. No obstante, <b>EL PROVEEDOR se reserva el dominio de los bienes suministrados hasta el
+pago total del precio</b>, conforme al artículo 952 del Código de Comercio. Mientras subsista la
+reserva, EL COMPRADOR no podrá enajenar, gravar ni pignorar los bienes, y deberá conservarlos en
+condiciones adecuadas de custodia.</p></div>
+
+<div class="cl"><h3>Novena — Garantía</h3>
+<p>EL PROVEEDOR otorga garantía por defectos de fabricación, contada desde la fecha de entrega, así:
+<b>doce (12) meses</b> en equipos electrónicos de control e instrumentación y <b>seis (6) meses</b>
+en accesorios neumáticos. La garantía comprende la reposición o reparación del bien defectuoso sin
+costo para EL COMPRADOR, dentro de los quince (15) días hábiles siguientes a la reclamación escrita.
+Se excluyen de la garantía los daños originados en instalación indebida, conexión a tensiones o
+señales distintas de las especificadas, sobrecarga, manipulación por terceros no autorizados, uso
+en condiciones ambientales fuera de especificación, fuerza mayor y desgaste normal.</p></div>
+
+<div class="cl"><h3>Décima — Obligaciones de EL PROVEEDOR</h3>
+<ol>
+  <li>Suministrar los bienes nuevos, originales de fábrica y conforme a las marcas y referencias de
+  la COT-0100; no se admiten sustituciones sin autorización escrita de EL COMPRADOR.</li>
+  <li>Cumplir el plazo de entrega y mantener informado a EL COMPRADOR del avance del despacho.</li>
+  <li>Expedir la factura electrónica con IVA discriminado y entregar las remisiones y actas.</li>
+  <li>Atender las reclamaciones de garantía en los términos de la cláusula novena.</li>
+  <li>Responder por el transporte y por los daños que sufran los bienes hasta la entrega material.</li>
+  <li>Entregar, cuando existan, los certificados de origen, fichas técnicas y manuales del fabricante.</li>
+</ol></div>
+
+<div class="cl"><h3>Décima primera — Obligaciones de EL COMPRADOR</h3>
+<ol>
+  <li>Pagar el precio en la forma y plazos pactados en la cláusula cuarta.</li>
+  <li>Emitir la orden de compra y suscribir el presente contrato, el pagaré y su carta de instrucciones.</li>
+  <li>Recibir los bienes en el lugar y horario convenidos y suscribir las remisiones y actas.</li>
+  <li>Formular las observaciones dentro del término de la cláusula séptima.</li>
+  <li>Practicar y certificar las retenciones legales.</li>
+</ol></div>
+
+<div class="cl"><h3>Décima segunda — Incumplimiento de EL COMPRADOR</h3>
+<p>La mora en cualquiera de los pagos genera <b>intereses moratorios a la tasa máxima legal
+permitida</b>, equivalente a una y media veces el interés bancario corriente certificado por la
+Superintendencia Financiera de Colombia para la modalidad correspondiente, conforme al artículo 884
+del Código de Comercio, liquidados por cada día de mora.</p>
+<p>Transcurridos <b>treinta (30) días calendario</b> de mora, EL PROVEEDOR podrá, a su elección:
+<b>(a)</b> declarar de plazo vencido la totalidad de las obligaciones pendientes y exigir su pago
+inmediato; <b>(b)</b> suspender las entregas pendientes sin que ello constituya incumplimiento de su
+parte; <b>(c)</b> ejercer la reserva de dominio de la cláusula octava; y <b>(d)</b> diligenciar y
+hacer efectivo el pagaré conforme a la cláusula décima cuarta. Estas facultades son acumulables.</p></div>
+
+<div class="cl"><h3>Décima tercera — Incumplimiento de EL PROVEEDOR</h3>
+<p>Si EL PROVEEDOR incurre en mora en la entrega por causa que le sea imputable, reconocerá a
+EL COMPRADOR, a título de cláusula penal moratoria (artículo 1592 del Código Civil), el
+<b>0,5 % del valor de la porción no entregada por cada día calendario de retraso</b>, hasta un tope
+del <b>10 %</b> de dicho valor. Esta suma podrá descontarse del saldo pendiente de pago.</p>
+<p>Superados <b>quince (15) días calendario</b> de mora sobre el plazo pactado, EL COMPRADOR podrá
+terminar unilateralmente el contrato mediante comunicación escrita, evento en el cual EL PROVEEDOR
+<b>reintegrará el anticipo</b> en la proporción no ejecutada dentro de los diez (10) días hábiles
+siguientes, junto con la cláusula penal causada, y EL COMPRADOR devolverá los bienes que no desee
+conservar. La aceptación de entregas parciales por parte de EL COMPRADOR no implica renuncia a
+estas facultades.</p></div>
+
+<div class="cl"><h3>Décima cuarta — Garantía de cumplimiento: pagaré</h3>
+<p>Para garantizar el pago del saldo y de cualquier suma que llegare a deber en virtud de este
+contrato, EL COMPRADOR suscribe a favor de EL PROVEEDOR un <b>pagaré con espacios en blanco</b>,
+acompañado de su respectiva <b>carta de instrucciones</b>, en los términos de los artículos 621, 622
+y 709 y siguientes del Código de Comercio. El pagaré solo podrá diligenciarse cuando concurran las
+condiciones previstas en la carta de instrucciones y, una vez satisfechas íntegramente las
+obligaciones, EL PROVEEDOR lo devolverá o destruirá dentro de los diez (10) días hábiles siguientes,
+dejando constancia escrita a EL COMPRADOR.</p></div>
+
+<div class="cl"><h3>Décima quinta — Fuerza mayor y caso fortuito</h3>
+<p>Ninguna de las partes será responsable por el incumplimiento derivado de fuerza mayor o caso
+fortuito debidamente acreditados, conforme al artículo 64 del Código Civil. La parte afectada
+informará por escrito dentro de los tres (3) días hábiles siguientes al hecho. Los plazos se
+suspenderán mientras dure el evento. Si este supera sesenta (60) días calendario, cualquiera de las
+partes podrá terminar el contrato, liquidando lo efectivamente ejecutado y reintegrando los saldos
+no aplicados.</p></div>
+
+<div class="cl"><h3>Décima sexta — Cesión y confidencialidad</h3>
+<p>Ninguna de las partes podrá ceder total o parcialmente este contrato sin autorización escrita de
+la otra. Las partes se obligan a mantener reserva sobre la información técnica, comercial y de
+precios intercambiada, obligación que subsiste por dos (2) años después de la terminación.</p></div>
+
+<div class="cl"><h3>Décima séptima — Independencia de las partes</h3>
+<p>Este contrato no genera vínculo laboral, societario, de agencia ni de representación entre las
+partes ni con el personal de cada una. Cada parte asume la responsabilidad exclusiva por sus
+obligaciones laborales, de seguridad social y tributarias.</p></div>
+
+<div class="cl"><h3>Décima octava — Mérito ejecutivo</h3>
+<p>Las partes acuerdan expresamente que este contrato, junto con las facturas, remisiones y actas de
+entrega que de él se deriven, <b>presta mérito ejecutivo</b> para el cobro de las obligaciones
+claras, expresas y exigibles que contiene, sin necesidad de requerimiento previo ni constitución en
+mora, a los cuales las partes renuncian, en los términos del artículo 422 del Código General del
+Proceso.</p></div>
+
+<div class="cl"><h3>Décima novena — Ley aplicable y solución de controversias</h3>
+<p>Este contrato se rige por la ley colombiana. Las diferencias que surjan se intentarán resolver
+mediante <b>arreglo directo</b> dentro de los quince (15) días hábiles siguientes a la comunicación
+escrita de la controversia. Agotada esa etapa sin acuerdo, las partes acudirán a
+<b>conciliación extrajudicial en derecho</b> ante el Centro de Conciliación de la Cámara de Comercio
+de Bucaramanga. Fracasada la conciliación, las controversias se someterán a los <b>jueces
+competentes del circuito de Bucaramanga</b>, jurisdicción que las partes acuerdan de común acuerdo.</p></div>
+
+<div class="cl"><h3>Vigésima — Notificaciones</h3>
+<p>Las comunicaciones se surtirán por escrito a las direcciones y correos electrónicos señalados en
+el encabezado, y se entenderán recibidas al día hábil siguiente de su envío. Todo cambio de datos de
+contacto deberá informarse por escrito.</p></div>
+
+<div class="cl"><h3>Vigésima primera — Perfeccionamiento y acuerdo íntegro</h3>
+<p>Este contrato se perfecciona con la firma de las partes y recoge el acuerdo íntegro entre ellas,
+dejando sin efecto cualquier oferta, cotización o comunicación previa sobre el mismo objeto —en
+particular las cotizaciones COT-0086, COT-0092, COT-0096 y COT-0098—, salvo la COT-0100 en cuanto
+constituye el anexo técnico. Toda modificación deberá constar por escrito firmado por ambas partes.</p></div>
+
+<p style="margin-top:18px">Para constancia se firma en dos (2) ejemplares del mismo tenor y valor,
+en la ciudad de ______________________, a los ______ días del mes de ______________ de 2026.</p>
+
+<div class="firmas">
+  <div><div class="linea"><b>EL PROVEEDOR</b>
+    Walter David Peñuela Sanabria<br>C.C. 1.098.761.868<br>Electromandos del Oriente</div></div>
+  <div><div class="linea"><b>EL COMPRADOR</b>
+    Grupo Agroindustrial GRASS S.A.S. — NIT 901.185.692-3<br>Nombre: ______________________<br>C.C. ______________________ · Representante legal</div></div>
+</div>
+
+<div class="pie"><span>CS-0100-2026 · Contrato de suministro — GRASS S.A.S. / Electromandos del Oriente</span>
+  <span>Anexo: COT-0100</span></div>
+</div></body></html>

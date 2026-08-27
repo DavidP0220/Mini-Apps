@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pagaré y carta de instrucciones — GRASS S.A.S. / Electromandos del Oriente</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --tinta:#0F172A; --gris:#475569; --gris2:#94A3B8; --linea:#E2E8F0;
+  --azul:#1D4ED8; --azulsuave:#EFF4FF; --verde:#047857; --papel:#fff;
+}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--tinta);background:#F1F5F9;font-size:10.5pt;line-height:1.5}
+.hoja{max-width:21cm;margin:0 auto;background:var(--papel);padding:16mm 15mm 14mm}
+h1{font-size:21pt;line-height:1.15;letter-spacing:-.02em;font-weight:700}
+h2{font-size:12.5pt;margin:26px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--tinta);
+  letter-spacing:-.01em}
+h3{font-size:10.5pt;margin:16px 0 6px;letter-spacing:.02em}
+p{margin:0 0 9px}
+small{font-size:8.5pt;color:var(--gris)}
+.eyebrow{font-size:8pt;letter-spacing:.16em;text-transform:uppercase;color:var(--gris2);font-weight:600}
+/* ---- cabecera ---- */
+.cab{background:var(--tinta);color:#fff;overflow:hidden;margin:-16mm -15mm 22px;padding:15mm 15mm 12mm}
+.cab .eyebrow{color:#8FB0F0}
+.cab h1{color:#fff;margin:6px 0 8px}
+.cab .lead{color:#CBD5E1;font-size:10pt;max-width:13cm}
+.cab .num{float:right;text-align:right;margin-left:12px;max-width:38%}
+.cab .num b{display:block;font-size:16pt}
+.cab .num span{font-size:8.5pt;color:#94A3B8}
+.partes{display:flex;gap:10px;margin-top:16px;clear:both}
+.parte{min-width:0}
+.parte{flex:1;border:1px solid #334155;border-radius:6px;padding:10px 12px}
+.parte .eyebrow{color:#64748B;margin-bottom:5px}
+.parte b{font-size:10.5pt;display:block;margin-bottom:3px}
+.parte span{font-size:8.7pt;color:#CBD5E1;display:block;line-height:1.45}
+/* ---- total ---- */
+.total{border:2px solid var(--tinta);border-radius:8px;padding:16px 18px;margin:4px 0 18px}
+.total .eyebrow{color:var(--gris)}
+.total .cifra{font-size:32pt;font-weight:700;letter-spacing:-.03em;line-height:1.05;margin:2px 0 2px}
+.total .pie{font-size:9pt;color:var(--gris)}
+.desglose{display:flex;gap:0;margin-top:14px;border-top:1px solid var(--linea);padding-top:12px}
+.desglose div{flex:1;padding-right:14px}
+.desglose div+div{border-left:1px solid var(--linea);padding-left:14px}
+.desglose .k{font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris2);font-weight:600}
+.desglose .v{font-size:13pt;font-weight:700;letter-spacing:-.02em;margin-top:2px}
+.desglose .v.sm{font-size:11.5pt}
+/* ---- tablas ---- */
+table{width:100%;border-collapse:collapse;font-size:9.5pt}
+table.fx{table-layout:fixed}
+th{text-align:left;overflow-wrap:break-word;font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);
+  font-weight:600;padding:0 8px 7px 0;border-bottom:1.5px solid var(--tinta)}
+td{padding:8px 8px 8px 0;overflow-wrap:break-word;border-bottom:1px solid var(--linea);vertical-align:top}
+th.r,td.r{text-align:right;padding-right:0}
+th.c,td.c{text-align:center}
+tr.tot td{border-top:1.5px solid var(--tinta);border-bottom:none;font-weight:700;padding-top:10px;font-size:11pt}
+.grupo td{background:var(--azulsuave);font-weight:700;font-size:9pt;letter-spacing:.04em;
+  text-transform:uppercase;padding:7px 8px 7px 6px;border-bottom:1px solid var(--linea)}
+.it{font-weight:600}
+.sub{display:block;color:var(--gris);font-size:8.5pt;line-height:1.4;margin-top:2px;font-weight:400}
+.sfila td{font-weight:700;background:#F8FAFC}
+/* ---- cajas ---- */
+.nota{border-left:3px solid var(--azul);background:var(--azulsuave);padding:11px 14px;margin:12px 0;
+  font-size:9.5pt;border-radius:0 5px 5px 0}
+.nota b{display:block;margin-bottom:3px}
+.cols{display:flex;gap:16px;margin-top:10px}
+.cols>div{flex:1}
+.cond{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--linea);border-radius:6px;overflow:hidden}
+.cond>div{padding:11px 14px;border-bottom:1px solid var(--linea)}
+.cond>div:nth-child(odd){border-right:1px solid var(--linea)}
+.cond>div:nth-last-child(-n+2){border-bottom:none}
+.cond .k{font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris2);font-weight:600;margin-bottom:3px}
+.cond .v{font-size:9.5pt}
+/* ---- firmas ---- */
+.firmas{display:flex;gap:40px;margin-top:36px;page-break-inside:avoid}
+.firmas div{flex:1}
+.linea{border-top:1px solid var(--tinta);margin-top:44px;padding-top:6px;font-size:9pt}
+.linea b{display:block}
+.pie{margin-top:26px;padding-top:10px;border-top:1px solid var(--linea);
+  font-size:8pt;color:var(--gris2);display:flex;justify-content:space-between}
+ol,ul{margin:0 0 10px 18px}li{margin-bottom:5px}
+.cl{margin-bottom:14px}
+.cl h3{margin-top:0}
+@page{size:A4;margin:14mm 13mm}
+@media print{
+  body{background:#fff;font-size:9.8pt}
+  .hoja{max-width:none;padding:0;margin:0}
+  .cab{margin:-14mm -13mm 18px;padding:14mm 13mm 10mm}
+  h2{page-break-after:avoid}
+  tr,.nota,.cond,.total{page-break-inside:avoid}
+  .noprint{display:none}
+}
+
+.blanco{display:inline-block;min-width:150px;border-bottom:1px solid var(--tinta)}
+.blanco.sm{min-width:78px}
+.tit{border-bottom:2.5px solid var(--tinta);padding-bottom:8px;margin-bottom:14px;
+  display:flex;align-items:flex-end;justify-content:space-between;gap:16px}
+.tit h1{font-size:17pt}
+.tit .der{text-align:right;font-size:8.5pt;color:var(--gris);line-height:1.4;white-space:nowrap}
+.tit .der b{display:block;font-size:11pt;color:var(--tinta);letter-spacing:.01em}
+.pg{font-size:9.6pt;line-height:1.45}
+.pg ol{margin:8px 0 8px 17px}
+.pg li{margin-bottom:5px}
+.pg p{margin-bottom:7px}
+.huella{display:inline-block;width:24mm;height:17mm;border:1px solid var(--gris2);vertical-align:top;margin-left:4px}
+.fpag{display:flex;gap:34px;margin-top:14px}
+.pg.cta{font-size:9.2pt;line-height:1.36}
+.pg.cta .fpag{margin-top:10px}
+.fpag>div{flex:1}
+.fpag .linea{margin-top:30px}
+.destacar{background:#FEF3C7;padding:1px 3px;border-radius:3px}
+</style></head><body><div class="hoja">
+
+<div class="nota noprint"><b>Cómo se usa este documento</b>
+Son dos hojas. La <b>primera</b> es el pagaré: se firma con los espacios de cuantía y fecha de
+vencimiento <b>en blanco</b>. La <b>segunda</b> es la carta de instrucciones, que se firma el mismo
+día y fija las únicas condiciones bajo las cuales el pagaré puede llenarse. Sin carta de
+instrucciones firmada, un pagaré en blanco no ofrece respaldo válido. Cada parte conserva copia de
+ambas. Esta nota no se imprime.</div>
+
+<div class="tit">
+  <h1>Pagaré</h1>
+  <div class="der"><b>N.º PG-0100-2026</b>Anexo del contrato de suministro CS-0100-2026<br>Cotización COT-0100</div>
+</div>
+
+<div class="pg">
+<p><b>DEUDOR / OTORGANTE:</b> GRUPO AGROINDUSTRIAL GRASS S.A.S., sociedad comercial identificada con
+NIT 901.185.692-3, domiciliada en Barrancabermeja, Santander, representada legalmente por
+<span class="blanco"></span>, mayor de edad, identificado con cédula de ciudadanía número
+<span class="blanco sm"></span>.</p>
+
+<p><b>ACREEDOR / BENEFICIARIO:</b> WALTER DAVID PEÑUELA SANABRIA, mayor de edad, identificado con
+cédula de ciudadanía número 1.098.761.868, domiciliado en Bucaramanga, Santander, o a quien
+represente sus derechos.</p>
+
+<p>Obrando en nombre y representación de la sociedad deudora, que en adelante se denominará
+EL DEUDOR, hago constar:</p>
+
+<ol>
+  <li><b>Promesa incondicional de pago.</b> EL DEUDOR pagará incondicionalmente a la orden de
+  <b>WALTER DAVID PEÑUELA SANABRIA</b>, o a quien represente sus derechos, en la ciudad de
+  <b>Bucaramanga</b>, la suma de <span class="blanco"></span> PESOS
+  ($ <span class="blanco sm"></span>) MONEDA CORRIENTE, el día <span class="blanco sm"></span>
+  de <span class="blanco sm"></span> de <span class="blanco sm"></span>.</li>
+
+  <li><b>Intereses.</b> Sobre la suma anterior EL DEUDOR reconocerá, desde la fecha de exigibilidad y
+  hasta el pago total, intereses de mora a la <b>tasa máxima legal permitida</b> —una y media veces
+  el interés bancario corriente certificado por la Superintendencia Financiera de Colombia para la
+  modalidad correspondiente—, conforme al artículo 884 del Código de Comercio.</li>
+
+  <li><b>Cláusula aceleratoria.</b> El beneficiario podrá declarar vencido el plazo de la totalidad
+  de la obligación y exigir su pago inmediato, sin declaración judicial previa, cuando EL DEUDOR
+  incurra en mora en el pago de cualquier suma a su cargo, sea admitido a proceso de insolvencia,
+  reorganización o liquidación, o se decrete embargo o secuestro de bienes que comprometa el
+  cumplimiento de esta obligación.</li>
+
+  <li><b>Renuncia a requerimientos.</b> EL DEUDOR renuncia expresamente a los requerimientos para
+  ser constituido en mora, a la presentación para el pago, al aviso de rechazo y al protesto de este
+  título, conforme a los artículos 696 y 697 del Código de Comercio.</li>
+
+  <li><b>Gastos de cobranza.</b> Serán de cargo de EL DEUDOR los gastos de cobranza judicial o
+  extrajudicial, incluidos honorarios de abogado y costas procesales.</li>
+
+  <li><b>Espacios en blanco.</b> Este pagaré se otorga con espacios en blanco y se acompaña de
+  <b>carta de instrucciones</b> suscrita en la misma fecha, en los términos del artículo 622 del
+  Código de Comercio, documento que fija de manera exclusiva las condiciones de su diligenciamiento.</li>
+
+  <li><b>Mérito ejecutivo.</b> Diligenciado conforme a la carta de instrucciones, este pagaré presta
+  mérito ejecutivo y podrá exigirse su pago por la vía ejecutiva sin requerimiento previo.</li>
+</ol>
+
+<p>En constancia se firma en la ciudad de <span class="blanco"></span>, a los
+<span class="blanco sm"></span> días del mes de <span class="blanco sm"></span> de
+<span class="blanco sm"></span>.</p>
+
+<div class="fpag">
+  <div><div class="linea"><b>EL DEUDOR</b>
+    GRUPO AGROINDUSTRIAL GRASS S.A.S. — NIT 901.185.692-3<br>
+    Nombre: ______________________________<br>
+    C.C. ____________________ · Representante legal<br>
+    Huella:<span class="huella"></span></div></div>
+  <div><div class="linea"><b>AVALISTA <span style="font-weight:400;color:var(--gris)">(opcional)</span></b>
+    Nombre: ______________________________<br>
+    C.C. ____________________<br>
+    Firma: ______________________________<br>
+    Huella:<span class="huella"></span></div></div>
+</div>
+</div>
+
+<div class="pie"><span>Pagaré PG-0100-2026 · Anexo del contrato CS-0100-2026</span><span>Página 1 de 2</span></div>
+
+<div style="page-break-before:always"></div>
+
+<div class="tit">
+  <h1>Carta de instrucciones</h1>
+  <div class="der"><b>Pagaré N.º PG-0100-2026</b>Artículo 622 del Código de Comercio</div>
+</div>
+
+<div class="pg cta">
+<p>Ciudad y fecha: <span class="blanco"></span></p>
+
+<p>Señor<br><b>WALTER DAVID PEÑUELA SANABRIA</b> — C.C. 1.098.761.868<br>
+Electromandos del Oriente · Calle 153F #22-19, Villa España II — Bucaramanga</p>
+
+<p>En mi calidad de representante legal de <b>GRUPO AGROINDUSTRIAL GRASS S.A.S.</b>, NIT
+901.185.692-3, y en desarrollo de lo previsto en el artículo 622 del Código de Comercio, imparto
+las instrucciones a las cuales usted deberá sujetarse de manera <b>exclusiva y estricta</b> para
+diligenciar el pagaré N.º PG-0100-2026 que suscribí con espacios en blanco en esta misma fecha:</p>
+
+<p><b>Primera — Origen de la obligación.</b> El pagaré garantiza el cumplimiento de las obligaciones
+de pago a cargo de EL DEUDOR derivadas del contrato de suministro <b>CS-0100-2026</b> y de la
+cotización <b>COT-0100 del 27 de agosto de 2026</b>, por valor total de <b>$ 38.961.101</b> (IVA
+incluido), y de cualquier otra suma que llegare a deberse por causa u ocasión de dicho contrato.</p>
+
+<p><b>Segunda — Condiciones para diligenciarlo.</b> El pagaré solo podrá diligenciarse cuando
+concurran, de manera conjunta:</p>
+<ol>
+  <li>Que EL DEUDOR se encuentre en <b>mora por más de treinta (30) días calendario</b> en el pago de
+  cualquier suma a su cargo derivada del contrato CS-0100-2026;</li>
+  <li>Que EL PROVEEDOR haya <b>requerido por escrito</b> el pago —por correo electrónico a la
+  dirección de contacto registrada o por comunicación física— y hayan transcurrido <b>diez (10) días
+  hábiles</b> desde el requerimiento sin que el pago se produzca; y</li>
+  <li>Que EL PROVEEDOR haya <b>cumplido las entregas</b> correspondientes a las sumas cuyo cobro se
+  pretende, acreditadas con las remisiones o el acta de entrega suscritas por EL DEUDOR.</li>
+</ol>
+<p><span class="destacar">No podrá diligenciarse el pagaré por sumas correspondientes a material no
+entregado, ni mientras exista una reclamación de garantía o una observación de recibo formulada
+dentro de los términos del contrato y pendiente de resolver.</span></p>
+
+<p><b>Tercera — Cuantía.</b> El espacio de la cuantía se llenará con una suma que <b>no podrá
+exceder</b> la sumatoria de: <b>(a)</b> el saldo insoluto del precio efectivamente causado y no
+pagado a la fecha de diligenciamiento, incluido el IVA facturado; <b>(b)</b> los intereses de mora
+liquidados a la tasa máxima legal permitida, desde la exigibilidad de cada suma y hasta la fecha de
+diligenciamiento; y <b>(c)</b> los gastos de cobranza efectivamente causados y documentados. De esa
+cuantía se <b>descontarán</b> todos los pagos, abonos, notas crédito, retenciones practicadas y
+penalidades a favor de EL DEUDOR causadas conforme a la cláusula décima tercera del contrato.</p>
+
+<p><b>Cuarta — Fechas.</b> La fecha de creación será la de suscripción de este documento. La fecha
+de vencimiento será la del día en que se diligencie el pagaré, quedando la obligación exigible a
+partir de ese momento.</p>
+
+<p><b>Quinta — Aviso posterior.</b> Diligenciado el pagaré, EL PROVEEDOR informará por escrito a
+EL DEUDOR, dentro de los <b>cinco (5) días hábiles</b> siguientes, la cuantía consignada y su
+liquidación detallada, remitiendo copia del título diligenciado al correo electrónico registrado.</p>
+
+<p><b>Sexta — Devolución.</b> Pagadas íntegramente las obligaciones garantizadas, EL PROVEEDOR
+devolverá el pagaré y esta carta de instrucciones, o los destruirá dejando constancia escrita,
+dentro de los <b>diez (10) días hábiles</b> siguientes al pago total, y expedirá el correspondiente
+paz y salvo.</p>
+
+<p><b>Séptima — Alcance.</b> Estas instrucciones son irrevocables mientras subsistan las
+obligaciones garantizadas y constituyen la única fuente de facultades para el diligenciamiento del
+título. Su desconocimiento faculta a EL DEUDOR para proponer las excepciones que la ley le confiere.
+Las partes declaran que la firma del pagaré con espacios en blanco se otorga con pleno conocimiento
+y aceptación de lo aquí dispuesto. Se suscribe en dos (2) ejemplares del mismo tenor, uno para
+cada parte.</p>
+
+<div class="fpag">
+  <div><div class="linea"><b>EL DEUDOR</b>
+    GRUPO AGROINDUSTRIAL GRASS S.A.S. — NIT 901.185.692-3<br>
+    Nombre: ______________________________<br>C.C. ____________________ · Representante legal</div></div>
+  <div><div class="linea"><b>ACEPTA — EL BENEFICIARIO</b>
+    Walter David Peñuela Sanabria<br>C.C. 1.098.761.868<br>Electromandos del Oriente</div></div>
+</div>
+</div>
+
+<div class="pie"><span>Carta de instrucciones · Pagaré PG-0100-2026</span><span>Página 2 de 2</span></div>
+</div></body></html>
