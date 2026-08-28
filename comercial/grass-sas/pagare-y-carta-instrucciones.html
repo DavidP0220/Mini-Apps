@@ -5,141 +5,149 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --tinta:#0F172A; --gris:#475569; --gris2:#94A3B8; --linea:#E2E8F0;
-  --azul:#1D4ED8; --azulsuave:#EFF4FF; --verde:#047857; --papel:#fff;
+  --fondo:#0F1428; --surf:#171E38; --surf2:#1E2745; --linea:#2A3357; --linea2:#374169;
+  --tinta:#EEF2FB; --gris:#A9B3D0; --gris2:#77839F;
+  --azul:#2D6CDF; --azulclaro:#6C9BFF; --verde:#00D9A5;
 }
-html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact;background:var(--fondo)}
 body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  color:var(--tinta);background:#F1F5F9;font-size:10.5pt;line-height:1.5}
-.hoja{max-width:21cm;margin:0 auto;background:var(--papel);padding:16mm 15mm 14mm}
-h1{font-size:21pt;line-height:1.15;letter-spacing:-.02em;font-weight:700}
-h2{font-size:12.5pt;margin:26px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--tinta);
-  letter-spacing:-.01em}
-h3{font-size:10.5pt;margin:16px 0 6px;letter-spacing:.02em}
+  color:var(--tinta);background:var(--fondo);font-size:10.5pt;line-height:1.55;position:relative}
+.pagina{width:100%;border-collapse:collapse;table-layout:fixed}
+.pagina>thead>tr>td,.pagina>tfoot>tr>td,.pagina>tbody>tr>td{border:none;padding:0;vertical-align:top}
+.mg{height:13mm}
+.hoja{max-width:21cm;margin:0 auto;padding:3mm 15mm}
+h1{font-size:22pt;line-height:1.12;letter-spacing:-.025em;font-weight:700;color:#fff}
+h2{font-size:12.5pt;margin:28px 0 12px;padding-bottom:8px;letter-spacing:-.01em;color:#fff;
+  border-bottom:1px solid var(--linea);position:relative}
+h2::after{content:"";position:absolute;left:0;bottom:-1px;width:42px;height:2px;background:var(--azul)}
+h3{font-size:10.5pt;margin:16px 0 6px;letter-spacing:.01em;color:#fff}
 p{margin:0 0 9px}
-small{font-size:8.5pt;color:var(--gris)}
-.eyebrow{font-size:8pt;letter-spacing:.16em;text-transform:uppercase;color:var(--gris2);font-weight:600}
+small{font-size:8.6pt;color:var(--gris)}
+b,strong{color:#fff}
+.eyebrow{font-size:8pt;letter-spacing:.16em;text-transform:uppercase;color:var(--azulclaro);font-weight:600}
+
 /* ---- cabecera ---- */
-.cab{background:var(--tinta);color:#fff;overflow:hidden;margin:0 0 20px;padding:9mm 10mm;border-radius:8px;
-  display:flex;align-items:flex-start;gap:14px}
+.cab{background:var(--surf);border:1px solid var(--linea);border-radius:10px;
+  margin:0 0 18px;padding:9mm 10mm;overflow:hidden;display:flex;align-items:flex-start;gap:14px}
 .cab .cuerpo{flex:1;min-width:0}
-.cab .eyebrow{color:#8FB0F0}
-.cab h1{color:#fff;margin:6px 0 8px}
-.cab .lead{color:#CBD5E1;font-size:10pt;max-width:13cm}
+.cab .logo{width:20mm;height:20mm;object-fit:contain;flex:none;display:block;margin-top:2px}
+.cab h1{margin:7px 0 9px}
+.cab .lead{color:var(--gris);font-size:10pt;max-width:13cm}
 .cab .num{float:right;text-align:right;margin-left:14px;max-width:42%}
-.cab .num b{display:block;font-size:16pt}
-.cab .num span{font-size:8.5pt;color:#94A3B8}
+.cab .num b{display:block;font-size:16pt;color:#fff}
+.cab .num span{font-size:8.5pt;color:var(--gris2)}
 .partes{display:flex;gap:10px;margin-top:16px;clear:both}
-.parte{min-width:0}
-.parte{flex:1;border:1px solid #334155;border-radius:6px;padding:10px 12px}
-.parte .eyebrow{color:#64748B;margin-bottom:5px}
+.parte{flex:1;min-width:0;border:1px solid var(--linea);border-radius:7px;padding:10px 12px;
+  background:rgba(255,255,255,.02)}
+.parte .eyebrow{color:var(--gris2);margin-bottom:5px}
 .parte b{font-size:10.5pt;display:block;margin-bottom:3px}
-.parte span{font-size:8.7pt;color:#CBD5E1;display:block;line-height:1.45}
-/* ---- total ---- */
-.total{border:2px solid var(--tinta);border-radius:8px;padding:16px 18px;margin:4px 0 18px}
-.total .eyebrow{color:var(--gris)}
-.total .cifra{font-size:32pt;font-weight:700;letter-spacing:-.03em;line-height:1.05;margin:2px 0 2px}
-.total .pie{font-size:9pt;color:var(--gris)}
-.desglose{display:flex;gap:0;margin-top:14px;border-top:1px solid var(--linea);padding-top:12px}
-.desglose div{flex:1;padding-right:14px}
-.desglose div+div{border-left:1px solid var(--linea);padding-left:14px}
-.desglose .k{font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris2);font-weight:600}
-.desglose .v{font-size:13pt;font-weight:700;letter-spacing:-.02em;margin-top:2px}
-.desglose .v.sm{font-size:11.5pt}
+.parte span{font-size:8.7pt;color:var(--gris);display:block;line-height:1.5}
+
+/* ---- membrete (carta) ---- */
+.membrete{background:var(--surf);border:1px solid var(--linea);border-radius:10px;
+  margin:0 0 20px;padding:7mm 9mm;display:flex;align-items:center;gap:16px;overflow:hidden}
+.membrete img{width:21mm;height:21mm;object-fit:contain;flex:none;display:block}
+.membrete .marca{flex:1;min-width:0}
+.membrete .marca b{display:block;font-size:11.2pt;letter-spacing:.03em;line-height:1.2;color:#fff}
+.membrete .marca span{font-size:7.3pt;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--azulclaro);display:block;margin-top:3px}
+.membrete .datos{text-align:right;font-size:7.9pt;color:var(--gris);line-height:1.5;flex:none;max-width:53mm}
+.membrete .datos b{color:#fff;font-size:9.2pt;display:block;margin-bottom:1px}
+
+/* ---- tarjeta de total ---- */
+.total{background:linear-gradient(135deg,#1E3A8F 0%,#2D6CDF 62%,#3D82F0 100%);
+  border-radius:12px;padding:17px 20px;margin:0 0 18px;color:#fff;box-shadow:0 1px 0 #3D82F0 inset}
+.total .eyebrow{color:#BBD2FF}
+.total .cifra{font-size:34pt;font-weight:700;letter-spacing:-.035em;line-height:1.05;margin:3px 0 3px;color:#fff}
+.total .pie{font-size:9pt;color:#CFE0FF}
+.cuentas{width:100%;border-collapse:collapse;margin-top:15px;font-size:11pt}
+.cuentas td{padding:9px 0;border:none;border-bottom:1px solid rgba(255,255,255,.22);color:#EAF1FF}
+.cuentas td.r{text-align:right;font-variant-numeric:tabular-nums}
+.cuentas tr.gran td{border-bottom:none;border-top:2px solid rgba(255,255,255,.65);
+  font-size:14.5pt;font-weight:700;padding-top:12px;letter-spacing:-.015em;color:#fff}
+.pago{display:flex;margin-top:15px;border-top:1px solid rgba(255,255,255,.22);padding-top:13px}
+.pago div{flex:1}
+.pago div+div{border-left:1px solid rgba(255,255,255,.22);padding-left:18px}
+.pago .k{font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:#BBD2FF;font-weight:600}
+.pago .v{font-size:13pt;font-weight:700;letter-spacing:-.02em;margin-top:3px;color:#fff}
+
 /* ---- tablas ---- */
 table{width:100%;border-collapse:collapse;font-size:9.5pt}
 table.fx{table-layout:fixed}
-th{text-align:left;overflow-wrap:break-word;font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);
-  font-weight:600;padding:0 8px 7px 0;border-bottom:1.5px solid var(--tinta)}
-td{padding:8px 8px 8px 0;overflow-wrap:break-word;border-bottom:1px solid var(--linea);vertical-align:top}
+th{text-align:left;font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris2);
+  font-weight:600;padding:0 8px 8px 0;border-bottom:1.5px solid var(--linea2);overflow-wrap:break-word}
+td{padding:8px 8px 8px 0;border-bottom:1px solid var(--linea);vertical-align:top;overflow-wrap:break-word}
 th.r,td.r{text-align:right;padding-right:0}
 th.c,td.c{text-align:center}
-tr.tot td{border-top:1.5px solid var(--tinta);border-bottom:none;font-weight:700;padding-top:10px;font-size:11pt}
-.grupo td{background:var(--azulsuave);font-weight:700;font-size:9pt;letter-spacing:.04em;
-  text-transform:uppercase;padding:7px 8px 7px 6px;border-bottom:1px solid var(--linea)}
-.it{font-weight:600}
-.sub{display:block;color:var(--gris);font-size:8.5pt;line-height:1.4;margin-top:2px;font-weight:400}
-.sfila td{font-weight:700;background:#F8FAFC}
+tr.tot td{border-top:1.5px solid var(--azul);border-bottom:none;font-weight:700;
+  padding-top:10px;font-size:11pt;color:#fff}
+.grupo td{background:rgba(45,108,223,.16);color:var(--azulclaro);font-weight:700;font-size:9pt;
+  letter-spacing:.05em;text-transform:uppercase;padding:7px 8px 7px 8px;border-bottom:1px solid var(--linea)}
+.it{font-weight:600;color:#fff}
+.sub{display:block;color:var(--gris2);font-size:8.5pt;line-height:1.45;margin-top:3px;font-weight:400}
+.sfila td{font-weight:700;background:rgba(255,255,255,.035);color:#fff}
+
 /* ---- cajas ---- */
-.nota{border-left:3px solid var(--azul);background:var(--azulsuave);padding:11px 14px;margin:12px 0;
-  font-size:9.5pt;border-radius:0 5px 5px 0}
+.nota{border-left:3px solid var(--verde);background:rgba(0,217,165,.08);padding:11px 14px;margin:12px 0;
+  font-size:9.5pt;border-radius:0 6px 6px 0;color:var(--gris)}
 .nota b{display:block;margin-bottom:3px}
-.cols{display:flex;gap:16px;margin-top:10px}
-.cols>div{flex:1}
-.cond{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--linea);border-radius:6px;overflow:hidden}
-.cond>div{padding:11px 14px;border-bottom:1px solid var(--linea)}
+.cols{display:flex;gap:18px;margin-top:10px}
+.cols>div{flex:1;min-width:0}
+.cond{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--linea);border-radius:8px;overflow:hidden}
+.cond>div{padding:11px 14px;border-bottom:1px solid var(--linea);background:rgba(255,255,255,.018)}
 .cond>div:nth-child(odd){border-right:1px solid var(--linea)}
 .cond>div:nth-last-child(-n+2){border-bottom:none}
-.cond .k{font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris2);font-weight:600;margin-bottom:3px}
-.cond .v{font-size:9.5pt}
-/* ---- firmas ---- */
+.cond .k{font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--azulclaro);font-weight:600;margin-bottom:4px}
+.cond .v{font-size:9.5pt;color:var(--tinta)}
+
+/* ---- firmas y pie ---- */
 .firmas{display:flex;gap:40px;margin-top:36px;page-break-inside:avoid}
 .firmas div{flex:1}
-.linea{border-top:1px solid var(--tinta);margin-top:44px;padding-top:6px;font-size:9pt}
-.linea b{display:block}
+.linea{border-top:1px solid var(--linea2);margin-top:44px;padding-top:7px;font-size:9pt;color:var(--gris)}
+.linea b{display:block;color:#fff}
 .pie{margin-top:26px;padding-top:10px;border-top:1px solid var(--linea);
   font-size:8pt;color:var(--gris2);display:flex;justify-content:space-between}
-ol,ul{margin:0 0 10px 18px}li{margin-bottom:5px}
-.cl{margin-bottom:14px}
+ol,ul{margin:0 0 10px 18px}
+li{margin-bottom:5px}
+.cl{margin-bottom:15px}
 .cl h3{margin-top:0}
-@page{size:A4;margin:14mm 13mm}
+
+@page{size:A4;margin:0}
 @media print{
-  body{background:#fff;font-size:9.8pt}
-  .hoja{max-width:none;padding:0;margin:0}
+  body{font-size:9.8pt}
+  .hoja{max-width:none;padding:0 13mm;margin:0}
   .cab{margin:0 0 16px;padding:7mm 8mm}
+  .membrete{margin:0 0 14px;padding:5mm 8mm}
   h2{page-break-after:avoid}
   tr,.nota,.cond,.total{page-break-inside:avoid}
   .noprint{display:none}
 }
 
-/* ---- membrete con logo ---- */
-.membrete{background:var(--tinta);color:#fff;margin:0 0 20px;padding:7mm 9mm;border-radius:7px;
-  display:flex;align-items:center;gap:16px;overflow:hidden}
-.membrete img{width:21mm;height:21mm;object-fit:contain;flex:none;display:block}
-.membrete .marca{flex:1;min-width:0}
-.membrete .marca b{display:block;font-size:11.2pt;letter-spacing:.03em;line-height:1.2}
-.membrete .marca span{font-size:7.3pt;letter-spacing:.1em;text-transform:uppercase;color:#8FB0F0;
-  display:block;margin-top:3px}
-.membrete .datos{text-align:right;font-size:7.9pt;color:#CBD5E1;line-height:1.5;flex:none;max-width:53mm}
-.membrete .datos b{color:#fff;font-size:9.2pt;display:block;margin-bottom:1px}
-.cab .logo{width:20mm;height:20mm;object-fit:contain;flex:none;display:block;margin-top:2px}
-.chip{background:var(--tinta);border-radius:6px;padding:5px;display:inline-block;line-height:0}
-.chip img{width:13mm;height:auto}
-@media print{.membrete{margin:0 0 14px;padding:5mm 8mm}}
-/* ---- membrete con logo ---- */
-.membrete{background:var(--tinta);color:#fff;margin:0 0 20px;padding:7mm 9mm;border-radius:7px;
-  display:flex;align-items:center;gap:16px;overflow:hidden}
-.membrete img{width:21mm;height:21mm;object-fit:contain;flex:none;display:block}
-.membrete .marca{flex:1;min-width:0}
-.membrete .marca b{display:block;font-size:11.2pt;letter-spacing:.03em;line-height:1.2}
-.membrete .marca span{font-size:7.3pt;letter-spacing:.1em;text-transform:uppercase;color:#8FB0F0;
-  display:block;margin-top:3px}
-.membrete .datos{text-align:right;font-size:7.9pt;color:#CBD5E1;line-height:1.5;flex:none;max-width:53mm}
-.membrete .datos b{color:#fff;font-size:9.2pt;display:block;margin-bottom:1px}
-.cab .logo{width:20mm;height:20mm;object-fit:contain;flex:none;display:block;margin-top:2px}
-.chip{background:var(--tinta);border-radius:6px;padding:5px;display:inline-block;line-height:0}
-.chip img{width:13mm;height:auto}
-@media print{.membrete{margin:0 0 14px;padding:5mm 8mm}}
-
-.blanco{display:inline-block;min-width:150px;border-bottom:1px solid var(--tinta)}
+.blanco{display:inline-block;min-width:150px;border-bottom:1px solid var(--gris)}
 .blanco.sm{min-width:78px}
-.tit{border-bottom:2.5px solid var(--tinta);padding-bottom:8px;margin-bottom:14px;
-  display:flex;align-items:flex-end;justify-content:space-between;gap:16px}
-.tit h1{font-size:17pt}
-.tit .der{text-align:right;font-size:8.5pt;color:var(--gris);line-height:1.4;white-space:nowrap}
-.tit .der b{display:block;font-size:11pt;color:var(--tinta);letter-spacing:.01em}
-.pg{font-size:9.6pt;line-height:1.45}
+.tit{border-bottom:1px solid var(--linea);padding-bottom:10px;margin-bottom:16px;
+  display:flex;align-items:flex-end;justify-content:space-between;gap:16px;position:relative}
+.tit::after{content:"";position:absolute;left:0;bottom:-1px;width:56px;height:2px;background:var(--azul)}
+.tit h1{font-size:18pt}
+.tit .der{text-align:right;font-size:8.5pt;color:var(--gris2);line-height:1.45;white-space:nowrap}
+.tit .der b{display:block;font-size:11pt;color:#fff;letter-spacing:.01em}
+.pg{font-size:9.6pt;line-height:1.5}
 .pg ol{margin:8px 0 8px 17px}
 .pg li{margin-bottom:5px}
-.pg p{margin-bottom:7px}
-.huella{display:inline-block;width:24mm;height:17mm;border:1px solid var(--gris2);vertical-align:top;margin-left:4px}
-.fpag{display:flex;gap:34px;margin-top:14px}
-.pg.cta{font-size:9.2pt;line-height:1.36}
+.pg p{margin-bottom:8px}
+.pg.cta{font-size:9.2pt;line-height:1.4}
 .pg.cta .fpag{margin-top:10px}
+.huella{display:inline-block;width:24mm;height:17mm;border:1px solid var(--linea2);
+  border-radius:3px;vertical-align:top;margin-left:4px;background:rgba(255,255,255,.03)}
+.fpag{display:flex;gap:34px;margin-top:14px}
 .fpag>div{flex:1}
 .fpag .linea{margin-top:30px}
-.destacar{background:#FEF3C7;padding:1px 3px;border-radius:3px}
-</style></head><body><div class="hoja">
+.chip{background:rgba(255,255,255,.05);border:1px solid var(--linea);border-radius:8px;
+  padding:6px;display:inline-block;line-height:0}
+.chip img{width:13mm;height:auto}
+.destacar{background:rgba(0,217,165,.14);border-radius:3px;padding:2px 4px;color:#fff}
+</style></head><body><table class="pagina"><thead><tr><td><div class="mg"></div></td></tr></thead>
+<tbody><tr><td><div class="hoja">
 
 <div class="nota noprint"><b>Cómo se usa este documento</b>
 Son dos hojas. La <b>primera</b> es el pagaré: se firma con los espacios de cuantía y fecha de
@@ -295,4 +303,5 @@ cada parte.</p>
 </div>
 
 <div class="pie"><span>Carta de instrucciones · Pagaré PG-0104-2026</span><span>Página 2 de 2</span></div>
-</div></body></html>
+</div></td></tr></tbody>
+<tfoot><tr><td><div class="mg"></div></td></tr></tfoot></table></body></html>
