@@ -130,16 +130,28 @@ li{margin-bottom:5px}
   .noprint{display:none}
 }
 
-.cuentas{width:100%;border-collapse:collapse;margin-top:16px;font-size:11pt}
-.cuentas td{padding:9px 0;border:none;border-bottom:1px solid var(--linea)}
-.cuentas td.r{text-align:right;font-variant-numeric:tabular-nums}
-.cuentas tr.gran td{border-bottom:none;border-top:2px solid var(--tinta);
-  font-size:14pt;font-weight:700;padding-top:12px;letter-spacing:-.01em}
-.pago{display:flex;gap:0;margin-top:16px;border-top:1px solid var(--linea);padding-top:14px}
-.pago div{flex:1}
-.pago div+div{border-left:1px solid var(--linea);padding-left:18px}
-.pago .k{font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris2);font-weight:600}
-.pago .v{font-size:13pt;font-weight:700;letter-spacing:-.02em;margin-top:3px}
+/* portada compacta: todo lo comercial y las firmas en la primera hoja */
+.cab{padding:6mm 7mm}
+.cab h1{font-size:18pt;margin:5px 0 0}
+.cab .lead{display:none}
+.partes{margin-top:12px}
+.parte{padding:9px 11px}
+.parte b{font-size:9.8pt}
+.parte span{font-size:7.7pt;line-height:1.4}
+.total{padding:15px 18px 13px;margin-bottom:14px}
+.total .cifra{font-size:27pt;margin:3px 0 2px}
+.total .pie{font-size:8.4pt}
+.cuentas{margin-top:11px;font-size:10pt}
+.cuentas td{padding:6px 0}
+.cuentas tr.gran td{font-size:12.5pt;padding-top:10px}
+.pago{margin-top:11px;padding-top:10px}
+.pago .v{font-size:11.5pt}
+h2{margin:18px 0 2px;font-size:12pt}
+.cond>div{padding:8px 0}
+.cond .v{font-size:9.2pt;line-height:1.45}
+.firmas{margin-top:14px}
+.linea{margin-top:26px}
+.cierre{margin-top:14px;font-size:8pt;color:var(--gris2);line-height:1.5}
 </style></head><body><table class="pagina"><thead><tr><td><div class="mg"></div></td></tr></thead>
 <tbody><tr><td><div class="hoja">
 
@@ -149,8 +161,7 @@ li{margin-bottom:5px}
   <div class="num"><b>COT-0104</b><span>Bucaramanga · 27 de agosto de 2026</span></div>
   <div class="eyebrow">Suministro industrial · Automatización y control</div>
   <h1>Cotización de suministro</h1>
-  <p class="lead">Tablero de control y automatización de planta — suministro completo de
-  67 referencias.</p>
+  <p class="lead">Tablero de control y automatización de planta — 67 referencias.</p>
   <div class="partes">
     <div class="parte"><div class="eyebrow">Dirigida a</div>
       <b>Grupo Agroindustrial GRASS S.A.S.</b>
@@ -177,57 +188,26 @@ li{margin-bottom:5px}
   </div>
 </div>
 
-<div class="nota">Esta cotización reemplaza las anteriores COT-0086, COT-0092, COT-0096 y COT-0098.
-Mismo alcance y mismos precios de la COT-0096; lo único que se agrega es el IVA discriminado,
-que para ustedes es descontable.</div>
-
-<h2>1. Condiciones comerciales</h2>
+<h2>Condiciones comerciales</h2>
 <div class="cond">
-  <div><div class="k">Validez de la oferta</div><div class="v">Hasta el 11 de septiembre de 2026</div></div>
   <div><div class="k">Forma de pago</div><div class="v">60 % de anticipo con la orden de compra · 40 % contra entrega</div></div>
-  <div><div class="k">Entrega</div><div class="v">3 semanas desde la confirmación de la orden de compra, con entregas parciales desde el primer despacho</div></div>
-  <div><div class="k">Flete</div><div class="v">Incluido hasta las instalaciones del cliente en Barrancabermeja</div></div>
-  <div><div class="k">Garantía</div><div class="v">12 meses en equipos electrónicos de control e instrumentación y 6 meses en accesorios neumáticos, desde la entrega, por defectos de fabricación</div></div>
+  <div><div class="k">Lugar de entrega</div><div class="v">Instalaciones del cliente en Barrancabermeja, Santander · flete incluido</div></div>
+  <div><div class="k">Plazo de entrega</div><div class="v">3 semanas desde la orden de compra · entregas parciales desde el primer despacho</div></div>
+  <div><div class="k">Validez de la oferta</div><div class="v">Hasta el 11 de septiembre de 2026 · precios firmes</div></div>
+  <div><div class="k">Garantía</div><div class="v">12 meses en control e instrumentación · 6 meses en accesorios neumáticos</div></div>
   <div><div class="k">Facturación</div><div class="v">Factura electrónica con IVA discriminado del 19 %</div></div>
 </div>
 
-<h2>2. Notas técnicas</h2>
-<div class="cols">
-  <div>
-    <h3>Sistema de control</h3>
-    <p><small>Todo el bloque de control es Delta original, con las referencias exactas especificadas.
-    El conjunto entrega 64 entradas digitales, 44 salidas relé y 4 entradas análogas, con Ethernet
-    Modbus TCP/IP en la CPU.</small></p>
-    <h3>Variador de velocidad</h3>
-    <p><small>Se ofrece WEG CFW500 de 3 HP en lugar de un variador genérico de importación de 2 HP:
-    un tamaño de potencia completo por encima, mayor margen de arranque y red de soporte y repuestos
-    en Colombia.</small></p>
-  </div>
-  <div>
-    <h3>Ventilación del tablero</h3>
-    <p><small>Ventilador y rejilla con filtro de 250 × 250 mm (Plastin PFI-2500) en lugar de
-    210 × 210 mm — mayor área de paso de aire y mejor disipación térmica, al mismo valor unitario.
-    Se confirma el espacio disponible antes del despacho.</small></p>
-    <h3>Transformador de corriente</h3>
-    <p><small>CT de relación 200/5 A clase 0.5 en vez de 100/5 A. No dimensionar el transformador al
-    límite de la carga reduce saturación del núcleo y calentamiento. El amperímetro Autonics se
-    entrega parametrizado para esta relación, sin costo adicional.</small></p>
-  </div>
-</div>
-
-<p style="margin-top:14px"><small>Valores en pesos colombianos. Los precios están sujetos a
-disponibilidad de inventario al momento de confirmar la orden. La orden de compra debe emitirse
-dentro de la vigencia de esta oferta. El detalle ítem por ítem está en el anexo.</small></p>
+<p class="cierre">Reemplaza las cotizaciones COT-0086, COT-0092, COT-0096 y COT-0098 — mismo
+alcance y mismos precios, con el IVA discriminado. Valores en pesos colombianos, sujetos a
+disponibilidad de inventario. Detalle ítem por ítem en el anexo.</p>
 
 <div class="firmas">
   <div><div class="linea"><b>Walter David Peñuela Sanabria</b>
-    C.C. 1.098.761.868 — Electromandos del Oriente</div></div>
+    C.C. 1.098.761.868 — Electromandos del Oriente<br>317 802 1422 · electromandos1@hotmail.com</div></div>
   <div><div class="linea"><b>Aceptación del cliente</b>
-    Grupo Agroindustrial GRASS S.A.S. — nombre, cargo y fecha</div></div>
+    Grupo Agroindustrial GRASS S.A.S. — NIT 901.185.692-3<br>Nombre, cargo y fecha</div></div>
 </div>
-
-<div class="pie"><span>COT-0104 · Grupo Agroindustrial GRASS S.A.S.</span>
-  <span>Walter David Peñuela Sanabria · 317 802 1422</span></div>
 
 <div style="page-break-before:always"></div>
 <h2 style="margin-top:0">Anexo — detalle del suministro</h2>
@@ -324,6 +304,31 @@ dentro de la vigencia de esta oferta. El detalle ítem por ítem está en el ane
     <tr class="tot"><td colspan="3">TOTAL A PAGAR</td><td class="r">$ 38.961.101</td></tr>
   </tbody>
 </table>
+
+<h2>Notas técnicas</h2>
+<div class="cols">
+  <div>
+    <h3>Sistema de control</h3>
+    <p><small>Todo el bloque de control es Delta original, con las referencias exactas especificadas.
+    El conjunto entrega 64 entradas digitales, 44 salidas relé y 4 entradas análogas, con Ethernet
+    Modbus TCP/IP en la CPU.</small></p>
+    <h3>Variador de velocidad</h3>
+    <p><small>Se ofrece WEG CFW500 de 3 HP en lugar de un variador genérico de importación de 2 HP:
+    un tamaño de potencia completo por encima, mayor margen de arranque y red de soporte y repuestos
+    en Colombia.</small></p>
+  </div>
+  <div>
+    <h3>Ventilación del tablero</h3>
+    <p><small>Ventilador y rejilla con filtro de 250 × 250 mm (Plastin PFI-2500) en lugar de
+    210 × 210 mm — mayor área de paso de aire y mejor disipación térmica, al mismo valor unitario.
+    Se confirma el espacio disponible antes del despacho.</small></p>
+    <h3>Transformador de corriente</h3>
+    <p><small>CT de relación 200/5 A clase 0.5 en vez de 100/5 A. No dimensionar el transformador al
+    límite de la carga reduce saturación del núcleo y calentamiento. El amperímetro Autonics se
+    entrega parametrizado para esta relación, sin costo adicional.</small></p>
+  </div>
+</div>
+
 <div class="pie"><span>COT-0104 · Anexo de detalle</span><span>electromandos1@hotmail.com · 317 802 1422</span></div>
 </div></td></tr></tbody>
 <tfoot><tr><td><div class="mg"></div></td></tr></tfoot></table></body></html>
