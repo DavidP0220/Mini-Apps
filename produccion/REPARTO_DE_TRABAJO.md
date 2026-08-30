@@ -10,7 +10,20 @@ pisan.** Este archivo es el contrato entre los dos.
 | Escribe en el repo | **si**, empuja a la rama | lee con `git pull` |
 | Su trabajo | guion, escenas, ritmo, prompts, titulos, miniaturas, estrategia | generar en Artistly, inpaint, descargar, montar en VideoExpress |
 
-**No hay canal directo entre los dos.** El unico puente es este repositorio.
+**No hay canal directo entre los dos.** El unico puente es este repositorio, y
+funciona en los dos sentidos:
+
+```
+   servidor  --- git push --->  GitHub  --- git pull --->  PC
+   servidor  <--- git pull ---  GitHub  <--- git push ---  PC
+```
+
+- **De ida:** el servidor empuja guion, escenas y hojas de prompts.
+- **De vuelta:** el PC escribe un reporte en `produccion/reportes/` al terminar
+  cada tanda y lo sube. El servidor lo lee con `git pull` y corrige.
+
+Con eso David no tiene que copiar y pegar entre las dos ventanas: solo dice
+"sigue" en una y "ya reporto" en la otra.
 
 ---
 
