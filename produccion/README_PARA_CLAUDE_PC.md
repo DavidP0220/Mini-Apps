@@ -42,7 +42,8 @@ sola, se acumula.
 
 ## Hojas disponibles
 
-- `produccion/impostor/LOTE_LISTO.txt` — 20 prompts, apertura de Impostor
+- `produccion/impostor/LOTE_01.txt` — 20 prompts, apertura de Impostor
+- `produccion/impostor/LOTE_02.txt` — 20 prompts, la explicacion facil y su muerte
 
 ## Para generar hojas nuevas
 

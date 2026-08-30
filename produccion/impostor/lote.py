@@ -33,93 +33,10 @@ CIERRE = ("Every surface is filled with flat solid blocks of colour and hard-edg
 
 CERRADOS = ("Close-up", "Medium close-up", "Extreme close-up")
 
-# ---------------- tabla de planos ----------------
-# (id, tamano de plano, escena en ingles positivo, lleva host)
+from escenas import BLOQUES
 
-PLANOS = [
-("SH001","Wide shot",
- "standing alone in the exact centre of a wide empty stage, one hard-edged circle of white light "
- "around his feet, the rest of the frame deep flat black, his arms straight down at his sides",True),
-
-("SH002","Medium shot",
- "seen from behind, shoulders raised toward his cap, facing a dark auditorium filled with long rows "
- "of pale cream head shapes, each head carrying two small flat black oval marks, every row turned "
- "toward him",True),
-
-("SH003","Close-up",
- "gripping the front edge of a plain wooden podium with both hands, his fingers pressed flat and "
- "pale against the dark wood, the rest of the frame in flat shadow",True),
-
-("SH004","Medium close-up",
- "with the grey hood pulled up and forward over the navy cap, the flat cream face resting deep "
- "inside the dark opening of the hood, held very still",True),
-
-("SH005","Wide shot",
- "an empty stage with one hard circle of white light on the floor, and a single grey hoodie lying "
- "flat and abandoned inside that circle, deep flat black all around it",False),
-
-("SH006","Wide shot",
- "an open savannah at dusk under a deep orange and purple flat sky, one small round pool of flat "
- "orange firelight on the ground, eight simplified seated human shapes arranged evenly around the "
- "fire, all of them the same size and the same grey tone",False),
-
-("SH007","Medium shot",
- "one of the seated shapes around that fire now standing upright, taller than every other shape and "
- "lit brighter orange by the flames, alone above the ring",False),
-
-("SH008","Medium shot",
- "the seated shapes around the fire all rotated toward the standing figure, every head aligned on "
- "the same point, the standing figure small and bright at the centre of their attention",False),
-
-("SH009","Close-up",
- "tall dark grass at ground level in the blue night beyond the fire, and low inside that grass two "
- "small flat black oval shapes, each one 100% solid black from edge to edge like a paper cut-out, "
- "the orange firelight glowing far behind them",False),
-
-("SH010","Wide shot",
- "the same fire circle with every figure seated again at the same height, the ring even and closed, "
- "the flat orange light spread equally across all of them",False),
-
-("SH011","Medium shot",
- "standing beside a long conference table in a flat modern office, six simplified seated colleagues "
- "around the table, his right hand lifted halfway toward the ceiling and stopped there",True),
-
-("SH012","Close-up",
- "lowering his raised hand back down onto the pale surface of the conference table, his fingers "
- "spread flat and still",True),
-
-("SH013","Medium close-up",
- "sitting in a dim room in front of an open laptop, the screen throwing one flat block of cold blue "
- "light across his cap and hoodie, one bright blue rectangular button glowing on that screen",True),
-
-("SH014","Close-up",
- "an open laptop screen in a dim room, its surface entirely dark and empty, one uniform black "
- "rectangle, the room around it flat and grey",False),
-
-("SH015","Wide shot",
- "walking down a long grey corridor pressed close against the left wall, his shoulder brushing the "
- "surface, the corridor stretching far away to a small pale rectangle of light",True),
-
-("SH016","Medium shot",
- "stepping sideways around a bright hard-edged pool of light on the corridor floor, both feet "
- "staying inside the grey shadow beside it",True),
-
-("SH017","Wide shot",
- "a crowded city street seen from above, filled with dozens of identical simplified grey human "
- "shapes all walking the same direction, evenly spaced and interchangeable",False),
-
-("SH018","Medium shot",
- "the same grey crowd with one single figure in bright red standing still among them, and every "
- "surrounding grey head turned toward that red figure",False),
-
-("SH019","Close-up",
- "framed so that his face fills the frame, flat and unreadable, one hard-edged diagonal shadow "
- "cutting across it so that one half is bright cream and the other half is deep grey",True),
-
-("SH020","Wide shot",
- "alone again on the wide empty stage inside the hard circle of white light, taking one single step "
- "forward so that the toe of one sneaker crosses the bright edge of the circle into the black",True),
-]
+N_BLOQUE = int(sys.argv[1]) if len(sys.argv) > 1 else 1
+PLANOS = BLOQUES[N_BLOQUE]
 
 # ---------------- construccion ----------------
 
@@ -155,8 +72,18 @@ def auditar(p):
             mal.append(w.strip("\\b"))
     return mal
 
+# --- ritmo: nunca dos planos seguidos del mismo tamano, ni en la costura ---
+def ritmo(planos, n_bloque):
+    fallos = []
+    previo = BLOQUES.get(n_bloque - 1)
+    serie = ([previo[-1]] if previo else []) + list(planos)
+    for a, b in zip(serie, serie[1:]):
+        if a[1] == b[1]:
+            fallos.append(f"{a[0]} y {b[0]} son ambos {a[1]}")
+    return fallos
+
 lineas = []
-lineas.append("HOJA DE LOTE — 20 imagenes · Impostor / DONT BE SEEN")
+lineas.append(f"HOJA DE LOTE {N_BLOQUE:02d} — {len(PLANOS)} imagenes · Impostor / DONT BE SEEN")
 lineas.append("=" * 72)
 lineas.append("")
 lineas.append("ANTES DE CADA UNA (5 clics, sin saltarse ninguno):")
@@ -169,6 +96,10 @@ lineas.append("")
 lineas.append("=" * 72)
 
 fallos = 0
+for f in ritmo(PLANOS, N_BLOQUE):
+    fallos += 1
+    print("  !! ritmo:", f, file=sys.stderr)
+
 for i, (sid, tam, esc, host) in enumerate(PLANOS, 1):
     p = construir(tam, esc, host)
     if not gramatica(esc, host):
@@ -185,8 +116,8 @@ for i, (sid, tam, esc, host) in enumerate(PLANOS, 1):
     lineas.append(p)
     lineas.append("")
 
-open("LOTE_LISTO.txt", "w", encoding="utf-8").write("\n".join(lineas))
+open(f"LOTE_{N_BLOQUE:02d}.txt", "w", encoding="utf-8").write("\n".join(lineas))
 
-print(f"{len(PLANOS)} prompts escritos en LOTE_LISTO.txt")
+print(f"{len(PLANOS)} prompts escritos en LOTE_{N_BLOQUE:02d}.txt")
 print(f"con host: {sum(1 for x in PLANOS if x[3])}   sin host: {sum(1 for x in PLANOS if not x[3])}")
-print("auditoria de negaciones:", "LIMPIA" if fallos == 0 else f"{fallos} FALLOS")
+print("auditoria (negaciones + redaccion + ritmo):", "LIMPIA" if fallos == 0 else f"{fallos} FALLOS")
