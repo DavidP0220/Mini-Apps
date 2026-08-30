@@ -58,9 +58,7 @@ exist. It is not the absence of proof. It is triggered *by* the proof.
 
 There is a second problem with it, and it is bigger. If this were simply low
 self-esteem, then praise would help. More evidence would help. A record of
-results would settle it. None of those things work. Ask anyone who carries
-this feeling what happened the last time someone told them they were
-excellent. It does not. Ask anyone who has this: a compliment does not land as
+results would settle it. None of those things work. Ask anyone who has this: a compliment does not land as
 relief. It lands as pressure. The bar just moved. Now there is more to
 protect, and more distance to fall.
 
@@ -127,7 +125,9 @@ specific target. The person who rose above the others.
 He called it a reverse dominance hierarchy, and the name is exact. It is not a
 metaphor, and it is not rare or regional. The group, acting together and
 without ever once deciding to, kept any single individual among them from
-ever becoming too large, or too visible, or too admired.
+ever becoming too large, or too visible, or too admired, or too separate
+from the rest of them. It happened in every band that has ever been studied
+this way, on every inhabited continent.
 
 **Comment one if you have felt this before you ever owned a phone. Comment
 zero if you think it started with the internet.** I want to see the split.
