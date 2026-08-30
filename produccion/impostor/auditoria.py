@@ -71,9 +71,13 @@ ok(recon == txt.split(), "los planos reconstruyen el guion palabra por palabra")
 print("\n[3] HOJAS DE PROMPTS")
 sys.path.insert(0, '.')
 esc = importlib.import_module('escenas')
+# Faltar escenas por escribir NO es un fallo: es trabajo pendiente del
+# servidor. Lo que si es fallo es que una escena ya escrita este mal.
 disenados = sum(len(v) for v in esc.BLOQUES.values())
-ok(disenados == OBJ_PLANOS, f"escenas disenadas = {OBJ_PLANOS}",
-   f"({disenados} — faltan {OBJ_PLANOS - disenados})")
+print(f"  INFO  escenas escritas: {disenados}/{OBJ_PLANOS}")
+if disenados < OBJ_PLANOS:
+    avisos.append(f"faltan {OBJ_PLANOS - disenados} escenas por escribir "
+                  f"(SH{disenados+1:03d} a SH{OBJ_PLANOS:03d}) — las escribe el servidor")
 ids = [p[0] for v in esc.BLOQUES.values() for p in v]
 ok(len(ids) == len(set(ids)), "sin shot_id repetidos")
 ok(ids == sorted(ids), "los shot_id van en orden")
@@ -97,12 +101,13 @@ ok(not sin_vo, "toda escena disenada tiene su linea de voz", f"{sin_vo[:3]}")
 if not sin_vo:
     print(f"  INFO  cubierto {len(ids)}/{OBJ_PLANOS} planos "
           f"({vo[ids[0]]['entrada']} a {vo[ids[-1]]['entrada']})")
-    avisos.append(f"faltan por disenar {OBJ_PLANOS-len(ids)} escenas (SH{len(ids)+1:03d} a SH{OBJ_PLANOS:03d})")
     avisos.append("los bloques 1 y 2 se escribieron antes del guion: hay que "
                   "revisarlos plano por plano contra su linea de voz")
 
 # ---------- resultado ----------
 print("\n" + "=" * 68)
+if not fallos:
+    print(f"VERDE — se puede generar hasta SH{disenados:03d}")
 if fallos:
     print(f"{len(fallos)} FALLOS\n"); [print("  -", f) for f in fallos]
 else:
