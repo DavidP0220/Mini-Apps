@@ -124,9 +124,10 @@ gatherer societies on every inhabited continent, he found the same machinery:
 ridicule, gossip, shaming, and finally ostracism — all of it aimed at one
 specific target. The person who rose above the others.
 
-He called it a reverse dominance hierarchy. It is not a metaphor and it is not
-rare: the group, acting together and without ever deciding to, kept any single
-individual from becoming too large.
+He called it a reverse dominance hierarchy, and the name is exact. It is not a
+metaphor, and it is not rare or regional. The group, acting together and
+without ever once deciding to, kept any single individual among them from
+ever becoming too large, or too visible, or too admired.
 
 **Comment one if you have felt this before you ever owned a phone. Comment
 zero if you think it started with the internet.** I want to see the split.

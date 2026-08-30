@@ -2,1583 +2,1801 @@
  {
   "shot": "SH001",
   "entrada": "0:00.0",
-  "seg": 6.1,
-  "palabras": 16,
-  "vo": "Right before you speak in public, your body does something you never asked it to do."
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "zoom in lento",
+  "vo": "Right before you speak in public,"
  },
  {
   "shot": "SH002",
-  "entrada": "0:06.1",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "Your chest tightens. Your hands go cold."
+  "entrada": "0:02.3",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom out lento",
+  "vo": "your body does something you never asked it to do."
  },
  {
   "shot": "SH003",
-  "entrada": "0:08.7",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "Something starts scanning the room — not for danger,"
+  "entrada": "0:06.1",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "zoom in fuerte",
+  "vo": "Your chest tightens. Your hands go cold."
  },
  {
   "shot": "SH004",
-  "entrada": "0:12.2",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "for faces. You have felt it in a meeting."
+  "entrada": "0:08.8",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "paneo a la izquierda",
+  "vo": "Something starts scanning the room —"
  },
  {
   "shot": "SH005",
-  "entrada": "0:15.6",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "It shows up in children before they can explain it,"
+  "entrada": "0:11.1",
+  "seg": 1.9,
+  "palabras": 5,
+  "mov": "paneo a la derecha",
+  "vo": "not for danger, for faces."
  },
  {
   "shot": "SH006",
-  "entrada": "0:19.4",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "and in people who have never failed at anything."
+  "entrada": "0:13.0",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "tilt hacia arriba",
+  "vo": "You have felt it in a meeting."
  },
  {
   "shot": "SH007",
-  "entrada": "0:22.8",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "Impostor syndrome. That is the name we gave it."
+  "entrada": "0:15.7",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "tilt hacia abajo",
+  "vo": "It shows up in children before they can explain it,"
  },
  {
   "shot": "SH008",
-  "entrada": "0:26.2",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "Evolution deleted our tails and thinned our fur."
+  "entrada": "0:19.5",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "zoom in lento",
+  "vo": "and in people who have never failed at anything."
  },
  {
   "shot": "SH009",
-  "entrada": "0:29.2",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "It left this one intact, firing on schedule."
+  "entrada": "0:22.9",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "paneo a la izquierda",
+  "vo": "Impostor syndrome. That is the name we gave it."
  },
  {
   "shot": "SH010",
-  "entrada": "0:32.3",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "Why didn't evolution remove your fear of being seen —"
+  "entrada": "0:26.3",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "zoom out lento",
+  "vo": "Evolution deleted our tails and thinned our fur. It left this one intact,"
  },
  {
   "shot": "SH011",
-  "entrada": "0:36.1",
-  "seg": 5.7,
-  "palabras": 15,
-  "vo": "and nobody has ever explained why. And the answer starts somewhere you would not expect:"
+  "entrada": "0:31.2",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "paneo a la derecha",
+  "vo": "firing on schedule. Why didn't evolution remove your fear of being seen —"
  },
  {
   "shot": "SH012",
-  "entrada": "0:41.8",
-  "seg": 5.3,
-  "palabras": 14,
-  "vo": "not with you, but with what your group did to anyone who stood out."
+  "entrada": "0:36.1",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "zoom in fuerte",
+  "vo": "and nobody has ever explained why."
  },
  {
   "shot": "SH013",
-  "entrada": "0:47.1",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "The first answer everyone gives is confidence."
+  "entrada": "0:38.4",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "tilt hacia arriba",
+  "vo": "And the answer starts somewhere you would not expect: not with you,"
  },
  {
   "shot": "SH014",
-  "entrada": "0:49.7",
-  "seg": 4.6,
-  "palabras": 12,
-  "vo": "You feel like a fraud because you do not believe in yourself."
+  "entrada": "0:43.0",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "tilt hacia abajo",
+  "vo": "but with what your group did to anyone who stood out."
  },
  {
   "shot": "SH015",
-  "entrada": "0:54.3",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "Fix the belief, fix the feeling. It sounds right."
+  "entrada": "0:47.2",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "zoom in lento",
+  "vo": "The first answer everyone gives is confidence."
  },
  {
   "shot": "SH016",
-  "entrada": "0:57.7",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "It is also the opposite of what the data shows."
+  "entrada": "0:49.9",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "zoom out lento",
+  "vo": "You feel like a fraud because you do not believe in yourself."
  },
  {
   "shot": "SH017",
-  "entrada": "1:01.5",
+  "entrada": "0:54.5",
   "seg": 3.4,
   "palabras": 9,
-  "vo": "In 1978, two psychologists, Pauline Clance and Suzanne Imes,"
+  "mov": "zoom in fuerte",
+  "vo": "Fix the belief, fix the feeling. It sounds right."
  },
  {
   "shot": "SH018",
-  "entrada": "1:04.9",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "described this pattern for the first time."
+  "entrada": "0:57.9",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "paneo a la izquierda",
+  "vo": "It is also the opposite of what the data shows."
  },
  {
   "shot": "SH019",
-  "entrada": "1:07.6",
-  "seg": 4.2,
-  "palabras": 11,
-  "vo": "They were not studying failures. They were studying high-achieving women —"
+  "entrada": "1:01.7",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "paneo a la derecha",
+  "vo": "In 1978, two psychologists, Pauline Clance and Suzanne Imes,"
  },
  {
   "shot": "SH020",
-  "entrada": "1:11.8",
-  "seg": 5.3,
-  "palabras": 14,
-  "vo": "doctors, professors, women with degrees on the wall and records that spoke for themselves."
+  "entrada": "1:05.1",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "tilt hacia arriba",
+  "vo": "described this pattern for the first time. They were not studying failures."
  },
  {
   "shot": "SH021",
-  "entrada": "1:17.1",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "The more the evidence proved them capable,"
+  "entrada": "1:09.7",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "tilt hacia abajo",
+  "vo": "They were studying high-achieving women — doctors, professors,"
  },
  {
   "shot": "SH022",
-  "entrada": "1:19.7",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "the more convinced they were that they had fooled everyone."
+  "entrada": "1:12.7",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "zoom in lento",
+  "vo": "women with degrees on the wall and records that spoke for themselves."
  },
  {
   "shot": "SH023",
-  "entrada": "1:23.5",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "That is the detail that kills the confidence theory."
+  "entrada": "1:17.3",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "zoom out lento",
+  "vo": "The more the evidence proved them capable,"
  },
  {
   "shot": "SH024",
-  "entrada": "1:27.0",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "Low self-esteem should weaken as evidence accumulates."
+  "entrada": "1:20.0",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in fuerte",
+  "vo": "the more convinced they were that they had fooled everyone."
  },
  {
   "shot": "SH025",
-  "entrada": "1:29.6",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "This does the opposite. It gets louder as you succeed."
+  "entrada": "1:23.8",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "paneo a la izquierda",
+  "vo": "That is the detail that kills the confidence theory."
  },
  {
   "shot": "SH026",
-  "entrada": "1:33.4",
-  "seg": 6.1,
-  "palabras": 16,
-  "vo": "A person who has never accomplished anything does not lie awake worrying they will be exposed."
+  "entrada": "1:27.2",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "paneo a la derecha",
+  "vo": "Low self-esteem should weaken as evidence accumulates. This does the opposite."
  },
  {
   "shot": "SH027",
-  "entrada": "1:39.5",
-  "seg": 4.2,
-  "palabras": 11,
-  "vo": "There is nothing to expose. The fear needs achievement to exist."
+  "entrada": "1:31.4",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "tilt hacia arriba",
+  "vo": "It gets louder as you succeed."
  },
  {
   "shot": "SH028",
-  "entrada": "1:43.7",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "It is not the absence of proof."
+  "entrada": "1:33.7",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "tilt hacia abajo",
+  "vo": "A person who has never accomplished anything does"
  },
  {
   "shot": "SH029",
-  "entrada": "1:46.3",
-  "seg": 4.9,
-  "palabras": 13,
-  "vo": "It is triggered by the proof. There is a second problem with it,"
+  "entrada": "1:36.7",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in lento",
+  "vo": "not lie awake worrying they will be exposed."
  },
  {
   "shot": "SH030",
-  "entrada": "1:51.3",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "and it is bigger. If this were simply low self-esteem,"
+  "entrada": "1:39.7",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom out lento",
+  "vo": "There is nothing to expose. The fear needs achievement to exist."
  },
  {
   "shot": "SH031",
-  "entrada": "1:55.1",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "then praise would help. More evidence would help."
+  "entrada": "1:43.9",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "zoom in fuerte",
+  "vo": "It is not the absence of proof. It is triggered by the proof."
  },
  {
   "shot": "SH032",
-  "entrada": "1:58.1",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "A record of results would settle it."
+  "entrada": "1:48.8",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "paneo a la izquierda",
+  "vo": "There is a second problem with it, and it is bigger."
  },
  {
   "shot": "SH033",
-  "entrada": "2:00.8",
-  "seg": 1.9,
-  "palabras": 5,
-  "vo": "None of those things work."
+  "entrada": "1:53.0",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "paneo a la derecha",
+  "vo": "If this were simply low self-esteem, then praise would help."
  },
  {
   "shot": "SH034",
-  "entrada": "2:02.7",
-  "seg": 5.3,
-  "palabras": 14,
-  "vo": "Ask anyone who carries this feeling what happened the last time someone told them"
+  "entrada": "1:56.8",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "tilt hacia arriba",
+  "vo": "More evidence would help. A record of results would settle it."
  },
  {
   "shot": "SH035",
-  "entrada": "2:08.0",
-  "seg": 4.2,
-  "palabras": 11,
-  "vo": "they were excellent. It does not. Ask anyone who has this:"
+  "entrada": "2:01.0",
+  "seg": 1.9,
+  "palabras": 5,
+  "mov": "tilt hacia abajo",
+  "vo": "None of those things work."
  },
  {
   "shot": "SH036",
-  "entrada": "2:12.2",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "a compliment does not land as relief."
+  "entrada": "2:02.9",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in lento",
+  "vo": "Ask anyone who carries this feeling what happened"
  },
  {
   "shot": "SH037",
-  "entrada": "2:14.8",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "It lands as pressure. The bar just moved."
+  "entrada": "2:05.9",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "zoom out lento",
+  "vo": "the last time someone told them they were excellent."
  },
  {
   "shot": "SH038",
-  "entrada": "2:17.8",
-  "seg": 4.2,
-  "palabras": 11,
-  "vo": "Now there is more to protect, and more distance to fall."
+  "entrada": "2:09.3",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "It does not. Ask anyone who has this: a compliment does not land as relief."
  },
  {
   "shot": "SH039",
-  "entrada": "2:22.0",
-  "seg": 4.9,
-  "palabras": 13,
-  "vo": "Watch what actually happens inside your head when someone says you did well."
+  "entrada": "2:15.0",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "zoom in fuerte",
+  "vo": "It lands as pressure. The bar just moved. Now there is more to protect,"
  },
  {
   "shot": "SH040",
-  "entrada": "2:27.0",
-  "seg": 5.7,
-  "palabras": 15,
-  "vo": "You do not think good. You think about the specific thing they did not see."
+  "entrada": "2:20.3",
+  "seg": 1.9,
+  "palabras": 5,
+  "mov": "paneo a la izquierda",
+  "vo": "and more distance to fall."
  },
  {
   "shot": "SH041",
-  "entrada": "2:32.7",
+  "entrada": "2:22.2",
   "seg": 4.2,
   "palabras": 11,
-  "vo": "The part that was luck. The part that was someone else."
+  "mov": "paneo a la derecha",
+  "vo": "Watch what actually happens inside your head when someone says you"
  },
  {
   "shot": "SH042",
-  "entrada": "2:36.8",
+  "entrada": "2:26.4",
   "seg": 2.7,
   "palabras": 7,
-  "vo": "You are not evaluating the compliment —"
+  "mov": "tilt hacia arriba",
+  "vo": "did well. You do not think good."
  },
  {
   "shot": "SH043",
-  "entrada": "2:39.5",
-  "seg": 5.7,
-  "palabras": 15,
-  "vo": "you are auditing it for the gap between what they believe and what you know."
+  "entrada": "2:29.1",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "tilt hacia abajo",
+  "vo": "You think about the specific thing they did not see."
  },
  {
   "shot": "SH044",
-  "entrada": "2:45.2",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "That is not a person who thinks poorly of themselves."
+  "entrada": "2:32.9",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom in lento",
+  "vo": "The part that was luck. The part that was someone else."
  },
  {
   "shot": "SH045",
-  "entrada": "2:49.0",
-  "seg": 6.8,
-  "palabras": 18,
-  "vo": "That is a person running surveillance on the difference between how they are seen and what they are."
+  "entrada": "2:37.1",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "zoom out lento",
+  "vo": "You are not evaluating the compliment —"
  },
  {
   "shot": "SH046",
-  "entrada": "2:55.8",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "So the confidence answer is dead. Something else is happening."
+  "entrada": "2:39.8",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "you are auditing it for the gap between what they believe and what you know."
  },
  {
   "shot": "SH047",
-  "entrada": "2:59.6",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "The second answer is modern life. Social media."
+  "entrada": "2:45.5",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in fuerte",
+  "vo": "That is not a person who thinks poorly of themselves."
  },
  {
   "shot": "SH048",
-  "entrada": "3:02.7",
-  "seg": 4.6,
-  "palabras": 12,
-  "vo": "Comparison. Everyone performing their best day while you live your average one."
+  "entrada": "2:49.3",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "paneo a la izquierda",
+  "vo": "That is a person running surveillance on the difference"
  },
  {
   "shot": "SH049",
-  "entrada": "3:07.2",
-  "seg": 4.2,
-  "palabras": 11,
-  "vo": "That one at least has teeth. Comparison does make it worse."
+  "entrada": "2:52.7",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "tilt hacia arriba",
+  "vo": "between how they are seen and what they are."
  },
  {
   "shot": "SH050",
-  "entrada": "3:11.4",
+  "entrada": "2:56.1",
   "seg": 3.8,
   "palabras": 10,
-  "vo": "But it cannot be the cause, for a simple reason:"
+  "mov": "paneo a la derecha",
+  "vo": "So the confidence answer is dead. Something else is happening."
  },
  {
   "shot": "SH051",
-  "entrada": "3:15.2",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "the fear predates every one of those things."
+  "entrada": "2:59.9",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "tilt hacia abajo",
+  "vo": "The second answer is modern life. Social media. Comparison."
  },
  {
   "shot": "SH052",
-  "entrada": "3:18.2",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "Anthropologists documented it in societies with no screens,"
+  "entrada": "3:03.3",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom in lento",
+  "vo": "Everyone performing their best day while you live your average one."
  },
  {
   "shot": "SH053",
-  "entrada": "3:21.3",
-  "seg": 4.6,
-  "palabras": 12,
-  "vo": "no feeds, no audience beyond the people they had known since birth."
+  "entrada": "3:07.5",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "paneo a la izquierda",
+  "vo": "That one at least has teeth. Comparison does make it worse."
  },
  {
   "shot": "SH054",
-  "entrada": "3:25.8",
-  "seg": 4.9,
-  "palabras": 13,
-  "vo": "Children in small communities show the same freeze when attention lands on them."
+  "entrada": "3:11.7",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom out lento",
+  "vo": "But it cannot be the cause, for a simple reason:"
  },
  {
   "shot": "SH055",
-  "entrada": "3:30.8",
-  "seg": 4.9,
-  "palabras": 13,
-  "vo": "The same lowering of the head. The same instinct to make themselves smaller."
+  "entrada": "3:15.5",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in fuerte",
+  "vo": "the fear predates every one of those things."
  },
  {
   "shot": "SH056",
-  "entrada": "3:35.7",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "And the timing is wrong in the other direction too."
+  "entrada": "3:18.5",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la derecha",
+  "vo": "Anthropologists documented it in societies with no screens,"
  },
  {
   "shot": "SH057",
-  "entrada": "3:39.5",
-  "seg": 4.2,
-  "palabras": 11,
-  "vo": "If feeds caused it, the fear should scale with screen time."
+  "entrada": "3:21.5",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "tilt hacia arriba",
+  "vo": "no feeds, no audience beyond the people they had known since birth."
  },
  {
   "shot": "SH058",
-  "entrada": "3:43.7",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "It does not. It scales with stakes."
+  "entrada": "3:26.1",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "tilt hacia abajo",
+  "vo": "Children in small communities show the same freeze when attention lands on them."
  },
  {
   "shot": "SH059",
-  "entrada": "3:46.3",
+  "entrada": "3:31.0",
   "seg": 4.9,
   "palabras": 13,
-  "vo": "A person who barely uses the internet still freezes before a wedding toast."
+  "mov": "zoom in lento",
+  "vo": "The same lowering of the head. The same instinct to make themselves smaller."
  },
  {
   "shot": "SH060",
-  "entrada": "3:51.3",
-  "seg": 4.9,
-  "palabras": 13,
-  "vo": "The trigger is not how many strangers you compared yourself to this morning."
+  "entrada": "3:35.9",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom out lento",
+  "vo": "And the timing is wrong in the other direction too."
  },
  {
   "shot": "SH061",
-  "entrada": "3:56.2",
-  "seg": 5.3,
-  "palabras": 14,
-  "vo": "The trigger is how many people are about to look at you at once."
+  "entrada": "3:39.7",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom in fuerte",
+  "vo": "If feeds caused it, the fear should scale with screen time."
  },
  {
   "shot": "SH062",
-  "entrada": "4:01.5",
-  "seg": 6.1,
-  "palabras": 16,
-  "vo": "Comparison is an amplifier. You do not build an amplifier and get sound out of nothing."
+  "entrada": "3:43.9",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "paneo a la izquierda",
+  "vo": "It does not. It scales with stakes."
  },
  {
   "shot": "SH063",
-  "entrada": "4:07.6",
-  "seg": 4.6,
-  "palabras": 12,
-  "vo": "Something has to be playing already. Here is what was actually playing."
+  "entrada": "3:46.6",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "paneo a la derecha",
+  "vo": "A person who barely uses the internet still freezes before a wedding toast."
  },
  {
   "shot": "SH064",
-  "entrada": "4:12.2",
-  "seg": 4.2,
-  "palabras": 11,
-  "vo": "For most of human history you did not live among strangers."
+  "entrada": "3:51.5",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "tilt hacia arriba",
+  "vo": "The trigger is not how many strangers you compared yourself to this morning."
  },
  {
   "shot": "SH065",
-  "entrada": "4:16.3",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "You lived in a band of twenty to fifty people,"
+  "entrada": "3:56.4",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "tilt hacia abajo",
+  "vo": "The trigger is how many people are about to look at you at once."
  },
  {
   "shot": "SH066",
-  "entrada": "4:20.1",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "and you would live with them until you died."
+  "entrada": "4:01.7",
+  "seg": 6.1,
+  "palabras": 16,
+  "mov": "plano fijo",
+  "vo": "Comparison is an amplifier. You do not build an amplifier and get sound out of nothing."
  },
  {
   "shot": "SH067",
-  "entrada": "4:23.5",
-  "seg": 4.2,
-  "palabras": 11,
-  "vo": "There was no other group. Leaving was not an option —"
+  "entrada": "4:07.8",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "zoom in lento",
+  "vo": "Something has to be playing already. Here is what was actually playing."
  },
  {
   "shot": "SH068",
-  "entrada": "4:27.7",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "it was a death sentence with extra steps."
+  "entrada": "4:12.4",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom out lento",
+  "vo": "For most of human history you did not live among strangers."
  },
  {
   "shot": "SH069",
-  "entrada": "4:30.8",
-  "seg": 4.9,
-  "palabras": 13,
-  "vo": "In that world, your survival was not decided by how good you were."
+  "entrada": "4:16.6",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in fuerte",
+  "vo": "You lived in a band of twenty to fifty people,"
  },
  {
   "shot": "SH070",
-  "entrada": "4:35.7",
+  "entrada": "4:20.4",
   "seg": 3.4,
   "palabras": 9,
-  "vo": "It was decided by whether the group kept you."
+  "mov": "paneo a la izquierda",
+  "vo": "and you would live with them until you died."
  },
  {
   "shot": "SH071",
-  "entrada": "4:39.1",
+  "entrada": "4:23.8",
   "seg": 4.2,
   "palabras": 11,
-  "vo": "And here is what most people never learn about those groups."
+  "mov": "paneo a la derecha",
+  "vo": "There was no other group. Leaving was not an option —"
  },
  {
   "shot": "SH072",
-  "entrada": "4:43.3",
-  "seg": 4.6,
-  "palabras": 12,
-  "vo": "They were not gentle. They were not egalitarian because they were kind."
+  "entrada": "4:28.0",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "tilt hacia arriba",
+  "vo": "it was a death sentence with extra steps. In that world,"
  },
  {
   "shot": "SH073",
-  "entrada": "4:47.8",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "They were egalitarian because they enforced it."
+  "entrada": "4:32.2",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "tilt hacia abajo",
+  "vo": "your survival was not decided by how good you were."
  },
  {
   "shot": "SH074",
-  "entrada": "4:50.5",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "The anthropologist Christopher Boehm spent decades on this."
+  "entrada": "4:36.0",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "zoom in lento",
+  "vo": "It was decided by whether the group kept you."
  },
  {
   "shot": "SH075",
-  "entrada": "4:53.5",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "Across hunter- gatherer societies on every inhabited continent,"
+  "entrada": "4:39.4",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom out lento",
+  "vo": "And here is what most people never learn about those groups."
  },
  {
   "shot": "SH076",
-  "entrada": "4:56.6",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "he found the same machinery: ridicule, gossip,"
+  "entrada": "4:43.6",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "zoom in fuerte",
+  "vo": "They were not gentle. They were not egalitarian because they were kind."
  },
  {
   "shot": "SH077",
-  "entrada": "4:59.2",
-  "seg": 4.9,
-  "palabras": 13,
-  "vo": "shaming, and finally ostracism — all of it aimed at one specific target."
+  "entrada": "4:48.2",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "They were egalitarian because they enforced it. The anthropologist Christopher Boehm spent decades on this."
  },
  {
   "shot": "SH078",
-  "entrada": "5:04.2",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "The person who rose above the others."
+  "entrada": "4:53.9",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "paneo a la izquierda",
+  "vo": "Across hunter- gatherer societies on every inhabited continent, he found the same machinery:"
  },
  {
   "shot": "SH079",
-  "entrada": "5:06.8",
+  "entrada": "4:58.8",
   "seg": 2.7,
   "palabras": 7,
-  "vo": "He called it a reverse dominance hierarchy."
+  "mov": "paneo a la derecha",
+  "vo": "ridicule, gossip, shaming, and finally ostracism —"
  },
  {
   "shot": "SH080",
-  "entrada": "5:09.5",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "It is not a metaphor and it is not rare:"
+  "entrada": "5:01.5",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "all of it aimed at one specific target. The person who rose above the others."
  },
  {
   "shot": "SH081",
-  "entrada": "5:13.3",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "the group, acting together and without ever deciding to,"
+  "entrada": "5:07.2",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "tilt hacia arriba",
+  "vo": "He called it a reverse dominance hierarchy, and the name is exact."
  },
  {
   "shot": "SH082",
-  "entrada": "5:16.7",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "kept any single individual from becoming too large."
+  "entrada": "5:11.8",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "zoom in lento",
+  "vo": "It is not a metaphor, and it is not rare or regional."
  },
  {
   "shot": "SH083",
-  "entrada": "5:19.7",
-  "seg": 4.9,
-  "palabras": 13,
-  "vo": "Comment one if you have felt this before you ever owned a phone."
+  "entrada": "5:16.4",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "tilt hacia abajo",
+  "vo": "The group, acting together and without ever once deciding to,"
  },
  {
   "shot": "SH084",
-  "entrada": "5:24.7",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "Comment zero if you think it started with the internet."
+  "entrada": "5:20.2",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom out lento",
+  "vo": "kept any single individual among them from ever becoming too large,"
  },
  {
   "shot": "SH085",
-  "entrada": "5:28.5",
+  "entrada": "5:24.4",
   "seg": 2.3,
   "palabras": 6,
-  "vo": "I want to see the split."
+  "mov": "zoom in fuerte",
+  "vo": "or too visible, or too admired."
  },
  {
   "shot": "SH086",
-  "entrada": "5:30.8",
-  "seg": 4.9,
-  "palabras": 13,
-  "vo": "A hunter who bragged about his kill had his kill mocked as scrawny."
+  "entrada": "5:26.7",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "paneo a la izquierda",
+  "vo": "Comment one if you have felt this before you ever owned a"
  },
  {
   "shot": "SH087",
-  "entrada": "5:35.7",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "The better the animal, the harder the mockery —"
+  "entrada": "5:31.3",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "paneo a la derecha",
+  "vo": "phone. Comment zero if you think it started with the internet."
  },
  {
   "shot": "SH088",
-  "entrada": "5:39.1",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "and the hunter was expected to agree,"
+  "entrada": "5:35.5",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "tilt hacia arriba",
+  "vo": "I want to see the split."
  },
  {
   "shot": "SH089",
-  "entrada": "5:41.8",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "to call his own kill thin and useless,"
+  "entrada": "5:37.8",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "tilt hacia abajo",
+  "vo": "A hunter who bragged about his kill had his kill mocked as scrawny."
  },
  {
   "shot": "SH090",
-  "entrada": "5:44.8",
+  "entrada": "5:42.7",
   "seg": 3.4,
   "palabras": 9,
-  "vo": "and to hand it to someone else to divide."
+  "mov": "zoom in lento",
+  "vo": "The better the animal, the harder the mockery —"
  },
  {
   "shot": "SH091",
-  "entrada": "5:48.2",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "A man who gave orders found nobody following them."
+  "entrada": "5:46.1",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "zoom out lento",
+  "vo": "and the hunter was expected to agree,"
  },
  {
   "shot": "SH092",
-  "entrada": "5:51.6",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "Not refusal. Just a group that quietly stopped hearing him."
+  "entrada": "5:48.8",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in fuerte",
+  "vo": "to call his own kill thin and useless,"
  },
  {
   "shot": "SH093",
-  "entrada": "5:55.4",
-  "seg": 4.9,
-  "palabras": 13,
-  "vo": "And when that did not work, the pressure escalated in a fixed order."
+  "entrada": "5:51.8",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "paneo a la izquierda",
+  "vo": "and to hand it to someone else to divide."
  },
  {
   "shot": "SH094",
-  "entrada": "6:00.4",
-  "seg": 6.5,
-  "palabras": 17,
-  "vo": "First laughter. Then gossip, which spread the judgement to people who had not even seen the event."
+  "entrada": "5:55.2",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "paneo a la derecha",
+  "vo": "A man who gave orders found nobody following them. Not refusal."
  },
  {
   "shot": "SH095",
-  "entrada": "6:06.8",
-  "seg": 4.2,
-  "palabras": 11,
-  "vo": "Then open shaming. Then the group simply stopped including him —"
+  "entrada": "5:59.4",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "tilt hacia arriba",
+  "vo": "Just a group that quietly stopped hearing him. And when that did not work,"
  },
  {
   "shot": "SH096",
-  "entrada": "6:11.0",
-  "seg": 2.3,
-  "palabras": 6,
-  "vo": "not a vote, not an announcement,"
+  "entrada": "6:04.7",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "tilt hacia abajo",
+  "vo": "the pressure escalated in a fixed order. First laughter. Then gossip,"
  },
  {
   "shot": "SH097",
-  "entrada": "6:13.3",
+  "entrada": "6:08.9",
   "seg": 4.9,
   "palabras": 13,
-  "vo": "just meals he was not called to and moves he was not told"
+  "mov": "zoom in lento",
+  "vo": "which spread the judgement to people who had not even seen the event."
  },
  {
   "shot": "SH098",
-  "entrada": "6:18.2",
+  "entrada": "6:13.8",
   "seg": 4.2,
   "palabras": 11,
-  "vo": "about. Run the arithmetic on that. In a band of thirty,"
+  "mov": "zoom out lento",
+  "vo": "Then open shaming. Then the group simply stopped including him —"
  },
  {
   "shot": "SH099",
-  "entrada": "6:22.4",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "you are not being judged by thirty strangers."
+  "entrada": "6:18.0",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "zoom in fuerte",
+  "vo": "not a vote, not an announcement,"
  },
  {
   "shot": "SH100",
-  "entrada": "6:25.4",
+  "entrada": "6:20.3",
   "seg": 5.3,
   "palabras": 14,
-  "vo": "You are being judged by thirty people who control every calorie you will eat,"
+  "mov": "paneo a la izquierda",
+  "vo": "just meals he was not called to and moves he was not told about."
  },
  {
   "shot": "SH101",
-  "entrada": "6:30.8",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "every night you will sleep in safety,"
+  "entrada": "6:25.6",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "paneo a la derecha",
+  "vo": "Run the arithmetic on that. In a band of thirty,"
  },
  {
   "shot": "SH102",
-  "entrada": "6:33.4",
-  "seg": 4.2,
-  "palabras": 11,
-  "vo": "and the only possibility you will ever have of a family."
+  "entrada": "6:29.4",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "tilt hacia arriba",
+  "vo": "you are not being judged by thirty strangers."
  },
  {
   "shot": "SH103",
-  "entrada": "6:37.6",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "There is no other town. There is no starting over."
+  "entrada": "6:32.4",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "tilt hacia abajo",
+  "vo": "You are being judged by thirty people who control every calorie you will eat,"
  },
  {
   "shot": "SH104",
-  "entrada": "6:41.4",
-  "seg": 4.9,
-  "palabras": 13,
-  "vo": "Against those stakes, a small chronic anxiety about being conspicuous is not irrational."
+  "entrada": "6:37.7",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "zoom in lento",
+  "vo": "every night you will sleep in safety,"
  },
  {
   "shot": "SH105",
-  "entrada": "6:46.3",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "It is cheap insurance on the only asset you have."
+  "entrada": "6:40.4",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom out lento",
+  "vo": "and the only possibility you will ever have of a family."
  },
  {
   "shot": "SH106",
-  "entrada": "6:50.1",
+  "entrada": "6:44.6",
   "seg": 3.8,
   "palabras": 10,
-  "vo": "So picture it. It is a Tuesday in 40,000 BC."
+  "mov": "zoom in fuerte",
+  "vo": "There is no other town. There is no starting over."
  },
  {
   "shot": "SH107",
-  "entrada": "6:53.9",
-  "seg": 2.3,
-  "palabras": 6,
-  "vo": "You did something well. Everyone saw."
+  "entrada": "6:48.4",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "paneo a la izquierda",
+  "vo": "Against those stakes, a small chronic anxiety about being conspicuous is not irrational."
  },
  {
   "shot": "SH108",
-  "entrada": "6:56.2",
-  "seg": 4.9,
-  "palabras": 13,
-  "vo": "And now every person you will ever know is looking at you and"
+  "entrada": "6:53.3",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "paneo a la derecha",
+  "vo": "It is cheap insurance on the only asset you have."
  },
  {
   "shot": "SH109",
-  "entrada": "7:01.1",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "deciding, silently, what to do about it."
+  "entrada": "6:57.1",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "tilt hacia arriba",
+  "vo": "So picture it. It is a Tuesday in 40,000 BC."
  },
  {
   "shot": "SH110",
-  "entrada": "7:03.8",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "Your body knows exactly what that look means."
+  "entrada": "7:00.9",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "tilt hacia abajo",
+  "vo": "You did something well. Everyone saw."
  },
  {
   "shot": "SH111",
-  "entrada": "7:06.8",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "Because the ones who did not feel it —"
+  "entrada": "7:03.2",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "zoom in lento",
+  "vo": "And now every person you will ever know is looking at you and deciding,"
  },
  {
   "shot": "SH112",
-  "entrada": "7:10.3",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "the ones who stood tall and stayed there —"
+  "entrada": "7:08.5",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "paneo a la izquierda",
+  "vo": "silently, what to do about it. Your body knows exactly what that look means."
  },
  {
   "shot": "SH113",
-  "entrada": "7:13.7",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "are not your ancestors. That is the whole selection event,"
+  "entrada": "7:13.8",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "zoom out lento",
+  "vo": "Because the ones who did not feel it —"
  },
  {
   "shot": "SH114",
-  "entrada": "7:17.5",
-  "seg": 4.2,
-  "palabras": 11,
-  "vo": "and it is worth saying slowly. Two people do something impressive."
+  "entrada": "7:17.2",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "zoom in fuerte",
+  "vo": "the ones who stood tall and stayed there — are not your ancestors."
  },
  {
   "shot": "SH115",
-  "entrada": "7:21.6",
-  "seg": 5.7,
-  "palabras": 15,
-  "vo": "One of them feels a cold pull in the chest and instinctively plays it down,"
+  "entrada": "7:22.1",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "paneo a la derecha",
+  "vo": "That is the whole selection event, and it is worth saying slowly."
  },
  {
   "shot": "SH116",
-  "entrada": "7:27.3",
-  "seg": 5.3,
-  "palabras": 14,
-  "vo": "hands the credit sideways, gets smaller. The other one enjoys it and stays visible."
+  "entrada": "7:26.7",
+  "seg": 1.9,
+  "palabras": 5,
+  "mov": "tilt hacia arriba",
+  "vo": "Two people do something impressive."
  },
  {
   "shot": "SH117",
-  "entrada": "7:32.7",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "Over enough generations, in enough bands, in enough winters,"
+  "entrada": "7:28.6",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "One of them feels a cold pull in the chest and instinctively plays it down,"
  },
  {
   "shot": "SH118",
-  "entrada": "7:36.1",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "only one of those two lines continues."
+  "entrada": "7:34.3",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "tilt hacia abajo",
+  "vo": "hands the credit sideways, gets smaller. The other one enjoys it and stays visible."
  },
  {
   "shot": "SH119",
-  "entrada": "7:38.7",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "You are not descended from the confident one."
+  "entrada": "7:39.6",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "zoom in lento",
+  "vo": "Over enough generations, in enough bands,"
  },
  {
   "shot": "SH120",
-  "entrada": "7:41.8",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "Nobody alive is. That line ended in the cold,"
+  "entrada": "7:41.9",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom out lento",
+  "vo": "in enough winters, only one of those two lines continues."
  },
  {
   "shot": "SH121",
-  "entrada": "7:45.2",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "outside the circle, a very long time ago."
+  "entrada": "7:45.7",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom in fuerte",
+  "vo": "You are not descended from the confident one. Nobody alive is."
  },
  {
   "shot": "SH122",
-  "entrada": "7:48.2",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "I want to be honest about something,"
+  "entrada": "7:49.9",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "paneo a la izquierda",
+  "vo": "That line ended in the cold,"
  },
  {
   "shot": "SH123",
-  "entrada": "7:50.9",
+  "entrada": "7:52.2",
   "seg": 3.0,
   "palabras": 8,
-  "vo": "because it is the part that gets skipped."
+  "mov": "paneo a la derecha",
+  "vo": "outside the circle, a very long time ago."
  },
  {
   "shot": "SH124",
-  "entrada": "7:53.9",
-  "seg": 4.6,
-  "palabras": 12,
-  "vo": "This is usually where someone tells you the fear is a lie."
+  "entrada": "7:55.2",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "I want to be honest about something, because it is the part that gets skipped."
  },
  {
   "shot": "SH125",
-  "entrada": "7:58.5",
-  "seg": 5.3,
-  "palabras": 14,
-  "vo": "That you deserve to be there. That the voice in your head is wrong."
+  "entrada": "8:00.9",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "tilt hacia arriba",
+  "vo": "This is usually where someone tells you the fear is a lie."
  },
  {
   "shot": "SH126",
-  "entrada": "8:03.8",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "The voice in your head is not wrong."
+  "entrada": "8:05.5",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "tilt hacia abajo",
+  "vo": "That you deserve to be there. That the voice in your head is wrong."
  },
  {
   "shot": "SH127",
-  "entrada": "8:06.8",
-  "seg": 4.9,
-  "palabras": 13,
-  "vo": "It is just old. It is not saying you are not good enough."
+  "entrada": "8:10.8",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in lento",
+  "vo": "The voice in your head is not wrong."
  },
  {
   "shot": "SH128",
-  "entrada": "8:11.8",
+  "entrada": "8:13.8",
   "seg": 4.9,
   "palabras": 13,
-  "vo": "Listen to it again. It is saying they are going to find out."
+  "mov": "zoom out lento",
+  "vo": "It is just old. It is not saying you are not good enough."
  },
  {
   "shot": "SH129",
-  "entrada": "8:16.7",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "Those are completely different sentences. One is about ability."
+  "entrada": "8:18.7",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "paneo a la izquierda",
+  "vo": "Listen to it again. It is saying they are going to find out."
  },
  {
   "shot": "SH130",
-  "entrada": "8:20.1",
-  "seg": 4.9,
-  "palabras": 13,
-  "vo": "The other is about exposure. Your nervous system is not evaluating your work."
+  "entrada": "8:23.6",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "zoom in fuerte",
+  "vo": "Those are completely different sentences. One is about ability. The other is about exposure."
  },
  {
   "shot": "SH131",
-  "entrada": "8:25.1",
-  "seg": 4.6,
-  "palabras": 12,
-  "vo": "It never was. It is running a threat model on your visibility."
+  "entrada": "8:28.9",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "paneo a la derecha",
+  "vo": "Your nervous system is not evaluating your work. It never was."
  },
  {
   "shot": "SH132",
-  "entrada": "8:29.6",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "And that model was correct. For three hundred thousand years,"
+  "entrada": "8:33.1",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "tilt hacia arriba",
+  "vo": "It is running a threat model on your visibility."
  },
  {
   "shot": "SH133",
-  "entrada": "8:33.4",
-  "seg": 5.7,
-  "palabras": 15,
-  "vo": "being seen as exceptional in a small group you could not leave was genuinely dangerous."
+  "entrada": "8:36.5",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "tilt hacia abajo",
+  "vo": "And that model was correct. For three hundred thousand years,"
  },
  {
   "shot": "SH134",
-  "entrada": "8:39.1",
-  "seg": 1.1,
-  "palabras": 3,
-  "vo": "Not embarrassing. Dangerous."
+  "entrada": "8:40.3",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "being seen as exceptional in a small group you could not leave was genuinely dangerous."
  },
  {
   "shot": "SH135",
-  "entrada": "8:40.3",
-  "seg": 6.1,
-  "palabras": 16,
-  "vo": "The people who tracked that risk obsessively lived long enough to have children who tracked it"
+  "entrada": "8:46.0",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom in lento",
+  "vo": "Not embarrassing. Dangerous. The people who tracked that risk obsessively lived"
  },
  {
   "shot": "SH136",
-  "entrada": "8:46.3",
-  "seg": 7.2,
-  "palabras": 19,
-  "vo": "too. You are the result of a very long line of people who were extremely careful about being noticed."
+  "entrada": "8:50.2",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "zoom out lento",
+  "vo": "long enough to have children who tracked it too."
  },
  {
   "shot": "SH137",
-  "entrada": "8:53.5",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "Which means the feeling is not evidence of a flaw."
+  "entrada": "8:53.6",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "paneo a la izquierda",
+  "vo": "You are the result of a very long line"
  },
  {
   "shot": "SH138",
-  "entrada": "8:57.3",
-  "seg": 6.5,
-  "palabras": 17,
-  "vo": "It is evidence of an inheritance. And that changes what you are supposed to do with it,"
+  "entrada": "8:57.0",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "zoom in fuerte",
+  "vo": "of people who were extremely careful about being noticed."
  },
  {
   "shot": "SH139",
-  "entrada": "9:03.8",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "because you do not fix an inheritance."
+  "entrada": "9:00.4",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "paneo a la derecha",
+  "vo": "Which means the feeling is not evidence of a flaw."
  },
  {
   "shot": "SH140",
-  "entrada": "9:06.5",
-  "seg": 6.8,
-  "palabras": 18,
-  "vo": "You cannot argue with it either. Telling yourself you deserve to be there is a sentence about competence,"
+  "entrada": "9:04.2",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "tilt hacia arriba",
+  "vo": "It is evidence of an inheritance."
  },
  {
   "shot": "SH141",
-  "entrada": "9:13.3",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "aimed at a system that was never asking about competence."
+  "entrada": "9:06.5",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "tilt hacia abajo",
+  "vo": "And that changes what you are supposed to do with it,"
  },
  {
   "shot": "SH142",
-  "entrada": "9:17.1",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "It is asking one question, and only one:"
+  "entrada": "9:10.7",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "zoom in lento",
+  "vo": "because you do not fix an inheritance. You cannot argue with it either."
  },
  {
   "shot": "SH143",
-  "entrada": "9:20.1",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "how many people can see me right now,"
+  "entrada": "9:15.6",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "zoom out lento",
+  "vo": "Telling yourself you deserve to be there is a sentence about competence,"
  },
  {
   "shot": "SH144",
-  "entrada": "9:23.2",
-  "seg": 4.2,
-  "palabras": 11,
-  "vo": "and can I get away from them if this goes badly?"
+  "entrada": "9:20.2",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in fuerte",
+  "vo": "aimed at a system that was never asking about competence."
  },
  {
   "shot": "SH145",
-  "entrada": "9:27.3",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "Answer that question honestly and the feeling makes perfect sense."
+  "entrada": "9:24.0",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la izquierda",
+  "vo": "It is asking one question, and only one:"
  },
  {
   "shot": "SH146",
-  "entrada": "9:31.1",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "Answer the other one — am I good enough —"
+  "entrada": "9:27.0",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "tilt hacia arriba",
+  "vo": "how many people can see me right now,"
  },
  {
   "shot": "SH147",
-  "entrada": "9:34.9",
-  "seg": 4.6,
-  "palabras": 12,
-  "vo": "and you will be arguing forever with something that was never listening,"
+  "entrada": "9:30.0",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "paneo a la derecha",
+  "vo": "and can I get away from them if this goes badly?"
  },
  {
   "shot": "SH148",
-  "entrada": "9:39.5",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "in a language it does not speak,"
+  "entrada": "9:34.2",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "tilt hacia abajo",
+  "vo": "Answer that question honestly and the feeling makes perfect sense."
  },
  {
   "shot": "SH149",
-  "entrada": "9:42.2",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "about a subject it was never built to judge."
+  "entrada": "9:38.0",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in lento",
+  "vo": "Answer the other one — am I good enough —"
  },
  {
   "shot": "SH150",
-  "entrada": "9:45.6",
-  "seg": 5.3,
-  "palabras": 14,
-  "vo": "And here's where it flips. Everyone treats impostor syndrome as a fear of failure."
+  "entrada": "9:41.8",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "zoom out lento",
+  "vo": "and you will be arguing forever with something that was never listening,"
  },
  {
   "shot": "SH151",
-  "entrada": "9:50.9",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "It is not. Look at when it actually fires."
+  "entrada": "9:46.4",
+  "seg": 6.1,
+  "palabras": 16,
+  "mov": "plano fijo",
+  "vo": "in a language it does not speak, about a subject it was never built to judge."
  },
  {
   "shot": "SH152",
-  "entrada": "9:54.3",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "It does not fire when you fail."
+  "entrada": "9:52.5",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "zoom in fuerte",
+  "vo": "And here's where it flips. Everyone treats impostor syndrome as a fear of failure."
  },
  {
   "shot": "SH153",
-  "entrada": "9:57.0",
-  "seg": 4.2,
-  "palabras": 11,
-  "vo": "When you fail, you feel bad, but you feel safe —"
+  "entrada": "9:57.8",
+  "seg": 6.1,
+  "palabras": 16,
+  "mov": "plano fijo",
+  "vo": "It is not. Look at when it actually fires. It does not fire when you fail."
  },
  {
   "shot": "SH154",
-  "entrada": "10:01.1",
-  "seg": 4.6,
-  "palabras": 12,
-  "vo": "small, ordinary, unseen. It fires when you are about to be recognised."
+  "entrada": "10:03.9",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "paneo a la izquierda",
+  "vo": "When you fail, you feel bad, but you feel safe —"
  },
  {
   "shot": "SH155",
-  "entrada": "10:05.7",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "When you get promoted. When the audience grows."
+  "entrada": "10:08.1",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "paneo a la derecha",
+  "vo": "small, ordinary, unseen. It fires when you are about to be recognised."
  },
  {
   "shot": "SH156",
-  "entrada": "10:08.7",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "When someone introduces you as an expert."
+  "entrada": "10:12.7",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "tilt hacia arriba",
+  "vo": "When you get promoted. When the audience grows."
  },
  {
   "shot": "SH157",
-  "entrada": "10:11.4",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "It is not a fear of not being good enough."
+  "entrada": "10:15.7",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "tilt hacia abajo",
+  "vo": "When someone introduces you as an expert."
  },
  {
   "shot": "SH158",
-  "entrada": "10:15.2",
+  "entrada": "10:18.4",
   "seg": 3.8,
   "palabras": 10,
-  "vo": "It is a fear of being seen as good enough."
+  "mov": "zoom in lento",
+  "vo": "It is not a fear of not being good enough."
  },
  {
   "shot": "SH159",
-  "entrada": "10:19.0",
-  "seg": 5.7,
-  "palabras": 15,
-  "vo": "Success is the trigger. That is why it scales with your achievements instead of shrinking."
+  "entrada": "10:22.2",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "zoom out lento",
+  "vo": "It is a fear of being seen as good enough. Success is the trigger."
  },
  {
   "shot": "SH160",
-  "entrada": "10:24.7",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "Every step up puts you further above the group —"
+  "entrada": "10:27.5",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom in fuerte",
+  "vo": "That is why it scales with your achievements instead of shrinking."
  },
  {
   "shot": "SH161",
-  "entrada": "10:28.5",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "and the old system reads height as exposure,"
+  "entrada": "10:31.7",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "paneo a la izquierda",
+  "vo": "Every step up puts you further above the group —"
  },
  {
   "shot": "SH162",
-  "entrada": "10:31.5",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "and exposure as risk. Test it on yourself."
+  "entrada": "10:35.5",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "paneo a la derecha",
+  "vo": "and the old system reads height as exposure, and exposure as risk."
  },
  {
   "shot": "SH163",
-  "entrada": "10:34.6",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "Think of the last time this feeling was loudest."
+  "entrada": "10:40.1",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "tilt hacia arriba",
+  "vo": "Test it on yourself. Think of the last time this feeling was loudest."
  },
  {
   "shot": "SH164",
-  "entrada": "10:38.0",
+  "entrada": "10:45.0",
   "seg": 4.6,
   "palabras": 12,
+  "mov": "tilt hacia abajo",
   "vo": "I am almost certain it was not the day something went wrong."
  },
  {
   "shot": "SH165",
-  "entrada": "10:42.5",
+  "entrada": "10:49.6",
   "seg": 2.7,
   "palabras": 7,
+  "mov": "zoom in lento",
   "vo": "It was the day something went right,"
  },
  {
   "shot": "SH166",
-  "entrada": "10:45.2",
+  "entrada": "10:52.3",
   "seg": 3.4,
   "palabras": 9,
+  "mov": "zoom out lento",
   "vo": "in front of people, and someone said your name."
  },
  {
   "shot": "SH167",
-  "entrada": "10:48.6",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "And notice the specific shape of the thought."
+  "entrada": "10:55.7",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "And notice the specific shape of the thought. It is never I cannot do this."
  },
  {
   "shot": "SH168",
-  "entrada": "10:51.6",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "It is never I cannot do this."
+  "entrada": "11:01.4",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in fuerte",
+  "vo": "It is what happens when they realise. That word —"
  },
  {
   "shot": "SH169",
-  "entrada": "10:54.3",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "It is what happens when they realise."
+  "entrada": "11:05.2",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "paneo a la izquierda",
+  "vo": "realise — is the whole confession. It admits the thing is real."
  },
  {
   "shot": "SH170",
-  "entrada": "10:57.0",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "That word — realise — is the whole confession."
+  "entrada": "11:09.8",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "It is only afraid of it being seen. You do not have a confidence problem."
  },
  {
   "shot": "SH171",
-  "entrada": "11:00.4",
+  "entrada": "11:15.5",
   "seg": 5.3,
   "palabras": 14,
-  "vo": "It admits the thing is real. It is only afraid of it being seen."
- },
- {
-  "shot": "SH172",
-  "entrada": "11:05.7",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "You do not have a confidence problem."
- },
- {
-  "shot": "SH173",
-  "entrada": "11:08.4",
-  "seg": 5.3,
-  "palabras": 14,
+  "mov": "paneo a la derecha",
   "vo": "You have a camouflage system that never got the message that the tribe dissolved."
  },
  {
+  "shot": "SH172",
+  "entrada": "11:20.8",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "tilt hacia arriba",
+  "vo": "The antagonist in this story was never you. It was the tribe."
+ },
+ {
+  "shot": "SH173",
+  "entrada": "11:25.4",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "tilt hacia abajo",
+  "vo": "And the tribe is gone. The mismatch is total."
+ },
+ {
   "shot": "SH174",
-  "entrada": "11:13.7",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "The antagonist in this story was never you."
+  "entrada": "11:28.8",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "zoom in lento",
+  "vo": "The group you actually live in now is not twenty people you cannot leave."
  },
  {
   "shot": "SH175",
-  "entrada": "11:16.7",
+  "entrada": "11:34.1",
   "seg": 3.4,
   "palabras": 9,
-  "vo": "It was the tribe. And the tribe is gone."
- },
- {
-  "shot": "SH176",
-  "entrada": "11:20.1",
-  "seg": 6.8,
-  "palabras": 18,
-  "vo": "The mismatch is total. The group you actually live in now is not twenty people you cannot leave."
- },
- {
-  "shot": "SH177",
-  "entrada": "11:27.0",
-  "seg": 3.4,
-  "palabras": 9,
+  "mov": "zoom out lento",
   "vo": "It is billions of people you will never meet,"
  },
  {
-  "shot": "SH178",
-  "entrada": "11:30.4",
+  "shot": "SH176",
+  "entrada": "11:37.5",
   "seg": 4.2,
   "palabras": 11,
+  "mov": "zoom in fuerte",
   "vo": "and you can walk away from almost any of them tomorrow."
  },
  {
-  "shot": "SH179",
-  "entrada": "11:34.6",
+  "shot": "SH177",
+  "entrada": "11:41.7",
   "seg": 3.4,
   "palabras": 9,
+  "mov": "paneo a la izquierda",
   "vo": "Standing out no longer costs you your food supply."
  },
  {
+  "shot": "SH178",
+  "entrada": "11:45.1",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "paneo a la derecha",
+  "vo": "It no longer gets you driven into the dark. In this world,"
+ },
+ {
+  "shot": "SH179",
+  "entrada": "11:49.7",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "tilt hacia arriba",
+  "vo": "being seen is how you find work, find people, find anything at all."
+ },
+ {
   "shot": "SH180",
-  "entrada": "11:38.0",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "It no longer gets you driven into the dark."
+  "entrada": "11:54.6",
+  "seg": 6.1,
+  "palabras": 16,
+  "mov": "plano fijo",
+  "vo": "The single behaviour your ancestors were most punished for is now the one thing that pays."
  },
  {
   "shot": "SH181",
-  "entrada": "11:41.4",
-  "seg": 3.8,
-  "palabras": 10,
-  "vo": "In this world, being seen is how you find work,"
+  "entrada": "12:00.7",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "tilt hacia abajo",
+  "vo": "Think about how strange that reversal is. For three hundred thousand years,"
  },
  {
   "shot": "SH182",
-  "entrada": "11:45.2",
-  "seg": 7.2,
-  "palabras": 19,
-  "vo": "find people, find anything at all. The single behaviour your ancestors were most punished for is now the one"
+  "entrada": "12:05.3",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in lento",
+  "vo": "the safest position in the group was the middle —"
  },
  {
   "shot": "SH183",
-  "entrada": "11:52.4",
+  "entrada": "12:09.1",
   "seg": 3.8,
   "palabras": 10,
-  "vo": "thing that pays. Think about how strange that reversal is."
- },
- {
-  "shot": "SH184",
-  "entrada": "11:56.2",
-  "seg": 5.7,
-  "palabras": 15,
-  "vo": "For three hundred thousand years, the safest position in the group was the middle —"
- },
- {
-  "shot": "SH185",
-  "entrada": "12:01.9",
-  "seg": 3.8,
-  "palabras": 10,
+  "mov": "paneo a la izquierda",
   "vo": "competent enough to be kept, quiet enough to be ignored."
  },
  {
-  "shot": "SH186",
-  "entrada": "12:05.7",
+  "shot": "SH184",
+  "entrada": "12:12.9",
   "seg": 3.8,
   "palabras": 10,
+  "mov": "zoom out lento",
   "vo": "Today that exact position is the one that gets overlooked,"
  },
  {
-  "shot": "SH187",
-  "entrada": "12:09.5",
+  "shot": "SH185",
+  "entrada": "12:16.7",
   "seg": 3.4,
   "palabras": 9,
+  "mov": "zoom in fuerte",
   "vo": "passed over and forgotten. The middle stopped being shelter."
  },
  {
-  "shot": "SH188",
-  "entrada": "12:12.9",
+  "shot": "SH186",
+  "entrada": "12:20.1",
   "seg": 4.6,
   "palabras": 12,
+  "mov": "paneo a la derecha",
   "vo": "It became invisibility, and invisibility is now the thing that costs you."
  },
  {
-  "shot": "SH189",
-  "entrada": "12:17.5",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "And your body has not been told."
+  "shot": "SH187",
+  "entrada": "12:24.7",
+  "seg": 6.1,
+  "palabras": 16,
+  "mov": "plano fijo",
+  "vo": "And your body has not been told. It runs the same alarm at the same volume,"
  },
  {
-  "shot": "SH190",
-  "entrada": "12:20.1",
-  "seg": 3.4,
-  "palabras": 9,
-  "vo": "It runs the same alarm at the same volume,"
- },
- {
-  "shot": "SH191",
-  "entrada": "12:23.5",
+  "shot": "SH188",
+  "entrada": "12:30.8",
   "seg": 4.6,
   "palabras": 12,
+  "mov": "tilt hacia arriba",
   "vo": "on a threat that stopped existing. And notice what the mismatch costs,"
  },
  {
-  "shot": "SH192",
-  "entrada": "12:28.1",
+  "shot": "SH189",
+  "entrada": "12:35.4",
   "seg": 5.3,
   "palabras": 14,
+  "mov": "tilt hacia abajo",
   "vo": "because it is not just discomfort. It is the work you did not publish."
  },
  {
-  "shot": "SH193",
-  "entrada": "12:33.4",
+  "shot": "SH190",
+  "entrada": "12:40.7",
   "seg": 2.7,
   "palabras": 7,
+  "mov": "zoom in lento",
   "vo": "The role you did not apply for."
  },
  {
-  "shot": "SH194",
-  "entrada": "12:36.1",
+  "shot": "SH191",
+  "entrada": "12:43.4",
   "seg": 5.7,
   "palabras": 15,
+  "mov": "plano fijo",
   "vo": "The idea you had first and let someone else say out loud six months later."
  },
  {
-  "shot": "SH195",
-  "entrada": "12:41.8",
+  "shot": "SH192",
+  "entrada": "12:49.1",
   "seg": 4.2,
   "palabras": 11,
+  "mov": "zoom out lento",
   "vo": "None of that was a decision. Every one of them felt,"
  },
  {
-  "shot": "SH196",
-  "entrada": "12:45.9",
+  "shot": "SH193",
+  "entrada": "12:53.3",
   "seg": 3.8,
   "palabras": 10,
+  "mov": "zoom in fuerte",
   "vo": "in the moment, like caution. That is the expensive part."
  },
  {
-  "shot": "SH197",
-  "entrada": "12:49.7",
-  "seg": 3.0,
-  "palabras": 8,
-  "vo": "The system does not announce itself as fear."
+  "shot": "SH194",
+  "entrada": "12:57.1",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "The system does not announce itself as fear. It arrives disguised as good judgement —"
  },
  {
-  "shot": "SH198",
-  "entrada": "12:52.8",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "It arrives disguised as good judgement —"
- },
- {
-  "shot": "SH199",
-  "entrada": "12:55.4",
+  "shot": "SH195",
+  "entrada": "13:02.8",
   "seg": 3.0,
   "palabras": 8,
+  "mov": "paneo a la izquierda",
   "vo": "not yet, not ready, needs more work —"
  },
  {
-  "shot": "SH200",
-  "entrada": "12:58.5",
+  "shot": "SH196",
+  "entrada": "13:05.8",
   "seg": 4.9,
   "palabras": 13,
+  "mov": "paneo a la derecha",
   "vo": "and every one of those sentences is the same instinct wearing a suit."
  },
  {
-  "shot": "SH201",
-  "entrada": "13:03.4",
+  "shot": "SH197",
+  "entrada": "13:10.7",
   "seg": 4.2,
   "palabras": 11,
+  "mov": "tilt hacia arriba",
   "vo": "That is why you cannot reason your way out of it."
  },
  {
-  "shot": "SH202",
-  "entrada": "13:07.6",
+  "shot": "SH198",
+  "entrada": "13:14.9",
   "seg": 3.0,
   "palabras": 8,
+  "mov": "tilt hacia abajo",
   "vo": "It is not an opinion about your competence."
  },
  {
-  "shot": "SH203",
-  "entrada": "13:10.6",
+  "shot": "SH199",
+  "entrada": "13:17.9",
+  "seg": 6.1,
+  "palabras": 16,
+  "mov": "plano fijo",
+  "vo": "It is a smoke detector wired to a fire that went out thousands of years ago"
+ },
+ {
+  "shot": "SH200",
+  "entrada": "13:24.0",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in lento",
+  "vo": "— still working perfectly, still screaming at toast."
+ },
+ {
+  "shot": "SH201",
+  "entrada": "13:27.0",
   "seg": 6.5,
   "palabras": 17,
-  "vo": "It is a smoke detector wired to a fire that went out thousands of years ago —"
+  "mov": "plano fijo",
+  "vo": "Comment eight if you are going to do the visible thing anyway this week. I read them."
  },
  {
-  "shot": "SH204",
-  "entrada": "13:17.1",
-  "seg": 2.7,
-  "palabras": 7,
-  "vo": "still working perfectly, still screaming at toast."
- },
- {
-  "shot": "SH205",
-  "entrada": "13:19.7",
+  "shot": "SH202",
+  "entrada": "13:33.5",
   "seg": 5.3,
   "palabras": 14,
-  "vo": "Comment eight if you are going to do the visible thing anyway this week."
+  "mov": "zoom out lento",
+  "vo": "So what do you do with a system that is functioning exactly as designed,"
  },
  {
-  "shot": "SH206",
-  "entrada": "13:25.1",
-  "seg": 6.5,
-  "palabras": 17,
-  "vo": "I read them. So what do you do with a system that is functioning exactly as designed,"
- },
- {
-  "shot": "SH207",
-  "entrada": "13:31.5",
+  "shot": "SH203",
+  "entrada": "13:38.8",
   "seg": 4.6,
   "palabras": 12,
+  "mov": "zoom in fuerte",
   "vo": "for a world that is gone? You stop trying to delete it."
  },
  {
-  "shot": "SH208",
-  "entrada": "13:36.1",
+  "shot": "SH204",
+  "entrada": "13:43.4",
   "seg": 4.6,
   "palabras": 12,
+  "mov": "paneo a la izquierda",
   "vo": "You cannot. It is not damage. You learn to read it correctly."
  },
  {
-  "shot": "SH209",
-  "entrada": "13:40.6",
+  "shot": "SH205",
+  "entrada": "13:48.0",
   "seg": 4.2,
   "palabras": 11,
+  "mov": "paneo a la derecha",
   "vo": "When that tightness arrives, it is not information about your ability."
  },
  {
-  "shot": "SH210",
-  "entrada": "13:44.8",
+  "shot": "SH206",
+  "entrada": "13:52.2",
   "seg": 3.8,
   "palabras": 10,
+  "mov": "tilt hacia arriba",
   "vo": "It is information about your visibility. Those are different facts."
  },
  {
-  "shot": "SH211",
-  "entrada": "13:48.6",
+  "shot": "SH207",
+  "entrada": "13:56.0",
   "seg": 2.7,
   "palabras": 7,
+  "mov": "tilt hacia abajo",
   "vo": "One of them is worth listening to."
  },
  {
+  "shot": "SH208",
+  "entrada": "13:58.7",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "zoom in lento",
+  "vo": "The other one is a fossil."
+ },
+ {
+  "shot": "SH209",
+  "entrada": "14:01.0",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom out lento",
+  "vo": "The feeling will not leave. It was never going to."
+ },
+ {
+  "shot": "SH210",
+  "entrada": "14:04.8",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "zoom in fuerte",
+  "vo": "It is the same feeling that kept your ancestors"
+ },
+ {
+  "shot": "SH211",
+  "entrada": "14:08.2",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "paneo a la izquierda",
+  "vo": "inside the circle when being outside the circle killed"
+ },
+ {
   "shot": "SH212",
-  "entrada": "13:51.3",
-  "seg": 4.2,
-  "palabras": 11,
-  "vo": "The other one is a fossil. The feeling will not leave."
+  "entrada": "14:11.6",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "paneo a la derecha",
+  "vo": "people. And there is something almost generous in that, once you see it clearly."
  },
  {
   "shot": "SH213",
-  "entrada": "13:55.4",
-  "seg": 7.2,
-  "palabras": 19,
-  "vo": "It was never going to. It is the same feeling that kept your ancestors inside the circle when being"
+  "entrada": "14:16.9",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "tilt hacia arriba",
+  "vo": "That tightness in your chest is not your body doubting you."
  },
  {
   "shot": "SH214",
-  "entrada": "14:02.7",
-  "seg": 4.9,
-  "palabras": 13,
-  "vo": "outside the circle killed people. And there is something almost generous in that,"
- },
- {
-  "shot": "SH215",
-  "entrada": "14:07.6",
-  "seg": 6.1,
-  "palabras": 16,
-  "vo": "once you see it clearly. That tightness in your chest is not your body doubting you."
- },
- {
-  "shot": "SH216",
-  "entrada": "14:13.7",
+  "entrada": "14:21.1",
   "seg": 3.4,
   "palabras": 9,
+  "mov": "tilt hacia abajo",
   "vo": "It is your body trying to keep you alive,"
  },
  {
-  "shot": "SH217",
-  "entrada": "14:17.1",
+  "shot": "SH215",
+  "entrada": "14:24.5",
   "seg": 3.0,
   "palabras": 8,
+  "mov": "zoom in lento",
   "vo": "using the only map it was ever given,"
  },
  {
-  "shot": "SH218",
-  "entrada": "14:20.1",
+  "shot": "SH216",
+  "entrada": "14:27.5",
   "seg": 3.8,
   "palabras": 10,
+  "mov": "zoom out lento",
   "vo": "drawn for a world of thirty people and one fire."
  },
  {
-  "shot": "SH219",
-  "entrada": "14:23.9",
+  "shot": "SH217",
+  "entrada": "14:31.3",
   "seg": 4.2,
   "palabras": 11,
+  "mov": "zoom in fuerte",
   "vo": "It is not lying to you. It is out of date."
  },
  {
-  "shot": "SH220",
-  "entrada": "14:28.1",
+  "shot": "SH218",
+  "entrada": "14:35.5",
   "seg": 4.2,
   "palabras": 11,
+  "mov": "paneo a la izquierda",
   "vo": "So you do not need to win an argument with it."
  },
  {
-  "shot": "SH221",
-  "entrada": "14:32.3",
+  "shot": "SH219",
+  "entrada": "14:39.7",
   "seg": 4.2,
   "palabras": 11,
+  "mov": "tilt hacia arriba",
   "vo": "You just need to stop treating its alarm as a verdict."
  },
  {
-  "shot": "SH222",
-  "entrada": "14:36.5",
-  "seg": 5.7,
-  "palabras": 15,
-  "vo": "Because that is the whole trick. You do not wait for the fear to end."
+  "shot": "SH220",
+  "entrada": "14:43.9",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "paneo a la derecha",
+  "vo": "Because that is the whole trick."
  },
  {
-  "shot": "SH223",
-  "entrada": "14:42.2",
+  "shot": "SH221",
+  "entrada": "14:46.2",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "tilt hacia abajo",
+  "vo": "You do not wait for the fear to end."
+ },
+ {
+  "shot": "SH222",
+  "entrada": "14:49.6",
   "seg": 4.2,
   "palabras": 11,
+  "mov": "zoom in lento",
   "vo": "It does not end. You go ahead while it is talking."
  },
  {
-  "shot": "SH224",
-  "entrada": "14:46.3",
+  "shot": "SH223",
+  "entrada": "14:53.8",
   "seg": 3.0,
   "palabras": 8,
+  "mov": "zoom out lento",
   "vo": "Your fear of being seen is not weakness."
  },
  {
-  "shot": "SH225",
-  "entrada": "14:49.4",
+  "shot": "SH224",
+  "entrada": "14:56.8",
   "seg": 4.9,
   "palabras": 13,
+  "mov": "zoom in fuerte",
   "vo": "It is a peace treaty with a tribe that no longer exists —"
  },
  {
-  "shot": "SH226",
-  "entrada": "14:54.3",
+  "shot": "SH225",
+  "entrada": "15:01.7",
   "seg": 2.7,
   "palabras": 7,
+  "mov": "paneo a la izquierda",
   "vo": "and you are allowed to break it."
  }
 ]
