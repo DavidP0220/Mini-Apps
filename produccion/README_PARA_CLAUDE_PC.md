@@ -3,6 +3,11 @@
 Este repositorio es el puente. Aqui llegan las hojas de prompts ya escritas
 y verificadas. Tu trabajo es generarlas en Artistly.
 
+## Reparto
+
+Lee primero `produccion/REPARTO_DE_TRABAJO.md`: define que hace cada Claude.
+No escribas prompts de imagen — eso lo hace el del servidor y llega por el repo.
+
 ## Antes de empezar
 
 Lee, en este orden:
