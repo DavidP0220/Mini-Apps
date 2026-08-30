@@ -11,9 +11,10 @@ BLOQUE_01 = [
  "around his feet, the rest of the frame deep flat black, his arms straight down at his sides",True),
 
 ("SH002","Medium shot",
- "seen from behind, shoulders raised toward his cap, facing a dark auditorium filled with long rows "
- "of pale cream head shapes, each head carrying two small flat black oval marks, every row turned "
- "toward him",True),
+ "seen entirely from behind, so that the back of his grey hood and the back of his navy cap fill the "
+ "near half of the frame, his shoulders raised, looking away from the camera toward a dark auditorium "
+ "of long rows of pale cream head shapes, each head carrying two small flat black oval marks, all of "
+ "them turned toward him",True),
 
 ("SH003","Close-up",
  "gripping the front edge of a plain wooden podium with both hands, his fingers pressed flat and "
