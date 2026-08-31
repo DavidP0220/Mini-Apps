@@ -53,6 +53,8 @@ sola, se acumula.
 - `produccion/impostor/LOTE_04.txt` — 20 prompts, la banda y la jerarquia inversa
 - `produccion/impostor/LOTE_05.txt` — 20 prompts, el castigo del grupo
 - `produccion/impostor/LOTE_06.txt` — 20 prompts, las apuestas reales y el evento de seleccion
+- `produccion/impostor/LOTE_07.txt` — 20 prompts, el giro oscuro y la herencia
+- `produccion/impostor/LOTE_08.txt` — 20 prompts, el giro meta: el exito es el disparador
 
 ## Para generar hojas nuevas
 
