@@ -8,3 +8,10 @@ config.json.bak
 node_modules/
 .DS_Store
 Thumbs.db
+
+# miniaturas: pruebas y binarios de trabajo
+produccion/miniaturas/_base_prueba.png
+produccion/miniaturas/_fuentes/
+
+__pycache__/
+*.pyc
