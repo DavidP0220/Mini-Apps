@@ -30,29 +30,43 @@ personaje plano del video. En miniatura, plano = invisible.
 
 ## La plantilla, elemento por elemento
 
-**1. Fondo.** Negro casi total. Un solo foco calido, o negro puro con glitch.
-Contraste de valor extremo: es lo que la hace legible a 210x118 px.
+**1. Fondo.** Negro casi total, o **division calido/frio**: masa clara y calida
+a la izquierda, azul frio a la derecha. Contraste de valor extremo: es lo que
+la hace legible a 210x118 px.
 
-**2. Reparto del cuadro.** Texto en el 45% izquierdo. Host en el 55% derecho.
-Siempre. En las dos miniaturas es identico.
+**2. Reparto del cuadro.** Texto en el 45% izquierdo. Imagen en el 55% derecho.
+Siempre.
 
-**3. El texto, tres lineas y en este orden:**
+**2b. La escala. Esto es lo que mas subio la calidad.** La version nueva
+abandona el plano medio del host y usa un **primer plano extremo**: un solo ojo
+ocupando media miniatura, la cara cortada por los bordes. Un ojo enorme gana a
+una persona entera. Ademas permite sudor, venas rojas y textura, que a tamano
+de plano medio no se verian.
+
+**3. El texto. La version nueva son CUATRO lineas:**
 
 ```
-banda roja de brochazo   texto BLANCO pequeno en mayusculas   <- la premisa
+banda roja de brochazo   texto BLANCO pequeno en mayusculas    <- la premisa
 palabra BLANCA enorme    contorno negro, textura desgastada
-palabra AMARILLA enorme  con un brochazo rojo debajo          <- el golpe
+palabra AMARILLA enorme  con un brochazo rojo debajo           <- el golpe
+barra NEGRA fina         texto blanco + UNA palabra en ROJO    <- la especificidad
 ```
 
-Ejemplos reales:
+Ejemplos reales, en orden de evolucion:
 
-| banda roja | blanco | amarillo |
-|---|---|---|
-| 95% OF PEOPLE | OVERTHINK | EVERYTHING |
-| YOUR BRAIN THINKS | IT'S BEING | HUNTED |
+| banda roja | blanco | amarillo | barra negra |
+|---|---|---|---|
+| 95% OF PEOPLE | OVERTHINK | EVERYTHING | — |
+| YOUR BRAIN THINKS | IT'S BEING | HUNTED | — |
+| YOUR BRAIN THINKS | IT'S STILL | HUNTING | THE 40,000 YEAR OLD **GLITCH** |
 
-La banda roja pone la premisa. El blanco arranca la frase. **El amarillo
-remata con la palabra que duele.** Siempre la palabra mas fuerte en amarillo.
+La banda roja pone la premisa. El blanco arranca la frase. **El amarillo remata
+con la palabra que duele.** Y la barra negra, que es lo nuevo, **mete un numero
+concreto y una sola palabra en rojo**: el numero da credibilidad, la palabra
+roja da el concepto. `40,000 YEAR OLD` + `GLITCH`.
+
+Esa cuarta linea es la mejora. Un numero especifico convierte una frase
+generica en una promesa concreta.
 
 **4. Tipografia.** Condensada, muy alta y estrecha, tipo Anton. Mayusculas.
 Contorno negro grueso. Textura rayada encima, no plana.
@@ -73,27 +87,33 @@ antes de leer el titulo.
 
 *Why Didn't Evolution Remove Your Fear of Being Seen?*
 
-**Texto**, siguiendo exactamente el patron de las otras dos:
+**Texto**, sobre la plantilla nueva de cuatro lineas:
 
 ```
 banda roja    →  YOUR BRAIN SAYS
 blanco        →  DON'T BE
-amarillo      →  SEEN
+amarillo      →  SEEN                              (subrayado rojo)
+barra negra   →  THE 300,000 YEAR OLD  CAMOUFLAGE   (la ultima palabra en rojo)
 ```
 
-Mismo molde que `YOUR BRAIN THINKS / IT'S BEING / HUNTED`. El espectador que
-ya vio una reconoce la siguiente.
+Mismo molde que `YOUR BRAIN THINKS / IT'S STILL / HUNTING / THE 40,000 YEAR OLD
+GLITCH`. El espectador que vio una reconoce la siguiente antes de leerla.
 
-**Escena.** El host a la derecha, apretado contra la oscuridad, con las dos
-manos a medio subir tapandose de un **foco blanco duro que le cae encima desde
-arriba**. Los ojos muy abiertos, la boca abierta. Detras de el, en el negro,
-**decenas de pares de ovalos palidos mirando**.
+`300,000` es el numero real de la tesis y `CAMOUFLAGE` es el concepto del
+video: el sindrome del impostor como sistema de camuflaje.
 
-La ironia dramatica: **el reflector ya lo encontro.** El se esta tapando de
-una luz que lleva rato sobre el.
+**Escena, con la escala nueva.** Primer plano extremo de la cara del host
+cortada por los bordes, ocupando la mitad izquierda-centro. **Un ojo enorme muy
+abierto**, con venas rojas y gotas de sudor bajando por la piel agrietada.
+Sobre el ojo cae en diagonal **una franja de luz blanca y dura de reflector**.
+
+En la mitad derecha, en el azul frio: **una pared de decenas de caras palidas
+pequenas mirandolo**, tratadas con el mismo glitch de rayas y aberracion.
+
+La ironia dramatica: **el reflector ya lo encontro.** El ojo esta reaccionando
+a una luz que lleva rato encima.
 
 Arriba a la derecha: el garabato blanco, los signos, los rayos.
-Abajo a la derecha: la taza DISCIPLINE FOCUS FUTURE.
 
 ---
 
