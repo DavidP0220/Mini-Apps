@@ -90,11 +90,16 @@ antes de leer el titulo.
 **Texto. CERRADO por David el 2026-08-30:**
 
 ```
-banda roja    →  IT'S NOT SHYNESS
+banda roja    →  THIS IS NOT SHYNESS
 blanco        →  YOUR BRAIN
 amarillo      →  IS HIDING YOU              (subrayado rojo)
-barra negra   →  AND IT LEARNED IT  300,000 YEARS AGO
+barra negra   →  ONLY WHEN YOU WIN  ON PURPOSE
 ```
+
+La barra ya no dice `AND IT LEARNED IT 300,000 YEARS AGO`. Ese era un dato del
+pasado. `ONLY WHEN YOU WIN` es la tesis del video convertida en una acusacion
+sobre el espectador: el sindrome del impostor **no se dispara cuando fallas,
+se dispara cuando ganas.** Y `ON PURPOSE` en rojo dice que no es un accidente.
 
 Sigue la formula de la miniatura de `IT'S NOT AN ADDICTION`, que es la mejor
 del canal, y no la de las anteriores:
@@ -170,6 +175,37 @@ Recortar un fotograma solo sirve si los fotogramas tienen suficiente detalle.
 genera aparte**, con detalle, volumen y expresion — y despues pasa por los
 pasos 2 a 6 igual que las demas. La tipografia siempre por codigo. Lo unico
 que cambia es de donde sale la base.
+
+---
+
+---
+
+## LA REGLA: cada miniatura tiene que ser mejor que la anterior
+
+David, 2026-08-31: *"tienes que hacer cada vez algo mejor, no puedes fallar en
+eso"*. Para poder cumplirlo hay que poder medirlo. Estas son las mejoras
+verificadas, en orden:
+
+| Version | Que sumo |
+|---|---|
+| 95% OF PEOPLE / OVERTHINK / EVERYTHING | la plantilla: banda roja, blanco, amarillo |
+| YOUR BRAIN THINKS / IT'S BEING / HUNTED | fondo negro puro, glitch, mas contraste |
+| ...IT'S STILL HUNTING / THE 40,000 YEAR OLD GLITCH | **cuarta linea** con numero y palabra roja; **primer plano extremo** de un ojo |
+| IT'S NOT AN ADDICTION / ...AND SOMEBODY DESIGNED IT | la banda roja **contradice**; frase completa con sujeto y verbo; la barra es **acusacion**, no dato |
+| THIS IS NOT ADDICTION / ...4 HOURS A DAY BY DESIGN | banda **mas corta y mas dura**; tipografia **mas grande, ~55% del ancho**; caja negra maciza tras el blanco; color **mas saturado**; y la barra pasa de un dato del pasado a **un numero sobre el espectador** |
+
+**El salto que mas vale es el ultimo.** `THE 40,000 YEAR OLD GLITCH` habla de
+la prehistoria. `4 HOURS A DAY` habla del dia de ayer del que mira. Un dato
+sobre el pasado se lee; un numero sobre uno mismo se clica.
+
+### Lo que hay que superar en la proxima
+
+1. La barra inferior debe llevar **algo cuantificado del espectador**, no del
+   pasado.
+2. El bloque de texto ocupa **55% del ancho**, no menos.
+3. La banda roja: **cuatro palabras o menos.**
+4. Si la version nueva no gana en al menos uno de esos tres frentes, no es
+   nueva: es la misma otra vez.
 
 ---
 

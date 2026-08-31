@@ -80,17 +80,19 @@ def render(base, setup, cuerpo, remate, sub1, sub_rojo, salida, desplazar=0):
     im=ImageEnhance.Contrast(im).enhance(1.15).convert('RGBA')
     d=ImageDraw.Draw(im)
 
-    fset=ImageFont.truetype(F,54)
-    fbig=ImageFont.truetype(F,132)
-    fsub=ImageFont.truetype(F,44)
+    # medidas leidas de la mejor miniatura del canal (THIS IS NOT ADDICTION):
+    # el bloque de texto ocupa ~55% del ancho, no ~45%
+    fset=ImageFont.truetype(F,60)
+    fbig=ImageFont.truetype(F,150)
+    fsub=ImageFont.truetype(F,48)
 
     bb=fset.getbbox(setup); bw=bb[2]-bb[0]+52; bh=bb[3]-bb[1]+30
     banda_brocha(d, 52, 44, bw, bh)
     d.text((52+26, 44+15-bb[1]), setup, font=fset, fill=(255,255,255))
 
     y=44+bh+30
-    texto_texturado(im,(44,y),cuerpo,fbig,(255,255,255)); y+=140
-    wrem=texto_texturado(im,(44,y),remate,fbig,(255,206,8)); y+=150
+    texto_texturado(im,(44,y),cuerpo,fbig,(255,255,255)); y+=158
+    wrem=texto_texturado(im,(44,y),remate,fbig,(255,206,8)); y+=168
 
     # linea roja de brocha: sigue el ancho real de la palabra amarilla,
     # nunca un ancho fijo. Con una palabra corta la raya ya no sobresale.
@@ -129,5 +131,5 @@ if __name__ == '__main__':
     #   grande      -> frase completa, con sujeto y verbo
     #   barra negra -> ACUSACION que abre una pregunta, no un dato cerrado
     if os.path.exists('miniatura_v7_base.png'):
-        render('miniatura_v7_base.png',"IT'S NOT SHYNESS","YOUR BRAIN","IS HIDING YOU",
-               "AND IT LEARNED IT","300,000 YEARS AGO","MINIATURA_V7.jpg")
+        render('miniatura_v7_base.png',"THIS IS NOT SHYNESS","YOUR BRAIN","IS HIDING YOU",
+               "ONLY WHEN YOU WIN","ON PURPOSE","MINIATURA_V7.jpg")
