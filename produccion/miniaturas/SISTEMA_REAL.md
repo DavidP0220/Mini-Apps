@@ -117,6 +117,52 @@ Arriba a la derecha: el garabato blanco, los signos, los rayos.
 
 ---
 
+---
+
+## COMO SE CONSTRUYE — por codigo, no con IA generativa
+
+Metodo del Claude del PC, 2026-08-30. Vive en `_miniaturas.py` y tarda
+segundos en sacar cualquier variante.
+
+**Generar la miniatura con IA es la via equivocada.** Componerla por codigo
+desde las imagenes del propio video garantiza dos cosas que la IA no puede:
+el personaje es exactamente el del video, y la tipografia es **identica** entre
+miniaturas, no parecida. Ese era el problema que llevabamos meses arrastrando.
+
+Los seis pasos:
+
+1. **La base es un fotograma del propio video**, escalado a 1080p y recortado a
+   1280x720 desplazando el encuadre para dejar al personaje a la derecha.
+   No se genera nada nuevo.
+2. **Degradado oscuro sobre el lado izquierdo**, suave. Es lo que le da al
+   texto donde respirar y lo que lo hace legible a tamano pequeno.
+3. **Texto en Anton** (de Google Fonts; la fuente del canal **no era Impact**),
+   con el contorno negro dibujado en varias pasadas alrededor de cada letra.
+4. **Textura de aranazos**: rayas y puntos al azar aplicados **solo sobre el
+   relleno de la letra, nunca sobre el contorno**. Ese detalle es lo que da el
+   aspecto desgastado de las miniaturas buenas.
+5. **La banda roja no es un rectangulo**: es un poligono con los bordes
+   irregulares al azar, para que parezca dada a brocha.
+6. **Fusion de dos imagenes del video** con mascara desenfocada, para que la
+   union no se note.
+
+### El limite de este metodo, y cuando NO aplica
+
+Recortar un fotograma solo sirve si los fotogramas tienen suficiente detalle.
+
+- **Video 5:** sus imagenes vienen de Google Flow, con volumen y textura. El
+  recorte funciona perfecto.
+- **Video 7:** sus imagenes son **planas a proposito** — cel-shading, contorno
+  duro, cara neutra. Recortar un fotograma plano da exactamente la miniatura
+  sosa que ya rechazamos una vez.
+
+**Regla:** en videos de estilo plano, la imagen base de la miniatura **se
+genera aparte**, con detalle, volumen y expresion — y despues pasa por los
+pasos 2 a 6 igual que las demas. La tipografia siempre por codigo. Lo unico
+que cambia es de donde sale la base.
+
+---
+
 ## Prueba obligatoria antes de aprobar
 
 Bajarla a **210x118 px** y mirarla. Si el amarillo no se lee o el host se
