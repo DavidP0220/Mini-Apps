@@ -654,5 +654,265 @@ BLOQUE_08 = [
  "far below on the ground",True),
 ]
 
+BLOQUE_09 = [
+("SH161","Medium shot",
+ "a tall narrow stone column rising out of flat ground with a wide cone of hard white light falling "
+ "onto its flat top from above",False),
+
+("SH162","Medium close-up",
+ "standing squarely facing the camera, evenly lit against a plain background, completely still",True),
+
+("SH163","Wide shot",
+ "a plain room with a stack of objects fallen over on the floor, the light calm and even, and nobody "
+ "anywhere in the frame",False),
+
+("SH164","Medium shot",
+ "holding a finished object up above his head with both hands while a group of grey figures stands "
+ "around him watching",True),
+
+("SH165","Close-up",
+ "one grey hand entering from the edge of the frame with the index finger pointing straight out "
+ "toward the viewer, lit hard from one side",False),
+
+("SH166","Medium shot",
+ "looking down at his own two open hands held in front of him, the palms turned up and lit warm",True),
+
+("SH167","Close-up",
+ "a solid stone object resting plainly on a flat surface in bright even light, its shape clear and "
+ "undeniable, sharp shadow beneath it",False),
+
+("SH168","Medium shot",
+ "two grey hands drawing a heavy cloth over that same stone object until only its outline shows "
+ "under the fabric",False),
+
+("SH169","Wide shot",
+ "standing flat against a patterned wall whose colours and shapes match his clothes so closely that "
+ "only his thin black outline separates him from it",True),
+
+("SH170","Medium shot",
+ "a ring of grey figures seen straight on and standing shoulder to shoulder, all of them facing "
+ "directly toward the viewer",False),
+
+("SH171","Wide shot",
+ "that same ring of ground now completely empty, the fire burned out and grey ash spread flat where "
+ "it was, cold blue light over everything",False),
+
+("SH172","Medium shot",
+ "twenty small grey figures standing in one tight ring, drawn small in the lower left corner of an "
+ "otherwise empty pale frame",False),
+
+("SH173","Wide shot",
+ "an enormous city grid seen from very high above at night, filled edge to edge with countless tiny "
+ "points of warm light",False),
+
+("SH174","Medium shot",
+ "walking straight through a dense crowd of grey figures on a wide street, every one of them facing "
+ "away and continuing on their own path",True),
+
+("SH175","Close-up",
+ "a full shelf of stacked food lit plainly and evenly, with open space around it and nobody standing "
+ "near it",False),
+
+("SH176","Wide shot",
+ "an open doorway standing wide with a brightly lit street visible through it, warm light filling the "
+ "whole opening",False),
+
+("SH177","Medium shot",
+ "standing under one clear pool of light while three grey figures walk toward him with their hands "
+ "held open in front of them",True),
+
+("SH178","Close-up",
+ "one hand raised in the air being pressed firmly back down by a second hand laid flat on top of it, "
+ "against a dark background",False),
+
+("SH179","Medium shot",
+ "one open modern palm receiving a small bright glowing object placed into it from above, lit warm",False),
+
+("SH180","Wide shot",
+ "a large stone pyramid standing the right way up on a wide plain, solid on its broad base under a "
+ "clear pale sky",False),
+]
+
+BLOQUE_10 = [
+("SH181","Medium shot",
+ "a row of grey figures standing side by side at exactly the same height, with one figure at the "
+ "precise centre of the row",False),
+
+("SH182","Close-up",
+ "two steady hands working carefully on a small object, the movements neat and unhurried, lit warm "
+ "and evenly",False),
+
+("SH183","Wide shot",
+ "a modern crowd where every figure is brightly lit except one in the middle, who is drawn in flat "
+ "dull grey",False),
+
+("SH184","Medium shot",
+ "one hand reaching past that grey middle figure to take hold of the brightly lit figure standing "
+ "just behind him",False),
+
+("SH185","Wide shot",
+ "standing flat against a patterned wall so evenly matched to it that only the faintest outline of "
+ "his shoulders and cap separates him from the surface",True),
+
+("SH186","Close-up",
+ "a small round alarm bell mounted on a bare wall, its clapper caught mid-strike, sound lines drawn "
+ "radiating out from it",False),
+
+("SH187","Medium shot",
+ "that same bell ringing on the wall of a completely empty room with bare floorboards and nothing "
+ "else in the frame",False),
+
+("SH188","Wide shot",
+ "a cold empty landscape at dawn with flat grey light, bare ground and open sky, and nothing moving "
+ "anywhere in it",False),
+
+("SH189","Medium shot",
+ "resting one hand flat on top of a closed wooden drawer packed tight with papers, the drawer shut "
+ "and the room dim",True),
+
+("SH190","Close-up",
+ "a blank sheet of paper pinned to a corkboard with one empty pin stuck in the board beside it",False),
+
+("SH191","Wide shot",
+ "sitting in the back row of a bright meeting room while another figure stands at the front "
+ "presenting, every other head turned toward the front",True),
+
+("SH192","Medium shot",
+ "holding one hand still in the air just above a large switch on a wall, the fingers open and not "
+ "touching it",True),
+
+("SH193","Close-up",
+ "that same hand drawing back away from the switch, the fingers curling in, the switch left "
+ "untouched",False),
+
+("SH194","Medium shot",
+ "a figure in a neat pressed suit standing politely upright, while the shadow it casts on the wall "
+ "behind is the shape of a crouching animal",False),
+
+("SH195","Close-up",
+ "a thick stack of papers being pushed back down into an open drawer by one flat hand",False),
+
+("SH196","Wide shot",
+ "five figures in neat suits standing in a row, each one casting the same crouching animal shadow "
+ "onto the wall behind them",False),
+
+("SH197","Medium shot",
+ "standing with his mouth open in speech and one arm raised toward that suited figure, which stays "
+ "perfectly still and unmoved",True),
+
+("SH198","Close-up",
+ "a tall neat stack of finished work sitting on a desk in even light, untouched and complete",False),
+
+("SH199","Wide shot",
+ "a small round smoke detector on a high ceiling, and far below it on the floor a wide circle of "
+ "cold grey ancient ash",False),
+
+("SH200","Medium shot",
+ "that same smoke detector on the ceiling with loud sound lines radiating from it, directly above a "
+ "single piece of burnt toast sitting on a plate",False),
+]
+
+BLOQUE_11 = [
+("SH201","Wide shot",
+ "standing squarely facing the camera in a plain evenly lit space with one hand open at his side, "
+ "calm and still",True),
+
+("SH202","Medium shot",
+ "an intricate machine of brass gears and levers running smoothly, every wheel turning cleanly in "
+ "mesh with the next, lit warm",False),
+
+("SH203","Wide shot",
+ "that same machine standing alone in the middle of an empty ruined landscape under a grey sky, "
+ "still turning, with nothing around it",False),
+
+("SH204","Close-up",
+ "one hand laying a heavy wrench down flat on the ground beside the running machine, the fingers "
+ "open and releasing it",False),
+
+("SH205","Medium close-up",
+ "standing with his chest and shoulders drawn tight, both arms pressed close to his sides, one hard "
+ "band of cold tone across his chest",True),
+
+("SH206","Medium shot",
+ "two plain stone tiles lying side by side on a flat surface, the left one carved with an open hand "
+ "and the right one carved with a single solid black oval",False),
+
+("SH207","Close-up",
+ "the right stone tile lifted up and held in two fingers against the light, its carved black oval "
+ "clear and sharp",False),
+
+("SH208","Medium shot",
+ "the left stone tile lying half buried in dry cracked earth, its carved surface worn down and dusty",False),
+
+("SH209","Wide shot",
+ "a modern living room floor with the faint pale outline of an ancient ring of stones and a fire "
+ "circle showing through the floorboards",False),
+
+("SH210","Medium shot",
+ "a group of simplified figures seated close together inside a ring of warm orange firelight at "
+ "night, shoulders touching",False),
+
+("SH211","Close-up",
+ "the exact edge where the orange firelight stops and solid black begins, the boundary hard and "
+ "clean across the frame",False),
+
+("SH212","Wide shot",
+ "that same fire circle seen from far outside in the cold dark, small and warm and bright in the "
+ "middle of a wide black plain",False),
+
+("SH213","Medium close-up",
+ "resting one open hand flat over the centre of his own chest, the light warm on his knuckles and "
+ "his face calm",True),
+
+("SH214","Close-up",
+ "that same hand pressed flat over the chest of a grey hoodie, the fingers spread wide, warm light "
+ "across the back of the hand",False),
+
+("SH215","Medium shot",
+ "an old worn map spread open on a wooden table, drawn with simple thick lines and rubbed thin along "
+ "its folds",False),
+
+("SH216","Close-up",
+ "the centre of that map showing thirty small marks arranged in a ring around one single drawn "
+ "circle, the paper yellowed",False),
+
+("SH217","Wide shot",
+ "that same old map lying open on a modern desk beside a tall window filled with a bright city at "
+ "night",False),
+
+("SH218","Medium shot",
+ "folding the old map closed calmly with both hands, his movements unhurried, warm lamplight on the "
+ "desk",True),
+
+("SH219","Close-up",
+ "one open hand resting gently on top of a ringing alarm bell, quieting it while leaving it fixed in "
+ "place on the wall",False),
+
+("SH220","Medium shot",
+ "standing upright and ready with his shoulders level and both arms loose at his sides, evenly lit "
+ "against a plain background",True),
+
+("SH221","Wide shot",
+ "standing at the edge of a lit stage with one hard circle of white light at his feet and a wide dark "
+ "auditorium opening out in front of him",True),
+
+("SH222","Medium shot",
+ "taking one full step forward so that his leading foot crosses the bright edge of the circle of "
+ "light, his body moving into it",True),
+
+("SH223","Medium close-up",
+ "standing fully lit and facing forward, his face calm and unreadable, the light even and warm "
+ "across him",True),
+
+("SH224","Wide shot",
+ "an old carved stone tablet lying flat in the middle of a wide circle of cold grey ash, one deep "
+ "crack running down its centre",False),
+
+("SH225","Close-up",
+ "that same stone tablet broken cleanly into two pieces, with bright white light pouring up through "
+ "the gap between them",False),
+]
+
 BLOQUES = {1: BLOQUE_01, 2: BLOQUE_02, 3: BLOQUE_03, 4: BLOQUE_04,
-           5: BLOQUE_05, 6: BLOQUE_06, 7: BLOQUE_07, 8: BLOQUE_08}
+           5: BLOQUE_05, 6: BLOQUE_06, 7: BLOQUE_07, 8: BLOQUE_08,
+           9: BLOQUE_09, 10: BLOQUE_10, 11: BLOQUE_11}

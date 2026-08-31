@@ -47,14 +47,22 @@ sola, se acumula.
 
 ## Hojas disponibles
 
-- `produccion/impostor/LOTE_01.txt` — 20 prompts, apertura de Impostor
-- `produccion/impostor/LOTE_02.txt` — 20 prompts, la explicacion facil y su muerte
-- `produccion/impostor/LOTE_03.txt` — 20 prompts, la muerte de la confianza y la explicacion social
-- `produccion/impostor/LOTE_04.txt` — 20 prompts, la banda y la jerarquia inversa
-- `produccion/impostor/LOTE_05.txt` — 20 prompts, el castigo del grupo
-- `produccion/impostor/LOTE_06.txt` — 20 prompts, las apuestas reales y el evento de seleccion
-- `produccion/impostor/LOTE_07.txt` — 20 prompts, el giro oscuro y la herencia
-- `produccion/impostor/LOTE_08.txt` — 20 prompts, el giro meta: el exito es el disparador
+**Las 11 hojas del video 7, completas: SH001 a SH225.**
+
+| Hoja | Planos | Tramo del video |
+|---|---|---|
+| LOTE_01 | SH001-020 | hook |
+| LOTE_02 | SH021-040 | la explicacion facil |
+| LOTE_03 | SH041-060 | su muerte, y la explicacion social |
+| LOTE_04 | SH061-080 | la banda y la jerarquia inversa |
+| LOTE_05 | SH081-100 | el castigo del grupo |
+| LOTE_06 | SH101-120 | las apuestas reales, el evento de seleccion |
+| LOTE_07 | SH121-140 | el giro oscuro, la herencia |
+| LOTE_08 | SH141-160 | el giro meta: el exito es el disparador |
+| LOTE_09 | SH161-180 | la inversion, el desajuste |
+| LOTE_10 | SH181-200 | lo que cuesta, el detector de humo |
+| LOTE_11 | SH201-225 | el cierre |
+
 
 ## Para generar hojas nuevas
 
