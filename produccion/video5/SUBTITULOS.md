@@ -26,10 +26,34 @@ Que significa cada cosa:
 | Alignment | 2 | centrado abajo |
 | MarginV | 110 | tercio inferior, sin chocar con la barra de YouTube |
 
-## Comando
+## Como se generan — con los tiempos reales, no estimados
 
+Edge TTS entrega, **en la misma pasada que el audio**, la marca de tiempo de
+cada palabra. No hay que adivinar cuando entra cada bloque: lo dice el propio
+locutor.
+
+**1. Voz y marcas juntas:**
+
+```bash
+edge-tts --voice en-US-AndrewNeural --rate=-15% \
+         --file NARRACION.txt \
+         --write-media VOZ.mp3 --write-subtitles VOZ.vtt
 ```
-ffmpeg -i video.mp4 -vf "ass=subs.ass" -c:a copy salida.mp4
+
+**2. Convertir a los subtitulos del canal:**
+
+```bash
+python3 produccion/subtitulos/subtitulos.py VOZ.vtt SUBS.ass
+```
+
+Reagrupa las palabras en bloques de 3 a 4, cortando en la puntuacion, las pasa
+a mayusculas y les pone el estilo de arriba. Ningun bloque baja de 0,4 s y
+ninguno se solapa con el siguiente.
+
+**3. Quemarlos sobre el video:**
+
+```bash
+ffmpeg -i video.mp4 -vf "ass=SUBS.ass" -c:a copy final.mp4
 ```
 
 ## Regla de corte
