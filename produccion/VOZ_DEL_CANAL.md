@@ -66,11 +66,36 @@ done
 Se incluye Andrew a proposito, para comparar contra lo que ya conocemos.
 Las cuatro se generan con `--rate=-15%` para oirlas al ritmo del nicho.
 
-## Decision
+## Decision — CERRADA
 
-- **Voz elegida:** _pendiente de la escucha de David_
-- **Rate:** pendiente de la medicion de wpm del nicho
-- **Fecha:** —
+- **Voz del canal: `en-US-AndrewNeural`**
+- **Decidida por David el 2026-08-30.** No se reabre.
+- **Rate: `-15%` por defecto**, hasta que la medicion del nicho diga otro numero.
 
-Una vez escrita aqui, **no se cambia.** Si alguna vez se cambia, se cambia
-para todos los videos siguientes y se anota por que.
+**Todos los videos, de aqui en adelante, con esta voz.** El espectador que
+vuelve reconoce la voz antes que la miniatura.
+
+### Lo que hay que vigilar con esta voz
+
+Andrew pertenece a la familia `Conversation, Copilot`, no a `News, Novel`. En
+la practica eso significa **una sola cosa que corregir siempre**: lee rapido.
+En el video 5 salio a **175 wpm**, muy por encima del rango del nicho
+(148-159).
+
+**Regla fija: ningun audio de este canal se genera sin `--rate`.**
+
+```bash
+edge-tts --voice en-US-AndrewNeural --rate=-15% \
+         --file NARRACION.txt --write-media VOZ.mp3
+ffprobe -v error -show_entries format=duration -of csv=p=0 VOZ.mp3
+```
+
+Y despues de generar, **siempre** se mide:
+
+```
+palabras del guion / duracion en segundos x 60 = wpm real
+```
+
+Si el resultado sale fuera de 148-159, se ajusta el `--rate` y se vuelve a
+generar. Es gratis y toma minutos. Publicar con la voz acelerada cuesta
+retencion.
