@@ -53,7 +53,12 @@ video es plano y sin orejas. **Y las miniaturas con ese estilo son justo las que
 > en la miniatura. La miniatura tiene su propio lenguaje y está funcionando. Cambiarla al estilo
 > plano del video sería igualar hacia abajo algo que ya gana.
 
-> ✅ **RATIFICADO POR DAVID EL 2026-08-30.** El loop de identidad visual generó una miniatura
+> ❌ **ANULADO POR DAVID EL 2026-08-31: "va sin orejas y ya".** El personaje de
+> miniatura pasa a ir **sin orejas, sin pelo y sin nariz**, igual que el del
+> video. Lo que lo distingue es la expresion, el volumen y la luz, no la
+> anatomia. Se deja abajo el acuerdo anterior como historial.
+>
+> ✅ ~~RATIFICADO POR DAVID EL 2026-08-30.~~ El loop de identidad visual generó una miniatura
 > alternativa con el personaje plano y sin orejas (V6, en `IDENTIDAD_VISUAL_2026-08-30/`). David la
 > comparó con la actual y **eligió mantener la de orejas y estilo 3D**. Este punto 7 deja de ser un
 > conflicto abierto y pasa a ser regla: **ningún agente propone quitarle las orejas al personaje de

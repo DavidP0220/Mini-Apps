@@ -23,17 +23,22 @@ herramienta.
 Un fotograma plano del video no sirve: el personaje sale centrado y de frente,
 y al recortar a la derecha solo se ve la capucha.
 
-## Contradiccion abierta — pendiente de David
+## Orejas: CERRADO — van SIN orejas
 
-`FORMULA_MINIATURAS_MM.md` punto 7 dice, ratificado por David el 2026-08-30,
-que el personaje de miniatura **lleva orejas y estilo 3D**, y que ningun agente
-debe proponer quitarselas.
+David, 2026-08-31: *"va sin orejas y ya"*. **Esto anula el punto 7 de
+`FORMULA_MINIATURAS_MM.md`**, que decia lo contrario y estaba ratificado el
+2026-08-30.
 
-El 2026-08-31, en el chat, David dijo *"sin orejas, recuerda que estaba mal"*.
+Queda constancia del costo, porque el dato es del propio canal: las dos
+miniaturas que rinden **13-14% de CTR** llevan orejas y sombreado 3D. Se cambia
+igual, por decision de David, y si algun dia se quiere medir se hace como
+prueba A/B explicita.
 
-Lo mas probable es que se refiriera a la ilustracion anime rechazada —que tenia
-orejas, pelo, nariz y ademas no era el personaje—, pero **hasta que lo confirme
-no se genera ninguna base nueva**, porque la instruccion cambia por completo.
+**Regla vigente:** el personaje de miniatura va **sin orejas, sin pelo y sin
+nariz**, igual que el del video. Lo que lo separa del personaje del video no es
+la anatomia sino **la expresion, el volumen y la luz**: cejas quebradas, boca
+tensa, luz de borde calida y textura. Una cara neutra mata la miniatura
+(punto 4 de la formula, ese sigue vigente).
 
 ## Medidas de la composicion, tomadas de la referencia
 
