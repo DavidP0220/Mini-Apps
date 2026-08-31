@@ -40,6 +40,31 @@ la anatomia sino **la expresion, el volumen y la luz**: cejas quebradas, boca
 tensa, luz de borde calida y textura. Una cara neutra mata la miniatura
 (punto 4 de la formula, ese sigue vigente).
 
+## EL OJO: ovalo negro macizo, nunca anatomico
+
+David, 2026-08-31, viendo la ilustracion rechazada: *"pilas con esos ojos, eso
+no se parece a mi personaje"*.
+
+**Era el fallo de fondo de todos los intentos.** El prompt pedia
+`bloodshot white, wide iris, bright highlight` — un ojo anatomico. El personaje
+del canal **no tiene ojos anatomicos**: tiene dos ovalos negros macizos. Cada
+vez que se le pide un iris, Artistly dibuja el ojo de otro personaje, y con el
+ojo se va el personaje entero.
+
+La miniatura del video 5 tiene un ojo con venas porque aquel personaje era
+distinto. **De esa referencia se copia la escala y el drama, jamas el ojo.**
+
+Formula fija para el ojo en miniatura:
+
+```
+one solid black oval shape, 100% solid black from edge to edge,
+a single flat silhouette of one uniform black, like a paper cut-out
+```
+
+El impacto lo dan **el tamano, la ceja quebrada, el sudor y la franja de luz**,
+nunca el detalle anatomico. Un ovalo negro macizo del tamano de media pantalla
+pega mas fuerte que un ojo realista, y ademas es suyo.
+
 ## Medidas de la composicion, tomadas de la referencia
 
 | | |
