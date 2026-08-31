@@ -16,25 +16,25 @@ def ok(c, msg, dato=""):
     if c: return True
     return False
 
-print("=" * 68); print("BARRIDO DE PRODUCCION — Impostor"); print("=" * 68)
+print("=" * 68); print("BARRIDO DE PRODUCCION — Apendice"); print("=" * 68)
 
 # ---------- 1. guion ----------
 print("\n[1] GUION")
-g = open('GUION_impostor.md', encoding='utf-8').read()
+g = open('GUION_apendice.md', encoding='utf-8').read()
 txt = re.sub(r'\*+', '', ' '.join(
     l for l in g.split('## Verificacion de beats')[0].split('\n---\n',1)[1].split('\n')
     if l.strip() and not l.lstrip().startswith(('#','|','---','>')))).strip()
 n_pal = len(txt.split()); dur = n_pal / WPM * 60
 ok(True, f"palabras habladas: {n_pal} -> {int(dur//60)}:{int(dur%60):02d}")
 
-BEATS = [("palabra del tema","Impostor syndrome",None),
-         ("pregunta del titulo","nobody has ever explained why",None),
-         ("comment one / zero","Comment one if you have felt",(.36,.44)),
-         ("2a persona con ano","Tuesday in 40,000 BC",(.40,.49)),
+BEATS = [("palabra del tema","Your appendix.",None),
+         ("pregunta del titulo","nobody has ever explained",None),
+         ("comment one / zero","Comment one if you have had",(.36,.44)),
+         ("2a persona con ano","It is 1348",(.40,.49)),
          ("giro oscuro","I want to be honest",(.52,.58)),
          ("giro meta","And here's where it flips",(.65,.72)),
-         ("comment eight","Comment eight if you",(.85,.90)),
-         ("cierre citable","peace treaty with a tribe",(.90,1.0))]
+         ("comment eight","Comment eight if you never knew",(.85,.90)),
+         ("cierre citable","spare tire for a road",(.90,1.0))]
 for nom, frag, v in BEATS:
     i = txt.find(frag)
     if i < 0: fallos.append(f"beat ausente: {nom}"); continue

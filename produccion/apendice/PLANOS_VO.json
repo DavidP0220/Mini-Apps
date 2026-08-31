@@ -1,0 +1,1802 @@
+[
+ {
+  "shot": "SH001",
+  "entrada": "0:00.0",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in lento",
+  "vo": "There is an organ inside you right now."
+ },
+ {
+  "shot": "SH002",
+  "entrada": "0:03.0",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "zoom out lento",
+  "vo": "Your own doctor will tell you it is useless."
+ },
+ {
+  "shot": "SH003",
+  "entrada": "0:06.4",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in fuerte",
+  "vo": "It sits low on the right side of your abdomen."
+ },
+ {
+  "shot": "SH004",
+  "entrada": "0:10.2",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la izquierda",
+  "vo": "It is the size of your little finger."
+ },
+ {
+  "shot": "SH005",
+  "entrada": "0:13.2",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "tilt hacia arriba",
+  "vo": "You have one. So does everyone you know."
+ },
+ {
+  "shot": "SH006",
+  "entrada": "0:16.2",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "paneo a la derecha",
+  "vo": "For a hundred and fifty years,"
+ },
+ {
+  "shot": "SH007",
+  "entrada": "0:18.5",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "tilt hacia abajo",
+  "vo": "medicine has agreed on one thing about it."
+ },
+ {
+  "shot": "SH008",
+  "entrada": "0:21.5",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in lento",
+  "vo": "It does nothing. Your appendix. Here is what nobody explains."
+ },
+ {
+  "shot": "SH009",
+  "entrada": "0:25.3",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "zoom out lento",
+  "vo": "If it does nothing, it should have shrunk away."
+ },
+ {
+  "shot": "SH010",
+  "entrada": "0:28.7",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "zoom in fuerte",
+  "vo": "That is what evolution does. It took our tails. It thinned our fur."
+ },
+ {
+  "shot": "SH011",
+  "entrada": "0:33.6",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la izquierda",
+  "vo": "But this one is still here. Full size."
+ },
+ {
+  "shot": "SH012",
+  "entrada": "0:36.6",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "paneo a la derecha",
+  "vo": "In all of us. And it can kill you."
+ },
+ {
+  "shot": "SH013",
+  "entrada": "0:40.0",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "tilt hacia arriba",
+  "vo": "Why didn't evolution remove your appendix —"
+ },
+ {
+  "shot": "SH014",
+  "entrada": "0:42.7",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "tilt hacia abajo",
+  "vo": "and nobody has ever explained why."
+ },
+ {
+  "shot": "SH015",
+  "entrada": "0:45.0",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in lento",
+  "vo": "The answer is not that evolution missed it."
+ },
+ {
+  "shot": "SH016",
+  "entrada": "0:48.0",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la izquierda",
+  "vo": "The answer is that it was never useless,"
+ },
+ {
+  "shot": "SH017",
+  "entrada": "0:51.0",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "and the man who called it useless was the most famous biologist who ever lived."
+ },
+ {
+  "shot": "SH018",
+  "entrada": "0:56.7",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom out lento",
+  "vo": "The standard answer is leftovers. The story goes like this:"
+ },
+ {
+  "shot": "SH019",
+  "entrada": "1:00.5",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "zoom in fuerte",
+  "vo": "our ancestors ate leaves. Leaves are hard to digest,"
+ },
+ {
+  "shot": "SH020",
+  "entrada": "1:03.9",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "paneo a la derecha",
+  "vo": "so they needed a large fermentation chamber in the gut."
+ },
+ {
+  "shot": "SH021",
+  "entrada": "1:07.7",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "tilt hacia arriba",
+  "vo": "When our diet changed, that chamber shrank,"
+ },
+ {
+  "shot": "SH022",
+  "entrada": "1:10.4",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "tilt hacia abajo",
+  "vo": "and the appendix is what is left of it."
+ },
+ {
+  "shot": "SH023",
+  "entrada": "1:13.8",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "zoom in lento",
+  "vo": "A tail end. A scar from an older menu. Charles Darwin wrote this himself,"
+ },
+ {
+  "shot": "SH024",
+  "entrada": "1:19.1",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom out lento",
+  "vo": "in 1871. He listed the appendix as a vestigial remnant,"
+ },
+ {
+  "shot": "SH025",
+  "entrada": "1:22.9",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "paneo a la izquierda",
+  "vo": "evidence of our descent from leaf-eating ancestors. Coming from him,"
+ },
+ {
+  "shot": "SH026",
+  "entrada": "1:26.7",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "zoom in fuerte",
+  "vo": "it stopped being a hypothesis and became a fact."
+ },
+ {
+  "shot": "SH027",
+  "entrada": "1:30.1",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "paneo a la derecha",
+  "vo": "It is also wrong, and the reason is simple enough to check."
+ },
+ {
+  "shot": "SH028",
+  "entrada": "1:34.7",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "tilt hacia arriba",
+  "vo": "Evolution does not politely leave useless organs at full size."
+ },
+ {
+  "shot": "SH029",
+  "entrada": "1:38.5",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "It reclaims them. Building tissue costs energy, and tissue that can become infected costs lives."
+ },
+ {
+  "shot": "SH030",
+  "entrada": "1:44.2",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "tilt hacia abajo",
+  "vo": "A structure with no function gets smaller, generation after generation,"
+ },
+ {
+  "shot": "SH031",
+  "entrada": "1:48.0",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom in lento",
+  "vo": "until it is a trace. That is not what happened here."
+ },
+ {
+  "shot": "SH032",
+  "entrada": "1:52.2",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "zoom out lento",
+  "vo": "Your appendix is not a shrivelled remainder. It has its own blood supply."
+ },
+ {
+  "shot": "SH033",
+  "entrada": "1:57.1",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "zoom in fuerte",
+  "vo": "It has a dedicated muscular wall. And it is packed with lymphatic tissue —"
+ },
+ {
+  "shot": "SH034",
+  "entrada": "2:02.4",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "paneo a la izquierda",
+  "vo": "the same tissue your body uses to fight infection,"
+ },
+ {
+  "shot": "SH035",
+  "entrada": "2:05.8",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "tilt hacia arriba",
+  "vo": "in concentrations you do not find in a leftover."
+ },
+ {
+  "shot": "SH036",
+  "entrada": "2:09.2",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "Bodies do not spend that on garbage. Think about what a real vestige looks like,"
+ },
+ {
+  "shot": "SH037",
+  "entrada": "2:14.9",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "paneo a la derecha",
+  "vo": "because we have several. The muscles around your ears are still wired —"
+ },
+ {
+  "shot": "SH038",
+  "entrada": "2:19.8",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "tilt hacia abajo",
+  "vo": "a few people can wiggle them — but they are thin,"
+ },
+ {
+  "shot": "SH039",
+  "entrada": "2:24.0",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in lento",
+  "vo": "weak and shrinking, and they cost almost nothing."
+ },
+ {
+  "shot": "SH040",
+  "entrada": "2:27.0",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "zoom out lento",
+  "vo": "Your tailbone is three or four fused vertebrae where a tail used to be,"
+ },
+ {
+  "shot": "SH041",
+  "entrada": "2:32.3",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "paneo a la izquierda",
+  "vo": "and it does not have its own blood supply or its own muscular wall."
+ },
+ {
+  "shot": "SH042",
+  "entrada": "2:37.6",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "zoom in fuerte",
+  "vo": "That is what abandonment looks like: smaller, cheaper, on its way out."
+ },
+ {
+  "shot": "SH043",
+  "entrada": "2:42.2",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "paneo a la derecha",
+  "vo": "The appendix looks like the opposite. It looks maintained."
+ },
+ {
+  "shot": "SH044",
+  "entrada": "2:45.6",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "tilt hacia arriba",
+  "vo": "And there is a second problem with Darwin's version,"
+ },
+ {
+  "shot": "SH045",
+  "entrada": "2:49.0",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "tilt hacia abajo",
+  "vo": "which is that the animals do not cooperate."
+ },
+ {
+  "shot": "SH046",
+  "entrada": "2:52.0",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom in lento",
+  "vo": "If the appendix were the shrinking remainder of a leaf-eating gut,"
+ },
+ {
+  "shot": "SH047",
+  "entrada": "2:56.2",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "zoom out lento",
+  "vo": "it should be largest in the leaf eaters and absent in everyone else."
+ },
+ {
+  "shot": "SH048",
+  "entrada": "3:01.1",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in fuerte",
+  "vo": "It is not. Koalas, which eat almost nothing but leaves,"
+ },
+ {
+  "shot": "SH049",
+  "entrada": "3:04.9",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "paneo a la izquierda",
+  "vo": "have an enormous fermentation chamber and no appendix at the end of it."
+ },
+ {
+  "shot": "SH050",
+  "entrada": "3:09.8",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "paneo a la derecha",
+  "vo": "Rabbits have one. Wombats have one. We have one."
+ },
+ {
+  "shot": "SH051",
+  "entrada": "3:13.2",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "tilt hacia arriba",
+  "vo": "The pattern does not line up with diet at all."
+ },
+ {
+  "shot": "SH052",
+  "entrada": "3:17.0",
+  "seg": 6.1,
+  "palabras": 16,
+  "mov": "plano fijo",
+  "vo": "When a theory predicts a pattern and the pattern is not there, the theory is finished."
+ },
+ {
+  "shot": "SH053",
+  "entrada": "3:23.1",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "tilt hacia abajo",
+  "vo": "It only survived this long because of whose name was on it."
+ },
+ {
+  "shot": "SH054",
+  "entrada": "3:27.7",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in lento",
+  "vo": "The second answer is that appendicitis is a modern problem."
+ },
+ {
+  "shot": "SH055",
+  "entrada": "3:31.5",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "zoom out lento",
+  "vo": "Low fibre. Refined food. Western diets. Fix the diet, fix the appendix."
+ },
+ {
+  "shot": "SH056",
+  "entrada": "3:36.1",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "zoom in fuerte",
+  "vo": "That one is more interesting, because it is partly true and completely insufficient."
+ },
+ {
+  "shot": "SH057",
+  "entrada": "3:41.0",
+  "seg": 1.9,
+  "palabras": 5,
+  "mov": "paneo a la izquierda",
+  "vo": "Appendicitis does vary between populations."
+ },
+ {
+  "shot": "SH058",
+  "entrada": "3:42.9",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la derecha",
+  "vo": "But it shows up in societies with diets"
+ },
+ {
+  "shot": "SH059",
+  "entrada": "3:45.9",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "tilt hacia arriba",
+  "vo": "that have nothing in common with each other,"
+ },
+ {
+  "shot": "SH060",
+  "entrada": "3:48.9",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "tilt hacia abajo",
+  "vo": "and it showed up long before processed food existed."
+ },
+ {
+  "shot": "SH061",
+  "entrada": "3:52.3",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in lento",
+  "vo": "Egyptian mummies show it. Medieval remains show it."
+ },
+ {
+  "shot": "SH062",
+  "entrada": "3:55.3",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom out lento",
+  "vo": "And here is the detail that kills the diet theory outright:"
+ },
+ {
+  "shot": "SH063",
+  "entrada": "3:59.5",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "paneo a la izquierda",
+  "vo": "the organ itself is not degrading in any of those populations."
+ },
+ {
+  "shot": "SH064",
+  "entrada": "4:03.7",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in fuerte",
+  "vo": "It is not thinner in one and thicker in another."
+ },
+ {
+  "shot": "SH065",
+  "entrada": "4:07.5",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "paneo a la derecha",
+  "vo": "It is maintained. Identically. Everywhere. A part your body is actively maintaining,"
+ },
+ {
+  "shot": "SH066",
+  "entrada": "4:12.1",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "tilt hacia arriba",
+  "vo": "at cost, across every human population on earth, is not a leftover."
+ },
+ {
+  "shot": "SH067",
+  "entrada": "4:16.7",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "tilt hacia abajo",
+  "vo": "And the maintenance is not passive."
+ },
+ {
+  "shot": "SH068",
+  "entrada": "4:19.0",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in lento",
+  "vo": "Your appendix is one of the densest concentrations"
+ },
+ {
+  "shot": "SH069",
+  "entrada": "4:22.0",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la izquierda",
+  "vo": "of lymphatic tissue anywhere in your digestive system."
+ },
+ {
+  "shot": "SH070",
+  "entrada": "4:25.0",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom out lento",
+  "vo": "That tissue is expensive, it is metabolically active,"
+ },
+ {
+  "shot": "SH071",
+  "entrada": "4:28.0",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "zoom in fuerte",
+  "vo": "and it is the same tissue your body deploys where it expects a fight."
+ },
+ {
+  "shot": "SH072",
+  "entrada": "4:33.3",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "paneo a la derecha",
+  "vo": "You do not garrison an abandoned building."
+ },
+ {
+  "shot": "SH073",
+  "entrada": "4:36.0",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "tilt hacia arriba",
+  "vo": "So we have an organ that everyone calls useless,"
+ },
+ {
+  "shot": "SH074",
+  "entrada": "4:39.4",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "tilt hacia abajo",
+  "vo": "that the body pays to keep, that has no obvious job,"
+ },
+ {
+  "shot": "SH075",
+  "entrada": "4:43.6",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in lento",
+  "vo": "and that occasionally kills the person carrying it."
+ },
+ {
+  "shot": "SH076",
+  "entrada": "4:46.6",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la izquierda",
+  "vo": "Something in that description has to be wrong."
+ },
+ {
+  "shot": "SH077",
+  "entrada": "4:49.6",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "zoom out lento",
+  "vo": "It is the word useless. In 2007,"
+ },
+ {
+  "shot": "SH078",
+  "entrada": "4:52.3",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "zoom in fuerte",
+  "vo": "three researchers at Duke University — Randal Bollinger, William Parker and their colleagues —"
+ },
+ {
+  "shot": "SH079",
+  "entrada": "4:57.6",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la derecha",
+  "vo": "published a paper that reframed the whole question."
+ },
+ {
+  "shot": "SH080",
+  "entrada": "5:00.6",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "tilt hacia arriba",
+  "vo": "They were not asking what the appendix used to do."
+ },
+ {
+  "shot": "SH081",
+  "entrada": "5:04.4",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "tilt hacia abajo",
+  "vo": "They were asking what it is doing now. Their answer was this:"
+ },
+ {
+  "shot": "SH082",
+  "entrada": "5:09.0",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in lento",
+  "vo": "your gut is not empty. It holds trillions of bacteria,"
+ },
+ {
+  "shot": "SH083",
+  "entrada": "5:12.8",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "zoom out lento",
+  "vo": "and you cannot live without them. They break down what you cannot,"
+ },
+ {
+  "shot": "SH084",
+  "entrada": "5:17.4",
+  "seg": 1.9,
+  "palabras": 5,
+  "mov": "zoom in fuerte",
+  "vo": "they train your immune system,"
+ },
+ {
+  "shot": "SH085",
+  "entrada": "5:19.3",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "paneo a la izquierda",
+  "vo": "and they occupy the space that dangerous bacteria would otherwise take."
+ },
+ {
+  "shot": "SH086",
+  "entrada": "5:23.5",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "paneo a la derecha",
+  "vo": "That population is your most valuable and most fragile possession."
+ },
+ {
+  "shot": "SH087",
+  "entrada": "5:27.3",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "tilt hacia arriba",
+  "vo": "There are more bacterial cells in your intestine"
+ },
+ {
+  "shot": "SH088",
+  "entrada": "5:30.3",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in lento",
+  "vo": "than there are stars you can see with"
+ },
+ {
+  "shot": "SH089",
+  "entrada": "5:33.3",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "tilt hacia abajo",
+  "vo": "a telescope, and the specific mix of them took years to assemble."
+ },
+ {
+  "shot": "SH090",
+  "entrada": "5:37.9",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom out lento",
+  "vo": "It is not a generic sludge. It is a particular community,"
+ },
+ {
+  "shot": "SH091",
+  "entrada": "5:42.1",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in fuerte",
+  "vo": "tuned to you, and it cannot be rebuilt from nothing."
+ },
+ {
+  "shot": "SH092",
+  "entrada": "5:45.9",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "paneo a la izquierda",
+  "vo": "And every so often, something wipes it out. Dysentery. Cholera."
+ },
+ {
+  "shot": "SH093",
+  "entrada": "5:49.7",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "paneo a la derecha",
+  "vo": "Severe infection. For most of human history, those were not rare events."
+ },
+ {
+  "shot": "SH094",
+  "entrada": "5:54.3",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "tilt hacia arriba",
+  "vo": "They were ordinary. A bad season, bad water,"
+ },
+ {
+  "shot": "SH095",
+  "entrada": "5:57.3",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "tilt hacia abajo",
+  "vo": "and the entire contents of your intestine were flushed out in a day."
+ },
+ {
+  "shot": "SH096",
+  "entrada": "6:02.2",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in lento",
+  "vo": "Comment one if you have had yours removed."
+ },
+ {
+  "shot": "SH097",
+  "entrada": "6:05.2",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "zoom out lento",
+  "vo": "Comment zero if you still have it. I want to see the split."
+ },
+ {
+  "shot": "SH098",
+  "entrada": "6:10.1",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in fuerte",
+  "vo": "So what refills it? The appendix is a dead-end tube,"
+ },
+ {
+  "shot": "SH099",
+  "entrada": "6:13.9",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "paneo a la izquierda",
+  "vo": "narrow, with a single opening, tucked to one side of the main flow."
+ },
+ {
+  "shot": "SH100",
+  "entrada": "6:18.8",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la derecha",
+  "vo": "Anything living inside it is protected from the"
+ },
+ {
+  "shot": "SH101",
+  "entrada": "6:21.8",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "tilt hacia arriba",
+  "vo": "flood that empties the rest of the gut."
+ },
+ {
+  "shot": "SH102",
+  "entrada": "6:24.8",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "tilt hacia abajo",
+  "vo": "The walls are coated in biofilm — a dense,"
+ },
+ {
+  "shot": "SH103",
+  "entrada": "6:28.2",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in lento",
+  "vo": "organised colony of the exact bacteria you need."
+ },
+ {
+  "shot": "SH104",
+  "entrada": "6:31.2",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la izquierda",
+  "vo": "It is a backup drive. Not a leftover."
+ },
+ {
+  "shot": "SH105",
+  "entrada": "6:34.2",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom out lento",
+  "vo": "A safe house. Picture it. It is 1348."
+ },
+ {
+  "shot": "SH106",
+  "entrada": "6:37.2",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "zoom in fuerte",
+  "vo": "You drink from a well that everyone drinks from."
+ },
+ {
+  "shot": "SH107",
+  "entrada": "6:40.6",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la derecha",
+  "vo": "Two days later your body empties itself completely."
+ },
+ {
+  "shot": "SH108",
+  "entrada": "6:43.6",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "Everyone in your household is doing the same thing. Half of them will not recover."
+ },
+ {
+  "shot": "SH109",
+  "entrada": "6:49.3",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "tilt hacia arriba",
+  "vo": "You will. And the reason is a small tube you have never heard of,"
+ },
+ {
+  "shot": "SH110",
+  "entrada": "6:54.6",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "tilt hacia abajo",
+  "vo": "quietly holding a copy of you. When the storm passes,"
+ },
+ {
+  "shot": "SH111",
+  "entrada": "6:58.4",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "zoom in lento",
+  "vo": "the appendix reseeds the intestine with a clean copy of what was lost."
+ },
+ {
+  "shot": "SH112",
+  "entrada": "7:03.3",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom out lento",
+  "vo": "Days instead of months. In a world without clean water,"
+ },
+ {
+  "shot": "SH113",
+  "entrada": "7:07.1",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "zoom in fuerte",
+  "vo": "that difference is the difference between living and not."
+ },
+ {
+  "shot": "SH114",
+  "entrada": "7:10.5",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "paneo a la izquierda",
+  "vo": "And notice how well the shape fits the job."
+ },
+ {
+  "shot": "SH115",
+  "entrada": "7:13.9",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "paneo a la derecha",
+  "vo": "A dead end, so the current does not run through it."
+ },
+ {
+  "shot": "SH116",
+  "entrada": "7:18.1",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "tilt hacia arriba",
+  "vo": "Narrow, so very little gets flushed out. One opening,"
+ },
+ {
+  "shot": "SH117",
+  "entrada": "7:21.5",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "tilt hacia abajo",
+  "vo": "so it can close itself off and then reopen. Rich in immune tissue,"
+ },
+ {
+  "shot": "SH118",
+  "entrada": "7:26.4",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "zoom in lento",
+  "vo": "so the colony inside stays the right colony and nothing hostile moves in."
+ },
+ {
+  "shot": "SH119",
+  "entrada": "7:31.3",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "zoom out lento",
+  "vo": "Positioned at the exact junction between the small intestine and the large one —"
+ },
+ {
+  "shot": "SH120",
+  "entrada": "7:36.6",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "zoom in fuerte",
+  "vo": "the point where a recolonisation would have to begin."
+ },
+ {
+  "shot": "SH121",
+  "entrada": "7:40.0",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "Every one of those features is a cost. Together they describe a piece of equipment,"
+ },
+ {
+  "shot": "SH122",
+  "entrada": "7:45.7",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "paneo a la izquierda",
+  "vo": "not an accident. That scenario was not exceptional. For almost all of human history,"
+ },
+ {
+  "shot": "SH123",
+  "entrada": "7:51.0",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la derecha",
+  "vo": "water was shared with animals and with sewage,"
+ },
+ {
+  "shot": "SH124",
+  "entrada": "7:54.0",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "tilt hacia arriba",
+  "vo": "and severe intestinal infection was one of the most common ways to die,"
+ },
+ {
+  "shot": "SH125",
+  "entrada": "7:58.9",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "tilt hacia abajo",
+  "vo": "especially before the age of five."
+ },
+ {
+  "shot": "SH126",
+  "entrada": "8:01.2",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in lento",
+  "vo": "A mechanism that shortened recovery from months to"
+ },
+ {
+  "shot": "SH127",
+  "entrada": "8:04.2",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la izquierda",
+  "vo": "days would have been under enormous selective pressure,"
+ },
+ {
+  "shot": "SH128",
+  "entrada": "8:07.2",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom out lento",
+  "vo": "generation after generation, for as long as there have been humans."
+ },
+ {
+  "shot": "SH129",
+  "entrada": "8:11.4",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "zoom in fuerte",
+  "vo": "Which is exactly what the evidence shows."
+ },
+ {
+  "shot": "SH130",
+  "entrada": "8:14.1",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "paneo a la derecha",
+  "vo": "I want to be honest about the part that is uncomfortable."
+ },
+ {
+  "shot": "SH131",
+  "entrada": "8:18.3",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "tilt hacia arriba",
+  "vo": "Once you see the appendix as a backup,"
+ },
+ {
+  "shot": "SH132",
+  "entrada": "8:21.3",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "tilt hacia abajo",
+  "vo": "the obvious question is why it kills people. And the answer is not reassuring."
+ },
+ {
+  "shot": "SH133",
+  "entrada": "8:26.6",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "The same design that makes it a good safe house makes it a good trap."
+ },
+ {
+  "shot": "SH134",
+  "entrada": "8:32.3",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "zoom in lento",
+  "vo": "A narrow dead-end tube with one opening is exactly the shape that blocks."
+ },
+ {
+  "shot": "SH135",
+  "entrada": "8:37.2",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom out lento",
+  "vo": "When it blocks, bacteria multiply behind the blockage, pressure builds,"
+ },
+ {
+  "shot": "SH136",
+  "entrada": "8:41.0",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "paneo a la izquierda",
+  "vo": "the blood supply is cut off, and the wall dies."
+ },
+ {
+  "shot": "SH137",
+  "entrada": "8:44.8",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom in fuerte",
+  "vo": "Then it bursts, and everything inside it goes into your abdomen."
+ },
+ {
+  "shot": "SH138",
+  "entrada": "8:49.0",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la derecha",
+  "vo": "Before surgery, that was fatal in most cases."
+ },
+ {
+  "shot": "SH139",
+  "entrada": "8:52.0",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "tilt hacia arriba",
+  "vo": "Roughly one person in fifteen develops appendicitis at some point."
+ },
+ {
+  "shot": "SH140",
+  "entrada": "8:55.8",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in lento",
+  "vo": "Do the arithmetic on a world with no operating rooms."
+ },
+ {
+  "shot": "SH141",
+  "entrada": "8:59.6",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "tilt hacia abajo",
+  "vo": "And it is worse than a lottery, because of who it takes."
+ },
+ {
+  "shot": "SH142",
+  "entrada": "9:04.2",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "Appendicitis peaks in the teens and twenties — not in the old, not in infants,"
+ },
+ {
+  "shot": "SH143",
+  "entrada": "9:09.9",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "zoom out lento",
+  "vo": "but precisely in the people who have already survived childhood and have not"
+ },
+ {
+  "shot": "SH144",
+  "entrada": "9:14.8",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "yet had children of their own. Evolution is indifferent to how you die at seventy."
+ },
+ {
+  "shot": "SH145",
+  "entrada": "9:20.5",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in fuerte",
+  "vo": "It is not indifferent to how you die at nineteen."
+ },
+ {
+  "shot": "SH146",
+  "entrada": "9:24.3",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "paneo a la izquierda",
+  "vo": "So this organ was killing people at the single worst moment it could,"
+ },
+ {
+  "shot": "SH147",
+  "entrada": "9:29.2",
+  "seg": 1.9,
+  "palabras": 5,
+  "mov": "paneo a la derecha",
+  "vo": "and it was kept anyway."
+ },
+ {
+  "shot": "SH148",
+  "entrada": "9:31.1",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "tilt hacia arriba",
+  "vo": "So evolution kept an organ that killed a meaningful fraction of every generation."
+ },
+ {
+  "shot": "SH149",
+  "entrada": "9:36.0",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "tilt hacia abajo",
+  "vo": "That is not a mistake. That is a price."
+ },
+ {
+  "shot": "SH150",
+  "entrada": "9:39.4",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in lento",
+  "vo": "Natural selection does not optimise your survival — it trades."
+ },
+ {
+  "shot": "SH151",
+  "entrada": "9:43.2",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom out lento",
+  "vo": "And for three hundred thousand years, this trade was worth taking:"
+ },
+ {
+  "shot": "SH152",
+  "entrada": "9:47.4",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in fuerte",
+  "vo": "a small chance of dying at twenty against"
+ },
+ {
+  "shot": "SH153",
+  "entrada": "9:50.4",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la izquierda",
+  "vo": "a much larger chance of dying at eight"
+ },
+ {
+  "shot": "SH154",
+  "entrada": "9:53.4",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "paneo a la derecha",
+  "vo": "from an infection your gut could not recover from."
+ },
+ {
+  "shot": "SH155",
+  "entrada": "9:56.8",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "tilt hacia arriba",
+  "vo": "The appendix was never protecting you from appendicitis."
+ },
+ {
+  "shot": "SH156",
+  "entrada": "9:59.8",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "tilt hacia abajo",
+  "vo": "It was protecting you from something worse."
+ },
+ {
+  "shot": "SH157",
+  "entrada": "10:02.5",
+  "seg": 1.9,
+  "palabras": 5,
+  "mov": "zoom in lento",
+  "vo": "And here's where it flips."
+ },
+ {
+  "shot": "SH158",
+  "entrada": "10:04.4",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom out lento",
+  "vo": "The question everyone asks is why evolution kept a useless organ."
+ },
+ {
+  "shot": "SH159",
+  "entrada": "10:08.6",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in fuerte",
+  "vo": "That question has no answer, because the premise is false."
+ },
+ {
+  "shot": "SH160",
+  "entrada": "10:12.4",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "paneo a la izquierda",
+  "vo": "The real question is much stranger."
+ },
+ {
+  "shot": "SH161",
+  "entrada": "10:14.7",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "paneo a la derecha",
+  "vo": "Why did evolution keep a useful organ that kills you?"
+ },
+ {
+  "shot": "SH162",
+  "entrada": "10:18.5",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "tilt hacia arriba",
+  "vo": "And once you ask it that way,"
+ },
+ {
+  "shot": "SH163",
+  "entrada": "10:21.2",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "tilt hacia abajo",
+  "vo": "the appendix stops being a curiosity and becomes the"
+ },
+ {
+  "shot": "SH164",
+  "entrada": "10:24.6",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in lento",
+  "vo": "clearest example of a rule that governs your entire body:"
+ },
+ {
+  "shot": "SH165",
+  "entrada": "10:28.4",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom out lento",
+  "vo": "nothing in you was designed to be safe."
+ },
+ {
+  "shot": "SH166",
+  "entrada": "10:31.4",
+  "seg": 1.9,
+  "palabras": 5,
+  "mov": "zoom in fuerte",
+  "vo": "Everything in you was priced."
+ },
+ {
+  "shot": "SH167",
+  "entrada": "10:33.3",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "Heather Smith and her colleagues followed this to its conclusion by looking outside our species."
+ },
+ {
+  "shot": "SH168",
+  "entrada": "10:39.0",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "paneo a la izquierda",
+  "vo": "If the appendix were a vestige,"
+ },
+ {
+  "shot": "SH169",
+  "entrada": "10:41.3",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "paneo a la derecha",
+  "vo": "it should appear in a few related animals and be lost over and over."
+ },
+ {
+  "shot": "SH170",
+  "entrada": "10:46.6",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "The opposite is true. It has appeared independently in mammals dozens of separate times —"
+ },
+ {
+  "shot": "SH171",
+  "entrada": "10:52.3",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "tilt hacia arriba",
+  "vo": "in rabbits, in wombats, in primates — and once a lineage has it,"
+ },
+ {
+  "shot": "SH172",
+  "entrada": "10:57.2",
+  "seg": 1.9,
+  "palabras": 5,
+  "mov": "tilt hacia abajo",
+  "vo": "it almost never loses it."
+ },
+ {
+  "shot": "SH173",
+  "entrada": "10:59.1",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom in lento",
+  "vo": "You do not evolve the same structure thirty times by accident."
+ },
+ {
+  "shot": "SH174",
+  "entrada": "11:03.3",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "zoom out lento",
+  "vo": "That is the signature of something being selected for, over and over,"
+ },
+ {
+  "shot": "SH175",
+  "entrada": "11:07.9",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "zoom in fuerte",
+  "vo": "in lineages that share nothing but the same problem."
+ },
+ {
+  "shot": "SH176",
+  "entrada": "11:11.3",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la izquierda",
+  "vo": "And it tells you what the problem was."
+ },
+ {
+  "shot": "SH177",
+  "entrada": "11:14.3",
+  "seg": 6.1,
+  "palabras": 16,
+  "mov": "plano fijo",
+  "vo": "Rabbits, wombats and humans do not share a diet or a habitat or a body plan."
+ },
+ {
+  "shot": "SH178",
+  "entrada": "11:20.4",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "paneo a la derecha",
+  "vo": "What they share is a gut full of bacteria they cannot live without,"
+ },
+ {
+  "shot": "SH179",
+  "entrada": "11:25.3",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "tilt hacia arriba",
+  "vo": "and a world that periodically empties it."
+ },
+ {
+  "shot": "SH180",
+  "entrada": "11:28.0",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "tilt hacia abajo",
+  "vo": "The antagonist in this story is not your appendix."
+ },
+ {
+  "shot": "SH181",
+  "entrada": "11:31.4",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in lento",
+  "vo": "It is clean water. And that is a strange sentence,"
+ },
+ {
+  "shot": "SH182",
+  "entrada": "11:35.2",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "zoom out lento",
+  "vo": "so sit with it. The single greatest public health achievement in human history —"
+ },
+ {
+  "shot": "SH183",
+  "entrada": "11:40.5",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "zoom in fuerte",
+  "vo": "separating drinking water from sewage —"
+ },
+ {
+  "shot": "SH184",
+  "entrada": "11:42.8",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "paneo a la izquierda",
+  "vo": "is the thing that put this organ out of work."
+ },
+ {
+  "shot": "SH185",
+  "entrada": "11:46.6",
+  "seg": 6.1,
+  "palabras": 16,
+  "mov": "plano fijo",
+  "vo": "Nobody would undo it. Clean water saved more lives than every surgeon who has ever lived."
+ },
+ {
+  "shot": "SH186",
+  "entrada": "11:52.7",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la derecha",
+  "vo": "But it also took a piece of equipment"
+ },
+ {
+  "shot": "SH187",
+  "entrada": "11:55.7",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "tilt hacia arriba",
+  "vo": "that had a job for three hundred thousand"
+ },
+ {
+  "shot": "SH188",
+  "entrada": "11:58.7",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "tilt hacia abajo",
+  "vo": "years and left it loaded, sealed and idle inside a hundred million people."
+ },
+ {
+  "shot": "SH189",
+  "entrada": "12:03.6",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "zoom in lento",
+  "vo": "That is what progress does. It does not remove the old machinery."
+ },
+ {
+  "shot": "SH190",
+  "entrada": "12:08.2",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "zoom out lento",
+  "vo": "It just stops calling on it. Here is the mismatch, and it is complete."
+ },
+ {
+  "shot": "SH191",
+  "entrada": "12:13.5",
+  "seg": 5.7,
+  "palabras": 15,
+  "mov": "plano fijo",
+  "vo": "The appendix was built for a world where your gut was emptied regularly and violently."
+ },
+ {
+  "shot": "SH192",
+  "entrada": "12:19.2",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in fuerte",
+  "vo": "Sewers ended that world. Chlorinated water ended it."
+ },
+ {
+  "shot": "SH193",
+  "entrada": "12:22.2",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "paneo a la izquierda",
+  "vo": "In a developed country you may go your entire life without a single event"
+ },
+ {
+  "shot": "SH194",
+  "entrada": "12:27.5",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "paneo a la derecha",
+  "vo": "that requires a backup. The organ does not know that."
+ },
+ {
+  "shot": "SH195",
+  "entrada": "12:31.3",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "tilt hacia arriba",
+  "vo": "It sits there, full, maintained, waiting for a catastrophe that is never coming."
+ },
+ {
+  "shot": "SH196",
+  "entrada": "12:36.2",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "tilt hacia abajo",
+  "vo": "And an unused narrow tube is a tube with time to block."
+ },
+ {
+  "shot": "SH197",
+  "entrada": "12:40.8",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "zoom in lento",
+  "vo": "There is even evidence that it still matters."
+ },
+ {
+  "shot": "SH198",
+  "entrada": "12:43.8",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "zoom out lento",
+  "vo": "A team at Duke found that patients without an appendix were roughly four times"
+ },
+ {
+  "shot": "SH199",
+  "entrada": "12:49.1",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "zoom in fuerte",
+  "vo": "more likely to suffer recurring Clostridium difficile infections —"
+ },
+ {
+  "shot": "SH200",
+  "entrada": "12:52.5",
+  "seg": 2.7,
+  "palabras": 7,
+  "mov": "paneo a la izquierda",
+  "vo": "the exact scenario the appendix exists for,"
+ },
+ {
+  "shot": "SH201",
+  "entrada": "12:55.2",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "paneo a la derecha",
+  "vo": "the gut wiped out and needing to be reseeded."
+ },
+ {
+  "shot": "SH202",
+  "entrada": "12:58.6",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "tilt hacia arriba",
+  "vo": "Which means the organ we call useless is doing"
+ },
+ {
+  "shot": "SH203",
+  "entrada": "13:02.0",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "tilt hacia abajo",
+  "vo": "its job right up until the moment it kills you,"
+ },
+ {
+  "shot": "SH204",
+  "entrada": "13:05.8",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in lento",
+  "vo": "and doing it for people who will never need it."
+ },
+ {
+  "shot": "SH205",
+  "entrada": "13:09.6",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "zoom out lento",
+  "vo": "Comment eight if you never knew what your appendix was for. I read them."
+ },
+ {
+  "shot": "SH206",
+  "entrada": "13:14.9",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "zoom in fuerte",
+  "vo": "This is the same shape as every other mismatch in your body."
+ },
+ {
+  "shot": "SH207",
+  "entrada": "13:19.5",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "paneo a la izquierda",
+  "vo": "The sweet tooth that was right when sugar was rare."
+ },
+ {
+  "shot": "SH208",
+  "entrada": "13:23.3",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "paneo a la derecha",
+  "vo": "The stress response that was right when the threat was physical."
+ },
+ {
+  "shot": "SH209",
+  "entrada": "13:27.5",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "tilt hacia arriba",
+  "vo": "The appendix that was right when the water was filthy."
+ },
+ {
+  "shot": "SH210",
+  "entrada": "13:31.3",
+  "seg": 6.1,
+  "palabras": 16,
+  "mov": "plano fijo",
+  "vo": "None of them are broken. All of them are answering a question the world stopped asking."
+ },
+ {
+  "shot": "SH211",
+  "entrada": "13:37.4",
+  "seg": 3.4,
+  "palabras": 9,
+  "mov": "tilt hacia abajo",
+  "vo": "So what do you do with an organ that"
+ },
+ {
+  "shot": "SH212",
+  "entrada": "13:40.8",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in lento",
+  "vo": "is working perfectly for a world that no longer exists?"
+ },
+ {
+  "shot": "SH213",
+  "entrada": "13:44.6",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "zoom out lento",
+  "vo": "Nothing. That is the honest answer. You leave it alone, and if it blocks,"
+ },
+ {
+  "shot": "SH214",
+  "entrada": "13:49.9",
+  "seg": 5.3,
+  "palabras": 14,
+  "mov": "paneo a la izquierda",
+  "vo": "you let a surgeon take it out, and you get on with your life."
+ },
+ {
+  "shot": "SH215",
+  "entrada": "13:55.2",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "zoom in fuerte",
+  "vo": "But the next time someone tells you the human body is badly designed,"
+ },
+ {
+  "shot": "SH216",
+  "entrada": "14:00.1",
+  "seg": 3.0,
+  "palabras": 8,
+  "mov": "paneo a la derecha",
+  "vo": "remember what is actually sitting in your abdomen."
+ },
+ {
+  "shot": "SH217",
+  "entrada": "14:03.1",
+  "seg": 2.3,
+  "palabras": 6,
+  "mov": "tilt hacia arriba",
+  "vo": "Not a mistake. Not a leftover."
+ },
+ {
+  "shot": "SH218",
+  "entrada": "14:05.4",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "tilt hacia abajo",
+  "vo": "A piece of equipment built for conditions we spent two centuries escaping,"
+ },
+ {
+  "shot": "SH219",
+  "entrada": "14:10.0",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "zoom in lento",
+  "vo": "still loaded, still maintained, still waiting. Darwin was wrong about this one,"
+ },
+ {
+  "shot": "SH220",
+  "entrada": "14:14.6",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "zoom out lento",
+  "vo": "and it took a hundred and thirty-six years to find out."
+ },
+ {
+  "shot": "SH221",
+  "entrada": "14:18.8",
+  "seg": 3.8,
+  "palabras": 10,
+  "mov": "zoom in fuerte",
+  "vo": "That should tell you something about how much of your"
+ },
+ {
+  "shot": "SH222",
+  "entrada": "14:22.6",
+  "seg": 4.2,
+  "palabras": 11,
+  "mov": "paneo a la izquierda",
+  "vo": "own body you have been told is pointless simply because nobody"
+ },
+ {
+  "shot": "SH223",
+  "entrada": "14:26.8",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "paneo a la derecha",
+  "vo": "had looked hard enough yet. Your appendix is not a design flaw."
+ },
+ {
+  "shot": "SH224",
+  "entrada": "14:31.4",
+  "seg": 4.9,
+  "palabras": 13,
+  "mov": "tilt hacia arriba",
+  "vo": "It is a spare tire for a road we stopped driving on —"
+ },
+ {
+  "shot": "SH225",
+  "entrada": "14:36.3",
+  "seg": 4.6,
+  "palabras": 12,
+  "mov": "tilt hacia abajo",
+  "vo": "and you are still carrying it, in case the road comes back."
+ }
+]
