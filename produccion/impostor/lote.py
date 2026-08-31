@@ -19,8 +19,10 @@ FICHA = (
  "a young man drawn with deliberately simplified cartoon proportions. His head is a large, "
  "perfectly round, completely smooth bare scalp, and a dark navy blue baseball cap rests directly "
  "on that bare scalp. The sides of his head are smooth and unbroken curves from cap to jaw. "
- "His face is minimal and flat: two solid black oval eyes, two thick short dark eyebrows, a small "
- "black line for a mouth, and between the eyes and the mouth the face is one continuous smooth "
+ "His face is minimal and flat and expressionless: two solid black oval eyes, two thick short dark "
+ "eyebrows, one short "
+ "straight horizontal black line for a mouth held flat and level, and between the eyes and the "
+ "mouth the face is one continuous smooth "
  "unbroken plane of flat cream skin. The skin is a single even cream tone across the whole face. "
  "He wears a plain grey hoodie, dark jeans and sneakers.")
 
