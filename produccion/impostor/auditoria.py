@@ -101,8 +101,7 @@ ok(not sin_vo, "toda escena disenada tiene su linea de voz", f"{sin_vo[:3]}")
 if not sin_vo:
     print(f"  INFO  cubierto {len(ids)}/{OBJ_PLANOS} planos "
           f"({vo[ids[0]]['entrada']} a {vo[ids[-1]]['entrada']})")
-    avisos.append("los bloques 1 y 2 se escribieron antes del guion: hay que "
-                  "revisarlos plano por plano contra su linea de voz")
+    # los bloques 1 y 2 ya se reescribieron contra PLANOS_VO el 2026-08-30
 
 # ---------- resultado ----------
 print("\n" + "=" * 68)

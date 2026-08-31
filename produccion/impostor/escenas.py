@@ -170,4 +170,167 @@ BLOQUE_02 = [
  "framed so that his face fills the frame, flat and unreadable, lit evenly, holding perfectly still",True),
 ]
 
-BLOQUES = {1: BLOQUE_01, 2: BLOQUE_02}
+BLOQUE_03 = [
+("SH041","Medium shot",
+ "standing still in a bright room while looking away toward one dark corner where a small pile of "
+ "crumpled paper sits on the floor",True),
+
+("SH042","Wide shot",
+ "a wide desk seen from above with two white dice resting on one side of a sheet of paper, and a "
+ "second grey hand entering from the edge of the frame to rest on the same sheet",False),
+
+("SH043","Close-up",
+ "holding a small bright golden award between two fingers, turning it slowly on its side to inspect "
+ "the edge, the rest of the frame in flat shadow",True),
+
+("SH044","Medium shot",
+ "standing inside a narrow dark gap between two tall flat panels, one panel lit warm and bright and "
+ "the other flat grey, the gap running from the top of the frame to the bottom",True),
+
+("SH045","Wide shot",
+ "standing straight and evenly lit against a plain flat background with both arms relaxed at his "
+ "sides, the whole frame calm and open",True),
+
+("SH046","Medium shot",
+ "standing in front of a tall wall covered in small flat screens, each screen showing one plain grey "
+ "human silhouette, the glow falling cold on his cap and shoulders",True),
+
+("SH047","Close-up",
+ "two plain cream oval mask shapes lying side by side on a dark surface, the left one polished and "
+ "brightly lit, the right one dull and matte",False),
+
+("SH048","Wide shot",
+ "the broken metal pieces of a mechanical heart swept into one corner of a workshop floor, and on the "
+ "far wall a door standing open with flat white light pouring through it",False),
+
+("SH049","Medium shot",
+ "holding a phone up in front of his chest, its screen a bright grid of small glowing rectangles, the "
+ "room around him flat and dark",True),
+
+("SH050","Wide shot",
+ "a long row of small brightly lit stages side by side, one posed figure standing on each, and at the "
+ "far right end one dim ordinary room with a plain chair in it",False),
+
+("SH051","Close-up",
+ "a rectangular glowing screen with a row of sharp flat triangular teeth running along its bottom "
+ "edge, lit hard from one side",False),
+
+("SH052","Medium shot",
+ "a grey hand pointing at one spot on a long horizontal line painted across a plain wall, the line "
+ "running out of frame in both directions",False),
+
+("SH053","Wide shot",
+ "that same horizontal line continuing far to the left across a rough cave wall covered in simple "
+ "ochre handprints and animal figures",False),
+
+("SH054","Medium shot",
+ "a figure in field clothes writing in a small notebook while standing beside a cluster of simple "
+ "round huts, warm flat daylight",False),
+
+("SH055","Wide shot",
+ "a small village of round huts at dusk under a wide orange sky, a handful of simplified figures "
+ "around one fire, and flat empty land all the way to the horizon",False),
+
+("SH056","Medium shot",
+ "a small child-sized figure standing frozen in the middle of a circle of seated adults, every adult "
+ "head turned toward the child",False),
+
+("SH057","Close-up",
+ "that same child figure seen from the side with the head lowered and the shoulders pulled in tight, "
+ "making the whole body smaller",False),
+
+("SH058","Wide shot",
+ "an enormous plain clock face on a wall with two thick black hands and a smooth empty surface, one "
+ "hand sweeping backward",False),
+
+("SH059","Medium shot",
+ "two thick flat vertical bars side by side rising to exactly the same height, joined by a dotted "
+ "line across their tops",False),
+
+("SH060","Close-up",
+ "the same two bars, the left one now short and flat and the right one shooting up past the top edge "
+ "of the frame in bright colour",False),
+]
+
+BLOQUE_04 = [
+("SH061","Wide shot",
+ "standing at a long wedding table holding a raised glass, frozen in the middle of the motion, twenty "
+ "seated figures around the table all turned toward him",True),
+
+("SH062","Medium shot",
+ "a phone lying face down on a plain wooden table in flat morning light, one window casting a hard "
+ "bright rectangle across it",False),
+
+("SH063","Wide shot",
+ "standing alone and very small at the front of an enormous auditorium filled with steep rows of pale "
+ "cream head shapes, every row facing him",True),
+
+("SH064","Medium shot",
+ "a large flat amplifier box with a round speaker cone and dials on its front, a thick black cable "
+ "running out of it and off the edge of the frame",False),
+
+("SH065","Close-up",
+ "the end of that thick black cable plugged into a small dark socket set into bare earth, the ground "
+ "cracked and dry around it",False),
+
+("SH066","Wide shot",
+ "standing in a wide empty landscape under a pale sky with one small distant group of figures far "
+ "away and flat open ground everywhere else",True),
+
+("SH067","Medium shot",
+ "a tight cluster of about thirty simplified human figures standing close together, shoulders "
+ "touching, all of them the same grey tone",False),
+
+("SH068","Close-up",
+ "two clasped hands filling the frame, one large and lined and one small and smooth, held firmly "
+ "together against a flat dark background",False),
+
+("SH069","Wide shot",
+ "one small circle of orange firelight with seated figures around it, and flat solid black filling "
+ "every other part of the frame in all directions",False),
+
+("SH070","Medium shot",
+ "a single line of footprints pressed into pale dust leading away from a fire and stopping abruptly "
+ "at the edge of deep flat darkness",False),
+
+("SH071","Close-up",
+ "a stone spear point and a small caught animal laid together on bare ground, lit evenly and plainly, "
+ "with nothing else around them",False),
+
+("SH072","Wide shot",
+ "a ring of seated figures around a fire with one clear empty gap left open in the circle, the gap "
+ "facing the dark",False),
+
+("SH073","Medium shot",
+ "that same ring seen closer from just outside it, every face turned inward toward the centre, the "
+ "firelight flat orange on all of them",False),
+
+("SH074","Close-up",
+ "five pointing hands entering the frame from five different directions, all of their fingers aimed "
+ "at the same empty point at the centre",False),
+
+("SH075","Wide shot",
+ "a quiet study room with tall shelves of field notebooks and stacked papers, one figure seated at a "
+ "desk under a single warm lamp",False),
+
+("SH076","Medium shot",
+ "a large flat world map on a wall with small red pins pressed into every continent, lit evenly",False),
+
+("SH077","Close-up",
+ "four hands in a row against a dark background, the first pointing, the second cupped beside a "
+ "mouth, the third covering a face, the fourth pushing outward with the palm open",False),
+
+("SH078","Wide shot",
+ "a ring of seated figures around a fire with one figure standing tall at the centre, every seated "
+ "head aimed directly at the standing one",False),
+
+("SH079","Medium shot",
+ "a pyramid built of flat stone blocks standing completely upside down, balanced on its single point, "
+ "against a plain pale sky",False),
+
+("SH080","Wide shot",
+ "a wide plain covered with dozens of those upside-down pyramids, each one balanced on its point, "
+ "spread evenly to the horizon",False),
+]
+
+BLOQUES = {1: BLOQUE_01, 2: BLOQUE_02, 3: BLOQUE_03, 4: BLOQUE_04}

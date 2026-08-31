@@ -49,6 +49,8 @@ sola, se acumula.
 
 - `produccion/impostor/LOTE_01.txt` — 20 prompts, apertura de Impostor
 - `produccion/impostor/LOTE_02.txt` — 20 prompts, la explicacion facil y su muerte
+- `produccion/impostor/LOTE_03.txt` — 20 prompts, la muerte de la confianza y la explicacion social
+- `produccion/impostor/LOTE_04.txt` — 20 prompts, la banda y la jerarquia inversa
 
 ## Para generar hojas nuevas
 
