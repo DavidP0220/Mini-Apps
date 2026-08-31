@@ -555,8 +555,8 @@ BLOQUE_07 = [
  "one hand pulling a grey hood forward over a head until the face inside falls into flat shadow",False),
 
 ("SH136","Medium shot",
- "a smooth intact stone tool held up in one hand against a plain background, its surface unbroken and "
- "evenly lit",False),
+ "a smooth intact stone tool resting on a dark folded cloth, its surface unbroken and evenly lit, "
+ "with empty space around it",False),
 
 ("SH137","Close-up",
  "that same stone tool being passed from a large lined hand into a small smooth one, both hands "
@@ -567,21 +567,22 @@ BLOQUE_07 = [
  "cap and shoulders",True),
 
 ("SH139","Wide shot",
- "a workshop wall hung with rows of tools, and on the bench below it the old stone object resting "
+ "a workshop wall hung with rows of tools, and on the bench below it that same old worn tool resting "
  "alone with empty space all around it",False),
 
 ("SH140","Medium shot",
- "standing in front of an enormous closed stone door with his mouth open in speech, one arm lifted "
- "toward it",True),
+ "standing in front of an enormous closed door of dark riveted iron with his mouth open in speech, "
+ "one arm lifted toward it",True),
 ]
 
 BLOQUE_08 = [
 ("SH141","Wide shot",
- "standing very small at the base of that same enormous stone door, which is completely unchanged and "
- "fills the whole frame above him",True),
+ "standing very small at the base of that same enormous iron door, which is completely unchanged and "
+ "fills the whole frame above him in cold blue-grey",True),
 
 ("SH142","Close-up",
- "one small square opening cut into the face of the stone door, the space inside it solid black",False),
+ "one small square opening cut into the face of that iron door, the space inside it solid black, the "
+ "metal around it scratched and cold",False),
 
 ("SH143","Wide shot",
  "standing at the centre of a dark space surrounded on every side by dozens of pale oval shapes all "
@@ -845,8 +846,8 @@ BLOQUE_11 = [
  "the left stone tile lying half buried in dry cracked earth, its carved surface worn down and dusty",False),
 
 ("SH209","Wide shot",
- "a modern living room floor with the faint pale outline of an ancient ring of stones and a fire "
- "circle showing through the floorboards",False),
+ "a modern living room floor with the faint pale outline of an ancient fire circle showing through "
+ "the floorboards, its ash ring drawn in soft grey",False),
 
 ("SH210","Medium shot",
  "a group of simplified figures seated close together inside a ring of warm orange firelight at "
@@ -873,8 +874,8 @@ BLOQUE_11 = [
  "its folds",False),
 
 ("SH216","Close-up",
- "the centre of that map showing thirty small marks arranged in a ring around one single drawn "
- "circle, the paper yellowed",False),
+ "the centre of that yellowed sheet showing thirty small ink marks arranged in a ring around one "
+ "single drawn circle, the paper soft and worn at the fold",False),
 
 ("SH217","Wide shot",
  "that same old map lying open on a modern desk beside a tall window filled with a bright city at "

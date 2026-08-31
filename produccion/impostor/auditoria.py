@@ -105,6 +105,24 @@ mal_red = [p[0] for v in esc.BLOQUES.values() for p in v
            if p[3] and not (p[2].split()[0].endswith('ing') or p[2].startswith(ARR))]
 ok(not mal_red, "redaccion valida en las escenas con host", f"{mal_red[:3]}")
 
+# --- repeticion visual: lo que hace que un video "se vea repetido" ---
+import collections
+MOTIVOS = ["fire","ring","hand","wall","door","stone","crowd","stage","desk","map",
+           "column","pyramid","bell","screen","phone","tablet","ash","snow","hut",
+           "bed","tile","machine","mask","trophy","stack","drawer","suit","cloth"]
+escs = [(p[0], p[2]) for v in esc.BLOQUES.values() for p in v]
+rachas = []
+for m in MOTIVOS:
+    idx = [i for i,(s_,e_) in enumerate(escs) if re.search(r'\b'+m+r's?\b', e_, re.I)]
+    run = []
+    for i in idx + [10**9]:
+        if run and i == run[-1] + 1:
+            run.append(i); continue
+        if len(run) >= 4:
+            rachas.append(f"{m} en {escs[run[0]][0]}-{escs[run[-1]][0]} ({len(run)} seguidos)")
+        run = [i]
+ok(not rachas, "ningun motivo visual en 4 o mas planos seguidos", f"{rachas[:3]}")
+
 # ---------- 4. correspondencia imagen <-> voz ----------
 print("\n[4] IMAGEN CONTRA VOZ")
 vo = {r['shot']: r for r in P}
