@@ -329,4 +329,163 @@ BLOQUE_04 = [
  "movement caught halfway",False),
 ]
 
-BLOQUES = {1: BLOQUE_01, 2: BLOQUE_02, 3: BLOQUE_03, 4: BLOQUE_04}
+BLOQUE_05 = [
+("SH081","Medium shot",
+ "three researchers in white coats leaning together over a long laboratory bench, one of them "
+ "pointing at a diagram spread between them",False),
+
+("SH082","Close-up",
+ "a simplified cutaway of an intestine packed wall to wall with thousands of tiny coloured rounded "
+ "shapes, drawn flat and outlined thickly",False),
+
+("SH083","Wide shot",
+ "an enormous crowd of tiny coloured rounded shapes filling the entire frame edge to edge, each one "
+ "a slightly different colour",False),
+
+("SH084","Medium shot",
+ "a line of small pale shapes standing in formation facing a row of larger rounded shapes, like a "
+ "drill being taught on a parade ground",False),
+
+("SH085","Close-up",
+ "a wall built of tightly packed pale rounded shapes, with two dark spiked shapes pressing against "
+ "it from outside and finding every gap filled",False),
+
+("SH086","Medium shot",
+ "standing holding a clear glass jar filled with tiny coloured shapes carefully in both hands, close "
+ "against his chest",True),
+
+("SH087","Wide shot",
+ "a night sky full of stars over a dark landscape, the stars drawn as small flat points scattered "
+ "across the whole frame",False),
+
+("SH088","Close-up",
+ "one eyepiece of a brass telescope pointed upward, the metal catching a hard line of moonlight",False),
+
+("SH089","Wide shot",
+ "that same night sky beside an enormous mass of tiny coloured shapes, the mass many times denser "
+ "than the field of stars",False),
+
+("SH090","Medium shot",
+ "a bucket of plain grey sludge on the left of the frame and, on the right, a neat arrangement of "
+ "distinct coloured shapes sorted into groups",False),
+
+("SH091","Close-up",
+ "a hand carefully placing one small coloured shape into a precise gap among many others, the fit "
+ "exact",False),
+
+("SH092","Wide shot",
+ "a river of dark water surging through a narrow channel and sweeping everything loose along with "
+ "it, drawn in flat blocks of grey and blue",False),
+
+("SH093","Medium shot",
+ "a cluster of simple huts under heavy rain at dusk, water running in sheets off the roofs and "
+ "pooling on the ground",False),
+
+("SH094","Close-up",
+ "a wooden bucket dipped into a still well, the water inside it dark and clouded with fine "
+ "particles",False),
+
+("SH095","Wide shot",
+ "a simplified cutaway of an intestine now completely empty, its walls bare and pale, with nothing "
+ "at all inside it",False),
+
+("SH096","Medium shot",
+ "standing squarely facing the camera in a plain evenly lit space with one open hand raised beside "
+ "him",True),
+
+("SH097","Close-up",
+ "two plain wooden tokens lying side by side on a dark table, the left one carved with a single "
+ "notch and the right one smooth",False),
+
+("SH098","Medium shot",
+ "a simplified cutaway of a narrow dead-end tube branching off the side of a wide main channel, its "
+ "far end closed and rounded",False),
+
+("SH099","Wide shot",
+ "a wide fast river with one small still side pool tucked behind a rock, the water in the pool "
+ "completely calm while the river races past",False),
+
+("SH100","Close-up",
+ "the inside of that small still pool, its surface undisturbed and its bottom lined with tiny "
+ "coloured shapes",False),
+]
+
+BLOQUE_06 = [
+("SH101","Wide shot",
+ "the wide main channel scoured clean and empty by the current, while the small side pool beside it "
+ "stays full and untouched",False),
+
+("SH102","Close-up",
+ "the inner wall of that dead-end tube coated in a dense even layer of tiny coloured shapes packed "
+ "tightly together like a mosaic",False),
+
+("SH103","Medium shot",
+ "those same tiny shapes arranged in neat ordered rows across a curved surface, each one the same "
+ "size and evenly spaced",False),
+
+("SH104","Close-up",
+ "a small metal backup drive resting on a dark surface with one steady green light on its face, lit "
+ "hard from one side",False),
+
+("SH105","Wide shot",
+ "a stone medieval village at dusk with a well at its centre, thatched roofs and narrow lanes, drawn "
+ "flat with thick outlines",False),
+
+("SH106","Medium shot",
+ "a line of villagers waiting their turn at that well, one of them drawing up a bucket on a rope",False),
+
+("SH107","Close-up",
+ "a wooden cup tipped over on a table, a thin dark stain spreading out from it across the boards",False),
+
+("SH108","Wide shot",
+ "the inside of a small stone house with four still figures lying under blankets on the floor, one "
+ "candle burning low",False),
+
+("SH109","Medium shot",
+ "standing upright in the doorway of that same stone house with morning light behind him, the room "
+ "dim in front of him",True),
+
+("SH110","Close-up",
+ "one small pink tube glowing warm and faint inside a dark abdomen, the only lit thing in the frame",False),
+
+("SH111","Wide shot",
+ "a bare pale field with a thin line of green shoots pushing up through the soil in even rows "
+ "across it",False),
+
+("SH112","Medium shot",
+ "two calendars side by side on a wall, the left one with a few days crossed off and the right one "
+ "with entire months crossed off",False),
+
+("SH113","Close-up",
+ "two small stone markers standing side by side in bare earth, the left one upright and the right "
+ "one fallen flat",False),
+
+("SH114","Medium shot",
+ "a simplified cutaway of the dead-end tube shown large and clear, with four thin arrows pointing at "
+ "four different parts of it",False),
+
+("SH115","Wide shot",
+ "a fast current running past the mouth of a closed side channel, the water inside the channel "
+ "perfectly still",False),
+
+("SH116","Close-up",
+ "a narrow opening in a stone wall, just wide enough for one hand, with darkness beyond it",False),
+
+("SH117","Medium shot",
+ "a heavy round stone door rolled halfway across that same opening, caught in the middle of "
+ "closing",False),
+
+("SH118","Close-up",
+ "a ring of small pale immune cells standing shoulder to shoulder around a group of coloured shapes, "
+ "facing outward",False),
+
+("SH119","Wide shot",
+ "a simplified map of the gut with one bright point marked exactly where a narrow tube meets a wide "
+ "one, the rest drawn pale",False),
+
+("SH120","Medium shot",
+ "standing beside a large wall diagram of that junction and resting one finger on the marked point",True),
+]
+
+BLOQUES = {1: BLOQUE_01, 2: BLOQUE_02, 3: BLOQUE_03, 4: BLOQUE_04,
+           5: BLOQUE_05, 6: BLOQUE_06}
