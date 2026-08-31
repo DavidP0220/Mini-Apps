@@ -646,5 +646,265 @@ BLOQUE_08 = [
  "against a plain background",True),
 ]
 
+BLOQUE_09 = [
+("SH161","Wide shot",
+ "one small pink tube resting at the centre of a wide empty white room, casting a shadow far larger "
+ "than itself across the floor",False),
+
+("SH162","Medium shot",
+ "standing beside a large wall diagram and turning it upside down with both hands, the frame caught "
+ "halfway through the rotation",True),
+
+("SH163","Close-up",
+ "a glass museum case with a small card holder beside it, the card blank, one hand lifting the card "
+ "out",False),
+
+("SH164","Wide shot",
+ "a long wall covered in flat anatomical diagrams of many different organs, lit evenly from end to "
+ "end",False),
+
+("SH165","Medium shot",
+ "a bare workshop bench with a single blade lying open and exposed on it, its edge bright and "
+ "uncovered, lit hard from above",False),
+
+("SH166","Close-up",
+ "a small paper price tag tied with string to a plain object, the tag turned so its face shows, blank "
+ "and worn",False),
+
+("SH167","Medium shot",
+ "a researcher in a white coat seated at a desk covered in open books of animal anatomy, one hand "
+ "holding a page flat",False),
+
+("SH168","Wide shot",
+ "a family tree of simplified animal silhouettes branching across a dark wall, all the branches "
+ "spreading outward from one point",False),
+
+("SH169","Close-up",
+ "three of those branches with their end tips faded almost to nothing, the lines thinning as they "
+ "reach the edge",False),
+
+("SH170","Wide shot",
+ "that same tree with a bright glowing dot appearing independently on dozens of separate branches all "
+ "across it",False),
+
+("SH171","Medium shot",
+ "a rabbit, a wombat and a human silhouette standing side by side, each one with the same small pink "
+ "tube glowing in the same place",False),
+
+("SH172","Close-up",
+ "one of those glowing dots held steady and bright on a branch, the branch continuing past it "
+ "unbroken",False),
+
+("SH173","Wide shot",
+ "standing in a wide field among thirty identical small structures, each one built separately but all "
+ "of them exactly the same shape",True),
+
+("SH174","Medium shot",
+ "a hand pressing the same stamp onto a row of pages, the stamp caught mid-press over the last one",False),
+
+("SH175","Close-up",
+ "three completely different keys lying side by side on dark cloth, each one cut differently but all "
+ "three ending in the same shape",False),
+
+("SH176","Medium shot",
+ "one single lock lying on that same cloth, its keyhole large and clear, lit from one side",False),
+
+("SH177","Wide shot",
+ "a rabbit in grass, a wombat in dry earth and a man on a street, drawn in three separate panels side "
+ "by side, each in a different colour",False),
+
+("SH178","Close-up",
+ "a simplified cutaway of a gut in each of those three creatures, all three packed with the same tiny "
+ "coloured shapes",False),
+
+("SH179","Medium shot",
+ "a wave of dark water sweeping across the three panels at once, clearing all three of them in the "
+ "same motion",False),
+
+("SH180","Close-up",
+ "one small pink tube lying alone on a dark surface, lit softly and evenly, calm and unthreatening",False),
+]
+
+BLOQUE_10 = [
+("SH181","Wide shot",
+ "a clean modern water treatment plant at dawn, its round tanks pale and orderly, the water inside "
+ "them perfectly still and clear",False),
+
+("SH182","Medium shot",
+ "standing at the edge of one of those tanks looking down into the clear water, his reflection flat "
+ "on the surface",True),
+
+("SH183","Close-up",
+ "two pipes running side by side underground, one carrying clear water and one carrying dark, "
+ "separated by a solid wall between them",False),
+
+("SH184","Wide shot",
+ "a factory floor at the end of a shift, its machines switched off and the lights dimmed, everything "
+ "left in place",False),
+
+("SH185","Medium shot",
+ "an enormous crowd of pale figures standing calm and healthy under an open sky, filling the frame to "
+ "the horizon",False),
+
+("SH186","Close-up",
+ "a precision instrument sealed inside a clear case, its parts clean and complete, a fine layer of "
+ "dust across the lid",False),
+
+("SH187","Wide shot",
+ "a tall cliff of stacked earth layers with one thin bright band running horizontally through the "
+ "whole height of it",False),
+
+("SH188","Medium shot",
+ "rows and rows of those sealed cases stretching away into a dim warehouse, each one holding the same "
+ "instrument",False),
+
+("SH189","Close-up",
+ "an old lever mounted on a wall, still bolted firmly in place, its handle worn smooth and its base "
+ "solid",False),
+
+("SH190","Wide shot",
+ "sitting in a control room with rows of old switches behind him, facing a different panel entirely, "
+ "his back to all of them",True),
+
+("SH191","Medium shot",
+ "a simplified cutaway of an intestine being flushed clean by a surge of dark water, the walls "
+ "stripped bare",False),
+
+("SH192","Close-up",
+ "a chrome tap running clear water into a glass, the stream drawn as a flat bright ribbon",False),
+
+("SH193","Wide shot",
+ "a whole quiet life drawn as a row of ordinary rooms side by side, all of them calm and lit and "
+ "undisturbed",False),
+
+("SH194","Medium shot",
+ "that same small pink tube glowing steadily inside a dark abdomen, full and unchanged, while "
+ "everything around it stays still",False),
+
+("SH195","Close-up",
+ "a loaded flare gun resting in an open case with its charge in place, untouched, a thin film of dust "
+ "on the case lining",False),
+
+("SH196","Medium shot",
+ "a narrow pipe with sediment slowly gathering at the closed end, the layer thicker at the bottom "
+ "than the top",False),
+
+("SH197","Wide shot",
+ "lying in one bed of a hospital ward, the other beds in the row neatly made and unoccupied, the "
+ "light flat and even",True),
+
+("SH198","Medium shot",
+ "four identical figures standing in a row, with the one on the far left drawn deep red and the other "
+ "three pale",False),
+
+("SH199","Close-up",
+ "a simplified cutaway of a gut with dark spiked shapes spreading through it and the pale rounded "
+ "shapes pushed to the edges",False),
+
+("SH200","Medium shot",
+ "that same gut wall now bare, with one small pink tube beside it glowing warm and full",False),
+]
+
+BLOQUE_11 = [
+("SH201","Close-up",
+ "tiny coloured shapes streaming out of the mouth of that tube and spreading across the bare wall in "
+ "an even wave",False),
+
+("SH202","Medium shot",
+ "a night watchman in a lit booth reading calmly while the corridor outside him stays dark and "
+ "empty",False),
+
+("SH203","Wide shot",
+ "that same booth with its light still on and the corridor beyond it now filled with smoke, the "
+ "watchman still at his post",False),
+
+("SH204","Medium shot",
+ "an enormous crowd of pale figures walking past a small lit booth, none of them turning to look at "
+ "it",False),
+
+("SH205","Medium close-up",
+ "standing squarely facing the camera in a plain evenly lit space with one open hand raised beside "
+ "him",True),
+
+("SH206","Wide shot",
+ "three flat panels side by side on a dark wall, each one holding a different simple symbol, all lit "
+ "identically",False),
+
+("SH207","Close-up",
+ "a single piece of ripe fruit on bare ground with one hand reaching toward it from the edge of the "
+ "frame",False),
+
+("SH208","Medium shot",
+ "a figure frozen mid-stride with its whole body tensed, facing a long office corridor that stretches "
+ "away calm and clear ahead of it",False),
+
+("SH209","Close-up",
+ "a wooden bucket of dark clouded water sitting beside a clean glass of clear water on the same "
+ "table",False),
+
+("SH210","Wide shot",
+ "three precision instruments laid out side by side on dark cloth, each one complete and undamaged, "
+ "all three lit the same way",False),
+
+("SH211","Medium shot",
+ "standing in front of a workbench with the small pink tube resting on it, both his hands held open "
+ "at his sides",True),
+
+("SH212","Close-up",
+ "a set of gears turning smoothly and cleanly inside a machine, with nothing connected to their "
+ "output shaft",False),
+
+("SH213","Wide shot",
+ "a bright operating theatre with a team of figures gathered around one table, the light overhead "
+ "clean and even",False),
+
+("SH214","Medium shot",
+ "standing on a sunlit street walking forward with his hands in his hoodie pockets, the day ordinary "
+ "and bright around him",True),
+
+("SH215","Close-up",
+ "one hand tapping a fingertip twice against a smooth cream forearm, the gesture small and "
+ "dismissive",False),
+
+("SH216","Wide shot",
+ "a simplified full body drawn in flat colour with one small point glowing low on the right side of "
+ "the abdomen, the rest of the body plain",False),
+
+("SH217","Medium shot",
+ "a plain wooden crate labelled with a blank tag being lifted off a rubbish heap and set back on a "
+ "shelf",False),
+
+("SH218","Close-up",
+ "that same precision instrument opened out on dark cloth, every part machined, fitted and complete, "
+ "lit hard from one side",False),
+
+("SH219","Wide shot",
+ "the stone bust of the bearded Victorian man now seen from behind, small in the frame, with bright "
+ "daylight beyond him",False),
+
+("SH220","Medium shot",
+ "a long line of dated books on a shelf running from one end of the frame to the other, the last one "
+ "pulled slightly forward",False),
+
+("SH221","Close-up",
+ "a hand wiping dust off a plain brass plate until the metal underneath shows clean",False),
+
+("SH222","Wide shot",
+ "a wall of small closed drawers stretching across the whole frame, with one of them standing open "
+ "and lit from inside",False),
+
+("SH223","Medium close-up",
+ "standing squarely facing the camera, evenly lit, his face flat and still, the background plain",True),
+
+("SH224","Wide shot",
+ "a spare tire mounted on the back of a vehicle parked at the edge of a wide empty road, the road "
+ "running out of frame in both directions",False),
+
+("SH225","Close-up",
+ "that same spare tire seen up close, clean and fully inflated, with the empty road stretching away "
+ "behind it into the distance",False),
+]
+
 BLOQUES = {1: BLOQUE_01, 2: BLOQUE_02, 3: BLOQUE_03, 4: BLOQUE_04,
-           5: BLOQUE_05, 6: BLOQUE_06, 7: BLOQUE_07, 8: BLOQUE_08}
+           5: BLOQUE_05, 6: BLOQUE_06, 7: BLOQUE_07, 8: BLOQUE_08,
+           9: BLOQUE_09, 10: BLOQUE_10, 11: BLOQUE_11}
