@@ -139,6 +139,10 @@ def realzar(entrada, salida, ojo=(0.62, 0.44), radio=0.12, corte=0.78, zoom=1.0,
         w, h = im.size
         nw, nh = int(w/zoom), int(h/zoom)
         im = im.crop(((w-nw)//2, (h-nh)//2, (w-nw)//2+nw, (h-nh)//2+nh)).resize((w, h), Image.LANCZOS)
+        # el acercamiento mueve el ojo y lo agranda. Se corrige aqui para que
+        # quien llama pase siempre la posicion medida sobre la imagen ORIGINAL.
+        ojo = (0.5 + (ojo[0]-0.5)*zoom, 0.5 + (ojo[1]-0.5)*zoom)
+        radio = radio*zoom
     w, h = im.size
     x0 = int(w*corte)
 
