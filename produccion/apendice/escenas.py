@@ -487,5 +487,164 @@ BLOQUE_06 = [
  "standing beside a large wall diagram of that junction and resting one finger on the marked point",True),
 ]
 
+BLOQUE_07 = [
+("SH121","Close-up",
+ "a precision instrument lying open on dark cloth with every part machined and fitted, its screws "
+ "and hinges drawn cleanly, lit hard from one side",False),
+
+("SH122","Wide shot",
+ "a wide muddy riverbank at dusk where cattle drink at the water's edge and people fill jars a few "
+ "steps downstream from them",False),
+
+("SH123","Medium shot",
+ "an open stone channel running along the edge of a village street, dark water moving through it "
+ "past the doorways",False),
+
+("SH124","Wide shot",
+ "a row of simple grave markers on a hillside under a grey sky, most of them small and set close "
+ "together",False),
+
+("SH125","Close-up",
+ "one very small grave marker in bare earth with a single flat stone laid on top of it",False),
+
+("SH126","Medium shot",
+ "two hourglasses standing side by side on a table, the left one nearly full and the right one "
+ "almost empty",False),
+
+("SH127","Wide shot",
+ "a long line of simplified figures stretching from the front of the frame to the horizon, each "
+ "generation slightly smaller than the one before",False),
+
+("SH128","Medium shot",
+ "a stone wall built of many identical blocks stacked in even courses, running out of frame on both "
+ "sides",False),
+
+("SH129","Close-up",
+ "a thick stack of paper records on a desk with one page lifted, the columns on it drawn as neat "
+ "flat marks",False),
+
+("SH130","Medium close-up",
+ "standing squarely facing the camera against a plain flat background, evenly lit, completely "
+ "still",True),
+
+("SH131","Medium shot",
+ "a small metal backup drive resting on a dark surface with one steady green light, a cable coiled "
+ "beside it",False),
+
+("SH132","Close-up",
+ "that same narrow tube shown swollen and dark red along its length, the colour deepening toward "
+ "its closed end",False),
+
+("SH133","Wide shot",
+ "a stone safe house on a hillside with a single narrow door, seen from outside at dusk with warm "
+ "light in its one window",False),
+
+("SH134","Medium shot",
+ "that same narrow doorway now blocked by a fallen stone wedged tight in the opening, the space "
+ "behind it dark",False),
+
+("SH135","Close-up",
+ "a mass of tiny shapes multiplying and pressing tightly against the inside of a closed chamber, "
+ "packed to the walls",False),
+
+("SH136","Medium shot",
+ "a red vessel running to that chamber shown pinched shut halfway along, the section beyond it "
+ "drawn pale and grey",False),
+
+("SH137","Wide shot",
+ "a dark chamber wall split open with its contents spilling out into a wide open space, drawn in "
+ "flat blocks of red and grey",False),
+
+("SH138","Medium shot",
+ "an operating room drawn as a bare stone chamber with empty shelves along its walls, one plain "
+ "table at its centre under a single lamp",False),
+
+("SH139","Close-up",
+ "fifteen small identical figures arranged in a row, with exactly one of them coloured deep red",False),
+
+("SH140","Wide shot",
+ "standing in front of an enormous grid of small figures painted across a wall, with scattered ones "
+ "marked in red, and looking up at it",True),
+]
+
+BLOQUE_08 = [
+("SH141","Medium shot",
+ "a lottery drum full of pale tokens standing on a stage, with one hand reaching in to draw from "
+ "it",False),
+
+("SH142","Wide shot",
+ "a wide age line drawn across a wall from infancy to old age, with a tall red bar rising sharply "
+ "over the section for the teens and twenties",False),
+
+("SH143","Close-up",
+ "two figures standing together at the peak of that red bar, both of them young and upright, lit "
+ "brightly against the dark wall",False),
+
+("SH144","Medium shot",
+ "an empty woven cradle standing beside those two young figures, lit warm and completely unused",False),
+
+("SH145","Wide shot",
+ "an old figure seated calmly at the far right end of that same age line, in shadow, with the red "
+ "bar far away behind him",False),
+
+("SH146","Medium shot",
+ "one bright figure standing at the exact centre of a long path, with the way behind him lit and "
+ "the way ahead of him cut off in flat black",False),
+
+("SH147","Close-up",
+ "one hand setting a small object back down on a shelf instead of discarding it, the fingers "
+ "releasing it slowly",False),
+
+("SH148","Wide shot",
+ "a vast crowd of pale figures filling the frame, with a scattered few of them coloured deep red "
+ "throughout",False),
+
+("SH149","Medium shot",
+ "a market stall with a price tag hanging from a hook beside a plain object, the tag blank and "
+ "swinging",False),
+
+("SH150","Close-up",
+ "a two-pan weighing scale tipped over to one side, one pan low and heavy and the other high and "
+ "light",False),
+
+("SH151","Wide shot",
+ "a wide plain with a long line of stacked earth layers cut into a cliff at one side, hundreds of "
+ "thin bands running horizontally",False),
+
+("SH152","Medium shot",
+ "one small pale token resting alone on the left pan of that scale, tiny against the metal",False),
+
+("SH153","Close-up",
+ "a heavy pile of many pale tokens heaped high on the right pan, spilling over its edge",False),
+
+("SH154","Wide shot",
+ "a simplified cutaway of an intestine scoured completely bare, its walls pale and empty, with "
+ "nothing at all left inside",False),
+
+("SH155","Medium shot",
+ "standing in front of a large wall diagram of the tube with one hand held flat over the swollen "
+ "red section of it",True),
+
+("SH156","Wide shot",
+ "standing with his back to that diagram, facing a much larger dark shape looming across the "
+ "opposite wall of the room",True),
+
+("SH157","Medium shot",
+ "standing upright inside a room drawn completely upside down, the floor above him and the "
+ "furniture hanging over his head",True),
+
+("SH158","Close-up",
+ "a plain wooden box standing open and completely empty on a dark surface, one hard block of light "
+ "falling into it",False),
+
+("SH159","Wide shot",
+ "a tall stone arch standing alone on a plain with its keystone missing, the two halves leaning "
+ "against nothing at the top",False),
+
+("SH160","Medium close-up",
+ "standing squarely facing the camera with his head tilted very slightly to one side, evenly lit "
+ "against a plain background",True),
+]
+
 BLOQUES = {1: BLOQUE_01, 2: BLOQUE_02, 3: BLOQUE_03, 4: BLOQUE_04,
-           5: BLOQUE_05, 6: BLOQUE_06}
+           5: BLOQUE_05, 6: BLOQUE_06, 7: BLOQUE_07, 8: BLOQUE_08}
