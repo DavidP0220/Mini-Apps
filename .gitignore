@@ -15,3 +15,5 @@ produccion/miniaturas/_fuentes/
 
 __pycache__/
 *.pyc
+produccion/miniaturas/_plano_prueba.png
+produccion/miniaturas/_v7_realzada.png
