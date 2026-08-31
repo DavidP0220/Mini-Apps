@@ -123,6 +123,11 @@ if __name__ == '__main__':
     # La base NO se recorta de un fotograma: las imagenes del video 7 son
     # planas a proposito y un recorte plano da una miniatura sosa. Se genera
     # aparte con volumen y expresion, y entra por aqui como ruta.
+    # Texto elegido por David. La formula, leida de la miniatura de
+    # IT'S NOT AN ADDICTION:
+    #   banda roja  -> CONTRADICE lo que el espectador cree
+    #   grande      -> frase completa, con sujeto y verbo
+    #   barra negra -> ACUSACION que abre una pregunta, no un dato cerrado
     if os.path.exists('miniatura_v7_base.png'):
-        render('miniatura_v7_base.png',"YOUR BRAIN SAYS","DON'T BE","SEEN",
-               "THE 300,000 YEAR OLD","CAMOUFLAGE","MINIATURA_V7.jpg")
+        render('miniatura_v7_base.png',"IT'S NOT SHYNESS","YOUR BRAIN","IS HIDING YOU",
+               "AND IT LEARNED IT","300,000 YEARS AGO","MINIATURA_V7.jpg")

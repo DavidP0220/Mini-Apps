@@ -87,20 +87,30 @@ antes de leer el titulo.
 
 *Why Didn't Evolution Remove Your Fear of Being Seen?*
 
-**Texto**, sobre la plantilla nueva de cuatro lineas:
+**Texto. CERRADO por David el 2026-08-30:**
 
 ```
-banda roja    →  YOUR BRAIN SAYS
-blanco        →  DON'T BE
-amarillo      →  SEEN                              (subrayado rojo)
-barra negra   →  THE 300,000 YEAR OLD  CAMOUFLAGE   (la ultima palabra en rojo)
+banda roja    →  IT'S NOT SHYNESS
+blanco        →  YOUR BRAIN
+amarillo      →  IS HIDING YOU              (subrayado rojo)
+barra negra   →  AND IT LEARNED IT  300,000 YEARS AGO
 ```
 
-Mismo molde que `YOUR BRAIN THINKS / IT'S STILL / HUNTING / THE 40,000 YEAR OLD
-GLITCH`. El espectador que vio una reconoce la siguiente antes de leerla.
+Sigue la formula de la miniatura de `IT'S NOT AN ADDICTION`, que es la mejor
+del canal, y no la de las anteriores:
 
-`300,000` es el numero real de la tesis y `CAMOUFLAGE` es el concepto del
-video: el sindrome del impostor como sistema de camuflaje.
+- **La banda roja contradice**, no presenta. `IT'S NOT SHYNESS` le dice al
+  espectador que lo que cree esta mal antes de que lea nada mas.
+- **El texto grande es una frase completa**, con sujeto y verbo:
+  `YOUR BRAIN IS HIDING YOU`. Un fragmento como `DON'T BE SEEN` describe;
+  una frase con sujeto acusa.
+- **La barra negra es una acusacion, no un dato.** `THE 40,000 YEAR OLD GLITCH`
+  es informacion: la lees y ya sabes. `AND IT LEARNED IT 300,000 YEARS AGO`
+  abre una pregunta que solo el video responde. Eso es lo que hace el clic.
+
+El numero es 300.000 y no 40.000 por dos razones: es la cifra que afirma el
+guion, y 40.000 ya se uso en la miniatura anterior. Repetir el mismo numero
+entre videos le quita fuerza a los dos.
 
 **Escena, con la escala nueva.** Primer plano extremo de la cara del host
 cortada por los bordes, ocupando la mitad izquierda-centro. **Un ojo enorme muy
