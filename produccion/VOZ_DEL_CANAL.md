@@ -66,11 +66,43 @@ done
 Se incluye Andrew a proposito, para comparar contra lo que ya conocemos.
 Las cuatro se generan con `--rate=-15%` para oirlas al ritmo del nicho.
 
+## LA REFERENCIA — el sonido que hay que igualar
+
+`produccion/audio/REFERENCIA_VOZ.mp3`
+
+David la entrego el 2026-08-30 con una sola instruccion: **"tiene que ser
+exactamente esta"**. Todo audio del canal se compara contra este archivo antes
+de darlo por bueno.
+
+Huella tecnica medida sobre el archivo:
+
+| | |
+|---|---|
+| Duracion | 16,92 s |
+| Frecuencia | 24.000 Hz |
+| Bitrate | 48 kbps |
+| Canales | mono |
+
+Esos tres numeros son **la salida por defecto de Edge TTS**, lo que confirma
+que se genero con la misma herramienta y que es reproducible.
+
+**Lo que falta saber: con que `--rate` se genero.** Sin ese dato no se puede
+reproducir exactamente. Se averigua asi, y es rapido:
+
+1. Escuchar la referencia y transcribir su texto exacto, palabra por palabra.
+2. Generar ese mismo texto con `en-US-AndrewNeural` a `+0%`, `-10%` y `-15%`.
+3. Medir la duracion de cada uno. **El que de 16,92 s es el rate correcto.**
+
+La duracion no miente: dos audios del mismo texto y la misma voz solo pueden
+durar lo mismo si van al mismo rate. Una vez encontrado, se anota aqui abajo y
+se usa siempre.
+
 ## Decision — CERRADA
 
 - **Voz del canal: `en-US-AndrewNeural`**
 - **Decidida por David el 2026-08-30.** No se reabre.
-- **Rate: `-15%` por defecto**, hasta que la medicion del nicho diga otro numero.
+- **Rate: pendiente.** Se fija igualando la duracion de REFERENCIA_VOZ.mp3
+  con el metodo de arriba. Mientras tanto, `-15%`.
 
 **Todos los videos, de aqui en adelante, con esta voz.** El espectador que
 vuelve reconoce la voz antes que la miniatura.
