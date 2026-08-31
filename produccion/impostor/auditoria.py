@@ -84,6 +84,18 @@ ok(ids == sorted(ids), "los shot_id van en orden")
 tam = [p[1] for v in esc.BLOQUES.values() for p in v]
 rep = [(ids[i], ids[i+1]) for i in range(len(tam)-1) if tam[i] == tam[i+1]]
 ok(not rep, "nunca dos planos seguidos del mismo tamano", f"({len(rep)}) {rep[:3]}")
+# El host es el hilo del canal. Muchos planos seguidos sin el y el video deja
+# de parecer de Mindset Mechanics.
+MAX_SIN_HOST = 12
+racha, peor, donde = 0, 0, ""
+for p in [q for v in esc.BLOQUES.values() for q in v]:
+    if p[3]: racha = 0
+    else:
+        racha += 1
+        if racha > peor: peor, donde = racha, p[0]
+ok(peor <= MAX_SIN_HOST, f"nunca mas de {MAX_SIN_HOST} planos seguidos sin host",
+   f"(racha de {peor}, termina en {donde})")
+
 PROH = ["nose","ears","hair","blush","nostril",r"\bno\b","without","never","avoid","remove"]
 malos = [(p[0], w) for v in esc.BLOQUES.values() for p in v
          for w in PROH if re.search(w if w.startswith('\\') else r'\b'+w, p[2], re.I)]

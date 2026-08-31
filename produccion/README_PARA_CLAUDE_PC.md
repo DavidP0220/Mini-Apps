@@ -51,6 +51,8 @@ sola, se acumula.
 - `produccion/impostor/LOTE_02.txt` — 20 prompts, la explicacion facil y su muerte
 - `produccion/impostor/LOTE_03.txt` — 20 prompts, la muerte de la confianza y la explicacion social
 - `produccion/impostor/LOTE_04.txt` — 20 prompts, la banda y la jerarquia inversa
+- `produccion/impostor/LOTE_05.txt` — 20 prompts, el castigo del grupo
+- `produccion/impostor/LOTE_06.txt` — 20 prompts, las apuestas reales y el evento de seleccion
 
 ## Para generar hojas nuevas
 

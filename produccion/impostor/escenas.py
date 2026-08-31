@@ -103,8 +103,8 @@ BLOQUE_02 = [
  "top edge of the frame",False),
 
 ("SH024","Medium shot",
- "a grey figure standing directly behind that tall stack, so that only the top of a navy cap shows "
- "above the highest frame",False),
+ "standing directly behind that tall stack of frames, so that only the top of his navy cap shows "
+ "above the highest one",True),
 
 ("SH025","Wide shot",
  "the large mechanical heart of flat metal plates lying broken apart on a workshop floor, its pieces "
@@ -321,8 +321,8 @@ BLOQUE_04 = [
  "mouth, the third covering a face, the fourth pushing outward with the palm open",False),
 
 ("SH078","Wide shot",
- "a ring of seated figures around a fire with one figure standing tall at the centre, every seated "
- "head aimed directly at the standing one",False),
+ "standing tall and alone at the centre of a ring of seated figures around a fire, every seated head "
+ "aimed directly at him",True),
 
 ("SH079","Medium shot",
  "a pyramid built of flat stone blocks standing completely upside down, balanced on its single point, "
@@ -333,4 +333,166 @@ BLOQUE_04 = [
  "spread evenly to the horizon",False),
 ]
 
-BLOQUES = {1: BLOQUE_01, 2: BLOQUE_02, 3: BLOQUE_03, 4: BLOQUE_04}
+BLOQUE_05 = [
+("SH081","Medium shot",
+ "many grey hands rising together out of a crowd in one even motion, every arm at the same angle, "
+ "none of the figures looking at each other",False),
+
+("SH082","Wide shot",
+ "a crowd of identical grey figures with one slightly taller figure among them being pressed back "
+ "down by many hands flat on his shoulders",False),
+
+("SH083","Medium shot",
+ "one brightly glowing figure standing among grey ones while several cupped hands close in around the "
+ "glow from every side, dimming it",False),
+
+("SH084","Wide shot",
+ "a large flat world map filling the frame with the same small symbol of a ring of seated figures "
+ "repeated once on every continent",False),
+
+("SH085","Close-up",
+ "holding one empty open palm out flat in front of him against a plain dark background, the hand lit "
+ "warm and evenly",True),
+
+("SH086","Medium shot",
+ "holding that same open palm out with a modern phone now lying face up on it and glowing bright "
+ "blue, the room around him flat and dark",True),
+
+("SH087","Wide shot",
+ "a large crowd of grey figures split into two even halves by one clean bright vertical band of light "
+ "running from the top of the frame to the bottom",False),
+
+("SH088","Medium shot",
+ "a hunter figure holding a large animal up above his head while the seated figures around him wave "
+ "their hands low and flat in dismissal",False),
+
+("SH089","Close-up",
+ "a large dead animal lying on bare ground with several wide open laughing mouths drawn above it, "
+ "seen from just above the ground",False),
+
+("SH090","Medium shot",
+ "the same hunter holding the animal out at arm's length with his own shoulders raised in a shrug, "
+ "his head tilted down toward it",False),
+
+("SH091","Close-up",
+ "two hands passing a stone knife between them directly over the body of the animal, the blade "
+ "catching one hard block of light",False),
+
+("SH092","Wide shot",
+ "one figure standing with an arm stretched out pointing forward while every other figure in the "
+ "frame walks calmly away in a different direction",False),
+
+("SH093","Medium shot",
+ "that same figure with his mouth open in speech while every figure around him faces outward, their "
+ "backs forming a closed wall",False),
+
+("SH094","Close-up",
+ "a row of wide open laughing mouths across the frame, and at the right end one hand cupped beside a "
+ "mouth leaning in to whisper",False),
+
+("SH095","Wide shot",
+ "a long chain of figures spread across an open landscape, each one leaning toward the next to "
+ "whisper, the chain running all the way to the horizon",False),
+
+("SH096","Medium shot",
+ "one figure standing alone at the centre while the ring of figures around him steps outward, opening "
+ "a wide empty gap of ground between them",False),
+
+("SH097","Close-up",
+ "one grey hand lowering slowly onto a plain flat surface, the gesture small and ordinary, lit evenly",False),
+
+("SH098","Wide shot",
+ "sitting alone on the ground far outside the reach of a fire at night, facing away from it, while "
+ "the whole group eats together inside the ring of light behind him",True),
+
+("SH099","Medium shot",
+ "thirty small simplified figures arranged in a neat even grid on flat pale ground, seen from above",False),
+
+("SH100","Close-up",
+ "three simplified faces very close together filling the frame, all of them calm and familiar, lit "
+ "warm and softly",False),
+]
+
+BLOQUE_06 = [
+("SH101","Wide shot",
+ "thirty figures seated in a wide circle around one large shared pile of food at the centre, the "
+ "firelight flat orange across all of them",False),
+
+("SH102","Medium shot",
+ "a ring of sleeping figures lying around a low fire under a dark blue sky, with one clear empty gap "
+ "left in the ring",False),
+
+("SH103","Close-up",
+ "a small woven cradle basket resting empty on bare ground, warm firelight falling into it from one "
+ "side",False),
+
+("SH104","Wide shot",
+ "flat open land stretching to the horizon in every direction under a black sky, with one small fire "
+ "as the only point of light anywhere in the frame",False),
+
+("SH105","Medium shot",
+ "sitting slightly hunched at the outer edge of a fire circle, watching the group, his arms wrapped "
+ "around his knees",True),
+
+("SH106","Close-up",
+ "a small worn stone charm gripped tight inside a closed fist, the knuckles pale, one hard block of "
+ "firelight across them",False),
+
+("SH107","Wide shot",
+ "an open savannah at midday under a pale flat sky with the whole band spread across it, each figure "
+ "busy with a different task",False),
+
+("SH108","Medium shot",
+ "standing upright with a large caught animal lying on the ground at his feet, both arms at his "
+ "sides, the light flat and bright",True),
+
+("SH109","Wide shot",
+ "the whole band standing completely still across the frame with every single face turned toward one "
+ "point at the right edge",False),
+
+("SH110","Medium close-up",
+ "standing with his chest and shoulders held tight and both hands completely still at his sides, "
+ "the light hard on one side of him",True),
+
+("SH111","Wide shot",
+ "one figure standing tall and relaxed in the middle of the group with both arms open wide, brighter "
+ "than everyone around him",False),
+
+("SH112","Medium shot",
+ "that same patch of ground now empty, with the group closed into a tight circle around the bare "
+ "space where the figure stood",False),
+
+("SH113","Close-up",
+ "two small pebbles resting on a flat stone, with one finger pushing the left pebble off the edge",False),
+
+("SH114","Medium shot",
+ "two figures standing side by side, each one holding a large object up above his head, both lit the "
+ "same way",False),
+
+("SH115","Close-up",
+ "a chest and shoulders filling the frame with one spreading patch of cold blue tone across the "
+ "centre of the chest, the rest of the body warm cream",False),
+
+("SH116","Medium shot",
+ "one of those two figures handing his object sideways to the person next to him, his shoulders "
+ "lowered and his head slightly down",False),
+
+("SH117","Wide shot",
+ "the other figure standing tall and bright at the centre of the group with the object still raised, "
+ "every face around him turned toward it",False),
+
+("SH118","Medium shot",
+ "two long lines of figures receding into the distance side by side, the left line continuing full "
+ "and the right line thinning down to a single last figure",False),
+
+("SH119","Wide shot",
+ "one single continuous line of figures walking forward out of a distant horizon toward the front of "
+ "the frame, growing larger as they come",False),
+
+("SH120","Medium shot",
+ "a wide snowfield under a pale grey sky with one set of footprints crossing it and stopping in the "
+ "middle of the open white",False),
+]
+
+BLOQUES = {1: BLOQUE_01, 2: BLOQUE_02, 3: BLOQUE_03, 4: BLOQUE_04,
+           5: BLOQUE_05, 6: BLOQUE_06}
