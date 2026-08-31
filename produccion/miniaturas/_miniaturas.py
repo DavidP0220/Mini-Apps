@@ -65,6 +65,22 @@ def buscar_base(base):
         raise SystemExit(f'no hay ningun fotograma flow_{base:03d} en {D}/')
     return os.path.join(D,cand[0])
 
+ANCHO_MAX = 0.62          # el texto nunca pasa del 62% del cuadro
+
+def encajar(txt, cuerpo_ideal, limite):
+    """Devuelve el cuerpo de letra mas grande con el que txt cabe en limite.
+
+    La referencia usa palabras cortas y llena el ancho. Con frases largas, un
+    cuerpo fijo se come al personaje, que es justo lo que la miniatura no
+    puede hacer: el texto ocupa la izquierda, la imagen la derecha.
+    """
+    for cuerpo in range(cuerpo_ideal, 60, -3):
+        f = ImageFont.truetype(F, cuerpo)
+        bb = f.getbbox(txt)
+        if bb[2]-bb[0] <= limite:
+            return f
+    return ImageFont.truetype(F, 60)
+
 def render(base, setup, cuerpo, remate, sub1, sub_rojo, salida, desplazar=0):
     """desplazar: pixeles que se corre el encuadre a la izquierda. Positivo
     empuja al personaje hacia la derecha y le deja mas aire al texto."""
@@ -77,22 +93,31 @@ def render(base, setup, cuerpo, remate, sub1, sub_rojo, salida, desplazar=0):
         t=max(0.0, 1.0-x/(W*0.66))
         dv.line([(x,0),(x,H)], fill=int(242*(t**1.15)))
     im=Image.composite(Image.new('RGB',(W,H),(5,5,9)), im, ov.filter(ImageFilter.GaussianBlur(3)))
-    im=ImageEnhance.Contrast(im).enhance(1.15).convert('RGBA')
+    im=ImageEnhance.Contrast(im).enhance(1.18)
+    im=ImageEnhance.Color(im).enhance(1.35)        # la referencia va saturada
+    im=im.convert('RGBA')
     d=ImageDraw.Draw(im)
 
     # medidas leidas de la mejor miniatura del canal (THIS IS NOT ADDICTION):
     # el bloque de texto ocupa ~55% del ancho, no ~45%
-    fset=ImageFont.truetype(F,60)
-    fbig=ImageFont.truetype(F,150)
-    fsub=ImageFont.truetype(F,48)
+    # Medidas tomadas de THIS IS NOT ADDICTION: la palabra amarilla tiene
+    # ~130 px de alto de letra sobre 1280 de ancho. Anton da ~0.72 del cuerpo,
+    # asi que sobre el lienzo de 1536 el cuerpo va en ~205.
+    lim  = int(W*ANCHO_MAX)
+    fset = encajar(setup, 76, lim)
+    fbig = encajar(cuerpo, 205, lim)
+    fbig2= encajar(remate, 205, lim)
+    fbig = fbig if fbig.size <= fbig2.size else fbig2      # las dos lineas grandes van iguales
+    fbig2= fbig
+    fsub = encajar(sub1+' '+sub_rojo, 58, lim)
 
-    bb=fset.getbbox(setup); bw=bb[2]-bb[0]+52; bh=bb[3]-bb[1]+30
+    bb=fset.getbbox(setup); bw=bb[2]-bb[0]+64; bh=bb[3]-bb[1]+36
     banda_brocha(d, 52, 44, bw, bh)
-    d.text((52+26, 44+15-bb[1]), setup, font=fset, fill=(255,255,255))
+    d.text((52+32, 44+18-bb[1]), setup, font=fset, fill=(255,255,255))
 
-    y=44+bh+30
-    texto_texturado(im,(44,y),cuerpo,fbig,(255,255,255)); y+=158
-    wrem=texto_texturado(im,(44,y),remate,fbig,(255,206,8)); y+=168
+    y=44+bh+26
+    texto_texturado(im,(44,y),cuerpo,fbig,(255,255,255)); y+=int(fbig.size*1.05)
+    wrem=texto_texturado(im,(44,y),remate,fbig2,(255,206,8)); y+=int(fbig2.size*1.12)
 
     # linea roja de brocha: sigue el ancho real de la palabra amarilla,
     # nunca un ancho fijo. Con una palabra corta la raya ya no sobresale.
