@@ -588,8 +588,8 @@ BLOQUE_08 = [
  "bar far away behind him",False),
 
 ("SH146","Medium shot",
- "one bright figure standing at the exact centre of a long path, with the way behind him lit and "
- "the way ahead of him cut off in flat black",False),
+ "standing at the exact centre of a long path, with the way behind him lit warm and the way ahead "
+ "of him cut off in flat black",True),
 
 ("SH147","Close-up",
  "one hand setting a small object back down on a shelf instead of discarding it, the fingers "
