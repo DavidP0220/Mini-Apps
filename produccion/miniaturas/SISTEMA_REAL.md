@@ -209,6 +209,32 @@ sobre el pasado se lee; un numero sobre uno mismo se clica.
 
 ---
 
+---
+
+## LA COMPOSICION, MEDIDA — no descrita
+
+Medido sobre la miniatura del video 5, la mejor del canal. Esto es lo que le
+faltaba a todos los intentos: **no era el estilo, era la escala.**
+
+| | |
+|---|---|
+| **El ojo ocupa** | **la mitad del ancho del cuadro (0,505)** |
+| Centro del ojo | 65% del ancho · 47% del alto |
+| La zona fria azul empieza | 64% del ancho |
+| El bloque de texto | 62% del ancho como maximo |
+
+Un ojo de 0,15 del cuadro no se parece a uno de 0,50 por mas que compartan el
+estilo. Cualquier generacion futura lleva estas cuatro cifras dentro del prompt.
+
+## Lo que NO se hace
+
+**Reciclar una miniatura publicada y ponerle texto nuevo encima.** Se probo el
+2026-08-31 y David lo rechazo con razon: la imagen de abajo es de otro video y
+de otro tema, y por bien montado que quede el texto, nunca supera a la
+referencia. La base se genera para cada video.
+
+---
+
 ## Prueba obligatoria antes de aprobar
 
 Bajarla a **210x118 px** y mirarla. Si el amarillo no se lee o el host se
