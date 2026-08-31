@@ -70,7 +70,7 @@ def render(base, setup, cuerpo, remate, sub1, sub_rojo, salida, desplazar=0):
     empuja al personaje hacia la derecha y le deja mas aire al texto."""
     im=Image.open(buscar_base(base)).convert('RGB')
     im=im.resize((int(W*1.2), int(H*1.2)), Image.LANCZOS)
-    x0=max(0, min(im.width-W, im.width-W+desplazar))
+    x0=max(0, min(im.width-W, im.width-W-desplazar))
     im=im.crop((x0, (im.height-H)//2, x0+W, (im.height-H)//2+H))
     ov=Image.new('L',(W,H),0); dv=ImageDraw.Draw(ov)
     for x in range(W):
