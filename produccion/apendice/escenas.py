@@ -168,4 +168,165 @@ BLOQUE_02 = [
  "that stop abruptly",False),
 ]
 
-BLOQUES = {1: BLOQUE_01, 2: BLOQUE_02}
+BLOQUE_03 = [
+("SH041","Medium shot",
+ "a simplified cutaway of the base of a spine, its last fused blocks pale and plain, surrounded by "
+ "flat empty space on every side, the bone drawn as one solid dull shape",False),
+
+("SH042","Wide shot",
+ "a row of four objects on a long shelf, each one smaller, paler and more worn than the one before, "
+ "the last barely visible",False),
+
+("SH043","Close-up",
+ "one small pink tube shown large and sharp, its surface smooth and its wall thick, a bright red "
+ "vessel running along its length",False),
+
+("SH044","Medium shot",
+ "standing beside the tall stone bust of the bearded Victorian man and looking up at it from close "
+ "beside its plinth",True),
+
+("SH045","Wide shot",
+ "a wide savannah with a koala, a rabbit and a wombat standing side by side in a row on flat ground, "
+ "each drawn simply and outlined thickly",False),
+
+("SH046","Medium shot",
+ "a simplified cutaway of a gut drawn as a wide round chamber packed with green leaves, with a long "
+ "pale tube hanging from its end",False),
+
+("SH047","Close-up",
+ "two flat diagrams side by side: the left one a huge chamber with a long tube, the right one a small "
+ "chamber with a long tube, both drawn in the same style",False),
+
+("SH048","Wide shot",
+ "a koala sitting in the fork of a eucalyptus tree with a bundle of leaves in its paws, drawn flat "
+ "and outlined thickly against a pale sky",False),
+
+("SH049","Medium shot",
+ "a simplified cutaway of that koala showing an enormous round fermentation chamber, its end closing "
+ "off smoothly with nothing hanging from it",False),
+
+("SH050","Close-up",
+ "three small pink tubes lying side by side on a dark surface, each one a slightly different size, "
+ "all three lit the same way",False),
+
+("SH051","Wide shot",
+ "standing in front of a large flat scatter chart painted on a wall, its dots spread evenly in every "
+ "direction and one straight line drawn across it passing far away from almost all of them",True),
+
+("SH052","Medium shot",
+ "a tall structure of stacked blocks with the bottom block pulled out, the whole stack caught in the "
+ "moment of coming apart",False),
+
+("SH053","Close-up",
+ "a brass nameplate screwed to a plinth, its surface polished and blank, catching one hard line of "
+ "light",False),
+
+("SH054","Wide shot",
+ "a bright modern supermarket aisle stretching away, its shelves packed with identical boxes, the "
+ "light flat and even",False),
+
+("SH055","Medium shot",
+ "a plate on a table holding a plain pale burger and a heap of chips, drawn flat with thick outlines, "
+ "the background dim",False),
+
+("SH056","Close-up",
+ "one hand turning a small dial on a plain panel, the dial moved halfway, the panel otherwise empty",False),
+
+("SH057","Medium shot",
+ "a world map on a wall with small red pins pressed into it at scattered heights, clustered unevenly "
+ "across the continents",False),
+
+("SH058","Wide shot",
+ "standing at the centre of a frame divided into four settings around him — a hut, a market, a modern "
+ "kitchen and an open field — with people eating in each one",True),
+
+("SH059","Close-up",
+ "four plates in a row, each holding a completely different food, all of them lit identically",False),
+
+("SH060","Wide shot",
+ "an archaeological dig at dawn, a trench cut into pale earth with figures crouched along its edge "
+ "brushing at something below",False),
+]
+
+BLOQUE_04 = [
+("SH061","Medium shot",
+ "an Egyptian mummy laid out in a museum case with a small pink tube glowing faintly low on the right "
+ "side of its abdomen",False),
+
+("SH062","Close-up",
+ "a magnifying glass held over a fragment of old bone, its lens showing the surface enlarged and "
+ "sharp underneath",False),
+
+("SH063","Wide shot",
+ "the same small pink tube shown four times across the frame, each one beside a different figure, all "
+ "four identical in size and colour",False),
+
+("SH064","Medium shot",
+ "two of those tubes laid side by side and measured against a ruler, both reaching exactly the same "
+ "mark",False),
+
+("SH065","Close-up",
+ "one hand polishing the surface of that pink tube with a soft cloth, the movement careful and "
+ "unhurried",False),
+
+("SH066","Wide shot",
+ "standing at the front of a vast crowd of grey figures that fills the frame to the horizon, every "
+ "one of them with the same small pink tube glowing in the same place",True),
+
+("SH067","Medium shot",
+ "a maintenance crew of small figures on scaffolding working over the surface of an enormous pink "
+ "tube, tools in their hands",False),
+
+("SH068","Close-up",
+ "a cross-section of that tube wall showing a thick dense band of pale purple tissue packed between "
+ "its layers",False),
+
+("SH069","Wide shot",
+ "a long branching network of pale channels spread across a dark field like roots, all of them "
+ "converging toward one point",False),
+
+("SH070","Medium shot",
+ "a furnace burning hot inside a small chamber, fed by a thick pipe, the flame drawn as flat blocks "
+ "of orange and yellow",False),
+
+("SH071","Close-up",
+ "a row of small pale immune cells drawn as simple rounded shapes lined up shoulder to shoulder, all "
+ "facing the same direction",False),
+
+("SH072","Wide shot",
+ "a stone watchtower on a hill with lit windows and armed figures on its wall, and below it an empty "
+ "ruined building with dark windows",False),
+
+("SH073","Medium shot",
+ "standing in front of a large chalkboard covered in flat diagrams of the same pink tube, one hand "
+ "raised toward it",True),
+
+("SH074","Close-up",
+ "a hand dropping coins one by one into a slot on a plain metal box, three coins caught mid-fall",False),
+
+("SH075","Wide shot",
+ "a hospital corridor at night with one gurney being pushed fast toward a lit doorway at the far end, "
+ "everything else in flat shadow",False),
+
+("SH076","Medium shot",
+ "three plain cards laid out on a dark table, two of them clean and the third with its corner turned "
+ "up, lit from above",False),
+
+("SH077","Close-up",
+ "a single word-shaped blank label being peeled off a surface, the paper lifting at one corner to "
+ "show clean material underneath",False),
+
+("SH078","Wide shot",
+ "three researchers in white coats standing together in a bright laboratory, papers spread across a "
+ "long bench in front of them",False),
+
+("SH079","Medium shot",
+ "a bound scientific paper lying open on a bench under a lamp, its pages dense with flat diagrams of "
+ "the same tube",False),
+
+("SH080","Close-up",
+ "a hand turning a small brass telescope around so that it points in the opposite direction, the "
+ "movement caught halfway",False),
+]
+
+BLOQUES = {1: BLOQUE_01, 2: BLOQUE_02, 3: BLOQUE_03, 4: BLOQUE_04}
